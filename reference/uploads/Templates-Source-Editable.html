@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<style>
+  :root{
+    --ink:#121214; --ink-2:#1a1a1d;
+    --amber:#c1592e; --amber-light:#e0824b;
+    --paper:#f3eae0; --paper-dim:#c9bfb4;
+    --coral:#ff5a36; --grey:#6b625c; --grey-light:#9c9289;
+    --cat-laugh:#f4c430; --cat-shock:#7c5cff; --cat-surprise:#2cb6c4;
+    --cat-sarcasm:#d98e04; --cat-hype:#e8712e;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:#3a3a3d; font-family:'Cairo',sans-serif; }
+  .mono{ font-family:'DejaVu Sans Mono',monospace; direction:ltr; unicode-bidi:isolate; }
+
+  .qmark path{ fill-rule:evenodd; }
+
+  /* ============ COVER 820x360 ============ */
+  #cover{
+    width:820px; height:360px; position:relative; overflow:hidden;
+    background:var(--ink); direction:rtl;
+  }
+  #cover .torn-accent{
+    position:absolute; top:0; right:0; width:120px; height:120px;
+    clip-path:polygon(100% 0,0 0,55% 0,60% 14%,68% 4%,76% 16%,84% 6%,100% 22%);
+    background:var(--ink-2);
+  }
+  #cover .safe{ position:absolute; left:90px; right:90px; top:24px; bottom:24px; }
+  #cover .center{
+    position:absolute; inset:0; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; text-align:center; gap:10px;
+  }
+  #cover .lockup{ display:flex; align-items:center; gap:14px; }
+  #cover .qmark{ width:46px; height:46px; }
+  #cover .word-ar{ font-family:'Lalezar'; font-size:46px; color:var(--paper); }
+  #cover .word-en{ font-family:'Cairo'; font-weight:700; font-size:16px; color:var(--amber-light); letter-spacing:.04em; }
+  #cover .tagline{ font-family:'Lalezar'; font-size:22px; color:var(--amber); margin-top:2px; }
+
+  /* ============ POST TEMPLATE 1080x1350 ============ */
+  .post{ width:1080px; height:1350px; background:var(--ink); position:relative; overflow:hidden; }
+  .post .clip-area{
+    position:absolute; top:60px; right:60px; left:60px; height:1010px;
+    background:linear-gradient(160deg,#2a2320,#171412);
+    clip-path: polygon(0% 4%, 4% 0%, 82% 0%, 87% 4%, 91% 1%, 95% 5%, 98% 2%, 100% 8%, 100% 96%, 96% 100%, 4% 100%, 0% 96%);
+  }
+  .post .peel{ position:absolute; top:60px; right:60px; width:110px; height:110px; clip-path:polygon(100% 0,0 0,100% 100%); background:var(--paper); filter:drop-shadow(0 3px 5px rgba(0,0,0,.5)); }
+  .post .peel svg{ position:absolute; width:52px; height:52px; top:22px; right:16px; opacity:.6; }
+  .post .dur{ position:absolute; top:96px; left:96px; background:rgba(18,18,20,.78); color:var(--paper); font-size:22px; padding:8px 16px; border-radius:4px; }
+  .post .catdot{ position:absolute; bottom:130px; left:96px; width:26px; height:26px; border-radius:50%; border:3px solid var(--paper); }
+  .post .quote{ position:absolute; bottom:170px; left:96px; right:96px; text-align:center; font-family:'Lalezar'; font-size:56px; color:var(--paper); }
+  .post .footer{ position:absolute; bottom:0; right:0; left:0; height:220px; display:flex; align-items:center; justify-content:space-between; padding:0 60px; }
+  .post .cat-label{ font-family:'Cairo'; font-weight:700; font-size:30px; }
+  .post .brand-tag{ display:flex; align-items:center; gap:10px; }
+  .post .brand-tag svg{ width:30px; height:30px; }
+  .post .brand-tag span{ font-family:'Lalezar'; font-size:22px; color:var(--grey-light); }
+
+  /* ============ CATEGORY COLLECTION 1080x1350 (5 categories) ============ */
+  .collect{ width:1080px; height:1350px; background:var(--ink); position:relative; padding:70px 70px 60px; display:flex; flex-direction:column; }
+  .collect .head{ font-family:'Lalezar'; font-size:52px; color:var(--paper); text-align:center; margin-bottom:6px; }
+  .collect .sub{ font-family:'Cairo'; font-size:24px; color:var(--grey-light); text-align:center; margin-bottom:40px; }
+  .collect .grid5{ flex:1; display:grid; grid-template-columns:repeat(2,1fr); grid-template-rows:repeat(3,1fr); gap:22px; }
+  .collect .cell{ position:relative; background:linear-gradient(160deg,#2a2320,#171412); clip-path: polygon(0% 6%, 6% 0%, 78% 0%, 88% 8%, 100% 14%, 100% 94%, 94% 100%, 6% 100%, 0% 94%); display:flex; align-items:flex-end; padding:22px; }
+  .collect .cell .tag{ display:flex; align-items:center; gap:10px; }
+  .collect .cell .dot{ width:22px; height:22px; border-radius:50%; border:3px solid var(--paper); flex:0 0 auto; }
+  .collect .cell .name{ font-family:'Cairo'; font-weight:700; font-size:26px; color:var(--paper); }
+  .collect .cell.wide{ grid-column: span 2; }
+  .collect .brand-foot{ display:flex; align-items:center; justify-content:center; gap:10px; margin-top:34px; }
+  .collect .brand-foot svg{ width:26px; height:26px; }
+  .collect .brand-foot span{ font-family:'Lalezar'; font-size:20px; color:var(--grey-light); }
+
+  /* ============ ANNOUNCEMENT 1080x1350 ============ */
+  .ann{ width:1080px; height:1350px; background:var(--ink); position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:26px; text-align:center; padding:80px; }
+  .ann svg{ width:90px; height:90px; }
+  .ann .headline{ font-family:'Lalezar'; font-size:74px; color:var(--paper); line-height:1.2; }
+  .ann .sub{ font-family:'Cairo'; font-size:28px; color:var(--grey-light); max-width:700px; line-height:1.7; }
+  .ann .kicker{ font-family:'Cairo'; font-weight:700; font-size:20px; color:var(--amber-light); letter-spacing:.06em; }
+  .ann.milestone .headline{ color:var(--amber-light); }
+
+</style>
+</head>
+<body>
+
+  <!-- COVER -->
+  <div id="cover">
+    <div class="torn-accent"></div>
+    <div class="center">
+      <div class="lockup">
+        <svg class="qmark" viewBox="0 0 120 120"><path fill="var(--amber)" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg>
+        <div>
+          <div class="word-ar">يمن رياكت</div>
+          <div class="word-en">YEMREACT</div>
+        </div>
+      </div>
+      <div class="tagline">خذها. حطها. يمنية.</div>
+    </div>
+  </div>
+
+  <!-- POST TEMPLATE -->
+  <div class="post" id="post-shock">
+    <div class="clip-area"></div>
+    <div class="peel"><svg viewBox="0 0 120 120"><path fill="var(--ink)" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+    <div class="dur mono">2s</div>
+    <div class="catdot" style="background:var(--cat-shock)"></div>
+    <div class="quote">يا ساتر!</div>
+    <div class="footer">
+      <div class="cat-label" style="color:var(--cat-shock)">صدمة</div>
+      <div class="brand-tag"><svg viewBox="0 0 120 120"><path fill="var(--amber)" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg><span>يمن رياكت</span></div>
+    </div>
+  </div>
+
+  <!-- CATEGORY COLLECTION -->
+  <div class="collect" id="collection-5">
+    <div class="head">رياكشنات اليوم</div>
+    <div class="sub">خمس حالات، خمس لقطات جاهزة</div>
+    <div class="grid5">
+      <div class="cell"><div class="tag"><div class="dot" style="background:var(--cat-laugh)"></div><div class="name">ضحك</div></div></div>
+      <div class="cell"><div class="tag"><div class="dot" style="background:var(--cat-shock)"></div><div class="name">صدمة</div></div></div>
+      <div class="cell"><div class="tag"><div class="dot" style="background:var(--cat-surprise)"></div><div class="name">استغراب</div></div></div>
+      <div class="cell"><div class="tag"><div class="dot" style="background:var(--cat-hype)"></div><div class="name">حماس</div></div></div>
+      <div class="cell wide"><div class="tag"><div class="dot" style="background:var(--cat-sarcasm)"></div><div class="name">سخرية</div></div></div>
+    </div>
+    <div class="brand-foot"><svg viewBox="0 0 120 120"><path fill="var(--amber)" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg><span>يمن رياكت — خذها. حطها. يمنية.</span></div>
+  </div>
+
+  <!-- ANNOUNCEMENT: intro post -->
+  <div class="ann" id="ann-intro">
+    <svg viewBox="0 0 120 120"><path fill="var(--amber)" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg>
+    <div class="kicker">YEMREACT — يمن رياكت</div>
+    <div class="headline">مكتبة رياكشنات يمنية.<br>مو صفحة ميمز.</div>
+    <div class="sub">رياكشنات قصيرة ونادرة، منتقاة من مواقف حقيقية — جاهزة تاخذها وتحطها في مكانها.</div>
+  </div>
+
+  <!-- ANNOUNCEMENT: coming soon -->
+  <div class="ann" id="ann-soon">
+    <svg viewBox="0 0 120 120"><path fill="var(--amber)" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg>
+    <div class="headline">قريبًا</div>
+    <div class="sub">مكتبة رياكشنات كاملة، بحث بالموقف، جاهزة تاخذها.</div>
+  </div>
+
+  <!-- ANNOUNCEMENT: milestone -->
+  <div class="ann milestone" id="ann-milestone">
+    <div class="kicker mono">100 CLIPS</div>
+    <div class="headline">١٠٠ رياكشن</div>
+    <div class="sub">في المكتبة، وكل واحد فيها انتقيناه بإيدنا.</div>
+  </div>
+
+</body>
+</html>

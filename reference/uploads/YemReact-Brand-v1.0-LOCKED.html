@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YemReact Brand v1.0 — النسخة المعتمدة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Cairo:wght@400;600;700;800&family=Archivo+Black&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#121214; --ink-2:#1a1a1d; --ink-3:#232327;
+    --amber:#c1592e; --amber-light:#e0824b;
+    --paper:#f3eae0; --paper-dim:#c9bfb4;
+    --coral:#ff5a36; --grey:#6b625c; --grey-light:#9c9289;
+    --cat-laugh:#f4c430; --cat-shock:#7c5cff; --cat-anger:#c81e3a;
+    --cat-surprise:#2cb6c4; --cat-embarrass:#f17fb2; --cat-approve:#4caf6d;
+    --cat-reject:#6e8296; --cat-sarcasm:#d98e04; --cat-hype:#e8712e;
+    --pass:#4caf6d; --fixed:#e0824b;
+    --f-disp-ar:'Lalezar', sans-serif; --f-body-ar:'Cairo', sans-serif;
+    --f-disp-en:'Archivo Black', sans-serif; --f-body-en:'Inter', sans-serif;
+    --f-mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--ink); color:var(--paper); font-family:var(--f-body-ar); line-height:1.75; -webkit-font-smoothing:antialiased; }
+  .ltr{ direction:ltr; unicode-bidi:isolate; font-family:var(--f-body-en); }
+  .mono{ font-family:var(--f-mono); direction:ltr; unicode-bidi:isolate; }
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 24px; }
+  section{ padding:72px 0; border-bottom:1px solid rgba(243,234,224,0.07); }
+  section:last-of-type{ border-bottom:none; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:8px; font-family:var(--f-mono); font-size:12px; letter-spacing:.08em; color:var(--amber-light); text-transform:uppercase; margin-bottom:14px; }
+  .eyebrow::before{ content:''; width:16px; height:2px; background:var(--amber-light); }
+  h2{ font-family:var(--f-disp-ar); font-size:34px; font-weight:400; margin-bottom:10px; }
+  .lede{ color:var(--grey-light); font-size:15.5px; max-width:680px; margin-bottom:36px; }
+  .lede strong{ color:var(--paper); }
+
+  /* header */
+  .top{ padding-top:56px; }
+  .status{ display:inline-flex; align-items:center; gap:8px; background:rgba(76,175,109,0.12); border:1px solid var(--pass); color:var(--pass); font-family:var(--f-mono); font-size:12px; padding:6px 14px; margin-bottom:26px; }
+  .status::before{ content:'●'; font-size:9px; }
+  .top-lockup{ display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; margin-bottom:14px; }
+  .top-lockup .ar{ font-family:var(--f-disp-ar); font-size:56px; }
+  .top-lockup .en{ font-family:var(--f-disp-en); font-size:22px; color:var(--amber-light); }
+  .top-sub{ color:var(--grey-light); font-size:15px; max-width:680px; }
+
+  /* six questions */
+  .qa-list{ display:flex; flex-direction:column; gap:0; }
+  .qa-row{ display:grid; grid-template-columns:1fr auto; gap:16px; align-items:start; padding:18px 0; border-bottom:1px solid rgba(243,234,224,0.07); }
+  .qa-q{ font-size:14.5px; color:var(--paper); }
+  .qa-q b{ color:var(--paper); }
+  .qa-a{ font-size:13px; color:var(--grey-light); margin-top:4px; }
+  .tag{ font-family:var(--f-mono); font-size:11px; padding:4px 10px; white-space:nowrap; height:fit-content; }
+  .tag.pass{ background:rgba(76,175,109,.14); color:var(--pass); border:1px solid var(--pass); }
+  .tag.fixed{ background:rgba(224,130,75,.14); color:var(--fixed); border:1px solid var(--fixed); }
+
+  /* test grid */
+  .torn-lg{ clip-path: polygon(0% 6%, 6% 0%, 78% 0%, 83% 5%, 88% 1%, 93% 6%, 97% 2%, 100% 11%, 100% 94%, 94% 100%, 6% 100%, 0% 94%); }
+  .test-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+  @media (max-width:900px){ .test-grid{ grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .test-grid{ grid-template-columns:1fr;} }
+  .tc{ display:flex; flex-direction:column; gap:10px; }
+  .tc-head{ display:flex; align-items:center; gap:8px; font-size:13px; font-weight:700; }
+  .tc-emoji{ font-size:16px; }
+  .phone{ aspect-ratio:9/16; position:relative; overflow:hidden; border:1px solid rgba(243,234,224,.12); }
+  .blob{ position:absolute; border-radius:50%; filter:blur(2px); opacity:.9; }
+  .gesture{ position:absolute; border-radius:40% 60% 55% 45%/55% 45% 55% 45%; background:radial-gradient(circle,rgba(230,205,180,.55),rgba(230,205,180,0) 70%); filter:blur(3px); }
+
+  .peel{ position:absolute; width:15%; height:15%; clip-path:polygon(100% 0,0 0,100% 100%); background:var(--paper); filter:drop-shadow(0 1px 2px rgba(0,0,0,.6)) drop-shadow(0 0 2px rgba(0,0,0,.4)); }
+  .peel.tr{ top:0; right:0; }
+  .peel.tl{ top:0; left:0; clip-path:polygon(0 0,100% 0,0 100%); }
+  .peel svg{ position:absolute; width:52%; height:52%; top:14%; opacity:.6; }
+  .peel.tr svg{ right:14%; }
+  .peel.tl svg{ left:14%; }
+
+  .dur{ position:absolute; top:6%; background:rgba(18,18,20,.75); color:var(--paper); font-family:var(--f-mono); font-size:9px; padding:3px 6px; direction:ltr; }
+  .dur.left{ left:6%; } .dur.right{ right:6%; }
+
+  .dot{ position:absolute; bottom:7%; width:11px; height:11px; border-radius:50%; border:2px solid var(--paper); }
+  .dot.left{ left:6%; } .dot.right{ right:6%; }
+
+  .tc-note{ font-size:12px; color:var(--grey-light); line-height:1.6; }
+  .tc-note b{ color:var(--fixed); font-weight:700; }
+  .tc-note.clean{ color:var(--grey); }
+
+  /* report tiers */
+  .tier{ margin-bottom:44px; }
+  .tier-head{ display:flex; align-items:center; gap:10px; margin-bottom:16px; }
+  .tier-num{ font-family:var(--f-mono); font-size:12px; padding:4px 10px; }
+  .tier-num.t1{ background:rgba(76,175,109,.14); color:var(--pass); border:1px solid var(--pass); }
+  .tier-num.t2{ background:rgba(224,130,75,.14); color:var(--fixed); border:1px solid var(--fixed); }
+  .tier-num.t3{ background:rgba(200,30,58,.14); color:#e2647a; border:1px solid #c81e3a; }
+  .tier-title{ font-size:16px; font-weight:700; }
+  .tier ul{ list-style:none; }
+  .tier li{ font-size:14px; color:var(--grey-light); padding:11px 0; border-bottom:1px solid rgba(243,234,224,.06); display:flex; gap:10px; }
+  .tier li::before{ content:'—'; color:var(--grey); flex:0 0 auto; }
+  .tier li b{ color:var(--paper); font-weight:700; }
+
+  /* final checklist */
+  .lock-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  @media (max-width:900px){ .lock-grid{ grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .lock-grid{ grid-template-columns:1fr;} }
+  .lock-item{ background:var(--ink-2); border:1px solid rgba(243,234,224,.08); padding:20px; }
+  .lock-item .lh{ display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; }
+  .lock-item .ln{ font-weight:700; font-size:14px; }
+  .lock-item .lc{ font-family:var(--f-mono); font-size:10px; color:var(--pass); }
+  .lock-item .ld{ font-size:12.5px; color:var(--grey-light); line-height:1.7; }
+  .lock-item .ld .mono{ color:var(--paper-dim); }
+
+  footer{ padding:56px 0 90px; text-align:center; }
+  footer p{ color:var(--grey); font-size:12px; font-family:var(--f-mono); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <section class="top">
+    <div class="status mono">LOCKED — v1.0 — READY FOR HANDOFF</div>
+    <div class="top-lockup">
+      <span class="ar">يمن رياكت</span>
+      <span class="en ltr">YemReact</span>
+    </div>
+    <p class="top-sub">تقرير اختبار الهوية على 8 نماذج رياكشن واقعية ومتنوعة، وتثبيت النسخة النهائية المعتمدة للتسليم.</p>
+  </section>
+
+  <!-- SIX QUESTIONS -->
+  <section>
+    <div class="eyebrow">01 / نتائج الأسئلة الستة</div>
+    <h2>الحكم السريع</h2>
+    <div class="qa-list">
+      <div class="qa-row">
+        <div><div class="qa-q"><b>هل الهوية تخدم الرياكشن أم تنافسه؟</b></div><div class="qa-a">كل العناصر تعيش في الزوايا فقط وبأحجام صغيرة (٦–١٥٪ من الإطار) — لا شيء يقترب من مركز الكادر حيث التعبير.</div></div>
+        <div class="tag pass">تخدم — PASS</div>
+      </div>
+      <div class="qa-row">
+        <div><div class="qa-q"><b>هل تُعرف بدون إزعاج المحتوى؟</b></div><div class="qa-a">القُصاصة + التقشّر يكفيان للتعرف الفوري على المصدر بدون نص أو شعار كامل فوق اللقطة.</div></div>
+        <div class="tag pass">PASS</div>
+      </div>
+      <div class="qa-row">
+        <div><div class="qa-q"><b>هل تعمل القُصاصة مع كل أنواع اللقطات؟</b></div><div class="qa-a">في اللقطات القريبة جدًا أو التي فيها حركة يد نحو الكاميرا (حماس، رفض)، الزاوية الافتراضية قد تُشغَل. الحل: قاعدة "قلب الكتلة" الموثقة أدناه — لا تصميم جديد.</div></div>
+        <div class="tag fixed">PASS + قاعدة تشغيلية</div>
+      </div>
+      <div class="qa-row">
+        <div><div class="qa-q"><b>هل التصنيفات واضحة؟</b></div><div class="qa-a">٧ من ٨ فئات مطابقة مباشرة. "انبهار" لم تكن في اللوحة الأصلية — تم إلحاقها بعائلة "استغراب" اللونية بدل إضافة لون عاشر.</div></div>
+        <div class="tag fixed">PASS + توضيح</div>
+      </div>
+      <div class="qa-row">
+        <div><div class="qa-q"><b>هل الـWatermark مناسب فعلًا للفيديو؟</b></div><div class="qa-a">النسخة السابقة (تعتيم فقط بلا حافة) كانت ستختفي فوق خلفيات فاتحة. تمت تقويتها بظل وحافة داكنة خفيفة — الآن تعمل على أي خلفية.</div></div>
+        <div class="tag fixed">تم الإصلاح</div>
+      </div>
+      <div class="qa-row">
+        <div><div class="qa-q"><b>هل تبدو يمنية من روحها بدون رموز مباشرة؟</b></div><div class="qa-a">لا علم، لا زخارف، لا خناجر — الهوية اليمنية تأتي من المفهوم (المثل الشعبي) واللون (القشر) واللهجة الفعلية في الكابشنات.</div></div>
+        <div class="tag pass">PASS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISUAL TEST GRID -->
+  <section>
+    <div class="eyebrow">02 / الاختبار البصري — ٨ نماذج</div>
+    <h2>النظام مُطبَّق على عيّنة واقعية</h2>
+    <p class="lede">٦ نماذج تمر بالوضع الافتراضي بلا أي تعديل، ونموذجان يُظهران قاعدة "قلب الكتلة" الاحتياطية فعليًا، ونموذج واحد يُظهر الـWatermark بعد التقوية على خلفية فاتحة.</p>
+
+    <div class="test-grid">
+
+      <div class="tc">
+        <div class="tc-head"><span class="tc-emoji">😂</span> ضحك</div>
+        <div class="phone" style="background:linear-gradient(155deg,#2a2320,#171412)">
+          <div class="blob" style="width:60%;height:38%;top:28%;left:20%;background:radial-gradient(circle,rgba(193,89,46,.35),transparent 70%)"></div>
+          <div class="peel tr"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur left mono">3s</div>
+          <div class="dot left" style="background:var(--cat-laugh)"></div>
+        </div>
+        <div class="tc-note clean">وضع افتراضي — بلا تعديل.</div>
+      </div>
+
+      <div class="tc">
+        <div class="tc-head"><span class="tc-emoji">😳</span> صدمة</div>
+        <div class="phone" style="background:linear-gradient(155deg,#e9e0d3,#d2c6b3)">
+          <div class="blob" style="width:55%;height:35%;top:30%;left:22%;background:radial-gradient(circle,rgba(60,45,35,.25),transparent 70%)"></div>
+          <div class="peel tr"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur left mono" style="background:rgba(18,18,20,.85)">2s</div>
+          <div class="dot left" style="background:var(--cat-shock)"></div>
+        </div>
+        <div class="tc-note"><b>اختبار خلفية فاتحة:</b> بعد تقوية التقشّر بالظل والحافة، يبقى واضحًا حتى هنا.</div>
+      </div>
+
+      <div class="tc">
+        <div class="tc-head"><span class="tc-emoji">🤨</span> استغراب</div>
+        <div class="phone" style="background:linear-gradient(155deg,#232028,#15131a)">
+          <div class="blob" style="width:58%;height:36%;top:29%;left:21%;background:radial-gradient(circle,rgba(44,182,196,.22),transparent 70%)"></div>
+          <div class="peel tr"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur left mono">4s</div>
+          <div class="dot left" style="background:var(--cat-surprise)"></div>
+        </div>
+        <div class="tc-note clean">وضع افتراضي — بلا تعديل.</div>
+      </div>
+
+      <div class="tc">
+        <div class="tc-head"><span class="tc-emoji">🔥</span> حماس</div>
+        <div class="phone" style="background:linear-gradient(155deg,#2a2118,#181310)">
+          <div class="blob" style="width:60%;height:40%;top:32%;left:20%;background:radial-gradient(circle,rgba(232,113,46,.3),transparent 70%)"></div>
+          <div class="gesture" style="width:46%;height:30%;top:-6%;right:-8%"></div>
+          <div class="peel tl"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur right mono">3s</div>
+          <div class="dot right" style="background:var(--cat-hype)"></div>
+        </div>
+        <div class="tc-note"><b>قلب الكتلة:</b> يد مرفوعة تشغل الزاوية اليمنى المعتادة — الكتلة كاملة انقلبت لليسار.</div>
+      </div>
+
+      <div class="tc">
+        <div class="tc-head"><span class="tc-emoji">🙄</span> سخرية</div>
+        <div class="phone" style="background:linear-gradient(155deg,#292319,#17130f)">
+          <div class="blob" style="width:56%;height:34%;top:30%;left:22%;background:radial-gradient(circle,rgba(217,142,4,.22),transparent 70%)"></div>
+          <div class="peel tr"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur left mono">5s</div>
+          <div class="dot left" style="background:var(--cat-sarcasm)"></div>
+        </div>
+        <div class="tc-note clean">وضع افتراضي — السخرية غالبًا أطول قليلًا (٥ث) وهذا مقبول ضمن النظام.</div>
+      </div>
+
+      <div class="tc">
+        <div class="tc-head"><span class="tc-emoji">😐</span> إحراج/صمت</div>
+        <div class="phone" style="background:linear-gradient(155deg,#211f1e,#131211)">
+          <div class="blob" style="width:50%;height:30%;top:33%;left:25%;background:radial-gradient(circle,rgba(241,127,178,.16),transparent 70%)"></div>
+          <div class="peel tr"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur left mono">4s</div>
+          <div class="dot left" style="background:var(--cat-embarrass)"></div>
+        </div>
+        <div class="tc-note clean">تركيبة أهدأ وأقل حركة — العلامة صغيرة بما يكفي لعدم فرض طاقة لا تناسب اللحظة.</div>
+      </div>
+
+      <div class="tc">
+        <div class="tc-head"><span class="tc-emoji">❌</span> رفض</div>
+        <div class="phone" style="background:linear-gradient(155deg,#231e1e,#141111)">
+          <div class="blob" style="width:58%;height:36%;top:28%;left:21%;background:radial-gradient(circle,rgba(110,130,150,.22),transparent 70%)"></div>
+          <div class="gesture" style="width:44%;height:28%;bottom:-6%;left:-8%"></div>
+          <div class="peel tr"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur left mono">3s</div>
+          <div class="dot right" style="background:var(--cat-reject)"></div>
+        </div>
+        <div class="tc-note"><b>قلب جزئي:</b> يد ترفض تشغل الزاوية السفلية اليسرى — نقطة التصنيف فقط انتقلت لليمين، التقشّر بقي مكانه لأنه غير متأثر.</div>
+      </div>
+
+      <div class="tc">
+        <div class="tc-head"><span class="tc-emoji">🤯</span> انبهار</div>
+        <div class="phone" style="background:linear-gradient(155deg,#1f2224,#121415)">
+          <div class="blob" style="width:58%;height:36%;top:29%;left:21%;background:radial-gradient(circle,rgba(44,182,196,.22),transparent 70%)"></div>
+          <div class="peel tr"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur left mono">3s</div>
+          <div class="dot left" style="background:var(--cat-surprise)"></div>
+        </div>
+        <div class="tc-note"><b>عائلة استغراب:</b> نفس التركواز — لا لون عاشر مستقل، لتفادي تضخم قائمة التصنيف.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WRITTEN REPORT -->
+  <section>
+    <div class="eyebrow">03 / التقرير النهائي</div>
+    <h2>ما تغيّر فعليًا، وما لم يتغيّر</h2>
+
+    <div class="tier">
+      <div class="tier-head"><span class="tier-num t1 mono">TIER 1</span><span class="tier-title">نجح — لا يحتاج أي تعديل</span></div>
+      <ul>
+        <li>الرمز (القُصاصة + ثقب التشغيل) بكل أحجامه — من ١٢٠px لحد الفافيكون.</li>
+        <li>مبدأ "لا شيء يلمس الوجه" — تحقق في جميع النماذج الثمانية بلا استثناء.</li>
+        <li>ثنائي Lalezar / Cairo وتوازنه مع Archivo Black / Inter.</li>
+        <li>٧ من ٩ ألوان تصنيف (ضحك، صدمة، استغراب، حماس، سخرية، إحراج، رفض) بلا حاجة لأي تغيير.</li>
+        <li>الروح اليمنية عبر المفهوم واللون واللهجة، بلا أي رمز يمني مباشر.</li>
+        <li>قاعدة "لون سيادي واحد لكل تصميم" — لم تُنتهك في أي تطبيق مختبَر.</li>
+      </ul>
+    </div>
+
+    <div class="tier">
+      <div class="tier-head"><span class="tier-num t2 mono">TIER 2</span><span class="tier-title">تعديل بسيط — قاعدة تشغيلية، لا أصول تصميمية جديدة</span></div>
+      <ul>
+        <li><b>قاعدة قلب الكتلة:</b> إذا شغلت يد أو حركة الزاوية الافتراضية في أي لحظة من اللقطة، تُقلَب الكتلة (تقشّر + مدة + تصنيف) كوحدة واحدة للجهة المقابلة. ممنوع نقل عنصر واحد بمفرده — إما الكل بمكانه أو الكل مقلوب.</li>
+        <li><b>انبهار → عائلة استغراب:</b> لا لون عاشر. التصنيف اللوني وظيفته تضييق الخيارات لا الدقة المطلقة — الدقة النهائية تأتي من البحث النصي داخل المكتبة لاحقًا.</li>
+      </ul>
+    </div>
+
+    <div class="tier">
+      <div class="tier-head"><span class="tier-num t3 mono">TIER 3</span><span class="tier-title">وجب تغييره قبل الاعتماد — ونُفِّذ في هذه النسخة</span></div>
+      <ul>
+        <li><b>تقوية الـWatermark:</b> النسخة الأصلية (تعتيم فقط، بلا حافة) تختفي فعليًا فوق خلفية فاتحة — وهذا فشل وظيفي مباشر بما أن المصدر لقطات خام غير مُصوَّرة خصيصًا لنا. الإصلاح: ظلّ مزدوج داكن خلف شكل التقشّر <span class="mono">(drop-shadow 0 1px 2px + 0 0 2px, opacity .6/.4)</span> يمنحه حافة داكنة كافية على أي خلفية. هذا هو المعيار المعتمد من الآن فصاعدًا، ويُلغي النسخة السابقة بلا ظل.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FINAL LOCKED SPEC -->
+  <section>
+    <div class="eyebrow">04 / النسخة المثبَّتة</div>
+    <h2>YemReact Brand v1.0 — القائمة النهائية</h2>
+    <p class="lede">كل عنصر أدناه <strong>معتمد بصيغته الحالية</strong> وجاهز للتنفيذ. لا تغييرات تجميلية أُضيفت لمجرد الإضافة.</p>
+
+    <div class="lock-grid">
+      <div class="lock-item">
+        <div class="lh"><span class="ln">Logo + Mark</span><span class="lc mono">✓ LOCKED</span></div>
+        <div class="ld">القُصاصة: إطار مشطوف الزوايا + ثقب تشغيل مثلث <span class="mono">(fill-rule: evenodd)</span>. أحادي اللون، دائري، أبيض/أسود — كلها اجتازت الاختبار بلا تعديل.</div>
+      </div>
+      <div class="lock-item">
+        <div class="lh"><span class="ln">Colors</span><span class="lc mono">✓ LOCKED</span></div>
+        <div class="ld">Ink <span class="mono">#121214</span> · Amber <span class="mono">#C1592E</span> · Amber Light <span class="mono">#E0824B</span> · Paper <span class="mono">#F3EAE0</span> · Coral <span class="mono">#FF5A36</span> · Grey <span class="mono">#6B625C</span> (حدود فقط) · Grey Light <span class="mono">#9C9289</span> (نص ثانوي).</div>
+      </div>
+      <div class="lock-item">
+        <div class="lh"><span class="ln">Typography</span><span class="lc mono">✓ LOCKED</span></div>
+        <div class="ld">Lalezar (عربي، ≤٥ كلمات) + Archivo Black (إنجليزي) للعناوين. Cairo + Inter للنصوص. IBM Plex Mono للمواصفات والأرقام.</div>
+      </div>
+      <div class="lock-item">
+        <div class="lh"><span class="ln">Clip Template</span><span class="lc mono">✓ LOCKED</span></div>
+        <div class="ld">Safe area: أعلى ٦٪، أسفل ٢٠٪، يمين ١٤٪، يسار ٦٪ (9:16). القص الحقيقي مسموح فقط في البطاقات التي نتحكم بها، لا في الفيديو المُصدَّر.</div>
+      </div>
+      <div class="lock-item">
+        <div class="lh"><span class="ln">Watermark</span><span class="lc mono">✓ LOCKED — نسخة مُقوّاة</span></div>
+        <div class="ld">تقشّر ٩–١٥٪ من العرض، أعلى الزاوية الافتراضية، مع ظل مزدوج للتباين على أي خلفية. قاعدة القلب عند الحاجة.</div>
+      </div>
+      <div class="lock-item">
+        <div class="lh"><span class="ln">Categories</span><span class="lc mono">✓ LOCKED — ٩ فئات</span></div>
+        <div class="ld">ضحك، صدمة، غضب، استغراب (+ انبهار)، إحراج/صمت، موافقة، رفض، سخرية، حماس — نقطة لون + أيقونة خطية، بلا نص.</div>
+      </div>
+      <div class="lock-item">
+        <div class="lh"><span class="ln">Visual Language</span><span class="lc mono">✓ LOCKED</span></div>
+        <div class="ld">عائلة عنصر واحد: قُصاصة كبيرة (بطاقات) وصغيرة (تاغات)، تقشّر (واترمارك)، لا زخارف إضافية بلا وظيفة.</div>
+      </div>
+      <div class="lock-item">
+        <div class="lh"><span class="ln">Usage Rules</span><span class="lc mono">✓ LOCKED</span></div>
+        <div class="ld">لا لمس للوجه/التعبير أبدًا. لون سيادي واحد لكل تصميم. زاوية ممزقة واحدة فقط لكل عنصر. قلب الكتلة ككل لا كأجزاء.</div>
+      </div>
+      <div class="lock-item">
+        <div class="lh"><span class="ln">Applications</span><span class="lc mono">✓ LOCKED</span></div>
+        <div class="ld">بروفايل، منشور مربّع، ستيكر، قالب ميم، واجهة مكتبة مستقبلية — كلها مبنية على نفس مكونات القُصاصة، بلا أصول منفصلة.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="mono">YEMREACT BRAND v1.0 — VALIDATED ON 8 REAL USE CASES — LOCKED FOR DESIGNER + DEV HANDOFF</p>
+  </footer>
+
+</div>
+</body>
+</html>

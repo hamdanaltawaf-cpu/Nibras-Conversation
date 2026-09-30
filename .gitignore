@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Next.js / build
+.next/
+out/
+build/
+dist/
+
+# Local storage
+.storage/
+
+# Env & secrets
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.pub
+
+# Logs
+*.log
+
+# Tests
+test-results/
+
+# OS
+.DS_Store
