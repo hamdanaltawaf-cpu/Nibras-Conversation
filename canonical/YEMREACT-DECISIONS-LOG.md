@@ -1,5 +1,10 @@
 # YEMREACT-DECISIONS-LOG.md — Product Re-Foundation Decisions Log
 
+> **سلسلة C-xx — Content Axis (محور المحتوى) — افتُتحت رسميًا 2026-10-09 per DECISION-C02.**
+> ترقيم مستقل لقرارات محور المحتوى. السلاسل القائمة: `DECISION-001…015` (Stages 1-3) · `DECISION-I01…I10` (Stage 4) · `DECISION-4R01` (Stage 4R) · **`DECISION-C01…C-xx` (Content Axis)**.
+> C-01 = تعريف المحتوى اليمني (لم يُفتح بعد) · **C-02 = Search Nature — CLOSED 2026-10-09**.
+
+
 > سجل القرارات النهائية المعتمدة من حمدان — كل قرار يمر بـ Previous → New → Reason → Alternative → Impact → Stage
 > مصدر السلطة الوحيد: حمدان (Founder) — رأي نِبراس أو أي وكيل ليس قرارًا
 > الحالة: ACCEPTED فقط بعد كلمة "تم" صريحة
@@ -2388,3 +2393,228 @@
 - Stage 3 — Content & Editorial System — CLOSED — 2026-09-14 — 66 facts — PD-04+PD-05+PD-06 SKIPPED+PD-07+PD-08+PD-09+PD-10
 - Stage 4 — Experience & Identity — OPEN — Identity Re-Foundation — 2026-09-21 Brand Direction الختم PD-I01 CLOSED + 2026-09-23 Qussasa Mark v1.0 PD-I02 CLOSED + 2026-09-23 Multi-Accent Color System PD-I03 CLOSED + 2026-09-24 Watermark DEFERRED per DECISION-I05 + 2026-09-24 Reaction Card & Detail Page PD-I06 CLOSED per DECISION-I06 + 2026-09-25 Typography System PD-I04 CLOSED per DECISION-I04 — 73→74 facts — Direction C Al-Khatm + Qussasa Mark v1.0 Logo هيدر فقط + Multi-Accent Base Ink/Paper/Grey + Accent Qussasa-derived Amber + Optional Amber/Purple/Teal + Theme Day/Night/Auto + Reduce Motion + Settings Modal على ذوقك + Reset + Watermark مُجمّد PD-I05-R2 بعد الإطلاق + البطاقة وسائط+Duration+عنوان+⋮ + التفاصيل 8 كتل + أزرار رئيسية حفظ+تنزيل+مشاركة + ⋮ نسخ رابط+إبلاغ فقط لا تعديل Admin + عشوائية محدودة 10-20 + أزرار التفاصيل على نفس سطر العنوان جهة اليسار في RTL + لا Empty States + Duration ✅ البطاقة فقط ❌ لا في التفاصيل + Typography Lalezar Logo فقط + IBM Plex Sans Arabic + Inter + IBM Plex Mono + RTL كامل أرقام Western
 - Stage 4 NEXT: PD-I07 chips الشخصية + PD-I08 Light/Dark + PD-I09 Motion + Settings Modal Topic مستقبلي + PD-I05-R2 بعد الإطلاق — HISTORY+EVIDENCE فقط — بانتظار أمر حمدان — لا كود/Git/DB — توثيق فقط — لا Migration — لا تنفيذ — لا تعديل Brand القديم — وثّق فقط لا تنفذ
+
+
+---
+
+## DECISION-4R01 — Identity Compression — Scope Correction — ACCEPTED
+
+**Date:** 2026-10-02
+**Authority:** حمدان (Founder / Final Authority)
+**Type:** SCOPE CORRECTION — ضبط نطاق لاحق — **ليس فتحًا لـStage 4**
+**Stage:** **Stage 4R — Identity Compression** — مرحلة مستقلة صغيرة
+**Cycle:** DeepSeek (Architect) → Claude (Design) → ChatGPT (Analyst) → نِبراس (Documentation) → حمدان (Final Authority)
+**Rules:** ❌ لا كود/Git/DB — توثيق فقط — لا Migration — لا تنفيذ — لا تعديل Brand القديم
+
+### المبدأ الحاكم
+
+Stage 4 لم تخطئ. هذا **ضبط نطاق لاحق**، لا تصحيح سابق. **Stage 4 تبقى CLOSED** ولا تُفتح. التصحيحات تعيش في **Stage 4R**. لا يُحذف نص ولا يُعاد كتابته — إضافة ذيل إحالة فقط.
+
+### الجدول الحاكم
+
+| # | العنصر | الحالة قبل | الحالة بعد | نوع التغيير |
+|---|---|---|---|---|
+| 1 | Categories (الفئات) | P-31 — Staged A/B — لا يُنفَّذ فورًا | **REJECTED** — إزالة كاملة الآن | 🔴 تغيير حقيقي |
+| 2 | B-06 — 9 ألوان الفئات | ACTIVE | **REJECTED** — 9 colors removed with Categories | 🔴 تغيير حقيقي |
+| 3 | Watermark (العلامة المائية) | B-07 FROZEN / P-38 DEFERRED | **FROZEN** — موقوف حتى إغلاق Stage 8 — لا يُراجَع | 🟡 تغيير دلالي |
+| 4 | Qussasa Mark (الشعار) | B-04 / P-36 ACTIVE | **ACTIVE** — بلا تغيير | 🟢 تأكيد |
+| 4ب | Qussasa على بطاقة الرياكشن | غير موجود أصلًا per P-39 | **RE-AFFIRMED — REMOVED** | ⚠️ لا فكت جديد |
+| 5 | Chip الشخصية في صفحة التفاصيل | B-09 / P-35 ACTIVE | **ACTIVE** — inline قبل الوصف — غير قابل للنقر | 🟢 تأكيد |
+| 5ب | Chip على بطاقة الرياكشن | مُزال per DECISION-I07 2026-09-25 | **RE-AFFIRMED — REMOVED** | ⚠️ لا فكت جديد |
+
+### قرارات المصطلحات (Status Vocabulary)
+
+- ❌ **REJECTED-FINAL مرفوض** — يُستخدم **REJECTED** القائم. النهائية تُثبَّت في خانة السبب: «إزالة كاملة — لا Staged A/B».
+- ❌ **STOPPED-UNTIL-COMPLETE مرفوض** — يُستخدم **FROZEN** القائم + تحديد الحدث: «حتى إغلاق Stage 8».
+- ✅ **أُضيف قسم STATUS VOCABULARY — قاموس الحالات** في أعلى CANONICAL-BASELINE — مفتاح قراءة (legend) لا مصدرًا ثانيًا للحقيقة.
+- ✅ الفرق الحاسم المُثبَّت: **FROZEN = لا يُراجَع** · **DEFERRED = يُراجَع**.
+
+### الأثر على Signature Anchors (ركائز البصمة)
+
+يبقى **2 Anchors فعّالان**: Motion Signature (PD-I09 / Seal Motion) + chips الشخصية (صفحة التفاصيل فقط).
+→ شرط DECISION-I05 «Direction C يبقى صالحًا مع 2 Anchors» **ما زال محققًا** ✅
+
+### Impact على العدّ
+
+- **79 facts** → **-1** (B-06 REJECTED مع الفئات) → **+1** (P-47 NEW) → **79 facts**
+- التوزيع بعد القرار: 8 brand + 47 product + 6 IA + 10 technical + 8 security = **79**
+- سجل جديد: **STAGE 4R REGISTER** في CANONICAL-BASELINE
+
+### ما لا يُمسّ
+
+DECISION-I01 … DECISION-I10 · PD-I10-R2 / R3 / R4 · كتلة STAGE 4 — CLOSED · نص أي صف قائم في Baseline.
+
+### Stage 4R — Identity Compression — 5 محاور
+
+1. **المحتوى (Content)**
+2. **الاستخدام السريع (Quick Use)**
+3. **البحث (Search)**
+4. **الاكتشاف (Discovery)**
+5. **البصري (Visual)**
+
+**الحالة:** تُفتح بإشارة حمدان — لم تُفتح بعد.
+
+---
+
+## Topic 21 — Stage 4R — Identity Compression — DECISION-4R01 ACCEPTED — 2026-10-02
+
+- Stage 4 تبقى **CLOSED** — Stage 4R مرحلة مستقلة
+- Categories **REJECTED** إزالة كاملة — B-06 (9 ألوان) **REJECTED** معها — P-31 SUPERSEDED by P-47
+- Watermark **FROZEN** حتى إغلاق Stage 8 — B-07 + P-38
+- Qussasa Mark **ACTIVE** · Chip الشخصية **ACTIVE** (التفاصيل فقط) — ظهورهما على البطاقة **REMOVED / RE-AFFIRMED**
+- **STATUS VOCABULARY** أُضيف — REJECTED-FINAL و STOPPED-UNTIL-COMPLETE **مرفوضان**
+- **79 facts** (-1 B-06 +1 P-47) — العدّ لم يتغيّر
+- **NEXT:** انتظار إشارة حمدان لفتح **Stage 4R** (5 محاور) — و**Stage 5 / 5.1 Search Route** لا يزال OPEN
+
+
+---
+
+## DECISION-C02 — Search Nature — Known-Item Only — ACCEPTED — CLOSED
+
+**Date:** 2026-10-09
+**Authority:** حمدان (Founder / Final Authority)
+**Series:** **C-xx — Content Axis (محور المحتوى)** — افتُتحت رسميًا بهذا القرار
+**Type:** RESOLUTION — يحسم فكتًا مؤجلًا منذ DECISION-007 تصحيح 1 (2026-09-12)
+**Rules:** ❌ لا كود/Git/DB — توثيق فقط — إضافة فقط لا حذف ولا تعديل نص صف قائم
+
+### القرار
+
+**Search Nature = Known-Item only (البحث بالتعرّف فقط).** المستخدم يبحث عن شيء **يعرفه**.
+
+**يشمل 5 مداخل:**
+1. اسم الرياكشن / العنوان
+2. اسم الشخص
+3. جملة محددة
+4. وصف المشهد
+5. الكلام المضمن في الفيديو
+
+**لا يشمل:** Situational Search (البحث بالموقف) كأسلوب مستقل — **مُلغى**.
+
+**توضيح P-15:** «الموقف» = **سبب المجيء (Intent)**، وليس **آلية البحث (Mechanism)**. المستخدم يجيء بسبب موقف، لكنه يصل بالتعرّف أو التصفّح.
+
+**حقل Use Case (موقف الاستخدام):** ❌ **لا يُضاف حقل جديد** — يُستخدم الوصف الأساسي + الوصف الثنائي المطوي per P-39.
+
+### قرارات صياغية (محسومة في هذه الجولة)
+
+- ✅ «جملة محددة» **تُرجَّع** — 5 مداخل لا 4 (كانت ساقطة من المسودة الأولى)
+- ✅ `SUPERSEDED` **بدل** `REWRITTEN` — لأن REWRITTEN غير موجود في STATUS VOCABULARY ويخالف «لا إعادة كتابة»
+- ✅ P-01/P-09 تُوسَّم **⚠️ OPEN** ولا تُحسم هنا
+- ✅ افتتاح سلسلة **C-xx = Content Axis**
+- ⏸️ توسيع P-20 #6 («يكتمل معناه بلا شرح») **مؤجَّل إلى C-01** — معيار **اكتفاء دلالي** منفصل عن **الجاهزية التقنية**؛ دمجه يُفسد معيار #6 ويخالف رفض «7 معايير» في DECISION-009
+
+### ملاحظة توثيقية (مسجَّلة)
+
+P-14 بصيغته القديمة كان **Known-Item أصلًا** — مداخله الخمسة كلها بالتعرّف. الناقص كان كلمة «فقط» («ليس بالموقف **فقط**» = يسمح بالاثنين). لذلك DECISION-C02 **حسمٌ وإقفال**، لا انقلاب على قرار.
+
+### ذيول الإحالة (إضافة فقط — صفر حذف)
+
+| الصف | الذيل |
+|---|---|
+| P-14 | **SUPERSEDED by P-48** — Known-Item only — OPEN-Q-07 CLOSED |
+| P-01 | ⚠️ OPEN — «Search equal to browsing» تحت المراجعة → 5.1 |
+| P-09 | ⚠️ OPEN — «Browse OR Search equal» تحت المراجعة → 5.1 |
+| P-15 | توضيح: الموقف = Intent لا Mechanism |
+| P-20 | #6 توسيع → ⚠️ OPEN — DEFERRED to C-01 |
+
+### التوافق
+
+- ✅ **T-06** — pg_trgm + GIN + normalizeArabic مبني أصلًا لمطابقة نص معروف
+- ✅ **P-20 #4** — «بياناته جاهزة: اسم · شخص · جملة · مشهد · كلمات مفتاحية» = وقود Known-Item
+- ✅ **P-32** — Collections كتصنيف أساسي — الاكتشاف ينتقل للتصفّح والمجموعات
+- ✅ **IA-05 / P-39** — لا حقول جديدة
+- ⚠️ **P-01 / P-09** — «Search equal to browsing» تنكسر عمليًا: الزائر الجديد لا يعرف ما يبحث عنه → التصفّح مدخله الوحيد → تُحسم في 5.1
+
+### الأثر
+
+- **79 → 80 facts** — P-48 NEW — P-14 يبقى صفًّا بحالة SUPERSEDED — لا صف يُحذف
+- **C-02 → CLOSED** · **OPEN-Q-07 → CLOSED**
+- **5.1 Search Route → محسوم اتجاهًا:** `?q=` فلتر على سطح المكتبة — Known-Item لا يحتاج صفحة نتائج مستقلة (يدعمه دليل Giphy: 210,843 رابط `/search/` أُزيل من فهرس Google) — **التوثيق الرسمي لـ5.1 يبقى مطلوبًا**
+- **NEXT:** **C-01 — تعريف المحتوى اليمني**
+
+---
+
+## Topic 22 — C-02 — Search Nature — DECISION-C02 ACCEPTED — 2026-10-09
+
+- البحث = **Known-Item only** — 5 مداخل — Situational Search مُلغى
+- **P-48 NEW** — **P-14 SUPERSEDED** — **OPEN-Q-07 CLOSED**
+- P-01/P-09 ⚠️ OPEN → 5.1 · P-20 #6 DEFERRED → C-01 · لا حقل Use Case
+- افتتاح سلسلة **C-xx (Content Axis)**
+- **80 facts**
+- **NEXT:** C-01 تعريف المحتوى اليمني · و5.1 Search Route للتوثيق الرسمي
+
+
+---
+
+## DECISION-5.1 — Search Route — ACCEPTED — Stage 5 — CLOSED
+
+**Date:** 2026-10-09
+**Authority:** حمدان (Founder / Final Authority)
+**Stage:** **Stage 5 — IA & Navigation — Topic 5.1**
+**Basis:** DECISION-C02 (Search Nature = Known-Item only) + P-48 + OPEN-Q-07 CLOSED + وثيقة النقاش `YEMREACT-STAGE5-5.1-SEARCH-ROUTE-DISCUSSION.md` — التوصية (ب) **مُعتمدة**
+**Rules:** ❌ لا كود/Git/DB — توثيق فقط — إضافة فقط لا حذف
+
+### القرار — 6 بنود
+
+**1) سطح البحث = المكتبة (Search Surface = Library)**
+- `/` = المكتبة
+- `/?q=...` = **نفس المكتبة + فلتر بحث**
+- البحث = **فلتر على سطح المكتبة**، ليس سطحًا مستقلًا
+
+**2) `/search` → redirect (إعادة توجيه)**
+- المسار `/search` القائم في T-02 → **redirect إلى `/?q=`**
+- ❌ لا صفحة منفصلة · ❌ لا محتوى مكرر (duplicate content)
+
+**3) `noindex,follow`**
+- عند وجود `q` في الـURL → **`noindex,follow`**
+- حماية من سيناريو **Giphy**: Google أزال **210,843** رابط `/search/` من الفهرس — و«happy birthday» (1.6M بحث شهري) سقط من المركز 1 إلى الحذف الكامل — وتينور (Tenor) أصابه المثل
+- **SEO الحقيقي** في: **IA-02** صفحة تفاصيل الرياكشن `/r/[code]` + **P-34** المجموعات
+
+**4) التنفيذ عند Submit/Enter — ليس as-you-type**
+- السبب: **P-15** — الجهاز جوال متوسط، **10% ضعيف**
+- استثناء: **Autocomplete محلي (بلا طلب شبكة)** → **يُحسم في C-04**
+
+**5) البحث عالمي (Global Search)**
+- من **أي صفحة** عدا `/admin` → ينقل إلى `/?q=`
+
+**6) الرجوع من `/r/[code]`**
+- **`q` يبقى في الـURL**
+- مع **Scroll Restoration** → **يُحسم في Stage 7**
+
+### حسم P-01 و P-09
+
+**السؤال:** بعد C-02 (البحث Known-Item فقط) — هل «Search equal to browsing» ما زال صحيحًا؟
+
+**الجواب: نعم — مع توضيح حاسم:**
+> التساوي = **نفس السطح (same surface) — نقطتا دخول**. **وليس** نفس الآلية (mechanism).
+> المستخدم يدخل المكتبة، ثم إما يتصفّح (Browse) أو يبحث (Search) — وكلاهما على السطح نفسه.
+
+- **P-01** → يبقى **ACTIVE** + التوضيح — ⚠️ OPEN → ✅ **RESOLVED**
+- **P-09** → يبقى **ACTIVE** + التوضيح — ⚠️ OPEN → ✅ **RESOLVED**
+
+### ذيول الإحالة (إضافة فقط — صفر حذف)
+
+| الصف | الذيل |
+|---|---|
+| P-01 | ✅ RESOLVED — «Search equal to browsing» = نفس السطح |
+| P-09 | ✅ RESOLVED — «Browse OR Search equal» = نفس السطح |
+| P-48 | توضيح Search Route = `?q=` + البنود الستة |
+| T-02 | `/search` → redirect إلى `/?q=` |
+
+### الأثر
+
+- **80 facts — ثابتة — لا P-XX جديد** (القرار مسار/IA يُوثَّق كذيول على P-48 + T-02 — لا مصدر ثانٍ للحقيقة)
+- **5.1 → CLOSED** · **P-01 / P-09 → RESOLVED**
+- **مؤجَّل منه:** Autocomplete محلي → **C-04** · Scroll Restoration → **Stage 7**
+- **التالي:** Stage 5 يستمر — **5.2 Bottom Nav** · أو العودة إلى **C-01** — بإشارة حمدان
+
+---
+
+## Topic 23 — Stage 5 / 5.1 — Search Route — DECISION-5.1 ACCEPTED — CLOSED — 2026-10-09
+
+- سطح البحث = المكتبة — `/?q=` فلتر لا سطح مستقل
+- `/search` → redirect · `noindex,follow` عند `q` · SEO في IA-02 + P-34
+- Submit/Enter لا as-you-type (P-15) · Autocomplete محلي → C-04
+- بحث عالمي عدا `/admin` · `q` يبقى عند الرجوع · Scroll Restoration → Stage 7
+- **P-01 + P-09 RESOLVED** — التساوي = نفس السطح لا نفس الآلية
+- **80 facts** — لا فكت جديد
+- **NEXT:** 5.2 Bottom Nav — أو C-01 — بإشارة حمدان

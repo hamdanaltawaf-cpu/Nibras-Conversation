@@ -149,3 +149,17 @@
 - **5.1 — Search Route:** 🗣️ **OPEN** — بانتظار حمدان
 - لا شيء كُتب في DECISIONS-LOG أو Canonical Baseline — **79 facts** ثابتة
 - **التالي بعد إشارتك:** 5.2 — Bottom Nav التبويبات النهائية
+
+
+---
+
+## ✅ RESOLVED — DECISION-5.1 — 2026-10-09
+
+**الحالة:** هذا الملف **وثيقة نقاش (DISCUSSION) — مغلقة**. القرار النهائي صدر من حمدان بتاريخ **2026-10-09** باعتماد **الخيار (ب)** الموصى به هنا.
+
+- **القرار الرسمي:** `DECISION-5.1` في `YEMREACT-DECISIONS-LOG.md`
+- **الحقائق النافذة:** `P-48` (ذيل Search Route) + `T-02` (ذيل redirect) + `P-01` / `P-09` (RESOLVED) في `YEMREACT-CANONICAL-BASELINE.md`
+- **الأساس:** `DECISION-C02` — Search Nature = Known-Item only
+- **العدّ:** 80 facts — لا فكت جديد
+
+> ⚠️ هذا الملف **ليس مصدرًا للحقيقة**. المصدر الوحيد للحالة النافذة هو `YEMREACT-CANONICAL-BASELINE.md`، والسرد في `YEMREACT-DECISIONS-LOG.md`.
