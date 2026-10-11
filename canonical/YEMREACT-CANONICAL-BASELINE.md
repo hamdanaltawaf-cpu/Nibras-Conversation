@@ -1,11 +1,11 @@
-# YEMREACT-CANONICAL-BASELINE.md — Phase 1C+2A+Stage2+Stage3+Stage4 — Canonical Knowledge Baseline — Stage 3 CLOSED — **Stage 4 CLOSED 100%** — **Stage 4R — Identity Compression — DECISION-4R01 2026-10-02** — **C-02 Search Nature — DECISION-C02 2026-10-09** — **Stage 5 / 5.1 Search Route CLOSED — DECISION-5.1 2026-10-09** — Stage 5 OPEN — Stage 5.2 (المرحلة 5.2) OPEN (مفتوحة) — توثيق قرارات Stage 5.2 حتى 5.2.76 — 2026-10-11 — مراجعة اتساق أُلحقت بعد قرار المؤسس — Stage 5.2 ما تزال OPEN بانتظار موافقة المؤسس
+# YEMREACT-CANONICAL-BASELINE.md — Phase 1C+2A+Stage2+Stage3+Stage4 — Canonical Knowledge Baseline — Stage 3 CLOSED — **Stage 4 CLOSED 100%** — **Stage 4R — Identity Compression — DECISION-4R01 2026-10-02** — **C-02 Search Nature — DECISION-C02 2026-10-09** — **Stage 5 / 5.1 Search Route CLOSED — DECISION-5.1 2026-10-09** — Stage 5 OPEN — Stage 5.2 (المرحلة 5.2) CLOSED — إغلاق توثيقي بموافقة المؤسس 2026-10-11 — NEXT: C-01 تعريف المحتوى اليمني (Content Axis) — لا يعني الإغلاق تنفيذًا أو تحققًا برمجيًا
 
 > Only facts/decisions that are CONFIRMED / ACCEPTED / CURRENT or resolved with very clear evidence. No guessing.
 > Sources: 12 original + 6 audit files from Phase 1A/1B + DECISION-001 to 015 Stage1-3 2026-09-14 + DECISION-I01 Stage4 2026-09-21 + DECISION-I02 Stage4 2026-09-23 + DECISION-I03 Stage4 2026-09-23 + DECISION-I05 Stage4 2026-09-24 Watermark DEFERRED + DECISION-I06 Stage4 2026-09-24 Reaction Card + DECISION-I04 Stage4 2026-09-25 Typography System + DECISION-I07 Stage4 2026-09-25 PD-I07 Closed + DECISION-I08 Stage4 2026-09-25 Light/Dark + Soft Depth + DECISION-I09 Stage4 2026-09-26 Motion Language + DECISION-I10 Stage4 2026-09-30 UI Visual Language Studio Seal — Stage 2 CLOSED — Stage 3 CLOSED — PD-04 CLOSED — PD-05 CLOSED — PD-07 CLOSED — PD-08 CLOSED — PD-09 CLOSED — PD-10 CLOSED — PD-06 SKIPPED (حُسم في DECISION-007) — CONFLICT-009 CLOSED — CONFLICT-021 CLOSED — Stage 4 OPEN PD-I01 CLOSED PD-I02 CLOSED PD-I03 CLOSED PD-I05 DEFERRED PD-I06 CLOSED Brand Direction الختم — CONFLICT-019 partially resolved — Watermark مُجمّد per DECISION-I05
 > Date: 2026-09-11 initial, UPDATED 2026-09-24 with DECISION-001 to 015 + DECISION-I01 + DECISION-I02 + DECISION-I03 + DECISION-I05 + DECISION-I06 + DECISION-I04 + DECISION-I07 + DECISION-I08 + DECISION-I09 — Stage 3 CLOSED — Stage 4 OPEN — PD-I01 CLOSED — PD-I04 CLOSED — PD-I05 DEFERRED — PD-I06 CLOSED — PD-I07 CLOSED — PD-I08 CLOSED — PD-I09 CLOSED — PD-I10 CLOSED — Stage 4 CLOSED 100% — NEXT Stage 5 IA & Navigation + Search Route + Bottom Nav + Account UI — 79 facts
 > No code/Git/DB modification — documentation only.
 > تحديث توثيقي (2026-10-11): 80 حقيقة فعّالة؛ أُلحقت قرارات Stage 5.2 حتى 5.2.76 في المرجع وسجل القرارات. لا تغيير في عدد الحقائق ولا في الكود أو قاعدة البيانات.
-> الحالة: Stage 5.2 ما تزال OPEN (مفتوحة)؛ اكتملت مراجعة اتساق التوثيق، لكن الإغلاق مشروط بموافقة حمدان النهائية وفق 5.2.65.
+> الحالة الحالية (2026-10-11): Stage 5.2 مغلقة توثيقيًا بموافقة صريحة من حمدان. المرحلة/الموضوع التالي: C-01 — تعريف المحتوى اليمني (Content Axis). هذا الإغلاق توثيقي فقط؛ لا يتضمن فحص الكود أو قاعدة البيانات أو SEC-06، ولا يدّعي جاهزية الإطلاق.
 
 ## How to read
 
@@ -386,3 +386,17 @@
 - يقتصر هذا القرار على توقيت إتاحة الإرسال وسلوكه؛ لا يغيّر بقية شروط المساهمة أو مراجعة المحتوى.
 
 **مراجعة اتساق ملحقة بنتيجة 5.2.75:** تعارض نطاق ما قبل الإطلاق الذي أشار إليه نِبراس حُسم الآن بتأكيد صريح من المؤسس. لذلك تُقرأ عبارة «لا يظهر تعارض منتجي غير محسوم» في 5.2.75 بوصفها نتيجة المراجعة السابقة لنطاق ذلك التأكيد؛ ويضاف هذا الملحق إلى السجل دون حذف أو إعادة كتابة النتيجة التاريخية. تظل Stage 5.2 مفتوحة بانتظار موافقة حمدان النهائية. لم يُفحص الكود أو المسار الأمني SEC-06 ضمن هذا التعديل التوثيقي.
+
+
+---
+
+## إغلاق Stage 5.2 توثيقيًا وفتح الموضوع التالي — موافقة المؤسس — 2026-10-11
+
+**القرار:** وافق حمدان صراحةً على إغلاق Stage 5.2 توثيقيًا، مع التأكيد أن نطاق العمل هو التوثيق فقط، ولا يتضمن كتابة كود أو البناء أو فحص التنفيذ.
+
+- حالة Stage 5.2: **CLOSED — توثيقيًا فقط**.
+- النطاق المغلق: توثيق قرارات المرحلة حتى 5.2.76 ومراجعة اتساقها وفق السجل.
+- تبقى التفاصيل التقنية المفوّضة غير محسومة إلى حين الحاجة إليها في مراحل التنفيذ؛ ولا تُختلق لها قيم.
+- لا يُعد هذا الإغلاق تحققًا من مطابقة الكود أو قاعدة البيانات، ولا مراجعة أمنية لـSEC-06، ولا موافقة على جاهزية الإطلاق.
+- **NEXT: C-01 — تعريف المحتوى اليمني (Content Axis).** هذا هو الموضوع التالي الموثق؛ لا تُنشأ مرحلة Stage 5.3 من دون قرار صريح.
+- تبقى النتائج التاريخية السابقة، بما فيها 5.2.65 و5.2.75 و5.2.76، محفوظة كما هي؛ يُقرأ هذا القسم بوصفه تحديث الحالة بعد موافقة المؤسس.
