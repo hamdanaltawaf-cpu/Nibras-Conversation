@@ -520,3 +520,15 @@
 - **5.1 CLOSED** — NEXT: 5.2 Bottom Nav أو C-01 (Stage 4R متوقف مؤقتًا عند C-01)
 
 **ملاحظة لنموذج جديد يستلم هذا الملف:** اقرأ هذا الملف أولًا كاملًا قبل أي ملف آخر. إذا تعارض مع أي ملف قديم، هذا الملف هو الحقيقة الحالية. لا تعتبر أي PROPOSED كـACCEPTED إلا بعد تأكيد صريح من نِبراس عبر المستخدم. لا تكتب كودًا قبل اعتماد الخطة النهائية A→G. الملاحظات في القسم 13 ليست معتمدة بعد.
+
+
+---
+
+## CURRENT STATUS UPDATE — 2026-10-11 — Founder-approved
+
+- **Stage 5.2:** CLOSED **for documentation only**, by explicit founder approval.
+- **Next topic:** **C-01 — تعريف المحتوى اليمني (Content Axis)**. The deferred P-20 criterion #6 (“يكتمل معناه بلا شرح”) remains assigned to C-01.
+- **Scope:** documentation and decision history only. No code, build, database changes, or claims of runtime verification.
+- **Security:** SEC-06 was not audited as part of this closure and remains separate.
+- **History:** earlier “Stage 5.2 OPEN / awaiting founder approval” statements remain as historical records and are superseded for current status by this dated update and the closure decision in YEMREACT-DECISIONS-LOG.md.
+- Do not invent a Stage 5.3. Continue with C-01 unless Hamdan directs otherwise.
