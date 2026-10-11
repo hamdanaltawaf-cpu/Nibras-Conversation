@@ -29,7 +29,7 @@ Based on REFOUNDATION-ORDER.md Level 1-5 (49 ordered) and Phase 1C PARTIAL asses
 - **Stage 2 — Audience & Value** (الجمهور والقيمة)
 - **Stage 3 — Content & Editorial System** (المحتوى ونظام التحرير)
 - **Stage 4 — Experience & Identity** (التجربة والهوية)
-- **C-xx — Content Axis (محور المحتوى)** — سلسلة مستقلة — **C-02 Search Nature CLOSED 2026-10-09** · **C-01 تعريف المحتوى اليمني — التالي**
+- **C-xx — Content Axis (محور المحتوى)** — سلسلة مستقلة — **C-02 Search Nature CLOSED 2026-10-09** · **C-01 تعريف المحتوى اليمني — أُلغي كموضوع نشط 2026-10-12؛ كان مدرجًا كتالي في سجل 2026-10-11 (محفوظ تاريخيًا)** · لا موضوع تالٍ معيّن
 - **Stage 4R — Identity Compression** (ضغط الهوية) — DECISION-4R01 2026-10-02 — 5 محاور: Content · Quick Use · Search · Discovery · Visual — **تُفتح بإشارة حمدان**
 - **Stage 5 — Information Architecture & Navigation** (البنية والتنقل)
 - **Stage 6 — Core User Flows** (التدفقات الأساسية)
@@ -115,7 +115,7 @@ Based on REFOUNDATION-ORDER.md Level 1-5 (49 ordered) and Phase 1C PARTIAL asses
 ### C-xx — Content Axis (محور المحتوى)
 
 - **C-02 — Search Nature — CLOSED 2026-10-09** — DECISION-C02 — البحث = Known-Item only (بالتعرّف فقط) — 5 مداخل — Situational Search مُلغى — P-48 NEW · P-14 SUPERSEDED · OPEN-Q-07 CLOSED
-- **C-01 — تعريف المحتوى اليمني — التالي** — يشمل: توسيع P-20 #6 «يكتمل معناه بلا شرح» (DEFERRED إليه)
+- **C-01 — تعريف المحتوى اليمني — كان التالي؛ أُلغي كموضوع نشط 2026-10-12** — النطاق التاريخي: توسيع P-20 #6 «يكتمل معناه بلا شرح» (كان DEFERRED إليه). **P-20 #6 يبقى DEFERRED بلا وجهة معيّنة** إلى حين تكليف صريح لاحق.
 - **أثر على Stage 5:** 5.1 Search Route محسوم اتجاهًا `?q=` (فلتر على سطح المكتبة) — التوثيق الرسمي مطلوب
 
 ### Stage 4R — Identity Compression (ضغط الهوية)
@@ -129,7 +129,7 @@ Based on REFOUNDATION-ORDER.md Level 1-5 (49 ordered) and Phase 1C PARTIAL asses
 ### Stage 5 — Information Architecture & Navigation
 
 - **5.1 — Search Route — ✅ CLOSED 2026-10-09 — DECISION-5.1** — سطح البحث = المكتبة `/?q=` (فلتر لا سطح مستقل) · `/search` redirect · `noindex,follow` عند `q` · Submit/Enter لا as-you-type · بحث عالمي عدا `/admin` · `q` يبقى عند الرجوع — **P-01 + P-09 RESOLVED** — مؤجَّل: Autocomplete → C-04 · Scroll Restoration → Stage 7
-- **5.2 — Bottom Nav (التبويبات النهائية) — التالي**
+- **5.2 — Bottom Nav (التبويبات النهائية) — CLOSED توثيقيًا 2026-10-11**؛ كان C-01 مُدرجًا بعده ثم أُلغي كموضوع نشط في 2026-10-12؛ لا موضوع تالٍ معيّن.
 
 
 - **Objective:** حسم خريطة الموقع والتنقل — ما الصفحات، كيف نتنقل، ما موطن كل وظيفة.

@@ -1,7 +1,7 @@
 # YemReact — ملف السياق والقرارات المرجعي
 > هذا الملف هو المرجع الحي الوحيد للمحادثة الحالية فقط (منذ بدايتها مع نِبراس حتى الآن). لا يحتوي على أي معلومات من محادثات كلود السابقة إلا إذا تم تأكيدها صراحة هنا. يتم تحديثه بعد كل قرار مهم.
 
-**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-09-30 — DECISION-I10 UI Visual Language (Studio Seal) — Stage 4 CLOSED 100% — 79 facts
+**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-12 — إلغاء C-01 كموضوع نشط؛ 80 حقيقة بلا تغيير؛ لا موضوع تالٍ معيّن — (آخر milestone سابق: DECISION-I10، 2026-09-30)
 **الحالة العامة:** مرحلة DISCUSSION — تحليل وهوية وتخطيط، لا كود ولا تنفيذ UI
 **المدير التنفيذي:** نِبراس | **شريك النقاش:** أرينا | **مهندس التنفيذ (لاحقًا):** أرينا كود | **حلقة الوصل:** المستخدم
 **آلية العمل الجديدة:** نقاش متناوب — نِبراس يناقش مع المستخدم مرة، ثم مع أرينا مرة، ثم يعود للمستخدم — حتى حسم كل محور.
@@ -532,3 +532,10 @@
 - **Security:** SEC-06 was not audited as part of this closure and remains separate.
 - **History:** earlier “Stage 5.2 OPEN / awaiting founder approval” statements remain as historical records and are superseded for current status by this dated update and the closure decision in YEMREACT-DECISIONS-LOG.md.
 - Do not invent a Stage 5.3. Continue with C-01 unless Hamdan directs otherwise.
+
+## CURRENT STATUS UPDATE — 2026-10-12 — C-01 cancelled as active topic
+
+- **C-01:** canceled as an active topic by the explicit direction in this conversation. Earlier references naming it as “next” remain historical and are not deleted.
+- **P-20 #6:** remains **DEFERRED**; its former C-01 destination is no longer active, and no replacement destination has been assigned.
+- **Next topic:** none assigned. Do not create Stage 5.3 or choose a replacement topic without a future explicit assignment.
+- **Stage 5.2:** remains closed for documentation only. This update does not claim code, build, database, runtime, or SEC-06 verification.
