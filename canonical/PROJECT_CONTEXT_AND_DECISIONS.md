@@ -539,3 +539,17 @@
 - **P-20 #6:** remains **DEFERRED**; its former C-01 destination is no longer active, and no replacement destination has been assigned.
 - **Next topic:** none assigned. Do not create Stage 5.3 or choose a replacement topic without a future explicit assignment.
 - **Stage 5.2:** remains closed for documentation only. This update does not claim code, build, database, runtime, or SEC-06 verification.
+
+
+---
+
+## CURRENT STATUS UPDATE — 2026-10-18 — Stage 5-B decisions canonicalized
+
+- **Stage 5-B:** The founder-approved account, header, navigation, settings-surface, sign-in, and invitation decisions from 5-B.07–5-B.18 plus the approved 2026-10-15 handoff note have been canonicalized under DECISION-5B-CANONICAL.
+- **Mobile navigation:** Library · Collections · Account.
+- **Saved:** Inside Account; `/saved` is intended to redirect to Account with Saved selected while retaining guest access.
+- **Settings:** Dedicated page direction with Appearance, Account, Privacy; only approved functional options, no empty sections.
+- **Still open:** Theme default conflict (Day vs Auto), route names, exact Settings functions/reset scope, contribution identity fields, Help scope/workflow, invitation wording/close control, and final visual header comparison.
+- **Historical scope:** DECISION-I10's former five-item mobile navigation and DECISION-I03/P-37's modal-only Settings presentation are superseded only in the affected scope. Historical records remain intact.
+- **Stage status:** Stage 5.1 and Stage 5.2 remain closed. C-01 remains cancelled as an active topic; P-20 #6 remains DEFERRED with no replacement assignment. Do not create Stage 5.3.
+- **Verification boundary:** Documentation only. No code/build/database/runtime verification; technical redirect/return-destination behavior is not audited, and SEC-06 remains unaudited.

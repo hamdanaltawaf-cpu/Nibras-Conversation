@@ -408,3 +408,43 @@
 - P-20 #6 يبقى **DEFERRED**؛ أُلغي إسناده إلى C-01، ولم تُعيّن له وجهة بديلة.
 - لا يوجد موضوع تالٍ معيّن، ولا يُنشأ Stage 5.3 من هذا التحديث.
 - هذا تحديث حالة وتوثيق فقط؛ لا تغيير في الكود أو البناء أو قاعدة البيانات، ولا ادعاء بتحقق SEC-06 أو جاهزية الإطلاق.
+
+
+---
+
+## Stage 5-B — Account, Header & Navigation — Canonicalized 2026-10-18
+
+**Authority:** Founder-approved choices 5-B.07–5-B.18 and the founder-approved handoff note dated 2026-10-15, consolidated in merged PR #3.  
+**Scope:** Product and documentation decisions only. This entry does not establish implementation, build, database, runtime, or security verification.
+
+### Current accepted direction
+
+- **Mobile primary navigation:** Library, Collections, Account. Saved reactions are accessed within Account; Saved is not a separate bottom-navigation destination.
+- **Desktop navigation:** Library and Collections remain top-level destinations. Saved is not a separate desktop-header destination. Search and a distinct Send Reaction action remain in the desktop header.
+- **Send Reaction:** Available from Library and Account. It is not a general mobile-header action or a bottom-navigation destination. The existing `/submit` flow and Google sign-in at submission remain in force under DECISION-5.2.76.
+- **Account control on desktop:** Clicking the account image opens Account; the adjacent arrow opens the account dropdown. Both controls need keyboard access and clear focus behavior.
+- **Account page for signed-in users:** Private identity area; compact saved-reaction count and published-contribution count; Saved / My Contributions switcher; selected section content below. My Contributions is not an account-dropdown item.
+- **Guest Account view:** Concise sign-in invitation and access to local saved reactions. Do not show account statistics or a misleading empty contributions panel.
+- **Identity and privacy:** No public user profiles or social-network features. Optional display name/avatar are possible private identity fields only. Identity editing remains deferred until contribution-attribution fields are defined.
+- **`/saved`:** Intended to redirect to Account with Saved selected, while preserving guest access to saved content. This is a product decision, not proof of implementation.
+- **Settings:** Use a dedicated settings page, organized around Appearance, Account, and Privacy. Show only approved, functional options; do not show empty sections. Preserve existing appearance controls.
+- **Help:** Direction is a help center with FAQs, usage guidance, and issue reporting. Route, initial content, reporting workflow, and launch scope remain open.
+- **Library entry invitation:** An optional first-visit invitation may appear on `/` and `/?q=`, but must not block browsing; “الاستمرار كزائر” remains available there. Direct reaction and collection links open their requested content directly.
+- **Contextual sign-up invitation:** Non-blocking and context-sensitive on reaction/collection pages; at most once per browser after close/continue, including after logout. Exact Arabic copy and close affordance remain open.
+- **Sign-in:** Guest account-menu item is “تسجيل الدخول” and opens a full sign-in page. Do not place “الاستمرار كزائر” in that account-menu sign-in flow. Google is the active provider; Apple/Microsoft may be shown as “قيد التجهيز” without implying technical enablement.
+- **Return destination:** Return to the intended internal destination and preserve the query where applicable; reject external destinations. Technical validation remains unaudited.
+- **Visual review:** The full header composition is not visually approved yet; compare alternatives before final visual approval. Do not infer a Pinterest-inspired direction without a founder-specified element/reference.
+
+### Narrow historical reconciliation
+
+The earlier five-item mobile navigation in DECISION-I10 is historical for the affected navigation scope only; its Library, Collections, Account concepts and unrelated decisions are not erased. The earlier Settings Modal presentation in DECISION-I03/P-37 is superseded only as the presentation pattern by the founder-approved dedicated page; existing settings values are not automatically superseded.
+
+### Explicitly unresolved
+
+- Theme default conflict: P-37 says Day by default; DECISION-I08 says Auto by default. Do not choose silently.
+- Exact route names for sign-in, Account, Settings, and Help are not established by this entry.
+- Concrete functions in Settings sections; reset-settings scope; identity fields required for contribution attribution; count formatting/guest-save reconciliation; exact Saved/My Contributions empty states; Help content/workflow; invitation wording/close control; and final header visual composition remain open.
+- `returnTo` validation, crawler exceptions, preview cards, keyboard states, redirects, guest-save merging, builds/tests, and runtime behavior are not verified.
+- SEC-06 remains unaudited.
+
+This Stage 5-B entry does not reopen Stage 5.1 or Stage 5.2, reactivate C-01, reassign P-20 #6, or create Stage 5.3.
