@@ -122,7 +122,7 @@
 4. [PR #4 — Stage 5-B canonicalization](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/4) ودمجه `1ee2335f1abbe09b007cb1e028c366d281d10cc8` — دليل دمج تحديث الملفات المرجعية بتاريخ 2026-10-18، لا دليل تنفيذ.
 
 ### سجل النقاش النشط — مصدر لتتبع الحوار لا مرجع كانوني
-- [reaction-submission-discussion.md](../product/discussions/reaction-submission-discussion.md) — سجل تراكمي للأسئلة والإجابات والتصحيحات والتوصيات والنقاط المفتوحة، مع مطابقة الترقيم `B.01–B.07` إلى `SUB-SCOPE-01–07` وخلاصة مؤقتة وسجل للإدماج اللاحق. يُرجع إلى سجل المحادثة الأصلي عند غموض الخيارات. لا يُعامل محتوى النقاش بوصفه قرارًا كانونيًا مدمجًا، ولا يثبت تنفيذ صفحة الإرسال أو اختبارها.
+- [reaction-submission-discussion.md](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/blob/hamdanaltawaf-cpu-patch-1/docs/product/discussions/reaction-submission-discussion.md) — سجل تراكمي للأسئلة والإجابات والتصحيحات والتوصيات والنقاط المفتوحة، مع مطابقة الترقيم `B.01–B.07` إلى `SUB-SCOPE-01–07` وخلاصة مؤقتة وسجل للإدماج اللاحق. يُرجع إلى سجل المحادثة الأصلي عند غموض الخيارات. لا يُعامل محتوى النقاش بوصفه قرارًا كانونيًا مدمجًا، ولا يثبت تنفيذ صفحة الإرسال أو اختبارها.
 
 ### مصادر التخطيط والمساندة
 - [YEMREACT-REFORMATION-MASTER-PLAN.md](./YEMREACT-REFORMATION-MASTER-PLAN.md) — إطار المراحل الثماني؛ لا يثبت بدء المستقبلية.
