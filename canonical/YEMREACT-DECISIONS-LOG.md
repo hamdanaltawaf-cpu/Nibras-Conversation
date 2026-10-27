@@ -3092,3 +3092,27 @@ Admin, moderation, policy, report, and error routes are not finalized by this de
 ### Governance boundaries
 
 Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, server-side upload enforcement, routes, tests, builds, and runtime remain unverified.
+
+
+## DECISION-5B.24 — Guest Saves Reconciliation at Sign-in — ACCEPTED — 2026-10-28
+
+**Authority:** Founder delegated full decision authority after review of conflicts and likely effects.
+
+### Decision
+
+1. After successful sign-in, merge guest-local saved reaction codes into the signed-in account's existing saved reactions.
+2. The merge is additive and idempotent. Neither side overwrites the other; deduplicate by reaction code.
+3. Preserve guest-local saves until the server confirms that all guest-only additions have been persisted. On network/server failure, keep local data and allow retry. Retrying must not create duplicates.
+4. Keep guest-local saves separate from account-associated saves. Never copy a signed-in account's saves into the shared guest-local set on logout. A different account signing in on the same device must not inherit the previous account's saves.
+5. A saved code does not make deleted, unpublished, or otherwise unavailable content available. Handle unavailable entries under the content-availability rules without discarding valid saves.
+6. Preserve guest access to local saves and the intended /saved → Account/Saved behavior.
+
+### Conflict and implementation notes
+
+- Existing technical record T-07 says the current code uses localStorage key yr:saved, unions it with /api/me/saves, and does not clear local storage on logout.
+- That shared-key behavior may conflict with account isolation unless guest-local and account-associated sets are distinguished. Review the existing implementation before claiming conformance.
+- This is a product decision, not evidence that implementation, migrations, tests, builds, redirects, or runtime behavior have been verified.
+
+### Governance boundaries
+
+Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, server-side upload enforcement, routes, tests, builds, and runtime remain unverified.
