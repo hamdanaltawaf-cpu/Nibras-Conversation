@@ -3058,3 +3058,37 @@ Admin, moderation, policy, report, and error routes are not finalized by this de
 - OPEN-Q-08 and OPEN-Q-09 remain separate and OPEN.
 - SEC-06, upload security, server-side file enforcement, tests, build, runtime, and route behavior remain unverified.
 - Product/documentation decisions are not implementation or launch-readiness verification.
+
+
+---
+
+## DECISION-5B.21 — Settings Functions and Reset Scope — ACCEPTED — 2026-10-27
+
+**Authority:** Founder explicitly delegated decision authority for this topic and rejected treating earlier proposals as binding constraints.  
+**Scope:** Product behavior for `/settings`; documentation decision only.
+
+- **Page structure:** Dedicated `/settings` page with Appearance, Account, and Privacy sections.
+- **Appearance:** `Auto` is the default and follows `prefers-color-scheme`; manual options are `Day` and `Night`. Accent choices: Amber, Purple, and Teal. Reduce Motion: On/Off.
+- **Persistence:** preferences should persist across reloads and subsequent visits.
+- **Account:** show signed-in identity and provide sign-out. Account deletion may be offered only through a real, clearly explained, explicitly confirmed flow; no nonfunctional controls.
+- **Privacy:** explain guest/local saves versus account-associated data. Link to privacy information only when a real policy destination exists. Do not add fake toggles or unsupported data controls.
+- **Reset scope:** restore interface preferences only. Never delete the account, saves, submissions, or other user data. Any destructive data action must be separate and explicitly confirmed.
+- **Quality bar:** responsive, accessible, consistent with Brand v1.0, and smooth without compromising performance.
+- **Reconciliation:** resolves the previously open Settings functions and reset scope. Does not change approved DECISION-I08 tokens, soft-depth values, or 200ms transitions. Auto default remains governed by DECISION-5B.20.
+
+## DECISION-5B.22 — Contributor Data Visibility and Attribution — ACCEPTED — 2026-10-27
+
+**Authority:** Founder direction: define what the contributor and administration can see; no contributor data is exposed to other users.  
+**Scope:** Product privacy and role-visibility requirements; no implementation is implied.
+
+- **Contributor view:** own submissions only, including review status and any contributor-facing reason or change request, in My Contributions when signed in.
+- **Administration view:** authorized administrators may see associated account identity, submitted media and metadata, supplied source/reference information, submission time, review status, internal review history, and moderation notes.
+- **Other users:** no contributor identity or contribution history is public by default. No public contributor profile, public submission history, or automatic credit on published reactions.
+- **Notes separation:** internal moderation notes are not shown to contributors. Contributor-facing explanations and change requests must be stored/displayed separately.
+- **Access control:** contributors cannot inspect others’ submissions; administrative data is restricted to authorized roles.
+- **Data minimization:** collect and expose only what is needed to process, review, and administer submissions.
+- **Verification boundary:** these are requirements, not proof of implemented UI, schema, or authorization.
+
+### Governance boundaries
+
+Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, server-side upload enforcement, routes, tests, builds, and runtime remain unverified.
