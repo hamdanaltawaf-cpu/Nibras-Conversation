@@ -561,3 +561,11 @@
 - Canonical details are recorded in `YEMREACT-CANONICAL-BASELINE.md` and `YEMREACT-DECISIONS-LOG.md`.
 - Stage 5 remains OPEN; no Stage 5.3 or Stage 6 created. OPEN-Q-08 and OPEN-Q-09 remain separate/open.
 - Route implementation, upload security/SEC-06, tests, build, runtime, and server-side enforcement remain unverified. Documentation approval is not implementation verification.
+
+
+## UPDATE 2026-10-27 — DECISION-5B.21 / DECISION-5B.22
+
+- **DECISION-5B.21 — Settings Functions and Reset Scope:** founder delegated decision authority. `/settings` is a dedicated page with Appearance, Account, and Privacy. Appearance: Auto default via `prefers-color-scheme`, manual Day/Night, Amber/Purple/Teal accent, Reduce Motion On/Off, and persistent preferences. Reset restores interface preferences only and never deletes account data, saves, or submissions. Account/privacy controls must be real, clear, and supported; no fake toggles.
+- **DECISION-5B.22 — Contributor Data Visibility:** contributors see only their own submissions, statuses, and contributor-facing requests/reasons. Authorized administration can see the identity linked to submissions, submitted content/metadata, timestamps, review history, and internal moderation notes. Other users see no contributor identity or submission history by default; no public profiles or automatic public credit. Internal notes are separate from contributor-facing messages.
+- These are product/access-control requirements, not implementation evidence.
+- Stage 5 remains OPEN. No Stage 5.3 or Stage 6 created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, upload enforcement, routes, tests, build, and runtime remain unverified.

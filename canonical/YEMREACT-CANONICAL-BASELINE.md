@@ -490,3 +490,35 @@ These route names are accepted as product decisions. This record does not prove 
 - OPEN-Q-08 and OPEN-Q-09 remain separate and OPEN.
 - Upload security review / SEC-06, server-side file enforcement, tests, build, runtime, redirects, and route implementation remain unverified.
 - Product/documentation closure is not technical implementation or verification.
+
+
+---
+
+## FOUNDER-DELEGATED DECISION ADDENDUM — 2026-10-27 — Stage 5 OPEN
+
+The founder explicitly delegated decision authority for Settings functions and scope, rejecting any assumption that earlier proposals constrain the decision. The following records the resulting product decisions. Documentation only; no implementation or technical verification is implied.
+
+### DECISION-5B.21 — Settings Functions and Reset Scope — ACCEPTED — 2026-10-27
+
+- **Settings route:** `/settings`, a dedicated page with Appearance, Account, and Privacy sections.
+- **Appearance:** `Auto` (default, follows `prefers-color-scheme`), `Day`, and `Night`; accent choices Amber, Purple, and Teal; Reduce Motion On/Off.
+- **Persistence:** appearance preferences should persist across reloads and subsequent visits.
+- **Account:** show the signed-in account identity and provide sign-out. Account deletion may be offered only through a real, clearly explained, explicitly confirmed flow; do not display a nonfunctional control.
+- **Privacy:** explain the distinction between guest/local saves and account-associated data, and link to privacy information only when a real policy destination exists. Do not add fake privacy toggles or claim unsupported data controls.
+- **Reset:** “Restore default settings” resets interface preferences only. It must not delete the account, saves, submissions, or other user data. Destructive data actions, if supported, must be separate and require explicit confirmation.
+- **UX quality:** responsive on mobile and desktop, accessible, consistent with YemReact Brand v1.0, and smooth without compromising performance.
+- **Supersession:** this decision resolves the previously open Settings functions and reset scope. It does not alter approved brand tokens, soft-depth values, or 200ms appearance transitions in DECISION-I08, except for the established Auto default reaffirmed by DECISION-5B.20.
+
+### DECISION-5B.22 — Contributor Data Visibility and Attribution — ACCEPTED — 2026-10-27
+
+- **Contributor view:** a contributor may view only their own submissions, their review status, and any contributor-facing reason or request for changes recorded by the administration. This is available through My Contributions when signed in.
+- **Administration view:** authorized administrators may see the account identity associated with a submission, submitted media and metadata, source/reference information supplied with the submission, submission time, review status, internal review history, and internal notes needed for moderation.
+- **Public visibility:** no contributor identity or contribution history is exposed to other users by default. No public contributor profile, public submission history, or automatic contributor credit on published reactions.
+- **Internal versus external notes:** internal moderation notes are never shown to contributors. Any explanation or change request intended for a contributor must be stored/displayed separately as contributor-facing communication.
+- **Access control:** contributors cannot inspect another contributor’s submissions; administrative data is restricted to authorized roles.
+- **Data minimization:** collect and expose only information needed to process, review, and administer a submission.
+- **Verification boundary:** these are product/access-control requirements, not proof that authorization, database fields, or UI behavior have been implemented or tested.
+
+### Governance boundaries
+
+Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, server-side upload enforcement, routes, tests, builds, and runtime remain unverified.
