@@ -414,7 +414,7 @@
 
 ## Stage 5-B — Account, Header & Navigation — Canonicalized 2026-10-18
 
-**Authority:** Founder-approved choices 5-B.07–5-B.18 and the founder-approved handoff note dated 2026-10-15, consolidated in merged PR #3.  
+**Authority:** Founder-approved choices 5-B.07–5-B.18 and the founder-approved handoff note dated 2026-10-15 were captured in merged PR #3 and subsequently canonicalized in merged PR #4.  
 **Scope:** Product and documentation decisions only. This entry does not establish implementation, build, database, runtime, or security verification.
 
 ### Current accepted direction
