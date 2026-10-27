@@ -2983,7 +2983,7 @@ P-14 بصيغته القديمة كان **Known-Item أصلًا** — مداخل
 
 ## DECISION-5B-CANONICAL — Stage 5-B Account, Header & Navigation — ACCEPTED — 2026-10-18
 
-**Authority:** Hamdan, founder and final decision-maker. This record canonicalizes the explicit choices 5-B.07–5-B.18 and the additional decisions from the 2026-10-15 Stage 5-B handoff note, as approved by the founder and consolidated in merged PR #3.  
+**Authority:** Hamdan, founder and final decision-maker. The explicit choices 5-B.07–5-B.18 and the additional decisions from the 2026-10-15 Stage 5-B handoff note were captured in merged PR #3 and, following founder approval, canonicalized in merged PR #4.  
 **Scope:** Product and documentation decisions only. No code, build, database, runtime, or security verification is implied.
 
 ### Accepted decisions
