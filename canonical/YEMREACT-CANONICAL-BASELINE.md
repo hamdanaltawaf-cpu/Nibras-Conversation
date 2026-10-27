@@ -522,3 +522,15 @@ The founder explicitly delegated decision authority for Settings functions and s
 ### Governance boundaries
 
 Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, server-side upload enforcement, routes, tests, builds, and runtime remain unverified.
+
+
+### DECISION-5B.24 — Guest Saves Reconciliation at Sign-in — ACCEPTED — 2026-10-28
+
+- **Authority:** founder delegated full decision authority after reviewing conflicts and likely effects.
+- **Canonical behavior:** after successful sign-in, merge guest-local saved reaction codes with the signed-in account's saved reactions. The operation is additive and idempotent; neither set overwrites the other, and duplicate reaction codes appear only once.
+- **Persistence safety:** do not clear or discard guest-local saves until the server has confirmed successful persistence of the guest-only additions. If synchronization fails or the network is unavailable, preserve the local guest set and permit retry. Retries must not create duplicates.
+- **Account isolation:** account-associated saves must not be copied into the shared guest-local set on sign-out. A later, different account on the same device must not inherit the previous account's saves. Keep guest-local saves distinct from account-scoped data and only merge the independent guest set into the account that signs in.
+- **Unavailable reactions:** deleted, unpublished, or otherwise unavailable reactions must not be presented as available merely because a saved code exists. Handle unavailable entries according to content-availability rules without discarding other valid saves.
+- **Existing direction retained:** guest saves remain available without login; /saved is intended to open Account with Saved selected while preserving guest access.
+- **Technical caution:** the recorded implementation currently uses localStorage key yr:saved, an account API union, and does not clear local storage on logout (T-07). That shared-key behavior must be reviewed against the account-isolation requirement; this decision does not claim implementation or tests have changed.
+- **Verification boundary:** product policy only. Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, server-side upload enforcement, redirects, routes, tests, builds, and runtime remain unverified.

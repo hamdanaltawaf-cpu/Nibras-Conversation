@@ -569,3 +569,13 @@
 - **DECISION-5B.22 — Contributor Data Visibility:** contributors see only their own submissions, statuses, and contributor-facing requests/reasons. Authorized administration can see the identity linked to submissions, submitted content/metadata, timestamps, review history, and internal moderation notes. Other users see no contributor identity or submission history by default; no public profiles or automatic public credit. Internal notes are separate from contributor-facing messages.
 - These are product/access-control requirements, not implementation evidence.
 - Stage 5 remains OPEN. No Stage 5.3 or Stage 6 created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, upload enforcement, routes, tests, build, and runtime remain unverified.
+
+
+## UPDATE 2026-10-28 — DECISION-5B.24 Guest Saves Reconciliation
+
+- **DECISION-5B.24 — Guest Saves at Sign-in:** merge guest-local saved reaction codes additively into the signed-in account's saves after successful login; deduplicate by reaction code and never overwrite either set.
+- Do not clear guest-local saves until server persistence of additions is confirmed. If sync fails, preserve local data and allow safe retry.
+- Keep guest-local and account-associated saves isolated. Do not copy account saves into the shared guest store at logout; a different account on the same device must not inherit the previous account's saves.
+- Saved codes do not make deleted/unpublished content available; unavailable entries must not cause valid saves to be discarded.
+- Existing T-07 records shared localStorage key yr:saved, union with /api/me/saves, and no local clear on logout. This needs implementation review against account isolation; policy is not proof of implementation.
+- Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, upload enforcement, routes, tests, build, and runtime remain unverified.
