@@ -2983,7 +2983,7 @@ P-14 بصيغته القديمة كان **Known-Item أصلًا** — مداخل
 
 ## DECISION-5B-CANONICAL — Stage 5-B Account, Header & Navigation — ACCEPTED — 2026-10-18
 
-**Authority:** Hamdan, founder and final decision-maker. This record canonicalizes the explicit choices 5-B.07–5-B.18 and the additional decisions from the 2026-10-15 Stage 5-B handoff note, as approved by the founder and consolidated in merged PR #3.  
+**Authority:** Hamdan, founder and final decision-maker. The explicit choices 5-B.07–5-B.18 and the additional decisions from the 2026-10-15 Stage 5-B handoff note were captured in merged PR #3 and, following founder approval, canonicalized in merged PR #4.  
 **Scope:** Product and documentation decisions only. No code, build, database, runtime, or security verification is implied.
 
 ### Accepted decisions
@@ -3020,3 +3020,41 @@ P-14 بصيغته القديمة كان **Known-Item أصلًا** — مداخل
 - Concrete Settings functions, reset scope, contribution identity fields, count formatting and guest-save reconciliation, empty states, Help details, invitation copy/close control, and final header visual composition remain open.
 - Technical behavior for redirects, `returnTo` validation, crawler exceptions, preview cards, keyboard states, guest-save merging, tests/builds, and runtime is unverified.
 - SEC-06 remains unaudited. No implementation or launch-readiness claim is made.
+
+---
+
+## DECISION-5B.19 — Core Page Routes — ACCEPTED — 2026-10-27
+
+**Authority:** Explicit founder approval.
+**Scope:** Primary user-facing route names. Product/documentation decision only; no runtime implementation is implied.
+
+### Established routes retained
+- `/` — Library/home.
+- `/?q=` — Search filter on the Library surface.
+- `/search` — Redirect to `/?q=`; no separate search results page.
+- `/r/[code]` — Shareable reaction detail. Historical `/r/[slug]` references do not prove the runtime parameter name.
+- `/collections` — Collections index.
+- `/collections/[slug]` — Collection detail.
+- `/submit` — Reaction submission preparation; Google sign-in remains required at submission.
+- `/saved` — Product direction is redirect to Account with Saved selected while preserving guest access to local saves; technical implementation remains unverified.
+
+### Newly approved routes
+- `/login` — Full sign-in page; Google active, Apple and Microsoft marked “قيد التجهيز” and not assumed technically enabled.
+- `/account` — Private account page with Saved and My Contributions sections according to existing Stage 5-B decisions.
+- `/settings` — Dedicated settings page organized around Appearance, Account, and Privacy; show only approved, real functions.
+- `/help` — Help center for FAQs, usage guidance, and issue reporting. Exact content, workflow, and launch scope remain open.
+
+Admin, moderation, policy, report, and error routes are not finalized by this decision. Historical wildcard route inventories are not evidence of current application routes.
+
+## DECISION-5B.20 — Default Appearance Reconciliation — ACCEPTED — 2026-10-27
+
+**Authority:** Explicit founder approval.
+**Decision:** Auto is YemReact’s default appearance, following the operating-system preference via `prefers-color-scheme`. Users may manually choose Day or Night in Settings. Approved color tokens, soft-depth values, and 200ms transitions remain governed by DECISION-I08.
+
+**Narrow reconciliation:** The “Day default” wording in P-37 is superseded only for the default-theme choice. DECISION-I08’s “Auto = default” is reaffirmed. The earlier Stage 5-B decision for a dedicated Settings page supersedes the old modal-only presentation direction, without changing approved appearance controls or tokens.
+
+### Governance and verification boundaries
+- Stage 5 remains OPEN. These decisions do not close Stage 5, create Stage 5.3, or authorize Stage 6.
+- OPEN-Q-08 and OPEN-Q-09 remain separate and OPEN.
+- SEC-06, upload security, server-side file enforcement, tests, build, runtime, and route behavior remain unverified.
+- Product/documentation decisions are not implementation or launch-readiness verification.

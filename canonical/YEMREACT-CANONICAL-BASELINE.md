@@ -414,7 +414,7 @@
 
 ## Stage 5-B — Account, Header & Navigation — Canonicalized 2026-10-18
 
-**Authority:** Founder-approved choices 5-B.07–5-B.18 and the founder-approved handoff note dated 2026-10-15, consolidated in merged PR #3.  
+**Authority:** Founder-approved choices 5-B.07–5-B.18 and the founder-approved handoff note dated 2026-10-15 were captured in merged PR #3 and subsequently canonicalized in merged PR #4.  
 **Scope:** Product and documentation decisions only. This entry does not establish implementation, build, database, runtime, or security verification.
 
 ### Current accepted direction
@@ -448,3 +448,45 @@ The earlier five-item mobile navigation in DECISION-I10 is historical for the af
 - SEC-06 remains unaudited.
 
 This Stage 5-B entry does not reopen Stage 5.1 or Stage 5.2, reactivate C-01, reassign P-20 #6, or create Stage 5.3.
+
+---
+
+## FOUNDER DECISION ADDENDUM — 2026-10-27 — Stage 5 OPEN
+
+This addendum records two founder-approved decisions made on 2026-10-27. It is a product/documentation decision only; it does not establish application implementation, build/runtime success, database behavior, or security verification.
+
+### DECISION-5B.19 — Core Page Routes — ACCEPTED — 2026-10-27
+
+**Authority:** Explicit founder approval in the current decision discussion.
+**Scope:** Names of the primary user-facing routes only.
+
+#### Previously established routes
+- `/` — Library / home.
+- `/?q=` — Search filter on the Library surface.
+- `/search` — Redirect to `/?q=`; no separate search results surface.
+- `/r/[code]` — Shareable reaction detail page. Historical references to `/r/[slug]` must not be treated as proof of the runtime parameter name.
+- `/collections` — Collections index.
+- `/collections/[slug]` — Collection detail.
+- `/submit` — Reaction submission preparation page; Google sign-in is required at submission as previously decided.
+- `/saved` — The recorded product direction is to redirect to Account with Saved selected while preserving guest access to local saves. The redirect and save behavior remain technically unverified.
+
+#### Newly approved route names
+- `/login` — Full sign-in page. Google is the active provider; Apple and Microsoft remain “قيد التجهيز” and are not represented as technically enabled.
+- `/account` — Private account page, including Saved and My Contributions sections for signed-in users; guest behavior follows the existing Stage 5-B decisions.
+- `/settings` — Dedicated settings page organized around Appearance, Account, and Privacy, showing only approved, real functions.
+- `/help` — Help center direction covering FAQs, usage guidance, and issue reporting. Exact content, reporting workflow, and launch scope remain open.
+
+These route names are accepted as product decisions. This record does not prove that the routes exist or work in the application. Admin, moderation, policy, report, and error routes are not finalized by this decision and must not be invented from historical wildcard inventories.
+
+### DECISION-5B.20 — Default Appearance Reconciliation — ACCEPTED — 2026-10-27
+
+**Authority:** Explicit founder approval in the current decision discussion.
+**Decision:** Auto is the default appearance in YemReact. It follows the operating system preference through `prefers-color-scheme`. Users may manually choose Day or Night in Settings. Existing approved color tokens, soft-depth values, and the 200ms appearance transitions remain governed by DECISION-I08.
+
+**Reconciliation:** This decision supersedes the “Day default” wording in the historical P-37 entry only for the default-theme choice. DECISION-I08’s “Auto = default” behavior is reaffirmed. The prior Stage 5-B choice of a dedicated Settings page supersedes the old modal-only presentation direction; it does not silently change the approved appearance controls or tokens.
+
+### Governance boundaries
+- Stage 5 remains OPEN. This addendum does not close Stage 5, create Stage 5.3, or authorize Stage 6.
+- OPEN-Q-08 and OPEN-Q-09 remain separate and OPEN.
+- Upload security review / SEC-06, server-side file enforcement, tests, build, runtime, redirects, and route implementation remain unverified.
+- Product/documentation closure is not technical implementation or verification.

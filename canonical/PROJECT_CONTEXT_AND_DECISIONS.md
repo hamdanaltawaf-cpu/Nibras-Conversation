@@ -1,7 +1,7 @@
 # YemReact — ملف السياق والقرارات المرجعي
 > هذا الملف هو المرجع الحي الوحيد للمحادثة الحالية فقط (منذ بدايتها مع نِبراس حتى الآن). لا يحتوي على أي معلومات من محادثات كلود السابقة إلا إذا تم تأكيدها صراحة هنا. يتم تحديثه بعد كل قرار مهم.
 
-**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-12 — إلغاء C-01 كموضوع نشط؛ 80 حقيقة بلا تغيير؛ لا موضوع تالٍ معيّن — (آخر milestone سابق: DECISION-I10، 2026-09-30)
+**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-27 — DECISION-5B.19 core page routes accepted; DECISION-5B.20 Auto default reconciled; Stage 5 remains OPEN; OPEN-Q-08/09 remain separate/open; technical gates unverified
 **الحالة العامة:** مرحلة DISCUSSION — تحليل وهوية وتخطيط، لا كود ولا تنفيذ UI
 **المدير التنفيذي:** نِبراس | **شريك النقاش:** أرينا | **مهندس التنفيذ (لاحقًا):** أرينا كود | **حلقة الوصل:** المستخدم
 **آلية العمل الجديدة:** نقاش متناوب — نِبراس يناقش مع المستخدم مرة، ثم مع أرينا مرة، ثم يعود للمستخدم — حتى حسم كل محور.
@@ -553,3 +553,11 @@
 - **Historical scope:** DECISION-I10's former five-item mobile navigation and DECISION-I03/P-37's modal-only Settings presentation are superseded only in the affected scope. Historical records remain intact.
 - **Stage status:** Stage 5.1 and Stage 5.2 remain closed. C-01 remains cancelled as an active topic; P-20 #6 remains DEFERRED with no replacement assignment. Do not create Stage 5.3.
 - **Verification boundary:** Documentation only. No code/build/database/runtime verification; technical redirect/return-destination behavior is not audited, and SEC-06 remains unaudited.
+
+## UPDATE 2026-10-27 — DECISION-5B.19 / DECISION-5B.20
+
+- Founder approved primary routes: `/login`, `/account`, `/settings`, and `/help`, while retaining previously established library, search, reaction, collection, submission, and saved-route directions.
+- Founder reaffirmed `Auto` as the default appearance using `prefers-color-scheme`; Day/Night remain manual options, and DECISION-I08 tokens/depth/200ms transitions remain unchanged.
+- Canonical details are recorded in `YEMREACT-CANONICAL-BASELINE.md` and `YEMREACT-DECISIONS-LOG.md`.
+- Stage 5 remains OPEN; no Stage 5.3 or Stage 6 created. OPEN-Q-08 and OPEN-Q-09 remain separate/open.
+- Route implementation, upload security/SEC-06, tests, build, runtime, and server-side enforcement remain unverified. Documentation approval is not implementation verification.
