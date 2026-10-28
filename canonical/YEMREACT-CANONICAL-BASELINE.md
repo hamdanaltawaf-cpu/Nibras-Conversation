@@ -36,6 +36,21 @@
 
 ---
 
+## UPDATE 2026-10-29 — DECISION-5B.27 — Remaining UX Details — ACCEPTED
+
+**Status:** ACCEPTED — resolution explicitly delegated by Hamdan in the current roadmap workflow.  
+**Scope:** Product/UI policy only; no implementation or test claim.
+
+- **Signup invitations:** optional and non-blocking; compact inline/banner presentation, explicit dismiss and continue-as-guest actions, no repetitive prompts in the same browser context. Login via Google only. Guest saves remain local until server-confirmed reconciliation per DECISION-5B.24. Approved copy and contextual account-only prompt are recorded in `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
+- **Header visual reference:** locked YemReact Brand v1.0 + Qussasa Mark + accepted Stage 5-B responsive navigation. Pinterest is inspiration for the masonry content grid only, not the header/navigation design.
+- **Collections:** admin-curated, explicitly ordered published collection list; compact horizontal strip on the Library before the reaction grid; admin-selected cover or deterministic reaction thumbnail fallback; title and optional description; actual clip count may be shown per DECISION-5B.23; no follower/engagement counts. Signed-in followed collections appear privately in a labelled section at the top of `/collections`; no new route or Account tab.
+- **Help:** initial Arabic copy and content boundaries are defined in DECISION-5B.27. Help text must not claim unverified behavior; reporting must satisfy DECISION-5B.26 before being presented as operational.
+- **Governance:** DECISION-5B.19–5B.26 remain in force. Stage 5 remains OPEN; no Stage 5.3 or Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. SEC-06, app behavior, permissions, reporting, tests, build, and runtime remain unverified.
+
+Source: `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
+
+---
+
 ### 1. Brand Truth — LOCKED
 
 | # | What | Status | Why considered resolved | Source(s) | Confidence | Type |

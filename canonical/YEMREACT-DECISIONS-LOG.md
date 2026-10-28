@@ -3184,3 +3184,33 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - **الحدود:** OPEN-Q-08 منفصل ويحدد سياسة البحث. OPEN-Q-09 مغلق لأغراض التوثيق فقط؛ لا ادعاء بتنفيذ أو اختبار أو دقة مثبتة. Stage 5 تبقى OPEN، ولا تُنشأ Stage 5.3 أو Stage 6. SEC-06 وفرض صلاحيات الخادم والمسارات والاختبارات والبناء والتشغيل ما تزال غير متحققة.
 - **الوثيقة الكاملة:** `canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md`.
 
+
+
+---
+
+## DECISION-5B.27 — Remaining UX Details — ACCEPTED — 2026-10-29
+
+- **Authority:** Hamdan explicitly instructed the assistant to resolve the remaining open decisions and maintain the roadmap/change log after each work item in the current workflow (message received 2026-10-28). This is a delegated resolution of the four named open UX topics, not an independent expansion of scope.
+- **Status:** ACCEPTED — product/UI policy only. No implementation, test, build, or runtime claim.
+- **Canonical detail:** `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
+
+### Previous → New
+
+1. **Signup invitations:** Previously, only the non-blocking principle was settled; copy/placement behavior remained open. Now: compact optional inline/banner, explicit dismiss and continue-as-guest, no repetitive prompts in the same browser context, no login requirement for browsing or guest saves, Google-only sign-in copy, and approved Arabic copy for library and account-only collection-follow prompts.
+2. **Header visual reference:** Previously, visual comparison was open and Pinterest could not be assumed as the reference. Now: locked YemReact Brand v1.0 + Qussasa Mark + accepted Stage 5-B navigation are the reference. Pinterest-like masonry is only a library presentation pattern, not the header/navigation authority.
+3. **Collections:** Previously, ordering/cards/cover/followed-collection placement were open. Now: published collections are admin-curated and manually ordered; a compact horizontal collection strip appears on the Library before the reaction grid; cover comes from an admin selection or deterministic available reaction thumbnail; title/optional description and actual clip count only; no follower/engagement counts. Signed-in followed collections appear privately at the top of `/collections`, with no new route or Account tab.
+4. **Help copy:** Previously, final Arabic FAQ copy was open. Now: the initial Arabic copy, topics, and restrictions on unverified claims are recorded in DECISION-5B.27. Issue reporting must not be presented as operational before satisfying DECISION-5B.26's end-to-end gate.
+
+### Reason / alternatives rejected
+
+- Preserve low-friction guest browsing, truthful account synchronization, product-owned brand/navigation, curated rather than social collections, and honest Help content.
+- Rejected: blocking/repetitive signup prompts, Pinterest-derived header/navigation, engagement-ranked collections or public social counters, and Help copy that promises unverified functionality.
+
+### Impact / stage boundary
+
+- Resolves the four remaining product questions in the roadmap: signup invitations, header visual reference, collection presentation, and Arabic Help copy.
+- DECISION-5B.19 through DECISION-5B.26 remain in force; numeric display follows DECISION-5B.23, guest-save reconciliation follows DECISION-5B.24, and reporting launch readiness follows DECISION-5B.26.
+- Stage 5 remains OPEN. No Stage 5.3 and no Stage 6.
+- OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only.
+- SEC-06, upload enforcement, route behavior, permissions, report workflow, tests, build, and runtime remain UNVERIFIED.
+- This entry records product policy only; implementation and release readiness are not implied.
