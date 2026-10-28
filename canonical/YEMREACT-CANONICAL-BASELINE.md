@@ -546,3 +546,15 @@ Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage
 - This decision is limited to Saved/My Contributions. The earlier no-empty-state rule for optional reaction-detail fields remains in that scope.
 - Product/documentation policy only; no implementation or testing is implied. Stage 5 remains OPEN; no Stage 5.3 or Stage 6. OPEN-Q-08, OPEN-Q-09, SEC-06, and technical verification boundaries remain unchanged.
 
+
+
+### DECISION-5B.26 — Help Center and Issue Reporting — ACCEPTED — 2026-10-28
+
+- `/help` remains the central help-center route. Initial topics: getting started, finding reactions, guest versus account saves, collections/sharing, submissions and human review, account/settings, and reporting problems.
+- FAQ content must describe verified released behavior only; do not infer implementation from product policy or promise planned features.
+- Help is the central explanatory entry point for reports. Existing reaction-menu **إبلاغ** should feed the same workflow with reaction context prefilled; no new public report route is introduced by this decision.
+- Report categories: technical issue, reaction/content not working, rights/permission concern, content requiring review, and other. Require category and concise description; include reaction code/URL when relevant. Contact information is optional; sign-in is not required solely to report. No attachments in v1 without separate security/privacy review.
+- Confirm success only after server persistence is confirmed. Failures must be clear and retryable where possible; apply server-side validation and basic abuse controls. Do not promise response times without an operational support process.
+- Reports and internal notes are restricted to authorized personnel. Keep reporter-facing communication separate; minimize data; define retention/deletion handling before production. Reports trigger human review, not automatic removal/publication.
+- Static Help content may launch separately, but reporting controls must not be represented as operational until end-to-end submission, persistence, authorized review access, failure handling, and basic abuse controls are verified. Documentation is not implementation evidence.
+- DECISION-5B.19 and .22 remain in force. Stage 5 remains OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open. SEC-06 and technical verification boundaries remain unchanged.
