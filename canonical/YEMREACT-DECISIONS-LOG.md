@@ -3145,3 +3145,23 @@ Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-0
 8. **Reconciliation and boundaries:** DECISION-5B.19’s `/help` route and DECISION-5B.22’s privacy boundaries remain in force. Stage 5 remains OPEN; no Stage 5.3 or Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06, routes, tests, builds, runtime, and end-to-end reporting remain unverified.
 
 Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
+
+
+---
+
+## DECISION — OPEN-Q-08 — Search and Indexing — ACCEPTED / CLOSED FOR DOCUMENTATION
+
+- **Status:** ACCEPTED — 2026-10-28
+- **Authority:** Founder delegated review authority and explicitly authorized updating canonical references and merging the PR after review.
+- **Scope:** Search/indexing product policy; not implementation evidence.
+- **Decision:** Search for the reaction itself, not by situation. Do not rely on editors manually entering keywords as the primary method.
+- **Search sources:** available reliable embedded speech text, title, description, confirmed character name, quality-controlled derived alternate forms, and semantic representation.
+- **Automation:** trusted data may be indexed automatically; doubtful data routed for review; source and derived data remain separate; record provenance, processing type, and verification status; confidence is evaluated per data type; incorrect derived data can be disabled; retries are idempotent and indexes refresh when sources change.
+- **Normalization:** three tiers — safe normalization preserving originals; flexible matching for suitable spelling errors/near variants; semantic retrieval when wording differs. Avoid transformations that change meaning.
+- **Ranking:** composite relevance score based on match strength and data reliability. Trustworthy direct text receives strong preference. Semantic results may outrank only when evaluation shows they are clearly closer. Numeric weights remain unset until representative testing.
+- **No-result behavior:** distinguish weak results from no useful results, communicate uncertainty honestly, and allow query revision. Failed queries may reveal indexing gaps under privacy controls but must not cause arbitrary keyword additions.
+- **Evaluation:** use a fixed representative set covering exact embedded speech, spelling/dialect variations, title/character queries, semantic paraphrases, no-match queries, and shared phrases. Assess top-result success, ranking quality, misleading results, and semantic-search impact before numeric tuning.
+- **Boundary:** OPEN-Q-08 only defines that extracted speech can be used for search when available and sufficiently reliable. **OPEN-Q-09 remains separate and OPEN** for the extraction method and its accuracy challenges.
+- **Verification:** no claim that indexing, transcription, semantic search, tests, build, or runtime have been implemented or verified. Stage 5 remains OPEN; no Stage 5.3/Stage 6. SEC-06 and server-side upload enforcement remain unverified.
+- **Full specification:** `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
+
