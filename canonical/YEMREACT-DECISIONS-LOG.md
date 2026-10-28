@@ -3128,3 +3128,20 @@ Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-0
 - Unavailable saved codes do not make content available or discard valid saves. Human review remains required; no implication of automatic publication.
 - Scope: Saved and My Contributions only. Product policy, not implementation evidence. DECISION-5B-CANONICAL and 5B.22–5B.24 remain in force. Stage 5 remains OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06 and technical verification boundaries remain unverified.
 - Full decision: `canonical/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`.
+
+
+## DECISION-5B.26 — Help Center and Issue Reporting — ACCEPTED — 2026-10-28
+
+**Authority:** Founder said “ابدا” after the next decision was proposed.  
+**Scope:** Product policy and launch requirements for `/help` and issue reporting; not implementation evidence.
+
+1. **Help content:** Initial topics are getting started, finding reactions, guest/account saves, collections and sharing, submissions and human review, account/settings, and reporting. FAQ copy must describe verified released behavior only; planned or unverified behavior must not be presented as available.
+2. **Single reporting workflow:** `/help` explains reporting. The existing reaction overflow-menu **إبلاغ** action should enter the same workflow with reaction context prefilled. This decision does not introduce a new public report route.
+3. **Categories:** technical issue; reaction/content not working; rights/permission concern; content requiring review; other.
+4. **Required information:** category and concise description; affected reaction code/page URL when relevant. Contact information is optional. Sign-in is not required solely to report. No attachments in the first release unless separately security/privacy-reviewed.
+5. **Honest feedback:** success appears only after server-confirmed persistence. Failures must not be reported as success; provide clear retry where safe. Add server-side validation and basic abuse controls. Do not promise a reply or response time without an operational support process.
+6. **Privacy and review:** only authorized personnel can access reports. Keep internal notes separate from reporter-facing communication; minimize collected data and define retention/deletion handling before production. Reports go to human review and do not automatically remove or publish content.
+7. **Launch gate:** accurate static Help content can launch independently. Reporting controls must not be presented as working until end-to-end submission, persistence, authorized review access, failure handling, and basic abuse controls are verified. If unavailable, do not ship a dead button or fake form; mention an alternative contact channel only if an approved real destination exists.
+8. **Reconciliation and boundaries:** DECISION-5B.19’s `/help` route and DECISION-5B.22’s privacy boundaries remain in force. Stage 5 remains OPEN; no Stage 5.3 or Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06, routes, tests, builds, runtime, and end-to-end reporting remain unverified.
+
+Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
