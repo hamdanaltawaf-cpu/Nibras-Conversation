@@ -579,3 +579,7 @@
 - Saved codes do not make deleted/unpublished content available; unavailable entries must not cause valid saves to be discarded.
 - Existing T-07 records shared localStorage key yr:saved, union with /api/me/saves, and no local clear on logout. This needs implementation review against account isolation; policy is not proof of implementation.
 - Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, upload enforcement, routes, tests, build, and runtime remain unverified.
+
+
+## DECISION-5B.25 — Saved and My Contributions Empty States
+Accepted policy: render an empty state only after a successful load confirms no displayable items; loading/errors/permission failures are distinct. Guest and signed-in Saved have separate approved Arabic copy and link to `/`; signed-in My Contributions has approved copy and links to `/submit`. Guests must not see account stats or an empty My Contributions panel. Submissions with statuses are items; expose contributor-facing status/reasons only, never internal moderation notes. Unavailable saved codes do not unlock unavailable content or discard valid saves. Human review remains required. Scope is Saved/My Contributions only. Full specification: `canonical/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`. Product policy only, not implementation evidence. Stage 5 remains OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06 and technical verification remain unverified.
