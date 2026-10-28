@@ -583,3 +583,15 @@
 
 ## DECISION-5B.25 — Saved and My Contributions Empty States
 Accepted policy: render an empty state only after a successful load confirms no displayable items; loading/errors/permission failures are distinct. Guest and signed-in Saved have separate approved Arabic copy and link to `/`; signed-in My Contributions has approved copy and links to `/submit`. Guests must not see account stats or an empty My Contributions panel. Submissions with statuses are items; expose contributor-facing status/reasons only, never internal moderation notes. Unavailable saved codes do not unlock unavailable content or discard valid saves. Human review remains required. Scope is Saved/My Contributions only. Full specification: `canonical/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`. Product policy only, not implementation evidence. Stage 5 remains OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06 and technical verification remain unverified.
+
+
+## UPDATE 2026-10-28 — DECISION-5B.26 — Help Center and Issue Reporting — ACCEPTED
+
+- `/help` initial topics: getting started, finding reactions, guest/account saves, collections/sharing, submissions and human review, account/settings, and reporting.
+- FAQ content must not claim unverified or planned features are available.
+- Help explains reporting; the existing reaction-menu **إبلاغ** should use the same workflow and prefill the reaction context. No new public report route is added here.
+- Report categories: technical issue, reaction/content not working, rights/permission concern, content requiring review, and other. Category and concise description required; reaction/page reference when relevant; contact optional; no sign-in required solely to report; no attachments in v1 without separate review.
+- Only show success after server-confirmed persistence. Failures must be honest and retryable where safe; server-side validation and basic abuse controls are required.
+- Restrict reports/internal notes to authorized staff, separate reporter-facing messages, minimize data, and define retention/deletion before production. Reports require human review and do not automatically remove/publish content.
+- Static Help may launch independently. Reporting UI is not launch-ready until the end-to-end workflow is verified; no dead buttons, fake forms, or unsupported response-time promises.
+- Product policy only. DECISION-5B.19 and .22 remain in force. Stage 5 stays OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06 and technical verification boundaries unchanged.
