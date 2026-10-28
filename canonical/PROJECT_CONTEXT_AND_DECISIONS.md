@@ -595,3 +595,18 @@ Accepted policy: render an empty state only after a successful load confirms no 
 - Restrict reports/internal notes to authorized staff, separate reporter-facing messages, minimize data, and define retention/deletion before production. Reports require human review and do not automatically remove/publish content.
 - Static Help may launch independently. Reporting UI is not launch-ready until the end-to-end workflow is verified; no dead buttons, fake forms, or unsupported response-time promises.
 - Product policy only. DECISION-5B.19 and .22 remain in force. Stage 5 stays OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06 and technical verification boundaries unchanged.
+
+
+## UPDATE 2026-10-28 — OPEN-Q-08 Search and Indexing — Accepted after delegated review
+
+- The founder delegated review authority and authorized recording the decision, updating canonical references, and merging the PR.
+- OPEN-Q-08 is accepted and closed for documentation: YemReact search targets the reaction itself, not search by situation; editors should not have to manually enter keywords as the primary indexing method.
+- Search inputs may include reliable embedded speech text when available, title, description, confirmed character name, quality-controlled derived alternate forms, and semantic representations.
+- Use controlled automation with original/derived data separation, provenance and processing/verification metadata, per-data-type confidence, review of doubtful data, disablement of bad derived data, idempotent retries, and index refresh when source data changes.
+- Three matching tiers: safe normalization, flexible matching, semantic retrieval. Preserve originals and avoid meaning-changing normalization.
+- Use composite ranking based on relevance and reliability. Trustworthy direct text has strong priority; semantic results may overtake only when evaluation shows they are clearly closer. Do not set numeric weights before representative testing.
+- Handle weak/no results honestly. Use failed queries for privacy-conscious evaluation of indexing gaps, not arbitrary automatic keyword additions.
+- Evaluate exact embedded speech, spelling/dialect variants, title/character queries, semantically equivalent wording, no-match queries, and shared phrases. Measure first-result success, ranking quality, misleading results, and semantic-search impact.
+- OPEN-Q-08 only allows extracted speech to be used as a search source when available and sufficiently reliable. OPEN-Q-09 remains separate and OPEN for video speech extraction.
+- Product policy only; no implementation/test/build/runtime claim. Stage 5 remains OPEN; no Stage 5.3/Stage 6. SEC-06 and server-side upload enforcement remain unverified.
+- Full specification: `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
