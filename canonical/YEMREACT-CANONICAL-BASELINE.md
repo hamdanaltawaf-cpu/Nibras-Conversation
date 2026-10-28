@@ -573,3 +573,17 @@ Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage
 - **OPEN-Q-09 remains separate and OPEN**: it owns the choice and evaluation of automatic speech extraction from video. OPEN-Q-08 only permits using extracted speech as a search source when available and sufficiently reliable.
 - Stage 5 remains OPEN; no Stage 5.3 or Stage 6 created. SEC-06, server-side upload enforcement, route behavior, tests, builds, and runtime remain unverified.
 - Full decision: `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
+
+
+---
+
+## تحديث الحالة — 2026-10-28 — OPEN-Q-09 استخراج الكلام — مُعتمد للإغلاق التوثيقي
+
+- **OPEN-Q-09:** جُمعت سياسة استخراج الكلام من مقاطع الرياكشن، ومراجعة النص واعتماده، وعرضه بعد النشر، واستخدامه في البحث، ومعالجة الإخفاقات والصلاحيات والخصوصية والتكلفة في الوثيقة المرجعية: `canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md`.
+- الاستخراج يدوي ويقتصر على المشرفين المخوّلين. النص قابل للتحرير، ولا تُختلق الكلمات أو تُصحح تلقائيًا، ويُحتفظ بالنص النهائي فقط بعد التعديل.
+- قبل النشر، يبقى النص مسودة إدارية ولا يدخل البحث العام. بعد الضغط على «نشر الرياكشن»، يظهر النص النهائي المعتمد في صفحة تفاصيل الرياكشن ويجوز استخدامه في البحث وفق OPEN-Q-08.
+- فشل الاستخراج يختلف عن حالة «لا يوجد كلام قابل للاستخراج». إعادة المحاولة يدوية، ولا يبدأ الاستخراج تلقائيًا بعد مغادرة الصفحة أو انقطاع الاتصال أو استبدال المقطع.
+- شرط عدم التكلفة والخصوصية قائم؛ لم يُحدّد نموذج أو مزود أو أسلوب تنفيذ، ولم يثبت تحقق التكلفة الصفرية.
+- **الحالة:** OPEN-Q-09 مغلق لأغراض التوثيق فقط. هذا لا يعني تنفيذ الاستخراج أو اختبار الدقة أو التحقق من الفهرسة أو البناء أو التشغيل.
+- **الحدود:** Stage 5 ما تزال OPEN؛ لا تُنشأ Stage 5.3 ولا يبدأ Stage 6. SEC-06، وفرض صلاحيات الخادم، والمسارات، والاختبارات، والبناء، وسلوك التشغيل ما تزال غير متحققة.
+
