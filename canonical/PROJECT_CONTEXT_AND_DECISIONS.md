@@ -610,3 +610,16 @@ Accepted policy: render an empty state only after a successful load confirms no 
 - OPEN-Q-08 only allows extracted speech to be used as a search source when available and sufficiently reliable. OPEN-Q-09 remains separate and OPEN for video speech extraction.
 - Product policy only; no implementation/test/build/runtime claim. Stage 5 remains OPEN; no Stage 5.3/Stage 6. SEC-06 and server-side upload enforcement remain unverified.
 - Full specification: `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
+
+
+---
+
+## تحديث 2026-10-28 — OPEN-Q-09 سياسة استخراج الكلام — مُعتمد لأغراض التوثيق فقط
+
+- جُمعت قرارات OPEN-Q-09 في `canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md`.
+- استخراج الكلام عملية إدارية يبدأها مشرف مخوّل يدويًا؛ لا يُنشر النص تلقائيًا، ويحتفظ النظام بالنص النهائي فقط بعد تعديل المشرف.
+- تُحفظ المسودات والتعديلات غير المنشورة لاستعادتها، ولا تدخل البحث العام قبل نشر الرياكشن. بعد النشر يظهر النص النهائي في صفحة تفاصيل الرياكشن، ويجوز استخدامه في البحث وفق OPEN-Q-08.
+- حالات الاستخراج منفصلة: لم يبدأ، جارٍ الاستخراج، اكتمل، فشل، ولا يوجد كلام قابل للاستخراج. إعادة المحاولة يدوية، مع التعامل الآمن مع مغادرة الصفحة وانقطاع الاتصال والمهلة وتغيير المقطع وتعارض التعديلات.
+- لا تُختار تقنية أو خدمة أو نموذج في هذه المرحلة. عدم التكلفة والخصوصية شرطان، وليس هناك ادعاء بتحقيقهما تقنيًا.
+- OPEN-Q-09 مغلق لأغراض التوثيق فقط؛ لا يعني ذلك التنفيذ أو الاختبار. Stage 5 ما تزال OPEN، ولا تُنشأ Stage 5.3 ولا يبدأ Stage 6. OPEN-Q-08 مستقل، وحدود SEC-06 وفرض الصلاحيات والمسارات والاختبارات والبناء والتشغيل لم تتغير.
+
