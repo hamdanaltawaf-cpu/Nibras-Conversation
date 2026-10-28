@@ -558,3 +558,18 @@ Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage
 - Reports and internal notes are restricted to authorized personnel. Keep reporter-facing communication separate; minimize data; define retention/deletion handling before production. Reports trigger human review, not automatic removal/publication.
 - Static Help content may launch separately, but reporting controls must not be represented as operational until end-to-end submission, persistence, authorized review access, failure handling, and basic abuse controls are verified. Documentation is not implementation evidence.
 - DECISION-5B.19 and .22 remain in force. Stage 5 remains OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open. SEC-06 and technical verification boundaries remain unchanged.
+
+
+## DECISION UPDATE — 2026-10-28 — OPEN-Q-08 Search and Indexing — ACCEPTED / CLOSED FOR DOCUMENTATION
+
+- Search target is the **reaction itself**, not search by situation; editors are not expected to manually author search keywords as the primary indexing method.
+- Search may use available trustworthy embedded speech text, title, description, confirmed character name, quality-controlled derived alternate forms, and semantic representations.
+- Controlled automation: preserve original data separately from derived data; record provenance/processing/verification status; assess confidence by data type; review doubtful data; allow disabling bad derived data; make retries idempotent and refresh indexes when sources change.
+- Matching tiers: safe normalization first, flexible matching when direct matching is insufficient, semantic retrieval when wording differs. Preserve original text and avoid meaning-changing normalization.
+- Rank with a composite relevance score and data reliability. Give trustworthy direct text a strong preference; allow semantic results to outrank only when evaluation shows they are clearly closer. Do not set numeric weights before representative testing.
+- Handle weak/no results honestly. Use failed queries for privacy-conscious evaluation of indexing gaps, not arbitrary keyword generation.
+- Evaluate exact embedded-speech phrases, spelling/dialect variations, title/character queries, semantically equivalent wording, no-match queries, and shared phrases. Measure top-result success, ranking quality, misleading results, and semantic-search impact.
+- **OPEN-Q-08 is resolved/closed for documentation by this accepted decision only.** This is product policy, not implementation or test evidence.
+- **OPEN-Q-09 remains separate and OPEN**: it owns the choice and evaluation of automatic speech extraction from video. OPEN-Q-08 only permits using extracted speech as a search source when available and sufficiently reliable.
+- Stage 5 remains OPEN; no Stage 5.3 or Stage 6 created. SEC-06, server-side upload enforcement, route behavior, tests, builds, and runtime remain unverified.
+- Full decision: `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
