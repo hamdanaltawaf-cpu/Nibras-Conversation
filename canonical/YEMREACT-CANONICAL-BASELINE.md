@@ -534,3 +534,15 @@ Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage
 - **Existing direction retained:** guest saves remain available without login; /saved is intended to open Account with Saved selected while preserving guest access.
 - **Technical caution:** the recorded implementation currently uses localStorage key yr:saved, an account API union, and does not clear local storage on logout (T-07). That shared-key behavior must be reviewed against the account-isolation requirement; this decision does not claim implementation or tests have changed.
 - **Verification boundary:** product policy only. Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, server-side upload enforcement, redirects, routes, tests, builds, and runtime remain unverified.
+
+## DECISION-5B.25 — Saved and My Contributions Empty States — ACCEPTED — 2026-10-28
+
+- Show an empty state only after a successful load confirms there are no items to display. Loading and failure states remain distinct.
+- Guest Saved empty copy: **“ما حفظت أي رياكشن لحد الآن”**; **“تصفّح المكتبة واحفظ الرياكشنات التي تعجبك، وبتحصل عليها هنا.”**; action **“استكشف المكتبة”** → /.
+- Signed-in Saved empty copy: **“محفوظاتك بتظهر هنا”**; **“احفظ الرياكشنات التي تريد الرجوع إليها، وستجدها في مكان واحد.”**; action **“استكشف المكتبة”** → /.
+- Signed-in My Contributions empty copy: **“ما عندك مساهمات حتى الآن”**; **“أرسل رياكشن يمنيًا ليستفيد منه الآخرون بعد مراجعته واعتماده.”**; action **“أرسل رياكشن”** → /submit.
+- Guest Account must not show account statistics or an empty My Contributions panel. Submissions with statuses are displayed as submissions, not treated as an empty state; only contributor-facing explanations may be shown.
+- Unavailable saved codes must not make unavailable content available or cause other valid saves to be discarded. Loading/server/network failures are not empty states.
+- This decision is limited to Saved/My Contributions. The earlier no-empty-state rule for optional reaction-detail fields remains in that scope.
+- Product/documentation policy only; no implementation or testing is implied. Stage 5 remains OPEN; no Stage 5.3 or Stage 6. OPEN-Q-08, OPEN-Q-09, SEC-06, and technical verification boundaries remain unchanged.
+
