@@ -3116,3 +3116,15 @@ Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-0
 ### Governance boundaries
 
 Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, server-side upload enforcement, routes, tests, builds, and runtime remain unverified.
+
+
+## DECISION-5B.25 — Saved and My Contributions Empty States
+
+- Empty states appear only after a successful load confirms there are no displayable items; loading, network/server errors, and permission failures are distinct states.
+- Guest Saved: “ما حفظت أي رياكشن لحد الآن” / “تصفّح المكتبة واحفظ الرياكشنات التي تعجبك، وبتحصل عليها هنا.” / “استكشف المكتبة” → `/`.
+- Signed-in Saved: “محفوظاتك بتظهر هنا” / “احفظ الرياكشنات التي تريد الرجوع إليها، وستجدها في مكان واحد.” / “استكشف المكتبة” → `/`.
+- Signed-in My Contributions: “ما عندك مساهمات حتى الآن” / “أرسل رياكشن يمنيًا ليستفيد منه الآخرون بعد مراجعته واعتماده.” / “أرسل رياكشن” → `/submit`.
+- Guests see no account statistics or empty My Contributions panel. Submissions with statuses are items; show contributor-facing status/reasons only, never internal moderation notes.
+- Unavailable saved codes do not make content available or discard valid saves. Human review remains required; no implication of automatic publication.
+- Scope: Saved and My Contributions only. Product policy, not implementation evidence. DECISION-5B-CANONICAL and 5B.22–5B.24 remain in force. Stage 5 remains OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06 and technical verification boundaries remain unverified.
+- Full decision: `canonical/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`.
