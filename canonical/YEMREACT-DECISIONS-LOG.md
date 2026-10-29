@@ -3214,3 +3214,18 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only.
 - SEC-06, upload enforcement, route behavior, permissions, report workflow, tests, build, and runtime remain UNVERIFIED.
 - This entry records product policy only; implementation and release readiness are not implied.
+
+
+---
+
+## DECISION-5B.28 — Route Inventory Boundaries and Unavailable States — ACCEPTED — 2026-10-29
+
+- **Authority:** Hamdan directed continuation of documentation work before Stage 5 closure and explicitly deferred execution-related work until documentation is complete.
+- **Scope:** Product/documentation classification of route inventory gaps; no app-code/database change or technical verification.
+- **Admin:** `/admin` is the only product-level admin route established for Stage 5. Do not invent product-level subroute names. Actual internal route structure and authorization enforcement remain for a separately authorized technical review.
+- **Privacy/legal:** Stage 5 does not approve standalone `/privacy`, `/terms`, or `/rights` routes by inference. `/settings` and `/help` remain the accepted product surfaces. Legal obligations and any required disclosures remain a separate legal-scope review; this decision does not waive them.
+- **Reporting:** No standalone public `/report` route is approved; follow DECISION-5B.26's Help/reaction-menu workflow and launch gate.
+- **Unavailable links:** Invalid/unavailable reaction codes use an unavailable/not-found state within `/r/[code]`; unknown app paths use the general not-found state. Do not render fake empty details or expose internal moderation notes. Default concise copy may be «هذا الرياكشن غير متاح».
+- **Still unverified:** actual admin route tree, HTTP status/SEO/crawl behavior, permission enforcement, report workflow, route rendering, tests/build/runtime.
+- **Stage boundary:** Stage 5 remains OPEN pending documentation closeout review and Hamdan's explicit decision. No Stage 5.3/Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only.
+- **Full decision:** `canonical/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
