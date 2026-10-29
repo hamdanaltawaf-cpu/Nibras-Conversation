@@ -7,7 +7,7 @@
 
 ## 1. Standalone policy, privacy, and rights pages
 
-1. Stage 5 does **not** introduce standalone \`/privacy\`, \`/terms\`, or \`/rights\` routes.
+1. Stage 5 does **not** introduce standalone `/privacy`, `/terms`, or `/rights` routes.
 2. The product must not display a privacy/rights link unless it leads to a real, approved policy destination.
 3. The product may explain the difference between guest-local saves and account-associated data in relevant help/settings copy, but must not imply a full privacy policy exists if it does not.
 4. Defining legal/policy content and whether a dedicated destination is needed is **DEFERRED** to a separately scoped policy-content decision. No placeholder or invented policy page is approved by this decision.
@@ -20,21 +20,21 @@
    - Unknown page: **«الصفحة غير موجودة»**
    - Unavailable reaction: **«الرياكشن غير متاح»**
    - Supporting text: **«يمكنك العودة للمكتبة أو البحث عن رياكشن آخر.»**
-   - Primary action: **«العودة للمكتبة»** → \`/\`
-   - Secondary action: **«البحث في المكتبة»** → \`/?q=\` with an empty query or the approved library search entry point; do not invent a new search route.
+   - Primary action: **«العودة للمكتبة»** → `/`
+   - Secondary action: **«البحث في المكتبة»** → `/?q=` with an empty query or the approved library search entry point; do not invent a new search route.
 4. Do not silently redirect an invalid public URL to an unrelated reaction. A direct user action may navigate back to the library.
 5. This is a UX/content decision only; HTTP status codes, routing implementation, metadata, and tests remain unverified and are not prescribed here.
 
 ## 3. Admin surface and subroutes
 
-1. \`/admin\` remains the only admin entry route established at this level.
+1. `/admin` remains the only admin entry route established at this level.
 2. The product inventory must cover these functional areas where applicable: reaction/content management, submission review, collections management, issue reports, speech extraction, and access/permission handling.
 3. Listing a functional area does not mean it must have its own URL. No admin subroute names are accepted in Stage 5 by this decision.
-4. Admin information architecture and detailed operator flows remain documented as functional sections until a dedicated admin-flow decision explicitly establishes any separate routes. Historical technical patterns such as \`/admin/*\` are not accepted product routes.
+4. Admin information architecture and detailed operator flows remain documented as functional sections until a dedicated admin-flow decision explicitly establishes any separate routes. Historical technical patterns such as `/admin/*` are not accepted product routes.
 
 ## 4. Alternatives rejected
 
-- Inventing \`/privacy\`, \`/terms\`, or \`/rights\` without approved policy content and a real destination.
+- Inventing `/privacy`, `/terms`, or `/rights` without approved policy content and a real destination.
 - Treating historical 404 responses as a complete user-facing design.
 - Revealing private moderation/publication state through an error message.
 - Redirecting an invalid URL to unrelated content without user intent.
