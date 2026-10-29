@@ -1,7 +1,7 @@
 # YemReact — ملف السياق والقرارات المرجعي
 > هذا الملف هو المرجع الحي الوحيد للمحادثة الحالية فقط (منذ بدايتها مع نِبراس حتى الآن). لا يحتوي على أي معلومات من محادثات كلود السابقة إلا إذا تم تأكيدها صراحة هنا. يتم تحديثه بعد كل قرار مهم.
 
-**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-28 — DECISION-5B.19/.20 + OPEN-Q-08 closed for documentation + OPEN-Q-09 closed for documentation; Stage 5 remains OPEN; technical gates unverified
+**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-29 — DECISION-5B.28 route boundaries + OPEN-Q-08/09 closed for documentation; Stage 5 remains OPEN; technical gates unverified
 **الحالة العامة:** مرحلة DISCUSSION — تحليل وهوية وتخطيط، لا كود ولا تنفيذ UI
 **المدير التنفيذي:** نِبراس | **شريك النقاش:** أرينا | **مهندس التنفيذ (لاحقًا):** أرينا كود | **حلقة الوصل:** المستخدم
 **آلية العمل الجديدة:** نقاش متناوب — نِبراس يناقش مع المستخدم مرة، ثم مع أرينا مرة، ثم يعود للمستخدم — حتى حسم كل محور.
@@ -607,7 +607,7 @@ Accepted policy: render an empty state only after a successful load confirms no 
 - Use composite ranking based on relevance and reliability. Trustworthy direct text has strong priority; semantic results may overtake only when evaluation shows they are clearly closer. Do not set numeric weights before representative testing.
 - Handle weak/no results honestly. Use failed queries for privacy-conscious evaluation of indexing gaps, not arbitrary automatic keyword additions.
 - Evaluate exact embedded speech, spelling/dialect variants, title/character queries, semantically equivalent wording, no-match queries, and shared phrases. Measure first-result success, ranking quality, misleading results, and semantic-search impact.
-- OPEN-Q-08 only allows extracted speech to be used as a search source when available and sufficiently reliable. OPEN-Q-09 remains separate and OPEN for video speech extraction.
+- At the time of the OPEN-Q-08 update, OPEN-Q-09 was still open; it was subsequently documented and closed for documentation only in its own separate decision on 2026-10-28. The two decisions remain separate; extraction implementation remains unverified.
 - Product policy only; no implementation/test/build/runtime claim. Stage 5 remains OPEN; no Stage 5.3/Stage 6. SEC-06 and server-side upload enforcement remain unverified.
 - Full specification: `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
 
@@ -623,3 +623,12 @@ Accepted policy: render an empty state only after a successful load confirms no 
 - لا تُختار تقنية أو خدمة أو نموذج في هذه المرحلة. عدم التكلفة والخصوصية شرطان، وليس هناك ادعاء بتحقيقهما تقنيًا.
 - OPEN-Q-09 مغلق لأغراض التوثيق فقط؛ لا يعني ذلك التنفيذ أو الاختبار. Stage 5 ما تزال OPEN، ولا تُنشأ Stage 5.3 ولا يبدأ Stage 6. OPEN-Q-08 مستقل، وحدود SEC-06 وفرض الصلاحيات والمسارات والاختبارات والبناء والتشغيل لم تتغير.
 
+
+
+## UPDATE 2026-10-29 — DECISION-5B.28 — Route Inventory Boundaries
+
+- Product/documentation scope is now explicit: `/admin` is the only approved product-level admin route; do not invent internal admin route names in Stage 5.
+- No standalone `/privacy`, `/terms`, `/rights`, or `/report` route is approved by Stage 5. `/settings` and `/help` remain the accepted settings/help surfaces. Legal obligations and any required disclosures remain for a separate legal-scope review; this does not waive them.
+- Invalid/unavailable reaction codes are handled as an unavailable/not-found state inside `/r/[code]`; unknown application paths use the general not-found state. Do not show fake empty details or internal moderation notes.
+- Actual admin route structure, HTTP status/SEO behavior, permissions, and application rendering remain unverified for a separately authorized technical review.
+- Documentation-only decision; Stage 5 remains OPEN, no Stage 5.3/Stage 6, and no implementation work is authorized by this update.

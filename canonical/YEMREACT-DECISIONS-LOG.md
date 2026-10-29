@@ -3161,7 +3161,7 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - **Ranking:** composite relevance score based on match strength and data reliability. Trustworthy direct text receives strong preference. Semantic results may outrank only when evaluation shows they are clearly closer. Numeric weights remain unset until representative testing.
 - **No-result behavior:** distinguish weak results from no useful results, communicate uncertainty honestly, and allow query revision. Failed queries may reveal indexing gaps under privacy controls but must not cause arbitrary keyword additions.
 - **Evaluation:** use a fixed representative set covering exact embedded speech, spelling/dialect variations, title/character queries, semantic paraphrases, no-match queries, and shared phrases. Assess top-result success, ranking quality, misleading results, and semantic-search impact before numeric tuning.
-- **Boundary:** OPEN-Q-08 only defines that extracted speech can be used for search when available and sufficiently reliable. **OPEN-Q-09 remains separate and OPEN** for the extraction method and its accuracy challenges.
+- **Boundary at the time of this entry:** OPEN-Q-08 only defines that extracted speech can be used for search when available and sufficiently reliable. OPEN-Q-09 was then still open; it was subsequently closed for documentation only in its separate decision later on 2026-10-28. The two decisions remain separate, and extraction implementation is unverified.
 - **Verification:** no claim that indexing, transcription, semantic search, tests, build, or runtime have been implemented or verified. Stage 5 remains OPEN; no Stage 5.3/Stage 6. SEC-06 and server-side upload enforcement remain unverified.
 - **Full specification:** `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
 
@@ -3214,3 +3214,32 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only.
 - SEC-06, upload enforcement, route behavior, permissions, report workflow, tests, build, and runtime remain UNVERIFIED.
 - This entry records product policy only; implementation and release readiness are not implied.
+
+
+---
+
+## DECISION-5B.28 — Route Inventory Boundaries and Unavailable States — ACCEPTED — 2026-10-29
+
+- **Authority:** Hamdan directed continuation of documentation work before Stage 5 closure and explicitly deferred execution-related work until documentation is complete.
+- **Scope:** Product/documentation classification of route inventory gaps; no app-code/database change or technical verification.
+- **Admin:** `/admin` is the only product-level admin route established for Stage 5. Do not invent product-level subroute names. Actual internal route structure and authorization enforcement remain for a separately authorized technical review.
+- **Privacy/legal:** Stage 5 does not approve standalone `/privacy`, `/terms`, or `/rights` routes by inference. `/settings` and `/help` remain the accepted product surfaces. Legal obligations and any required disclosures remain a separate legal-scope review; this decision does not waive them.
+- **Reporting:** No standalone public `/report` route is approved; follow DECISION-5B.26's Help/reaction-menu workflow and launch gate.
+- **Unavailable links:** Invalid/unavailable reaction codes use an unavailable/not-found state within `/r/[code]`; unknown app paths use the general not-found state. Do not render fake empty details or expose internal moderation notes. Default concise copy may be «هذا الرياكشن غير متاح».
+- **Still unverified:** actual admin route tree, HTTP status/SEO/crawl behavior, permission enforcement, report workflow, route rendering, tests/build/runtime.
+- **Stage boundary:** Stage 5 remains OPEN pending documentation closeout review and Hamdan's explicit decision. No Stage 5.3/Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only.
+- **Full decision:** `canonical/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
+
+
+---
+
+## 2026-10-29 — Stage 5 Documentation Closeout Checklist — Cross-reference review completed; awaiting founder closure decision
+
+- أُضيفت مسودة `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-CHECKLIST.md` ضمن PR #19 لتجميع بوابات الإغلاق التوثيقية، والقرارات الكانونية، والاستثناءات والمؤجلات، وحدود التحقق التقني.
+- الحالة: IN PROGRESS؛ لا تُغلق Stage 5 من القائمة وحدها. يلزم تدقيق اتساق نهائي ثم توصية واضحة وموافقة حمدان الصريحة.
+- لا تنفيذ أو فحص تقني في هذا العمل. SEC-06 والمسارات الفعلية والصلاحيات والإبلاغ والاختبارات والبناء ووقت التشغيل تبقى UNVERIFIED حتى يكتمل التوثيق ويصدر تكليف منفصل.
+- مرجع العمل: PR #19 — https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/19.
+
+- Cross-reference review checked Stage 5 decisions through DECISION-5B.28, roadmap, inventory, deferred/cancelled register, and the separate OPEN-Q-08/OPEN-Q-09 decisions. Corrected stale OPEN-Q-09 wording in the OPEN-Q-08 document and updated the Stage 5-B status label to DECISION-5B.28.
+- The submission discussion source was confirmed on `hamdanaltawaf-cpu-patch-1`; it was not found on `main`. It remains on that branch under the earlier scope boundary and was not merged or relocated by this work.
+- Current documentation review outcome: ready to present for an explicit documentation-only closure decision; Stage 5 remains OPEN until Hamdan decides.

@@ -49,6 +49,17 @@
 
 Source: `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 
+## UPDATE 2026-10-29 — DECISION-5B.28 — Route Inventory Boundaries — ACCEPTED
+
+- Stage 5 product inventory does not approve invented admin subroutes or standalone `/privacy`, `/terms`, `/rights`, or `/report` routes.
+- `/admin` remains the product-level admin umbrella; exact internal route structure belongs to a separately authorized technical review.
+- `/settings` and `/help` remain the accepted settings/help surfaces. Legal obligations and any future legal disclosures remain a separate legal-scope review; this decision does not waive them.
+- Invalid/unavailable reaction codes use an unavailable/not-found state within `/r/[code]`, not a new product route. Unknown app paths use a general not-found state; no misleading empty detail or internal moderation disclosure.
+- HTTP status, SEO/crawl behavior, actual route tree, permissions, and rendering remain unverified.
+- Stage 5 remains OPEN. This decision is documentation/product scope only; no Stage 5.3, Stage 6, app code, database, tests, or build.
+
+Source: `canonical/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
+
 ---
 
 ### 1. Brand Truth — LOCKED
