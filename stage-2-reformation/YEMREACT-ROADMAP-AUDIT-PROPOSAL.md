@@ -141,6 +141,7 @@
 9. [PR #13 — OPEN-Q-08 documentation](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/13) و[PR #14 — OPEN-Q-09 Arabic documentation](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/14) — توثيق القرارات ومراجعها، لا دليل تنفيذ تقني.
 
 - [DECISION-5B.27 — Remaining UX Details](../canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md) — حسم دعوات التسجيل والترويسة وعرض المجموعات ونص المساعدة العربي.
+- [DECISION-5B.28 — Route and Not-Found Boundaries](../canonical/DECISION-5B.28-ROUTE-AND-NOT-FOUND-BOUNDARIES.md) — حدود صفحات السياسات، ورسائل not-found/الرياكشن غير المتاح، وعدم اعتماد مسارات إدارة فرعية في Stage 5.
 
 ### سجل نقاش صفحة الإرسال — مصدر لتتبع الحوار لا مرجع كانوني
 - [reaction-submission-discussion.md](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/blob/hamdanaltawaf-cpu-patch-1/docs/product/discussions/reaction-submission-discussion.md) — سجل النقاش الذي أُغلق بتاريخ 2026-10-24 على مستوى قرارات المنتج والتوثيق الخاص بصفحة الإرسال فقط. راجع [Commit الإغلاق `aad45e5086df50d726c7d7b8f214842c9f887450`](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/commit/aad45e5086df50d726c7d7b8f214842c9f887450). يحتفظ السجل بالإجابات التاريخية والتصحيحات؛ ولا يعني إغلاقه أن قراراته أُدمجت في الملفات الكانونية أو أن الصفحة نُفذت أو اختُبرت. تبقى بوابات الجاهزية التقنية غير متحققة.
