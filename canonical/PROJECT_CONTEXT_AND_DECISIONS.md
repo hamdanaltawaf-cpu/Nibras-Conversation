@@ -623,3 +623,12 @@ Accepted policy: render an empty state only after a successful load confirms no 
 - لا تُختار تقنية أو خدمة أو نموذج في هذه المرحلة. عدم التكلفة والخصوصية شرطان، وليس هناك ادعاء بتحقيقهما تقنيًا.
 - OPEN-Q-09 مغلق لأغراض التوثيق فقط؛ لا يعني ذلك التنفيذ أو الاختبار. Stage 5 ما تزال OPEN، ولا تُنشأ Stage 5.3 ولا يبدأ Stage 6. OPEN-Q-08 مستقل، وحدود SEC-06 وفرض الصلاحيات والمسارات والاختبارات والبناء والتشغيل لم تتغير.
 
+
+
+## UPDATE 2026-10-29 — DECISION-5B.28 — Route Inventory Boundaries
+
+- Product/documentation scope is now explicit: `/admin` is the only approved product-level admin route; do not invent internal admin route names in Stage 5.
+- No standalone `/privacy`, `/terms`, `/rights`, or `/report` route is approved by Stage 5. `/settings` and `/help` remain the accepted settings/help surfaces. Legal obligations and any required disclosures remain for a separate legal-scope review; this does not waive them.
+- Invalid/unavailable reaction codes are handled as an unavailable/not-found state inside `/r/[code]`; unknown application paths use the general not-found state. Do not show fake empty details or internal moderation notes.
+- Actual admin route structure, HTTP status/SEO behavior, permissions, and application rendering remain unverified for a separately authorized technical review.
+- Documentation-only decision; Stage 5 remains OPEN, no Stage 5.3/Stage 6, and no implementation work is authorized by this update.
