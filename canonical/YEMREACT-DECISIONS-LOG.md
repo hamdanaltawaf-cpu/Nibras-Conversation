@@ -3228,3 +3228,17 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - **Status boundary:** Stage 5 remains OPEN until the full page/flow/state inventory and explicit documentation-closure record are complete. No Stage 5.3 or Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. Implementation, HTTP status behavior, tests, build, and runtime remain unverified.
 - **Canonical detail:** \`canonical/DECISION-5B.28-ROUTE-AND-NOT-FOUND-BOUNDARIES.md\`.
 
+---
+
+## DECISION-5B.29 — Empty and Error State Copy — ACCEPTED — 2026-10-29
+
+- **Authority:** Delegated resolution of remaining Stage 5 documentation questions; roadmap and change log are kept synchronized after each work item.
+- **Scope:** Product/content policy only. This decision does not prove implementation or authorize code changes.
+- **General rules:** Loading, empty, error, permission-denied, and success remain distinct. Empty state only follows a successful load confirming no displayable items. A failure is never shown as an empty list.
+- **Approved initial copy:** The canonical decision defines Arabic empty/failure copy for the Library, Search, Collections list, and Collection detail, including retry actions for recoverable read failures.
+- **Optional sections:** Related/discovery sections are omitted when a successful response returns no items; failed requests are not treated as empty. No visible count for related/random items.
+- **Existing decisions preserved:** DECISION-5B.25 remains authoritative for Saved/My Contributions; DECISION-5B.28 remains authoritative for policy-route and not-found/unavailable-reaction boundaries; DECISION-5B.23 governs numeric display; OPEN-Q-08 governs search quality.
+- **Deferred:** Exact messages for upload validation, authentication cancellation, media playback, save failure, and ambiguous network outcomes remain within their relevant flow decisions or need separate documentation.
+- **Stage boundary:** Stage 5 remains OPEN until the complete documentation inventory and explicit documentation-closure record are complete. No Stage 5.3 or Stage 6. No app code/database changes, tests, build, or runtime verification.
+- **Canonical detail:** \`canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md\`.
+
