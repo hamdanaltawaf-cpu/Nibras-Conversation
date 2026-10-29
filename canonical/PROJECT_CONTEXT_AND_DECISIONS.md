@@ -1,7 +1,7 @@
 # YemReact — ملف السياق والقرارات المرجعي
 > هذا الملف هو المرجع الحي الوحيد للمحادثة الحالية فقط (منذ بدايتها مع نِبراس حتى الآن). لا يحتوي على أي معلومات من محادثات كلود السابقة إلا إذا تم تأكيدها صراحة هنا. يتم تحديثه بعد كل قرار مهم.
 
-**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-29 — DECISION-5B.28 route boundaries + OPEN-Q-08/09 closed for documentation; Stage 5 remains OPEN; technical gates unverified
+**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-29 — DECISION-5B.28 route boundaries + Stage 5 CLOSED FOR DOCUMENTATION ONLY; OPEN-Q-08/09 closed for documentation; technical gates unverified
 **الحالة العامة:** مرحلة DISCUSSION — تحليل وهوية وتخطيط، لا كود ولا تنفيذ UI
 **المدير التنفيذي:** نِبراس | **شريك النقاش:** أرينا | **مهندس التنفيذ (لاحقًا):** أرينا كود | **حلقة الوصل:** المستخدم
 **آلية العمل الجديدة:** نقاش متناوب — نِبراس يناقش مع المستخدم مرة، ثم مع أرينا مرة، ثم يعود للمستخدم — حتى حسم كل محور.
@@ -632,3 +632,12 @@ Accepted policy: render an empty state only after a successful load confirms no 
 - Invalid/unavailable reaction codes are handled as an unavailable/not-found state inside `/r/[code]`; unknown application paths use the general not-found state. Do not show fake empty details or internal moderation notes.
 - Actual admin route structure, HTTP status/SEO behavior, permissions, and application rendering remain unverified for a separately authorized technical review.
 - Documentation-only decision; Stage 5 remains OPEN, no Stage 5.3/Stage 6, and no implementation work is authorized by this update.
+
+
+## UPDATE 2026-10-29 — Stage 5 Documentation-Only Closure
+
+- Stage 5 is closed for documentation only after the route inventory and cross-reference checklist were reviewed and Hamdan explicitly directed this closure scope.
+- Record: `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`. The closure does not imply implementation, tests, security review, build, runtime, or release readiness.
+- The submission-discussion source remains on `hamdanaltawaf-cpu-patch-1` under its earlier scope restriction; it was not merged or relocated by this closure.
+- C-01 remains cancelled; P-20 #6 remains deferred without reassignment. Legal obligations remain a separate scope. No Stage 5.3, Stage 6, or Stage 9 is created/started.
+- Technical implementation and verification remain UNVERIFIED and require a separate explicit task after documentation is complete.
