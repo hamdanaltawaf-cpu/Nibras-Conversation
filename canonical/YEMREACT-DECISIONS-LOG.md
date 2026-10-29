@@ -3214,3 +3214,31 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only.
 - SEC-06, upload enforcement, route behavior, permissions, report workflow, tests, build, and runtime remain UNVERIFIED.
 - This entry records product policy only; implementation and release readiness are not implied.
+
+---
+
+## DECISION-5B.28 — Route and Not-Found Boundaries — ACCEPTED — 2026-10-29
+
+- **Authority:** Delegated task to resolve the remaining Stage 5 documentation questions and keep the roadmap/change log synchronized after each work item.
+- **Scope:** Product/IA documentation only; no application or database implementation.
+- **Policy pages:** Stage 5 adds no standalone \`/privacy\`, \`/terms\`, or \`/rights\` routes. A privacy/rights link may appear only when it leads to a real approved policy destination. Policy content and whether a dedicated destination is needed are deferred to a separate scoped decision.
+- **Not-found UX:** Unknown public pages use «الصفحة غير موجودة»; unknown/unpublished/unavailable public reactions use «الرياكشن غير متاح». Supporting text: «يمكنك العودة للمكتبة أو البحث عن رياكشن آخر.» Primary action returns to \`/\`; secondary action uses \`/?q=\`. Do not expose private publication/moderation state or silently redirect to unrelated content.
+- **Admin IA:** \`/admin\` remains the only admin entry route established at this level. Content/reaction management, submission review, collections, reports, speech extraction, and permissions are functional areas; no separate admin subroutes are accepted in Stage 5.
+- **Alternatives rejected:** Invented policy routes; treating historical HTTP 404 records as a full UX decision; exposing private moderation state; silently redirecting to unrelated content; treating historical \`/admin/*\` wildcards as product routes.
+- **Status boundary:** Stage 5 remains OPEN until the full page/flow/state inventory and explicit documentation-closure record are complete. No Stage 5.3 or Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. Implementation, HTTP status behavior, tests, build, and runtime remain unverified.
+- **Canonical detail:** \`canonical/DECISION-5B.28-ROUTE-AND-NOT-FOUND-BOUNDARIES.md\`.
+
+---
+
+## DECISION-5B.29 — Empty and Error State Copy — ACCEPTED — 2026-10-29
+
+- **Authority:** Delegated resolution of remaining Stage 5 documentation questions; roadmap and change log are kept synchronized after each work item.
+- **Scope:** Product/content policy only. This decision does not prove implementation or authorize code changes.
+- **General rules:** Loading, empty, error, permission-denied, and success remain distinct. Empty state only follows a successful load confirming no displayable items. A failure is never shown as an empty list.
+- **Approved initial copy:** The canonical decision defines Arabic empty/failure copy for the Library, Search, Collections list, and Collection detail, including retry actions for recoverable read failures.
+- **Optional sections:** Related/discovery sections are omitted when a successful response returns no items; failed requests are not treated as empty. No visible count for related/random items.
+- **Existing decisions preserved:** DECISION-5B.25 remains authoritative for Saved/My Contributions; DECISION-5B.28 remains authoritative for policy-route and not-found/unavailable-reaction boundaries; DECISION-5B.23 governs numeric display; OPEN-Q-08 governs search quality.
+- **Deferred:** Exact messages for upload validation, authentication cancellation, media playback, save failure, and ambiguous network outcomes remain within their relevant flow decisions or need separate documentation.
+- **Stage boundary:** Stage 5 remains OPEN until the complete documentation inventory and explicit documentation-closure record are complete. No Stage 5.3 or Stage 6. No app code/database changes, tests, build, or runtime verification.
+- **Canonical detail:** \`canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md\`.
+

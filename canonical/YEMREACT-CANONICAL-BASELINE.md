@@ -51,6 +51,33 @@ Source: `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 
 ---
 
+## UPDATE 2026-10-29 — DECISION-5B.28 — Route and Not-Found Boundaries — ACCEPTED
+
+**Status:** ACCEPTED — product/IA documentation only; no implementation or test claim.
+
+- **Policy routes:** Stage 5 does not introduce standalone `/privacy`, `/terms`, or `/rights` routes. Do not show a privacy/rights link unless it points to a real approved policy destination. Policy content and the need for a dedicated destination are deferred to a separately scoped decision.
+- **Not-found / unavailable reaction:** Use generic Arabic messages: «الصفحة غير موجودة» for an unknown page and «الرياكشن غير متاح» for an unavailable reaction; supporting text «يمكنك العودة للمكتبة أو البحث عن رياكشن آخر.» Primary action returns to `/`; secondary action uses the approved library search entry point `/?q=`. Do not disclose private moderation/publication state or silently redirect to unrelated content.
+- **Admin routes:** `/admin` remains the only admin entry route established here. Reaction/content management, submission review, collections, reports, speech extraction, and permissions are functional areas, not automatically separate routes. No admin subroute names are accepted in Stage 5.
+- **Governance:** Stage 5 remains OPEN pending the full documentation inventory and an explicit documentation-closure record. No Stage 5.3 or Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. Routing implementation, HTTP status behavior, permissions, tests, build, and runtime remain unverified.
+
+Source: `canonical/DECISION-5B.28-ROUTE-AND-NOT-FOUND-BOUNDARIES.md`.
+
+---
+
+## UPDATE 2026-10-29 — DECISION-5B.29 — Empty and Error State Copy — ACCEPTED
+
+**Status:** ACCEPTED — product/content policy only; no implementation or test claim.
+
+- Loading, empty, error, permission-denied, and success states remain distinct. Empty states appear only after successful confirmation that no displayable items exist.
+- Initial Arabic copy is defined for empty/failure states of the Library, Search, Collections list, and Collection detail in `canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
+- Optional related/discovery sections are omitted when a successful response contains no items; failed requests are not treated as empty results. No visible related/random item counts.
+- DECISION-5B.25 remains authoritative for Saved and My Contributions. Existing route/not-found copy remains governed by DECISION-5B.28.
+- Stage 5 remains OPEN pending the complete documentation inventory and explicit closure record. No Stage 5.3 or Stage 6. Implementation, tests, build, and runtime remain unverified.
+
+Source: `canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
+
+---
+
 ### 1. Brand Truth — LOCKED
 
 | # | What | Status | Why considered resolved | Source(s) | Confidence | Type |
