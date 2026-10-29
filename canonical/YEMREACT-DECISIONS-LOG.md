@@ -3233,9 +3233,13 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 
 ---
 
-## 2026-10-29 — Stage 5 Documentation Closeout Checklist — DRAFT
+## 2026-10-29 — Stage 5 Documentation Closeout Checklist — Cross-reference review completed; awaiting founder closure decision
 
 - أُضيفت مسودة `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-CHECKLIST.md` ضمن PR #19 لتجميع بوابات الإغلاق التوثيقية، والقرارات الكانونية، والاستثناءات والمؤجلات، وحدود التحقق التقني.
 - الحالة: IN PROGRESS؛ لا تُغلق Stage 5 من القائمة وحدها. يلزم تدقيق اتساق نهائي ثم توصية واضحة وموافقة حمدان الصريحة.
 - لا تنفيذ أو فحص تقني في هذا العمل. SEC-06 والمسارات الفعلية والصلاحيات والإبلاغ والاختبارات والبناء ووقت التشغيل تبقى UNVERIFIED حتى يكتمل التوثيق ويصدر تكليف منفصل.
 - مرجع العمل: PR #19 — https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/19.
+
+- Cross-reference review checked Stage 5 decisions through DECISION-5B.28, roadmap, inventory, deferred/cancelled register, and the separate OPEN-Q-08/OPEN-Q-09 decisions. Corrected stale OPEN-Q-09 wording in the OPEN-Q-08 document and updated the Stage 5-B status label to DECISION-5B.28.
+- The submission discussion source was confirmed on `hamdanaltawaf-cpu-patch-1`; it was not found on `main`. It remains on that branch under the earlier scope boundary and was not merged or relocated by this work.
+- Current documentation review outcome: ready to present for an explicit documentation-only closure decision; Stage 5 remains OPEN until Hamdan decides.
