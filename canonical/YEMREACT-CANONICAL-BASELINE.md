@@ -1,4 +1,4 @@
-# YEMREACT-CANONICAL-BASELINE.md — Phase 1C+2A+Stage2+Stage3+Stage4 — Canonical Knowledge Baseline — Stage 3 CLOSED — **Stage 4 CLOSED 100%** — **Stage 4R — Identity Compression — DECISION-4R01 2026-10-02** — **C-02 Search Nature — DECISION-C02 2026-10-09** — **Stage 5 / 5.1 Search Route CLOSED — DECISION-5.1 2026-10-09** — Stage 5 OPEN — Stage 5.2 (المرحلة 5.2) CLOSED — إغلاق توثيقي بموافقة المؤسس 2026-10-11 — C-01 تعريف المحتوى اليمني (Content Axis) — أُلغي كموضوع نشط 2026-10-12؛ لا يوجد موضوع تالٍ معيّن — P-20 #6 ما يزال مؤجلًا بلا وجهة جديدة — لا يعني الإغلاق تنفيذًا أو تحققًا برمجيًا
+# YEMREACT-CANONICAL-BASELINE.md — Phase 1C+2A+Stage2+Stage3+Stage4 — Canonical Knowledge Baseline — Stage 3 CLOSED — **Stage 4 CLOSED 100%** — **Stage 4R — Identity Compression — DECISION-4R01 2026-10-02** — **C-02 Search Nature — DECISION-C02 2026-10-09** — **Stage 5 / 5.1 Search Route CLOSED — DECISION-5.1 2026-10-09** — Stage 5 CLOSED FOR DOCUMENTATION ONLY — 2026-10-29 — Stage 5.2 (المرحلة 5.2) CLOSED — إغلاق توثيقي بموافقة المؤسس 2026-10-11 — C-01 تعريف المحتوى اليمني (Content Axis) — أُلغي كموضوع نشط 2026-10-12؛ لا يوجد موضوع تالٍ معيّن — P-20 #6 ما يزال مؤجلًا بلا وجهة جديدة — لا يعني الإغلاق تنفيذًا أو تحققًا برمجيًا
 
 > Only facts/decisions that are CONFIRMED / ACCEPTED / CURRENT or resolved with very clear evidence. No guessing.
 > Sources: 12 original + 6 audit files from Phase 1A/1B + DECISION-001 to 015 Stage1-3 2026-09-14 + DECISION-I01 Stage4 2026-09-21 + DECISION-I02 Stage4 2026-09-23 + DECISION-I03 Stage4 2026-09-23 + DECISION-I05 Stage4 2026-09-24 Watermark DEFERRED + DECISION-I06 Stage4 2026-09-24 Reaction Card + DECISION-I04 Stage4 2026-09-25 Typography System + DECISION-I07 Stage4 2026-09-25 PD-I07 Closed + DECISION-I08 Stage4 2026-09-25 Light/Dark + Soft Depth + DECISION-I09 Stage4 2026-09-26 Motion Language + DECISION-I10 Stage4 2026-09-30 UI Visual Language Studio Seal — Stage 2 CLOSED — Stage 3 CLOSED — PD-04 CLOSED — PD-05 CLOSED — PD-07 CLOSED — PD-08 CLOSED — PD-09 CLOSED — PD-10 CLOSED — PD-06 SKIPPED (حُسم في DECISION-007) — CONFLICT-009 CLOSED — CONFLICT-021 CLOSED — Stage 4 OPEN PD-I01 CLOSED PD-I02 CLOSED PD-I03 CLOSED PD-I05 DEFERRED PD-I06 CLOSED Brand Direction الختم — CONFLICT-019 partially resolved — Watermark مُجمّد per DECISION-I05
@@ -59,6 +59,14 @@ Source: `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 - Stage 5 remains OPEN. This decision is documentation/product scope only; no Stage 5.3, Stage 6, app code, database, tests, or build.
 
 Source: `canonical/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
+
+## UPDATE 2026-10-29 — Stage 5 Documentation-Only Closure
+
+- Stage 5 is closed for documentation only after the cross-reference review and Hamdan's explicit direction.
+- The page/flow inventory, route boundaries, current decisions, deferred/cancelled register, and closeout checklist are recorded in the roadmap and `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`.
+- This does not prove implementation, tests, build, runtime, security, or release readiness. SEC-06 and technical gates remain unverified. No Stage 5.3 or Stage 6 is created.
+
+Source: `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`.
 
 ---
 
