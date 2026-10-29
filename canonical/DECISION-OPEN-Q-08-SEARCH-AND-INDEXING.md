@@ -3,7 +3,7 @@
 **Status:** ACCEPTED — resolved by delegated review authority on 2026-10-28  
 **Scope:** Search retrieval, indexing inputs, derived-data governance, normalization, ranking, no-result handling, and quality evaluation. Product/search policy only; not implementation evidence.  
 **Authority:** Founder explicitly delegated review authority and authorized recording the decision, updating canonical files, and merging the PR after review.  
-**Related open item:** OPEN-Q-09 — automatic speech extraction from video — remains separate and OPEN.
+**Related item:** OPEN-Q-09 — automatic speech extraction from video — remains separate from OPEN-Q-08 and is CLOSED FOR DOCUMENTATION only in its own canonical decision; implementation remains unverified.
 
 ## Decision summary
 
@@ -92,13 +92,13 @@ Test each retrieval method separately and then test the hybrid system. This deci
 
 OPEN-Q-08 defines that extracted speech may be used as a search source **when it is available and sufficiently reliable**. It does not choose, require, implement, or certify a video speech-extraction technology.
 
-OPEN-Q-09 remains separate and OPEN for deciding how speech is extracted from video and how accuracy issues such as Yemeni dialect, noise, music, and overlapping voices are handled.
+OPEN-Q-09 remains separate and CLOSED FOR DOCUMENTATION only in its own canonical document; its extraction method and accuracy challenges remain policy requirements, not verified implementation.
 
 ## 8. Closure and verification boundary
 
 This decision resolves the product/design question OPEN-Q-08 for documentation purposes. It does not mean search indexing, transcription, semantic retrieval, ranking, analytics, or evaluation tooling has been implemented, tested, or verified.
 
-Stage 5 remains OPEN. Do not create Stage 5.3 or start Stage 6. OPEN-Q-09 remains OPEN. SEC-06, server-side upload enforcement, route behavior, tests, builds, and runtime remain unverified unless separately verified.
+Stage 5 remains OPEN. Do not create Stage 5.3 or start Stage 6. OPEN-Q-09 is closed for documentation only in its separate document; this does not verify extraction implementation. SEC-06, server-side upload enforcement, route behavior, tests, builds, and runtime remain unverified unless separately verified.
 
 ## Review outcome
 
