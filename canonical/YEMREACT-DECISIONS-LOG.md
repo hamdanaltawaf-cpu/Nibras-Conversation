@@ -3243,3 +3243,16 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - Cross-reference review checked Stage 5 decisions through DECISION-5B.28, roadmap, inventory, deferred/cancelled register, and the separate OPEN-Q-08/OPEN-Q-09 decisions. Corrected stale OPEN-Q-09 wording in the OPEN-Q-08 document and updated the Stage 5-B status label to DECISION-5B.28.
 - The submission discussion source was confirmed on `hamdanaltawaf-cpu-patch-1`; it was not found on `main`. It remains on that branch under the earlier scope boundary and was not merged or relocated by this work.
 - Current documentation review outcome: ready to present for an explicit documentation-only closure decision; Stage 5 remains OPEN until Hamdan decides.
+
+
+---
+
+## 2026-10-29 — Stage 5 CLOSED FOR DOCUMENTATION ONLY
+
+- **Authority:** Hamdan explicitly directed documentation-only closure after asking that the next recommended documentation step be completed first and that implementation remain deferred until documentation is complete.
+- **Evidence:** Cross-reference review and checklist recorded in `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-CHECKLIST.md`; closure record in `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`.
+- **Scope:** Stage 5 product/IA/navigation documentation only. Stage 5.1 and 5.2 remain historically closed within their own scopes; Stage 5 overall is now closed for documentation only.
+- **Decision set:** DECISION-5B.19–.28 documented; OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. C-01 remains cancelled; P-20 #6 remains deferred without reassignment.
+- **Exception retained:** The submission-discussion source remains on `hamdanaltawaf-cpu-patch-1` under the earlier scope restriction and was not merged or relocated.
+- **Unverified:** SEC-06, actual route behavior, permissions, guest-save reconciliation, report workflow, speech extraction, tests, build, runtime, and release readiness. No implementation was performed.
+- **Stage boundary:** No Stage 5.3, Stage 6, or Stage 9 is created or started. Any technical task requires separate explicit authorization.
