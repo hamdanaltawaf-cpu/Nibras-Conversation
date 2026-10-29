@@ -64,6 +64,20 @@ Source: `canonical/DECISION-5B.28-ROUTE-AND-NOT-FOUND-BOUNDARIES.md`.
 
 ---
 
+## UPDATE 2026-10-29 — DECISION-5B.29 — Empty and Error State Copy — ACCEPTED
+
+**Status:** ACCEPTED — product/content policy only; no implementation or test claim.
+
+- Loading, empty, error, permission-denied, and success states remain distinct. Empty states appear only after successful confirmation that no displayable items exist.
+- Initial Arabic copy is defined for empty/failure states of the Library, Search, Collections list, and Collection detail in `canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
+- Optional related/discovery sections are omitted when a successful response contains no items; failed requests are not treated as empty results. No visible related/random item counts.
+- DECISION-5B.25 remains authoritative for Saved and My Contributions. Existing route/not-found copy remains governed by DECISION-5B.28.
+- Stage 5 remains OPEN pending the complete documentation inventory and explicit closure record. No Stage 5.3 or Stage 6. Implementation, tests, build, and runtime remain unverified.
+
+Source: `canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
+
+---
+
 ### 1. Brand Truth — LOCKED
 
 | # | What | Status | Why considered resolved | Source(s) | Confidence | Type |
