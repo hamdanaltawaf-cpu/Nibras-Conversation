@@ -1,7 +1,7 @@
 # YemReact — ملف السياق والقرارات المرجعي
 > هذا الملف هو المرجع الحي الوحيد للمحادثة الحالية فقط (منذ بدايتها مع نِبراس حتى الآن). لا يحتوي على أي معلومات من محادثات كلود السابقة إلا إذا تم تأكيدها صراحة هنا. يتم تحديثه بعد كل قرار مهم.
 
-**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-28 — DECISION-5B.19/.20 + OPEN-Q-08 closed for documentation + OPEN-Q-09 closed for documentation; Stage 5 remains OPEN; technical gates unverified
+**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-29 — DECISION-5B.28 route boundaries + OPEN-Q-08/09 closed for documentation; Stage 5 remains OPEN; technical gates unverified
 **الحالة العامة:** مرحلة DISCUSSION — تحليل وهوية وتخطيط، لا كود ولا تنفيذ UI
 **المدير التنفيذي:** نِبراس | **شريك النقاش:** أرينا | **مهندس التنفيذ (لاحقًا):** أرينا كود | **حلقة الوصل:** المستخدم
 **آلية العمل الجديدة:** نقاش متناوب — نِبراس يناقش مع المستخدم مرة، ثم مع أرينا مرة، ثم يعود للمستخدم — حتى حسم كل محور.
@@ -607,7 +607,7 @@ Accepted policy: render an empty state only after a successful load confirms no 
 - Use composite ranking based on relevance and reliability. Trustworthy direct text has strong priority; semantic results may overtake only when evaluation shows they are clearly closer. Do not set numeric weights before representative testing.
 - Handle weak/no results honestly. Use failed queries for privacy-conscious evaluation of indexing gaps, not arbitrary automatic keyword additions.
 - Evaluate exact embedded speech, spelling/dialect variants, title/character queries, semantically equivalent wording, no-match queries, and shared phrases. Measure first-result success, ranking quality, misleading results, and semantic-search impact.
-- OPEN-Q-08 only allows extracted speech to be used as a search source when available and sufficiently reliable. OPEN-Q-09 remains separate and OPEN for video speech extraction.
+- At the time of the OPEN-Q-08 update, OPEN-Q-09 was still open; it was subsequently documented and closed for documentation only in its own separate decision on 2026-10-28. The two decisions remain separate; extraction implementation remains unverified.
 - Product policy only; no implementation/test/build/runtime claim. Stage 5 remains OPEN; no Stage 5.3/Stage 6. SEC-06 and server-side upload enforcement remain unverified.
 - Full specification: `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
 
