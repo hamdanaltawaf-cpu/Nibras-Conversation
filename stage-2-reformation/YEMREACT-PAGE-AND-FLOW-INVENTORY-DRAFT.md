@@ -146,5 +146,6 @@
 - `canonical/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md` — حالات المحفوظات و«مساهماتي».
 - `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md` — سياسة المساعدة والإبلاغ.
 - `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md` — حسم دعوات التسجيل والترويسة وعرض المجموعات ونص المساعدة العربي.
+- `canonical/DECISION-5B.28-ROUTE-AND-NOT-FOUND-BOUNDARIES.md` — حسم حدود مسارات السياسات، ورسائل الرابط/الرياكشن غير المتاح، ونطاق مسارات الإدارة.
 
 **ملاحظة المصادر:** لم يُفحص مستودع التطبيق أو قاعدة البيانات في إعداد هذه المسودة. أسماء المسارات غير المثبتة موسومة UNKNOWN/OPEN عمدًا ولا ينبغي تحويلها إلى قرارات.
