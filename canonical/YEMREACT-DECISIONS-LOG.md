@@ -3214,3 +3214,17 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only.
 - SEC-06, upload enforcement, route behavior, permissions, report workflow, tests, build, and runtime remain UNVERIFIED.
 - This entry records product policy only; implementation and release readiness are not implied.
+
+---
+
+## DECISION-5B.28 — Route and Not-Found Boundaries — ACCEPTED — 2026-10-29
+
+- **Authority:** Delegated task to resolve the remaining Stage 5 documentation questions and keep the roadmap/change log synchronized after each work item.
+- **Scope:** Product/IA documentation only; no application or database implementation.
+- **Policy pages:** Stage 5 adds no standalone \`/privacy\`, \`/terms\`, or \`/rights\` routes. A privacy/rights link may appear only when it leads to a real approved policy destination. Policy content and whether a dedicated destination is needed are deferred to a separate scoped decision.
+- **Not-found UX:** Unknown public pages use «الصفحة غير موجودة»; unknown/unpublished/unavailable public reactions use «الرياكشن غير متاح». Supporting text: «يمكنك العودة للمكتبة أو البحث عن رياكشن آخر.» Primary action returns to \`/\`; secondary action uses \`/?q=\`. Do not expose private publication/moderation state or silently redirect to unrelated content.
+- **Admin IA:** \`/admin\` remains the only admin entry route established at this level. Content/reaction management, submission review, collections, reports, speech extraction, and permissions are functional areas; no separate admin subroutes are accepted in Stage 5.
+- **Alternatives rejected:** Invented policy routes; treating historical HTTP 404 records as a full UX decision; exposing private moderation state; silently redirecting to unrelated content; treating historical \`/admin/*\` wildcards as product routes.
+- **Status boundary:** Stage 5 remains OPEN until the full page/flow/state inventory and explicit documentation-closure record are complete. No Stage 5.3 or Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. Implementation, HTTP status behavior, tests, build, and runtime remain unverified.
+- **Canonical detail:** \`canonical/DECISION-5B.28-ROUTE-AND-NOT-FOUND-BOUNDARIES.md\`.
+
