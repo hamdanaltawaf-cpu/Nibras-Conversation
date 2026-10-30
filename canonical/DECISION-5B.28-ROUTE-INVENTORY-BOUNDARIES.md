@@ -47,5 +47,18 @@
 - OPEN-Q-08 and OPEN-Q-09 remain separate and CLOSED FOR DOCUMENTATION only.
 - No app code, database, security settings, tests, build, runtime, or release configuration is changed or verified by this decision.
 
+
+## User-facing unavailable/not-found copy clarification — 2026-10-30
+
+The route decision is clarified with the following initial Arabic UX copy, selectively adopted from PR #18 and aligned to the existing route boundaries:
+
+- Unknown application path: «الصفحة غير موجودة».
+- Invalid or unavailable reaction at `/r/[code]`: «الرياكشن غير متاح».
+- Supporting text: «يمكنك العودة للمكتبة أو البحث عن رياكشن آخر.»
+- Primary action: «العودة للمكتبة» → `/`.
+- Secondary action: «البحث في المكتبة» → `/?q=`.
+
+These messages must not disclose moderation, publication, or private review status. Do not silently redirect to unrelated content. HTTP status, metadata, redirects, crawl treatment, and rendering remain technical and UNVERIFIED. This is a copy-level clarification only; it does not create new routes or change the legal-scope boundary.
+
 ## Current status reconciliation — 2026-10-30
 The statement above that Stage 5 remains open pending closeout describes the state at the time this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** under `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`. OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. Actual routes, status codes, SEO/crawl behavior, admin authorization, and legal-scope outcomes remain unverified or assigned to a separate future scope. This addendum does not authorize implementation.
