@@ -621,3 +621,11 @@ Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage
 - **الحالة:** OPEN-Q-09 مغلق لأغراض التوثيق فقط. هذا لا يعني تنفيذ الاستخراج أو اختبار الدقة أو التحقق من الفهرسة أو البناء أو التشغيل.
 - **الحدود وقت تسجيل قرار OPEN-Q-09 (2026-10-28):** كانت Stage 5 ما تزال OPEN آنذاك. وقد سُجل لاحقًا إغلاقها توثيقيًا فقط في 2026-10-29؛ لا تُنشأ Stage 5.3 ولا يبدأ Stage 6. SEC-06، وفرض صلاحيات الخادم، والمسارات، والاختبارات، والبناء، وسلوك التشغيل ما تزال غير متحققة.
 
+
+## CURRENT GOVERNANCE STATUS — 2026-10-30 — Documentation / Execution Boundary
+
+- **Stage 5 documentation:** CLOSED FOR DOCUMENTATION ONLY, per `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md` (2026-10-29), cross-checked on 2026-10-30.
+- **Implementation:** NOT AUTHORIZED by the documentation closeout. No implementation, code changes, database changes, technical audit, test run, build, deployment, or runtime verification is claimed by these records.
+- **Still UNVERIFIED/DEFERRED:** SEC-06 and server-side upload validation; actual route tree and redirects; safe `returnTo` handling; guest-save merge and account isolation; admin/contributor permission enforcement; report persistence and end-to-end workflow; speech extraction technology/accuracy/cost/privacy; keyboard/focus accessibility; tests, build, runtime, and release readiness.
+- **Authorization boundary:** any technical work requires a separate explicit task from Hamdan after the documentation set is complete. An unresolved technical gate is not permission to begin implementation.
+- **Stage control:** no Stage 5.3, Stage 6, or Stage 9 is created or started. Historical entries that say Stage 5 is OPEN describe their dated prior status; the 2026-10-29 closeout record governs the current documentation status.
