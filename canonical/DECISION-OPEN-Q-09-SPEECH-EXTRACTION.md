@@ -154,3 +154,6 @@
 - [x] يجب التعامل بأمان مع الصلاحيات وتعارض التعديلات.
 - [x] عدم التكلفة والخصوصية شرطان؛ ولم تُحدد تقنية بعينها.
 - [x] لم يُدّعَ تنفيذ الميزة أو التحقق منها.
+
+## Current status reconciliation — 2026-10-30
+The statements above that Stage 5 remains open describe the status at the time this decision was recorded; they are retained as historical context. As of 2026-10-30, OPEN-Q-09 is **CLOSED FOR DOCUMENTATION ONLY**, separately from OPEN-Q-08, and Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** under `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`. The extraction technology, accuracy, cost, privacy, operational workflow, and implementation remain unverified/deferred. This addendum does not authorize implementation.
