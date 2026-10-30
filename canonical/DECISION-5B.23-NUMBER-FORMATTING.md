@@ -27,3 +27,6 @@
 Show numbers only when useful and grounded in real data. Do not invent values, duplicate counts, or add social-network metrics. This decision resolves the open Stage 5-B number/count-formatting topic and prohibits visible counts for related/recommended clips.
 
 Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, upload enforcement, routes, tests, build, and runtime remain unverified. This is product policy, not implementation evidence.
+
+## Current status reconciliation — 2026-10-30
+Any statement above that Stage 5 remains open or that OPEN-Q-08/OPEN-Q-09 remain open reflects the state when this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY**; OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. This decision remains accepted product policy; actual formatting behavior is unverified until separately authorized technical verification. No implementation is authorized by this addendum.
