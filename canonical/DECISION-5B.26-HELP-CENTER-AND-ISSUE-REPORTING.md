@@ -74,3 +74,6 @@ The initial Help center may publish its static, accurate FAQ content independent
 - Existing reaction overflow-menu direction that includes **نسخ الرابط** and **إبلاغ** is retained; this decision defines the intended reporting destination/workflow, not proof that it currently works.
 - DECISION-5B.22 remains in force for contributor data visibility and internal moderation notes. This decision does not make reports public or expand contributor visibility.
 - Stage 5 remains OPEN. Do not create Stage 5.3 or start Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and OPEN. SEC-06, server-side upload enforcement, route behavior, tests, builds, runtime, and end-to-end reporting remain unverified unless separately tested.
+
+## Current status reconciliation — 2026-10-30
+Any statement above that Stage 5 remains open or that OPEN-Q-08/OPEN-Q-09 remain open reflects the state when this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY**; OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. The reporting workflow and its persistence, access controls, and end-to-end behavior remain unverified/deferred; do not claim reporting is operational. This addendum does not authorize implementation.
