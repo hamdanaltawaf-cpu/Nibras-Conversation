@@ -45,7 +45,7 @@
 - **Header visual reference:** locked YemReact Brand v1.0 + Qussasa Mark + accepted Stage 5-B responsive navigation. Pinterest is inspiration for the masonry content grid only, not the header/navigation design.
 - **Collections:** admin-curated, explicitly ordered published collection list; compact horizontal strip on the Library before the reaction grid; admin-selected cover or deterministic reaction thumbnail fallback; title and optional description; actual clip count may be shown per DECISION-5B.23; no follower/engagement counts. Signed-in followed collections appear privately in a labelled section at the top of `/collections`; no new route or Account tab.
 - **Help:** initial Arabic copy and content boundaries are defined in DECISION-5B.27. Help text must not claim unverified behavior; reporting must satisfy DECISION-5B.26 before being presented as operational.
-- **Governance:** DECISION-5B.19–5B.26 remain in force. Stage 5 remains OPEN; no Stage 5.3 or Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. SEC-06, app behavior, permissions, reporting, tests, build, and runtime remain unverified.
+- **Governance:** DECISION-5B.19–5B.28 remain in force. Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** as recorded on 2026-10-29; this does not verify implementation. No Stage 5.3 or Stage 6 is created or started. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. SEC-06, app behavior, permissions, reporting, tests, build, and runtime remain unverified.
 
 Source: `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 
@@ -56,7 +56,7 @@ Source: `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 - `/settings` and `/help` remain the accepted settings/help surfaces. Legal obligations and any future legal disclosures remain a separate legal-scope review; this decision does not waive them.
 - Invalid/unavailable reaction codes use an unavailable/not-found state within `/r/[code]`, not a new product route. Unknown app paths use a general not-found state; no misleading empty detail or internal moderation disclosure.
 - HTTP status, SEO/crawl behavior, actual route tree, permissions, and rendering remain unverified.
-- Stage 5 remains OPEN. This decision is documentation/product scope only; no Stage 5.3, Stage 6, app code, database, tests, or build.
+- Stage 5 is CLOSED FOR DOCUMENTATION ONLY per the 2026-10-29 closeout record. This decision is documentation/product scope only; no Stage 5.3, Stage 6, app code, database, tests, or build.
 
 Source: `canonical/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
 
