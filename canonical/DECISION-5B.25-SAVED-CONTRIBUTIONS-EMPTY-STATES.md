@@ -16,3 +16,6 @@ Status: Accepted product policy.
 
 ## Verification boundary
 This is product policy, not evidence of implementation or tests. Stage 5 remains OPEN. Do not create Stage 5.3 or start Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, server-side upload allowlist enforcement, routes, tests, builds, and runtime remain unverified.
+
+## Current status reconciliation — 2026-10-30
+Any statement above that Stage 5 remains open or that OPEN-Q-08/OPEN-Q-09 remain open reflects the state when this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY**; OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. Loading, empty, error, and permission states remain technically unverified/deferred. This addendum does not authorize implementation.
