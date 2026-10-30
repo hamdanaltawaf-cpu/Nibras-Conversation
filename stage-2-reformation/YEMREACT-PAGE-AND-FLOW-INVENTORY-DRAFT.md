@@ -136,3 +136,12 @@
 - `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md` — سجل الإغلاق التوثيقي فقط.
 
 **ملاحظة المصادر:** لم يُفحص مستودع التطبيق أو قاعدة البيانات في إعداد هذه المسودة. مسارات المنتج ضمن نطاق Stage 5 صُنفت في DECISION-5B.28؛ ما بقي UNKNOWN/UNVERIFIED يخص البنية التقنية الفعلية أو المتطلبات القانونية المستقبلية، ولا ينبغي تحويله إلى مسارات أو قرارات غير مسنودة.
+
+## 2026-10-30 — Selective PR #18 content reconciliation
+
+- The initial empty/read-failure copy for Library, Search, Collections list, and Collection detail is now canonical in `DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
+- Saved and My Contributions continue to use DECISION-5B.25; flow-specific upload, authentication, media, save, and report failures remain deferred to their relevant decisions or a separately authorized documentation item.
+- The unavailable/not-found copy clarification is recorded in DECISION-5B.28: unknown path «الصفحة غير موجودة»; unavailable reaction «الرياكشن غير متاح»; return to `/` or search via `/?q=`.
+- The route/flow inventory remains documentation, not proof of implemented states. HTTP status, redirects, permissions, retry mechanics, accessibility, and runtime behavior remain UNVERIFIED.
+- The PR #18 draft's separate DECISION-5B.28 filename was not adopted because that decision number is already occupied by the canonical route-inventory decision on `main`. Its compatible copy-level clarification was incorporated into the existing canonical decision instead.
+- No duplicate decision number, new product route, code change, database change, test, or stage progression was introduced.
