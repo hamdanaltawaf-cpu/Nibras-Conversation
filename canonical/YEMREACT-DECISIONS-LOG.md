@@ -3273,3 +3273,12 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - SEC-06/server-side upload validation, route/redirect and safe return-destination behavior, guest-save merge/account isolation, permission enforcement, reporting persistence, speech extraction feasibility, accessibility, tests, build, runtime, and release readiness remain **UNVERIFIED / DEFERRED**.
 - Any technical work requires a separate explicit task from Hamdan after documentation is complete. Do not infer authorization from the existence of an open gate or a future-stage suggestion.
 - No Stage 5.3, Stage 6, or Stage 9 is created or started. Historical OPEN wording remains as historical record only.
+
+## 2026-10-30 — DECISION-5B.29 — Empty and Error State Copy — ACCEPTED
+
+- **Status:** ACCEPTED — product/content policy only.
+- **Authority:** Selective adoption from PR #18 under Hamdan's explicit authorization to process its documentation content.
+- **Decision:** Initial Arabic empty/read-failure copy and the rules distinguishing successful empty responses from request failures are recorded in `canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
+- **Scope:** Library, search, collections list, collection detail, and optional related/discovery sections. DECISION-5B.25 remains authoritative for Saved and My Contributions.
+- **Boundary:** Flow-specific upload/authentication/media/save/report failures, HTTP behavior, retry mechanics, implementation, and tests are not inferred or verified. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; no implementation or later stage is authorized.
+- **PR source:** PR #18, selectively adopted. PR #18 remains open; no merge or closure was performed.
