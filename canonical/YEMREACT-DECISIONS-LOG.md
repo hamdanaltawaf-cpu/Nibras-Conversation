@@ -3264,3 +3264,12 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - وُجدت صياغات حالية قديمة في الـBaseline والجرد تصف Stage 5 بأنها OPEN وتعرض مراجعة الإغلاق على أنها معلقة، رغم وجود سجل إغلاق 2026-10-29.
 - صُححت الصياغات الحالية لتتفق مع **CLOSED FOR DOCUMENTATION ONLY**. تبقى الصياغات الأقدم في سجل القرارات بوصفها تاريخًا سابقًا، ولا تتقدم على سجل الإغلاق الأحدث.
 - لا يعني هذا تحقق التنفيذ أو الأمان أو الاختبارات أو البناء أو التشغيل. SEC-06 وبقية البوابات التقنية ما تزال UNVERIFIED/DEFERRED. لا Stage 5.3 أو Stage 6، ولا تعديل للتطبيق أو قاعدة البيانات.
+
+
+## UPDATE 2026-10-30 — Stage 5 Documentation / Execution Boundary
+
+- Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** under the 2026-10-29 closeout record; the final consistency audit on 2026-10-30 reconciled the current baseline, roadmap, inventory, and checklist wording.
+- The closeout does not authorize implementation. No app-code/database change, technical audit, tests, build, deployment, or runtime verification is claimed.
+- SEC-06/server-side upload validation, route/redirect and safe return-destination behavior, guest-save merge/account isolation, permission enforcement, reporting persistence, speech extraction feasibility, accessibility, tests, build, runtime, and release readiness remain **UNVERIFIED / DEFERRED**.
+- Any technical work requires a separate explicit task from Hamdan after documentation is complete. Do not infer authorization from the existence of an open gate or a future-stage suggestion.
+- No Stage 5.3, Stage 6, or Stage 9 is created or started. Historical OPEN wording remains as historical record only.
