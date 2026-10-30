@@ -202,3 +202,14 @@
 - Completed the final reference pass and recorded the outcome in `stage-2-reformation/STAGE-5-DOCUMENTATION-COMPLETENESS-AUDIT-2026-10-30.md` and `canonical/YEMREACT-DOCUMENTATION-CHANGELOG-ADDENDUM-2026-10-30.md`.
 - The large `canonical/PROJECT_CONTEXT_AND_DECISIONS.md` remains a historical context record and was not rewritten in place; its older status labels and next-step suggestions are explicitly subordinate to current governing records. This exception does not leave a Stage 5 product decision open.
 - Documentation package for the reviewed Stage 5 product/IA/navigation scope is complete. Technical gates remain UNVERIFIED/DEFERRED; no app or database work is authorized.
+
+### 2026-10-30 — تدقيق طلبات السحب الأربعة ومعالجة PR #18 انتقائيًا
+
+- فُحصت طلبات السحب المفتوحة #18 و#17 و#6 و#2 من حيث الحالة والملفات المتغيرة والفروقات والتعليقات المتاحة.
+- **PR #18:** أُخذت منه انتقائيًا نصوص الحالات الفارغة وأخطاء القراءة في القرار الجديد `DECISION-5B.29`، وأُضيفت صياغة not-found/الرياكشن غير المتاح إلى القرار الموجود `DECISION-5B.28`. لم يُنشأ ملف ثانٍ برقم 5B.28؛ لأن الرقم مستخدم بالفعل في المرجع الكانوني. لم تُعتمد مسودة الإغلاق القديمة أو عبارات Stage 5 المفتوحة التاريخية.
+- **PR #17:** مقترح تاريخي تجاوزته وثيقة الإغلاق التوثيقي الحالية؛ حُفظ دون استيراد أو تغيير حالة.
+- **PR #6:** مصدر نقاش الإرسال وإغلاقه المؤرخ 2026-10-24؛ بقي على فرعه المصرح به دون نقل أو تعديل.
+- **PR #2:** مقترح تاريخي لإغلاق Stage 5-A؛ حُفظ دون استيراد أو تغيير حالة.
+- تم تحديث القرار الكانوني والـBaseline وسجل القرارات وجرد الصفحات وسجل تدقيق اكتمال التوثيق.
+- **حالة الطلبات:** الأربعة ما زالت OPEN وغير مدمجة وغير مغلقة. لم تُجرَ أي عملية تغيير لحالة PR.
+- **حدود العمل:** لا كود أو قاعدة بيانات أو اختبارات أو بناء أو نشر أو تحقق تقني. Stage 5 تبقى CLOSED FOR DOCUMENTATION ONLY؛ ولا Stage 5.3 أو Stage 6 أو Stage 9.
