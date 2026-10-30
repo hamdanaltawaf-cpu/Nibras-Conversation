@@ -629,3 +629,11 @@ Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage
 - **Still UNVERIFIED/DEFERRED:** SEC-06 and server-side upload validation; actual route tree and redirects; safe `returnTo` handling; guest-save merge and account isolation; admin/contributor permission enforcement; report persistence and end-to-end workflow; speech extraction technology/accuracy/cost/privacy; keyboard/focus accessibility; tests, build, runtime, and release readiness.
 - **Authorization boundary:** any technical work requires a separate explicit task from Hamdan after the documentation set is complete. An unresolved technical gate is not permission to begin implementation.
 - **Stage control:** no Stage 5.3, Stage 6, or Stage 9 is created or started. Historical entries that say Stage 5 is OPEN describe their dated prior status; the 2026-10-29 closeout record governs the current documentation status.
+
+## UPDATE 2026-10-30 — DECISION-5B.29 — Empty and Error State Copy
+
+- Initial Arabic copy for empty and recoverable read-failure states is accepted for Library, Search, Collections list, and Collection detail.
+- Empty states are shown only after successful loads; read failures remain distinct. Optional related/discovery sections may be omitted when successfully empty, but failures must not be silently treated as empty.
+- DECISION-5B.25 remains authoritative for Saved and My Contributions. Flow-specific upload/authentication/media/save/report errors remain deferred or governed by their own decisions.
+- This is product/content documentation only. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; implementation and technical behavior remain UNVERIFIED.
+- Source: `canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
