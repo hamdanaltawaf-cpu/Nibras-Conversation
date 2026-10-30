@@ -103,3 +103,6 @@ Stage 5 remains OPEN. Do not create Stage 5.3 or start Stage 6. OPEN-Q-09 is clo
 ## Review outcome
 
 The delegated review found the proposed policy coherent and sufficiently bounded to record: it preserves the product requirement to search for the reaction itself, separates source data from derived data, gives trustworthy direct text strong priority, requires evaluation before numeric tuning, and keeps speech extraction outside this decision. The policy is accepted with the boundaries and verification limits above.
+
+## Current status reconciliation — 2026-10-30
+The OPEN / Stage 5 OPEN wording above records the state when this decision was drafted and accepted on 2026-10-28; it is retained as historical context, not the current state. As of 2026-10-30, OPEN-Q-08 is **CLOSED FOR DOCUMENTATION ONLY** and Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** under the explicit closure record in `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`. OPEN-Q-09 remains a separate decision and is also closed for documentation only in its own document. Search/indexing and speech-extraction implementation, tests, quality, security, and runtime remain unverified/deferred. This addendum does not authorize implementation.
