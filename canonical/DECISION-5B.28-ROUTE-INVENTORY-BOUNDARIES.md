@@ -46,3 +46,6 @@
 - No Stage 5.3 is created and Stage 6 is not started.
 - OPEN-Q-08 and OPEN-Q-09 remain separate and CLOSED FOR DOCUMENTATION only.
 - No app code, database, security settings, tests, build, runtime, or release configuration is changed or verified by this decision.
+
+## Current status reconciliation — 2026-10-30
+The statement above that Stage 5 remains open pending closeout describes the state at the time this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** under `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`. OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. Actual routes, status codes, SEO/crawl behavior, admin authorization, and legal-scope outcomes remain unverified or assigned to a separate future scope. This addendum does not authorize implementation.
