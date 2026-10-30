@@ -34,3 +34,12 @@ Current governing records had already closed Stage 5 for documentation only, but
 
 ### Non-goals
 No application or database changes, technical verification, tests, build, deployment, or release actions were performed or authorized.
+
+## Entry 2026-10-30 — Supplemental review of four open pull requests
+
+- Inspected PR #18, #17, #6, and #2 before any merge/closure decision.
+- Selectively adopted PR #18's empty/read-failure copy as DECISION-5B.29 and incorporated compatible unavailable/not-found copy into the existing DECISION-5B.28. Rejected the duplicate 5B.28 filename/numbering and did not import stale Stage 5-open closure wording.
+- Updated the canonical baseline, decisions log, page/flow inventory, roadmap, and completeness audit.
+- PR #17 remains a historical closure-gate proposal; PR #6 remains the source discussion on its authorized branch; PR #2 remains a historical Stage 5-A proposal.
+- All four PRs remain OPEN and unmerged. No PR lifecycle action was taken.
+- No app/database changes, technical verification, tests, build, deployment, or future-stage work.
