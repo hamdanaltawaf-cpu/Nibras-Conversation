@@ -62,8 +62,7 @@
 
   Theme:
 
-  - نهاري (Day) — افتراضي — Default
-    - Paper فاتح — Ink داكن — Qussasa Mark واضح
+  - نهاري (Day) — خيار متاح؛ اختيار الافتراضي الحالي Auto وفق `DECISION-5B.20`. الصياغة السابقة للـDay default محفوظة في الأرشيف.
 
   - ليلي (Night)
     - Ink داكن خلفية — Paper فاتح نص — Qussasa Mark مضيء
@@ -80,21 +79,12 @@
     - Off: حركة كاملة — Motion Signature 150-200ms ختم/قلب
     - تفاصيل الحركة → PD-I09 Motion
 
-  Settings Modal:
-
-  - موجود — UI: "على ذوقك" — عنوان أنيق بلهجة يمنية
-  - يحتوي:
-    - 3 Accents: كهرماني (افتراضي) + بنفسجي + تيل
-    - Theme: نهاري (افتراضي) + ليلي + تلقائي
-    - Reduce Motion: On/Off
-    - زر "استعادة الإعدادات" — Reset to defaults
-  - Prototype يُظهر Modal — مرجع بصري — ليس نهائي
-  - Topic جديد — Settings Modal — يُفتح لاحقًا — Stage 4/5
+  [أُحيل وصف واجهة الإعدادات القديمة (Modal) إلى الأرشيف؛ المرجع الحالي صفحة إعدادات مستقلة. راجع `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03.]
 
   المرجع البصري — Prototype موقع تجريبي:
 
   - Home: Pinterest-like Masonry — P-08 — Masonry Grid visual only
-  - Settings Modal: 3 accents + theme + motion — "على ذوقك" — استعادة الإعدادات
+  - وصف نموذج Settings Modal السابق أُحيل إلى أرشيف النصوص المستبدلة؛ لا يُعد نمط العرض الحالي.
   - Qussasa Mark في Header — B-04 ACCEPTED — 16-512px
   - Captions بلهجة يمنية — P-35 Content Art Direction — قصيرة بلهجة يمنية
   - Flat Saves (Bookmark) — P-07 Flat Saves — Bookmark icon
