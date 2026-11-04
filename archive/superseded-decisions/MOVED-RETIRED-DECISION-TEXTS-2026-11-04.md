@@ -286,3 +286,12 @@ The earlier five-item mobile navigation in DECISION-I10 is historical for the af
 ## stale C01
 
 - **Next topic:** **C-01 — تعريف المحتوى اليمني (Content Axis)**. The deferred P-20 criterion #6 (“يكتمل معناه بلا شرح”) remains assigned to C-01.
+
+
+## DECISION-I06 — النص المستبدل (نقل حرفي)
+
+### سياسة منع الحالات الفارغة السابقة
+
+```
+**التصحيح 2 — إلغاء Empty States:** لا تظهر أي رسائل فارغة للمستخدم — لا اسم شخصية → لا شيء — لا وصف → لا شيء — لا وصف ثنائي → لا زر ▼ — لا مجموعات → لا قسم — غير مضاف → لا شيء — **القاعدة: الصفحة نظيفة — الحقل يُحذف من DOM إذا كان فارغًا — لا placeholder — لا empty message**
+```
