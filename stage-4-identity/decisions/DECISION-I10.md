@@ -98,10 +98,10 @@
 - Buttons 5 أنواع × 3 أحجام (40/44/48) × Radius 10px × 5 حالات — Inputs 44px + Radius 10 + Border 1px + shadow-sm + Focus ring 2px Accent
 - Cards: Reaction 14px + Collection Rail/Square + Mini 70×70 — Modals: Desktop Center + Mobile Bottom Sheet 22px
 - States: Empty للصفحات فقط Lucide + عنوان + إجراء — Loading Skeleton + Spinner 16px — Error فصحى هادئة — Toast Success + Error
-- Icons: Lucide 1.5px 16/20/24 — Bottom Nav 5 tabs: layout-grid/layers/plus/bookmark/circle-user
+- Icons: Lucide 1.5px 16/20/24 — تعيينات أيقونات Bottom Nav السابقة أُحيلت إلى الأرشيف.
 - Navigation: Header Desktop Mark+Logo+Nav+Search+Account — Mobile Mark+Search بلا Avatar + يختفي↓/يظهر↑
 - Account Menu 3 حالات: زائر (Google+الإعدادات+المساعدة) · مستخدم (Identity+الإعدادات+المساعدة+Logout) · أدمن (+الاستوديو مجموعة منفصلة) — Popover ديسكتوب / Sheet جوال
-- زر (+): محايد+🔒 قبل الإطلاق + Sheet «قريبًا» + Accent بعد الإطلاق + «+ رفع» في Header بعد الإطلاق فقط
+- سياسة زر (+) السابقة أُحيلت إلى أرشيف النصوص المستبدلة؛ لا تُقرأ كسياسة حالية.
 - Search Bar: 44px عرض 420-480px ديسكتوب + حقل كامل جوال + Placeholder البحث السابق مؤرشف؛ المرجع الحالي `5.2.67` + بلا فلاتر v1
 - Guest Save: localStorage + دمج عند الدخول + Seal Motion فورًا — Mobile: لا معاينة تلقائية + Tap يفتح التفاصيل — Report Flow: Sheet radio 5 أسباب
 - 7 تصحيحات مؤجلة Stage 7 + قراران مؤجلان (Search Route → Stage 5 · Scroll Restoration → مستقبلي)
