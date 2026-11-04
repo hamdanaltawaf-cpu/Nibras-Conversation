@@ -118,13 +118,13 @@
 
 - DECISION-I03 Multi-Accent Color System ACCEPTED 2026-09-23 Stage 4 Identity Re-Foundation PD-I03 Color System CLOSED
 - Palette الأساسي: Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived Qishr Amber + Success/Warning/Error قياسية
-- Accents اختيارية من الإعدادات Settings Modal على ذوقك: كهرماني Amber افتراضي دافئ يمني + بنفسجي Purple حديث مميز + تيل Teal بارد هادئ
-- Theme: نهاري Day افتراضي + ليلي Night + تلقائي Auto يتبع النظام prefers-color-scheme
+- Accents اختيارية من إعدادات المستخدم: كهرماني Amber افتراضي دافئ يمني + بنفسجي Purple حديث مميز + تيل Teal بارد هادئ؛ واجهة الإعدادات الحالية صفحة مستقلة، والوصف السابق مؤرشف.
+- Theme: نهاري Day + ليلي Night + تلقائي Auto؛ Auto هو الافتراضي الحالي وفق `DECISION-5B.20`.
 - Reduce Motion: On/Off — يحترم prefers-reduced-motion — تفاصيل PD-I09
-- Settings Modal: موجود UI على ذوقك عنوان أنيق بلهجة يمنية + 3 Accents + Theme + Motion + زر استعادة الإعدادات Reset — Topic جديد يُفتح لاحقًا
-- المرجع البصري Prototype موقع تجريبي: Home Pinterest-like Masonry + Settings Modal + Qussasa Mark في Header + Captions بلهجة يمنية + Flat Saves Bookmark + Duration badge — موقع تجريبي ليس نهائي — الاستوديو اسم مؤقت أدمن — البحث لاحقًا — تفاصيل نهائية مع بناء فعلي
+- [وصف واجهة Settings Modal السابقة نُقل إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03؛ المرجع الحالي صفحة إعدادات مستقلة.]
+- المرجع البصري Prototype موقع تجريبي: Home Pinterest-like Masonry + وصف واجهة الإعدادات السابق مؤرشف — Qussasa Mark في Header + Captions بلهجة يمنية + Flat Saves Bookmark + Duration badge؛ بقية ملاحظات النموذج تاريخية.
 - Rejected: النظام 1 كهرماني فقط محدود + النظام 2 نيلي يفقد الدفء + النظام 4 رمادي فقط بلا شخصية + 3 Accents ثابتة نستخدم متعدد — كلها REJECTED per DECISION-I03
-- Impact: P-37 Multi-Accent Color System — B-05 UPDATED Brand colors foundation → Multi-Accent — B-06 9 colors محفوظ للدراسة — 69→70 facts — PD-I03 CLOSED يفتح PD-I04+PD-I05+PD-I06+PD-I08+PD-I09+Settings Modal — Prototype مرجع بصري ليس نهائي — ملاحظة موقع تجريبي + الاستوديو اسم مؤقت + البحث لاحقًا
+- Impact: P-37 Multi-Accent Color System — B-05 UPDATED Brand colors foundation → Multi-Accent — B-06 9 colors محفوظ للدراسة — 69→70 facts — PD-I03 CLOSED يفتح PD-I04+PD-I05+PD-I06+PD-I08+PD-I09 + صفحة إعدادات مستقلة (وصف النمط السابق مؤرشف) — Prototype مرجع بصري ليس نهائي — ملاحظة موقع تجريبي + الاستوديو اسم مؤقت + البحث لاحقًا
 - No code/Git/DB — documentation only — No conflict Stage 3 — Multi-Accent يبني فوق Brand Direction + Qussasa Mark — Direction C + Qussasa + Qussasa-derived Amber
 
 
