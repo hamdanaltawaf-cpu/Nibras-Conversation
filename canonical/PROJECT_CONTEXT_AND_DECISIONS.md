@@ -1,7 +1,7 @@
 # YemReact — ملف السياق والقرارات المرجعي
 > هذا الملف هو المرجع الحي الوحيد للمحادثة الحالية فقط (منذ بدايتها مع نِبراس حتى الآن). لا يحتوي على أي معلومات من محادثات كلود السابقة إلا إذا تم تأكيدها صراحة هنا. يتم تحديثه بعد كل قرار مهم.
 
-**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-29 — DECISION-5B.28 route boundaries + Stage 5 CLOSED FOR DOCUMENTATION ONLY; OPEN-Q-08/09 closed for documentation; technical gates unverified
+**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-11-05 — تنظيم أرشيف القرارات المستبدلة، وإحالة ملخص التنقل التاريخي في I10 إلى مرجع Stage 5.2؛ Stage 5 CLOSED FOR DOCUMENTATION ONLY; technical gates unverified
 **الحالة العامة:** مرحلة DISCUSSION — تحليل وهوية وتخطيط، لا كود ولا تنفيذ UI
 **المدير التنفيذي:** نِبراس | **شريك النقاش:** أرينا | **مهندس التنفيذ (لاحقًا):** أرينا كود | **حلقة الوصل:** المستخدم
 **آلية العمل الجديدة:** نقاش متناوب — نِبراس يناقش مع المستخدم مرة، ثم مع أرينا مرة، ثم يعود للمستخدم — حتى حسم كل محور.
@@ -17,7 +17,7 @@
 - **Buttons** 5 أنواع × 3 أحجام (40/44/48) × Radius 10 · **Inputs** 44px + Border 1px + shadow-sm + Focus ring 2px Accent
 - **Cards** Reaction 14px + Collection Rail/Square + Mini 70×70 · **Modals** Desktop Center / Mobile Sheet 22px
 - **States** Empty للصفحات فقط · Skeleton + Spinner 16 · Error فصحى هادئة · Toast Success+Error
-- **Icons** Lucide 1.5px 16/20/24 · **Bottom Nav** 5 tabs (المكتبة · المجموعات · + · المحفوظات · الحساب)
+- **Icons** Lucide 1.5px 16/20/24 · ملخص تعيينات Bottom Nav في I10 تاريخي؛ المرجع الحالي للتنقل هو Stage 5.2: المكتبة · المجموعات · إرسال · المحفوظات · الحساب (`5.2.0` وما بعده).
 - **Account Menu (P-45)** 3 حالات: زائر / مستخدم / أدمن (+الاستوديو) · Popover ديسكتوب · Sheet جوال
 - **زر (+):** الصياغة السابقة الخاصة بالقفل و«قريبًا» أُحيلت إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I10؛ السياسة الحالية وفق `DECISION-5.2.76`.
 - **Guest Save (P-46)** localStorage + دمج عند الدخول + Seal Motion فورًا
