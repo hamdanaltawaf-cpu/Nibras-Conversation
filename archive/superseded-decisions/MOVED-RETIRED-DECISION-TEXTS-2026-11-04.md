@@ -224,6 +224,13 @@ P-18 القديم "Arena-Agent يرفع 300-500" → P-18 المُعدّل "Aren
 - **Bottom Nav: 5 tabs** — المكتبة · المجموعات · **+** · المحفوظات · الحساب
 ```
 
+
+### تعيينات أيقونات Bottom Nav السابقة في DECISION-I10
+
+```
+**8. Icons:** **Lucide** · `1.5px` · `16/20/24px` · Bottom Nav: `layout-grid` · `layers` · `plus` · `bookmark` · `circle-user`
+```
+
 ### سياسة زر (+) السابقة
 
 ```
