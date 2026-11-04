@@ -28,13 +28,13 @@
 
 **7. States:** Empty **للصفحات فقط** (Lucide icon + عنوان + إجراء) · Loading = Skeleton + Spinner 16px · Error = نبرة فصحى هادئة · **Toast: Success + Error** (ليس Success فقط)
 
-**8. Icons:** **Lucide** · `1.5px` · `16/20/24px` · Bottom Nav: `layout-grid` · `layers` · `plus` · `bookmark` · `circle-user`
+**8. Icons:** **Lucide** · `1.5px` · `16/20/24px` · تعيينات أيقونات Bottom Nav السابقة أُحيلت إلى الأرشيف.
 
 **9. Navigation:**
 - Header Desktop: Mark + Logo + Nav + **Search Bar كامل** + Account
 - Header Mobile: Mark + **Search Bar كامل** (بلا Avatar)
 - Header Mobile: يختفي عند scroll down / يظهر عند scroll up
-- **Bottom Nav: 5 tabs** — المكتبة · المجموعات · **+** · المحفوظات · الحساب
+- **Bottom Nav:** الصياغة السابقة ذات الخمس وجهات أُحيلت إلى الأرشيف؛ المرجع الحالي هو التنقل المعتمد لاحقًا في Stage 5.2 (`5.2.0` وما بعده).
 
 **10. Account Menu — 3 حالات:**
 - **الزائر:** Google Login + الإعدادات + المساعدة
@@ -43,9 +43,9 @@
 - Desktop = Popover · Mobile = Bottom Sheet
 - ❌ لا «المحفوظات» (مكررة) · ❌ لا «مساهماتي» (ميتة قبل الإطلاق)
 
-**11. زر (+):** محايد قبل الإطلاق + 🔒 · Bottom Sheet «الرفع يُفتح قريبًا» · Accent بعد الإطلاق · Desktop: زر «+ رفع» في Header **بعد الإطلاق فقط**
+[سياسة زر (+) السابقة أُحيلت إلى الأرشيف؛ المرجع الحالي هو `DECISION-5.2.76` وقرارات Stage 5.2 ذات الصلة.]
 
-**12. Search Bar:** Desktop حقل `44px` بعرض `420-480px` · Mobile حقل كامل في Header · Placeholder «ابحث عن رياكشن أو موقف...» · **بلا فلاتر في v1**
+**12. Search Bar:** Desktop حقل `44px` بعرض `420-480px` · Mobile حقل كامل في Header · Placeholder البحث السابق مؤرشف في `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. · **بلا فلاتر في v1**
 
 **13. Guest Save:** حفظ محلي `localStorage` للزائر · دمج عند الدخول · **Seal Motion يعمل فورًا**
 
@@ -98,11 +98,11 @@
 - Buttons 5 أنواع × 3 أحجام (40/44/48) × Radius 10px × 5 حالات — Inputs 44px + Radius 10 + Border 1px + shadow-sm + Focus ring 2px Accent
 - Cards: Reaction 14px + Collection Rail/Square + Mini 70×70 — Modals: Desktop Center + Mobile Bottom Sheet 22px
 - States: Empty للصفحات فقط Lucide + عنوان + إجراء — Loading Skeleton + Spinner 16px — Error فصحى هادئة — Toast Success + Error
-- Icons: Lucide 1.5px 16/20/24 — Bottom Nav 5 tabs: layout-grid/layers/plus/bookmark/circle-user
+- Icons: Lucide 1.5px 16/20/24 — تعيينات أيقونات Bottom Nav السابقة أُحيلت إلى الأرشيف.
 - Navigation: Header Desktop Mark+Logo+Nav+Search+Account — Mobile Mark+Search بلا Avatar + يختفي↓/يظهر↑
 - Account Menu 3 حالات: زائر (Google+الإعدادات+المساعدة) · مستخدم (Identity+الإعدادات+المساعدة+Logout) · أدمن (+الاستوديو مجموعة منفصلة) — Popover ديسكتوب / Sheet جوال
-- زر (+): محايد+🔒 قبل الإطلاق + Sheet «قريبًا» + Accent بعد الإطلاق + «+ رفع» في Header بعد الإطلاق فقط
-- Search Bar: 44px عرض 420-480px ديسكتوب + حقل كامل جوال + Placeholder «ابحث عن رياكشن أو موقف...» + بلا فلاتر v1
+- سياسة زر (+) السابقة أُحيلت إلى أرشيف النصوص المستبدلة؛ لا تُقرأ كسياسة حالية.
+- Search Bar: 44px عرض 420-480px ديسكتوب + حقل كامل جوال + Placeholder البحث السابق مؤرشف؛ المرجع الحالي `5.2.67` + بلا فلاتر v1
 - Guest Save: localStorage + دمج عند الدخول + Seal Motion فورًا — Mobile: لا معاينة تلقائية + Tap يفتح التفاصيل — Report Flow: Sheet radio 5 أسباب
 - 7 تصحيحات مؤجلة Stage 7 + قراران مؤجلان (Search Route → Stage 5 · Scroll Restoration → مستقبلي)
 - Rejected: Avatar جوال + المحفوظات/مساهماتي في Account + Toast للقريبًا + Emojis في UI + Infinite Scroll + Qussasa في Empty States + Linear نبرة Empty

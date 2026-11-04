@@ -74,10 +74,7 @@
 
 **Previous → New:**
 
-- **Previous:** P-02 (Video only — static images rejected) — CONFIRMED في Canonical Baseline القديم:
-  - S02, S06, S10 explicitly reject Pinterest static
-  - S04 MVP excludes static
-  - 12 مصدر تاريخي تعتبر الصور مرفوضة كمنتج
+- **Previous:** [النص السابق منقول إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`].
 
 - **New:** فيديو + صور — نوعا محتوى متكافئان — كلاهما منتج أساسي
 
@@ -816,7 +813,7 @@
   - Arena-Agent لا يرفع محتوى — فقط يجهّز النظام
   - Reason: Arena-Agent دوره برمجي/هندسي. الرفع عملية تحريرية تحتاج عين بشرية.
   ⚠️ هذا يُعدّل P-18 جزئيًا:
-    - P-18 القديم: "Arena-Agent يرفع 300-500"
+    - [الصياغة السابقة منقولة إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`].
     - P-18 المُعدّل: "Arena-Agent يبني ويجهّز وينشر. حمدان يرفع 300-500."
 
   3. Submissions Timing — توقيت المساهمات:
@@ -845,7 +842,7 @@
 **Reason:**
 
 1) يحل PD-05 Pipeline — CONFLICT-038 — Submit tension A/B/C — كيف نجمع 300-500؟ — Source لقطات قصيرة من مواقع التواصل + ليست ذاتية + قص مناسب فقط + منصة حرة لا حقوق — يطابق DECISION-009 تعديل 1 المنصة حرة تجمع رياكشنات عشوائية + P-24 حذف قانوني → Stage8
-2) يصحح P-18 — Arena-Agent يبني النظام كاملًا (كود + بنية + اختبار + BUG-1 + نشر) — حمدان يرفع 300-500 بنفسه بعد اكتمال البناء والنشر — Arena-Agent لا يرفع محتوى — فقط يجهّز — دوره برمجي/هندسي — الرفع تحريري يحتاج عين بشرية — P-18 القديم "Arena-Agent يرفع 300-500" → P-18 المُعدّل "Arena-Agent يبني ويجهّز وينشر. حمدان يرفع 300-500." — تعديل جزئي CONFIRMED
+2) يصحح P-18 — Arena-Agent يبني النظام كاملًا (كود + بنية + اختبار + BUG-1 + نشر) — حمدان يرفع 300-500 بنفسه بعد اكتمال البناء والنشر — Arena-Agent لا يرفع محتوى — فقط يجهّز — دوره برمجي/هندسي — الرفع تحريري يحتاج عين بشرية — الصياغة السابقة منقولة إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`؛ القرار النافذ موضح في هذا القسم. — تعديل جزئي CONFIRMED
 3) يحل Submissions Timing — قبل الإطلاق زر (+) يظهر لكنه مقفل فعليًا blur + "قريبًا" — عند الإطلاق حذف كود بسيط → يعمل — بعد الإطلاق مفتوحة من أول إطلاق — حماية الجودة أثناء البناء — الإطلاق يفتح الباب — يطابق Recent Axis C "زر المساهمة (+) يظهر الآن للجميع" لكن مع blur قبل الإطلاق
 4) يحل Rights — المنصة حرة لا حقوق — Report Button DECISION-010 يحمي بعد النشر — Legal كامل Stage 8 Terms + Privacy + Takedown + Content Policy — المحتوى لقطات قصيرة ليست تجارة — الإبلاغ يحمي
 5) يوضح Quality/Speed — لا يهم — التنوع والتغطية أهم من السرعة — Rubric 6 يُطبق على كل لقطة — 300-500 هدف إطلاق — الجودة عبر Rubric لكن التنوع أولاً — يطابق DECISION-009 Rubric 6 + DECISION-008 "المكتبة تكبر ليست مؤشر منتج"
@@ -1163,158 +1160,7 @@
 - P-29 Aspect Ratio + P-30 Aspect Criterion — 60 → 62 facts — Stage 3 PD-08 CLOSED — CONFLICT-021 CLOSED
 - NEXT: PD-09 Categories — HISTORY + EVIDENCE فقط — بانتظار أمر حمدان — لا تعارض مع PD-08
 
-## DECISION-014 — Categories Full Removal (Staged) — ACCEPTED — Stage 3 — PD-09
-
-- **Status:** ACCEPTED — CLOSED — PD-09 CLOSED — CONFLICT-009 CLOSED
-- **Decided by:** حمدان (Founder)
-- **Date:** 2026-09-14 — Stage 3 — PD-09 Categories
-- **Topic:** إزالة الفئات نهائيًا — مسار آمن من مرحلتين
-
-**Previous → New:**
-
-- **Previous:**
-  - CONFLICT-009 Categories Role — لم يُحسم منذ Phase 1 — VERSION DRIFT
-  - S10 Brand v1.0: 9 category colors LOCKED — ضحك #F4C430, صدمة #7C5CFF, غضب #C81E3A, استغراب #2CB6C4, إحراج/صمت #F17FB2, موافقة #4CAF6D, رفض #6E8296, سخرية #D98E04, حماس #E8712E
-  - S03: Categories filter vs data-only vs destination — VERSION DRIFT — Fixed filter bar as main nav vs data-only + color internal
-  - P-20 Rubric 6: لا يذكر فئة صريحًا — 6 معايير نهائية نظافة فنية + هوية يمنية + أخلاقي + بياناته جاهزة + تنوع + جاهز للاستخدام — لا فئة
-  - 6K: Admin CRUD للفئات (بُني حديثًا) — T-03 DB Category=9 active — Reaction=12 published seed — Category model موجود — Reaction.categoryId موجود
-  - P-14 Search Nature DECISION-007: البحث بالكلمات — ليس بالفئة — اسم الرياكشن، اسم الشخص، جملة، وصف مشهد، كلام مضمن — OPEN-Q-07
-  - S09 T-04: Media pipeline local — لا علاقة بالفئات
-  - PD-09 كان OPEN — HISTORY + EVIDENCE done 2026-09-14 — Categories role filter vs data-only
-
-- **New:**
-
-  **القرار:** إزالة كاملة للفئات (Full Removal) على مرحلتين — مسار آمن — مصيري Pivotal — لا يُنفَّذ فورًا — توثيق فقط الآن.
-
-  ```
-  STAGE A — الآن (بدون Migration / ترحيل) — آمنة — قابلة للتراجع:
-
-  1. UI Removal (إزالة من الواجهة):
-  - حذف CategoryNav (شريط الفئات) من الرئيسية
-  - حذف ?cat= من البحث
-  - حذف اختيار الفئة من نموذج الرفع (SubmissionForm + ReactionForm)
-  - حذف "الفئة" من صفحة التفاصيل /r/[code]
-  - حذف لون الفئة من البطاقة (ReactionCard) — B-06 يبقى لكن لا يُعرض
-
-  2. Admin Hidden (إخفاء الإدارة):
-  - صفحة إدارة الفئات تُخفى من القائمة — لا رابط في Admin menu
-  - كود 6K يبقى (يمكن استرجاعه) — لا حذف كود الآن
-  - الـ route /admin/categories يبقى (لكن لا يظهر رابط) — hidden not deleted
-
-  3. Schema Kept (البنية محفوظة):
-  - Category model (جدول الفئات) يبقى — Prisma schema.prisma يبقى
-  - Reaction.categoryId (المفتاح الأجنبي) يبقى — 12 رياكشن seed مرتبطة
-  - لا Migration الآن — لا DROP TABLE — لا ALTER TABLE — آمن
-
-  4. Brand Kept (الهوية محفوظة):
-  - 9 ألوان الفئات تبقى في Brand v1.0 LOCKED — B-06
-  - نحتفظ بها للدراسة — لا تعديل الآن
-  - لا تعديل tokens.css الآن
-
-  5. البديل — Collections + Keywords + Search:
-  - Collections (المجموعات) = التصنيف الأساسي — موضوعي: طلاب، قروبات، بلا سياق — P-32
-  - Keywords (الكلمات المفتاحية) = البحث — يغطي أوسع — OPEN-Q-08
-  - Search = حر بالكلمات (بدون فلتر) — P-14 — DECISION-007 — OPEN-Q-07
-
-  STAGE B — بعد P0 Git (Stage 7 / Stage 4) — خطير — يُنفَّذ فقط بعد أن يُحسم P0 Git:
-  - P0 Git = commit كامل + remote (نسخة بعيدة) + backup (نسخة احتياطية) — P0-1 Git branch master only 1 commit 331c1b3 + 28 modified + 119 untracked — خطر فقدان — SEC-04 Schema drift — يجب حسمه أولًا
-
-  عندها يُنفَّذ:
-
-  1. Migration (ترحيل) آمن:
-  ```sql
-  DROP TABLE Category;              -- حذف 9 فئات
-  ALTER TABLE Reaction              -- حذف المفتاح الأجنبي
-    DROP COLUMN categoryId;         -- من 12 رياكشن seed + 300-500 لاحقًا
-  ```
-
-  2. حذف 20+ موضع في الكود:
-  - CategoryNav component — شريط الفئات
-  - Admin Categories page (6K كامل) — CRUD categories + /new + /[slug]/edit
-  - CategoryDTO في API — /api/categories + /api/admin/categories
-  - Category references في ReactionForm — اختيار الفئة
-  - Category filtering في Search — ?cat= + categoryId filter + CategoryNav logic
-  - Category colors usage في ReactionCard — B-06 usage (لكن B-06 نفسه يبقى للدراسة Stage 4)
-  - categoryRepository.findActive — counts active only — bug includes draft/archived
-
-  3. تعديل Brand v1.0 — دراسة الاستخدام النهائي لـ9 ألوان:
-  - Visual Accents (لمسات بصرية)? — استخدام الألوان كلمسات بصرية عامة
-  - Mood Tags (وسوم مزاجية)? — تحويلها لوسوم مزاجية بدل فئات
-  - حذف نهائي? — حذف الألوان إذا لم نحتاجها
-  - القرار في Stage 4 (Experience) مع تفاصيل التنفيذ في Stage 7 (Technical)
-  - B-06 يبقى Stage A → يُعدّل Stage B — محفوظ للدراسة
-
-  Revisable — مرن — قابل للتراجع:
-  - Stage A قابل للتراجع (لا Migration) — إرجاع CategoryNav + ?cat= + Admin link — سهل
-  - Stage B قابل للتراجع (قبل Migration) — إذا لم ننفذ Migration بعد — يمكن التراجع
-  - إذا احتجنا Categories لاحقًا → نستعيد من Stage A — لا Migration = سهل الاسترجاع
-  - القرار مرن — ليس نهائي لا رجعة فيه
-
-  Terminology — المصطلحات:
-  - Categories → الفئات (تصنيف عاطفي: ضحك، صدمة، غضب، استغراب، إحراج/صمت، موافقة، رفض، سخرية، حماس)
-  - Collections → المجموعات (تصنيف موضوعي: طلاب، قروبات، بلا سياق) — التصنيف الأساسي الجديد
-  - Keywords → الكلمات المفتاحية (للبحث) — البحث الأساسي
-  - Migration → الترحيل / الهجرة (تغيير بنية قاعدة البيانات)
-  - Schema → المخطط / البنية (بنية قاعدة البيانات)
-  - DROP TABLE → حذف الجدول
-  - ALTER TABLE → تعديل الجدول
-  - UI → واجهة المستخدم
-  ```
-
-**Reason:**
-
-1) DECISION-007 Value + P-14 Search Nature — البحث بالكلمات — ليس بالفئة — اسم الرياكشن نفسه (مصطفى المومري)، اسم الشخص (هديل مانع)، جملة محددة ("اقرب اقرب لو انت رجال")، وصف المشهد (فيديو الذي يعد الرز)، الكلام المضمن في الفيديو — OPEN-Q-07 — البحث ليس "بالموقف" فقط — يشمل اسم، شخص، جملة، وصف مشهد، كلام مضمن — DECISION-007 تصحيح 1 — الفئة لا تغطي هذا — Keywords تغطي أوسع
-2) Pinterest-like — لا يعتمد على Categories في الصفحة الأولى — P-08 Presentation Pinterest-like Masonry Grid visual only — Pinterest يعرض صور بدون فلتر فئات في الرئيسية — البحث + التصفح + Collections كافية — لا نحتاج CategoryNav
-3) Collections (المجموعات) أقوى للسياق — موضوعي: طلاب، قروبات، بلا سياق — P-32 Collections as Primary Taxonomy — Collections = مجموعات الأدمن (طلاب، قروب، بلا سياق) — أقوى للسياق من الفئات العاطفية — DECISION-008 Audience أي شخص في موقف — Collections تغطي السياق الاجتماعي (طلاب، قروب) — أفضل من الفئات العاطفية فقط
-4) Keywords (الكلمات المفتاحية) تغطي البحث بشكل أوسع — OPEN-Q-08 Keyword Tool منفصل — أداة كلمات مفتاحية مرنة تتطور لخوارزمية — S1 Axis B — Keywords = البحث الأساسي — تغطي مواقف أكثر بدون الحاجة لتصنيف عاطفي — P-20 بياناته جاهزة + كلمات مفتاحية أساسية + استخراج تلقائي OPEN-Q-09
-5) الأمان أولًا — P0 Git محجوب — Migration خطير — T-10 Git branch master only 1 commit 331c1b3 2026-08-24 + 28 modified + 119 untracked + no remote — خطر فقدان 147 ملفًا — لا نقطة رجوع — P0-1 — SEC-04 Schema drift 3 indexes not in schema.prisma → next migrate dev proposes DROP — Migration الآن = مخاطرة عالية — Stage A بدون Migration = آمن
-6) قابلية التراجع — Stage A يمكن التراجع عنه بسهولة — لا Migration — إرجاع CategoryNav + ?cat= + Admin link — سهل — Stage B قابل للتراجع قبل Migration — إذا احتجنا Categories لاحقًا → نستعيد من Stage A
-7) 6K لا يُهدر — يُخفى (قابل للاسترجاع) بدل الحذف الفوري — Admin CRUD للفئات بُني حديثًا — لا نحذف كود 6K الآن — نخفيه من القائمة — يمكن استرجاعه إذا احتجنا — يحمي جهد 6K
-8) Brand محفوظ — للتعديل المدروس لاحقًا — B-06 9 category colors LOCKED — ضحك #F4C430، صدمة #7C5CFF، غضب #C81E3A، استغراب #2CB6C4، إحراج/صمت #F17FB2، موافقة #4CAF6D، رفض #6E8296، سخرية #D98E04، حماس #E8712E — نحتفظ بها للدراسة Stage 4 — لا تعديل الآن — دراسة: Visual Accents؟ Mood Tags؟ حذف نهائي؟ — القرار في Stage 4 مع تنفيذ Stage 7
-9) قرار مصيري Pivotal — يحتاج مسار آمن، ليس قرار متسرع — إزالة كاملة للفئات = قرار كبير — يؤثر على IA، Search، Admin، Brand، DB — يحتاج مرحلتين — Stage A الآن آمنة + Stage B بعد P0 Git — لا ننفذ أي شيء الآن — فقط نوثق — التنفيذ الفعلي يبدأ بعد اكتمال Stage 3 + Stage 4 + P0 Git — يحمي من خطأ Migration + فقدان بيانات + تعديل Brand قبل وقت مناسب
-
-**Alternative rejected:**
-
-- الخيار 1 (الحد الأدنى — إبقاء الفئات كـ data-only + color internal، لا filter bar) — REJECTED per DECISION-014 — لا يصل للإزالة الكاملة — نريد Full Removal — لا يلبي طلب الإزالة — REJECTED
-- الخيار 3 (دمج ذكي — Categories + Collections + Keywords هجين — Categories كـ mood tags + Collections كـ context + Keywords كـ search) — REJECTED per DECISION-014 — لا يُلبي طلب الإزالة — نريد إزالة كاملة — Collections كتصنيف أساسي + Keywords كبحث يكفي — لا نحتاج دمج — REJECTED
-- التنفيذ الفوري (بدون مرحلتين — DROP TABLE Category + ALTER TABLE Reaction DROP categoryId الآن + حذف 20+ موضع + تعديل Brand الآن) — REJECTED per DECISION-014 — مخاطرة عالية — P0 Git محجوب — T-10 Git dirty + no remote + SEC-04 drift — Migration خطير — يحتاج مسار آمن Stage A/B — REJECTED
-
-**Impact:**
-
-- PD-09 CLOSED — Stage 3 PD-09 CLOSED — CONFLICT-009 CLOSED — DECISION-014 ACCEPTED 2026-09-14 — 62 → 64 facts
-- P-31 NEW: Categories Removed (Staged A/B — إزالة على مرحلتين — Stage A الآن بدون Migration آمنة قابلة للتراجع — UI Removal CategoryNav + ?cat= + اختيار الفئة من نموذج الرفع + الفئة من /r/[code] + لون الفئة من البطاقة + Admin Hidden صفحة إدارة الفئات تُخفى من القائمة كود 6K يبقى route يبقى + Schema Kept Category model + Reaction.categoryId يبقى لا Migration + Brand Kept 9 ألوان B-06 تبقى للدراسة + البديل Collections=التصنيف الأساسي + Keywords=البحث + Search حر بالكلمات — Stage B بعد P0 Git — commit كامل + remote + backup — Migration آمن DROP TABLE Category + ALTER TABLE Reaction DROP categoryId + حذف 20+ موضع CategoryNav + Admin Categories 6K + CategoryDTO + Category refs + Category filtering + Category colors usage + تعديل Brand v1.0 دراسة 9 ألوان Visual Accents/Mood Tags/حذف نهائي Stage4/7 — Revisable مرن Stage A قابل للتراجع Stage B قابل للتراجع قبل Migration — إذا احتجنا Categories نستعيد من Stage A)
-- P-32 NEW: Collections as Primary Taxonomy (المجموعات كتصنيف أساسي — موضوعي: طلاب، قروبات، بلا سياق — أقوى للسياق من الفئات العاطفية — البديل الأساسي بعد إزالة الفئات — Pinterest-like لا يعتمد على Categories — Collections + Keywords + Search تكفي — PD-10 سيُوسَّع HISTORY+EVIDENCE)
-- Canonical Facts: 62 → 64 (8 brand + 32 product + 6 IA + 10 technical + 8 security)
-- CONFLICT-009 Categories Role: يُغلق بـ DECISION-014 — Fixed filter bar vs data-only vs destination → Full Removal Staged — CLOSED
-- 6K Admin CRUD: يبقى مخفيًا Stage A (قابل للاسترجاع) → يُحذف Stage B (بعد P0 Git) — لا يُهدر
-- Brand v1.0 B-06 9 colors: يبقى Stage A (محفوظ للدراسة) → يُعدّل Stage B (Visual Accents/Mood Tags/حذف) — دراسة Stage4/7
-- P-20 Rubric 6: لا يذكر فئة صريحًا — لا يحتاج حذف — "هوية يمنية" تبقى — لا تعتمد على الفئة — متوافق
-- P-04 Bumper REJECTED: لا علاقة — يبقى REJECTED
-- P-27+P-28 Duration 2-60s + Reaction Criterion: لا علاقة — يبقيان ACCEPTED
-- P-29+P-30 Aspect أي مقاس + لا فراغ أسود + هل هي رياكشن؟: لا علاقة — يبقيان ACCEPTED
-- Stage 4 (Experience): دراسة استخدام 9 ألوان B-06 — Visual Accents؟ Mood Tags؟ حذف نهائي؟ — كيفية تطبيق "بدون فراغ أسود" + Safe Area Guides لكل مقاس + Qussasa مراجعة لـ 16:9
-- Stage 7 (Technical): تنفيذ Migration + حذف 20+ موضع — CategoryNav + Admin Categories 6K + CategoryDTO + Category refs + filtering + colors usage — بعد P0 Git commit+remote+backup — آمن — T-10 + SEC-04
-- Admin: يفقد فلتر سريع Category — لكن Collections + Keywords تكفي — P-32 Collections as Primary Taxonomy
-- Search: ?cat= يُحذف — Search حر بالكلمات بدون فلتر — P-14 + DECISION-007 + OPEN-Q-07 + OPEN-Q-08
-- YEMREACT-HISTORICAL-NOT-CURRENT.md: VD-03 Categories role → HISTORICAL — S10 9 category colors → MOVED TO "محفوظة للدراسة Stage 4" — B-06 محفوظ للدراسة
-- NEXT: PD-10 Collections — HISTORY + EVIDENCE فقط — بانتظار أمر حمدان — Collections الآن لها دور أكبر — التصنيف الأساسي — PD-10 سيُوسَّع
-
-**Stage:** Stage 3 — PD-09 — CLOSED — DECISION-014 ACCEPTED 2026-09-14 — NEXT PD-10 Collections — CONFLICT-009 CLOSED — 62 → 64 facts
-
-**Evidence:** S10 Brand v1.0 LOCKED B-06 9 category colors #F4C430 #7C5CFF #C81E3A #2CB6C4 #F17FB2 #4CAF6D #6E8296 #D98E04 #E8712E, S03 Categories filter vs data-only vs destination VERSION DRIFT, CONFLICT-009 Categories Role OPEN since Phase1, P-20 Rubric 6 لا يذكر فئة, 6K Admin CRUD للفئات built, P-14 Search Nature DECISION-007 البحث بالكلمات ليس بالفئة + OPEN-Q-07 اسم شخص جملة وصف مشهد كلام مضمن, S09 T-03 DB Category=9 active Reaction=12 categoryId exists, S09 T-10 Git P0-1 1 commit + dirty + no remote + SEC-04 drift 3 indexes, DECISION-007 Value منتقاة + قابلة للبحث + جاهزة, DECISION-011 Pipeline لقطات قصيرة عشوائية, DECISION-012 Duration 2-60s + Reaction Criterion هل هي رياكشن, DECISION-013 Aspect أي مقاس + لا فراغ أسود + هل هي رياكشن, P-08 Pinterest-like visual only لا يعتمد Categories, P-32 Collections as Primary Taxonomy
-
----
-
-## Topic 9 — PD-09 — CLOSED — DECISION-014 ACCEPTED — Stage 3 — CONFLICT-009 CLOSED
-
-- Categories Full Removal (Staged A/B) — إزالة كاملة للفئات على مرحلتين — مسار آمن — مصيري Pivotal — لا يُنفَّذ فورًا — توثيق فقط الآن — لا كود/Git/DB
-- Stage A الآن بدون Migration آمنة قابلة للتراجع: UI Removal حذف CategoryNav من الرئيسية + حذف ?cat= من البحث + حذف اختيار الفئة من نموذج الرفع + حذف الفئة من /r/[code] + حذف لون الفئة من البطاقة — Admin Hidden صفحة إدارة الفئات تُخفى من القائمة كود 6K يبقى route يبقى — Schema Kept Category model + Reaction.categoryId يبقى لا Migration — Brand Kept 9 ألوان B-06 تبقى للدراسة لا تعديل — البديل Collections=التصنيف الأساسي + Keywords=البحث + Search حر بالكلمات بدون فلتر
-- Stage B بعد P0 Git Stage7/4: يُنفَّذ فقط بعد حسم P0 Git commit كامل + remote + backup — Migration آمن DROP TABLE Category + ALTER TABLE Reaction DROP categoryId من 12 رياكشن + 300-500 لاحقًا — حذف 20+ موضع CategoryNav + Admin Categories 6K كامل + CategoryDTO + Category refs + filtering + colors usage + تعديل Brand v1.0 دراسة 9 ألوان Visual Accents/Mood Tags/حذف نهائي Stage4/7
-- Revisable مرن: Stage A قابل للتراجع لا Migration + Stage B قابل للتراجع قبل Migration + إذا احتجنا Categories نستعيد من Stage A
-- Reason: DECISION-007 البحث بالكلمات ليس بالفئة + Pinterest-like لا يعتمد Categories + Collections أقوى للسياق موضوعي طلاب قروبات بلا سياق + Keywords تغطي أوسع + الأمان أولًا P0 Git محجوب Migration خطير + قابلية التراجع Stage A سهل + 6K لا يُهدر يُخفى قابل للاسترجاع + Brand محفوظ للدراسة + قرار مصيري يحتاج مسار آمن ليس متسرع
-- REJECTED: الخيار 1 الحد الأدنى data-only لا يصل للإزالة الكاملة + الخيار 3 دمج ذكي Categories+Collections+Keywords لا يلبي طلب الإزالة + التنفيذ الفوري بدون مرحلتين مخاطرة عالية P0 Git محجوب
-- Impact: P-31 Categories Removed Staged A/B + P-32 Collections as Primary Taxonomy — 62→64 facts — CONFLICT-009 CLOSED — 6K يبقى مخفيًا Stage A → يُحذف Stage B — Brand v1.0 B-06 يبقى Stage A → يُعدّل Stage B — P-20 Rubric لا يذكر فئة متوافق — P-04 Bumper لا علاقة — P-27+P-28 Duration لا علاقة — P-29+P-30 Aspect لا علاقة — Stage4 دراسة 9 ألوان + Stage7 Migration+حذف 20+ موضع بعد P0 Git — Admin يفقد فلتر سريع لكن Collections+Keywords تكفي — Search ?cat= يُحذف حر بالكلمات — YEMREACT-HISTORICAL-NOT-CURRENT VD-03 HISTORICAL + B-06 محفوظ للدراسة
-- NEXT: PD-10 Collections — HISTORY + EVIDENCE فقط — Collections الآن لها دور أكبر التصنيف الأساسي — PD-10 سيُوسَّع — بانتظار أمر حمدان — لا كود/Git/DB — لا Migration — لا حذف Schema — لا تعديل Brand
+[النص الكامل للقرار التاريخي والتكرار التابع له نُقل إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. المرجع الحالي لإزالة الفئات هو DECISION-4R01.]
 
 ## DECISION-015 — Collections as Primary Taxonomy — ACCEPTED — Stage 3 — PD-10
 
@@ -1629,7 +1475,7 @@
   - B-01 Brand v1.0 LOCKED — Ink #121214 + Qishr Amber + Paper — S10 — 8 scenarios test
   - P-08 Presentation Pinterest-like Masonry Grid visual only — P-35 Brand Direction الختم Modern UI Foundation — P-36 Qussasa Mark v1.0 Header
   - PD-I03 Color System كان OPEN — HISTORY+EVIDENCE done — يحتاج قرار
-  - Settings Modal لم يكن موجود — الآن موجود — UI "على ذوقك" — عنوان أنيق بلهجة يمنية — زر استعادة الإعدادات
+  - [وصف واجهة Settings Modal السابقة مؤرشف؛ راجع قسم DECISION-I03 في ملف النصوص المنقولة.]
 
 - **New:**
 
@@ -1654,7 +1500,7 @@
      - Warning: تنبيه
      - Error: خطأ/حذف
 
-  Accents اختيارية (من الإعدادات — Settings Modal):
+  Accents اختيارية (من إعدادات المستخدم):
 
   - كهرماني (Amber) — افتراضي — Default
     - دافئ — Qussasa-derived — Qishr — يمني بدون علم
@@ -1670,8 +1516,7 @@
 
   Theme:
 
-  - نهاري (Day) — افتراضي — Default
-    - Paper فاتح — Ink داكن — Qussasa Mark واضح
+  - نهاري (Day) — خيار متاح؛ Auto هو الافتراضي الحالي وفق `DECISION-5B.20`.
 
   - ليلي (Night)
     - Ink داكن خلفية — Paper فاتح نص — Qussasa Mark مضيء
@@ -1683,26 +1528,17 @@
 
   Reduce Motion:
 
-  - خيار (On/Off) — Settings Modal
+  - خيار (On/Off) — من إعدادات المستخدم.
     - On: تقليل الحركة — يحترم prefers-reduced-motion
     - Off: حركة كاملة — Motion Signature 150-200ms ختم/قلب
     - تفاصيل الحركة → PD-I09 Motion
 
-  Settings Modal:
-
-  - موجود — UI: "على ذوقك" — عنوان أنيق بلهجة يمنية
-  - يحتوي:
-    - 3 Accents: كهرماني (افتراضي) + بنفسجي + تيل
-    - Theme: نهاري (افتراضي) + ليلي + تلقائي
-    - Reduce Motion: On/Off
-    - زر "استعادة الإعدادات" — Reset to defaults
-  - Prototype يُظهر Modal — مرجع بصري — ليس نهائي
-  - Topic جديد — Settings Modal — يُفتح لاحقًا — Stage 4/5
+  [وصف واجهة Settings Modal السابقة نُقل حرفيًا إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03؛ المرجع الحالي صفحة إعدادات مستقلة.]
 
   المرجع البصري — Prototype موقع تجريبي:
 
   - Home: Pinterest-like Masonry — P-08 — Masonry Grid visual only
-  - Settings Modal: 3 accents + theme + motion — "على ذوقك" — استعادة الإعدادات
+  - وصف واجهة الإعدادات السابقة مؤرشف؛ المرجع الحالي صفحة إعدادات مستقلة.
   - Qussasa Mark في Header — B-04 ACCEPTED — 16-512px
   - Captions بلهجة يمنية — P-35 Content Art Direction — قصيرة بلهجة يمنية
   - Flat Saves (Bookmark) — P-07 Flat Saves — Bookmark icon
@@ -1739,7 +1575,7 @@
 **Impact:**
 
 - PD-I03 CLOSED — Stage 4 Identity Re-Foundation — PD-I03 Color System — ACCEPTED 2026-09-23 — 69 → 70 facts
-- P-37 NEW: Multi-Accent Color System — Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived + Success/Warning/Error قياسية + Accents اختيارية Amber افتراضي + Purple + Teal + Theme Day افتراضي + Night + Auto + Reduce Motion On/Off + Settings Modal "على ذوقك" + زر استعادة الإعدادات — Prototype مرجع بصري Home Masonry + Settings Modal + Qussasa Mark Header + Captions لهجة يمنية + Flat Saves Bookmark + Duration badge — ملاحظة موقع تجريبي ليس نهائي — "الاستوديو" اسم مؤقت أدمن — البحث لاحقًا — تفاصيل نهائية مع بناء فعلي
+- P-37 NEW: Multi-Accent Color System — Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived + Success/Warning/Error قياسية + Accents اختيارية Amber افتراضي + Purple + Teal + Theme Day/Night/Auto — Auto الافتراضي الحالي وفق DECISION-5B.20 + Reduce Motion On/Off + واجهة إعدادات مستقلة؛ وصف الواجهة السابقة مؤرشف — Prototype مرجع بصري Home Masonry + وصف واجهة الإعدادات السابقة مؤرشف + Qussasa Mark Header + Captions لهجة يمنية + Flat Saves Bookmark + Duration badge — ملاحظة موقع تجريبي ليس نهائي — "الاستوديو" اسم مؤقت أدمن — البحث لاحقًا — تفاصيل نهائية مع بناء فعلي
 - B-05 UPDATED: Brand colors foundation — من CONFIRMED as foundation intent → ACCEPTED — DECISION-I03 — Base Ink/Paper/Grey Monochrome + Accent Qussasa-derived Qishr Amber + Success/Warning/Error قياسية + Optional Amber/Purple/Teal + Theme Day/Night/Auto + Reduce Motion — Settings Modal "على ذوقك" — B-04 Qussasa Mark Header — B-09 Brand Direction الختم
 - B-06 9 category colors: يبقى محفوظ للدراسة — لا يُستخدم كفلتر — Categories Removed per DECISION-014 — يبقى للدراسة Visual Accents/Mood Tags — لا علاقة مباشرة بـ Multi-Accent — لكن Purple/Teal/Amber قد تُستلهم منه مستقبلًا — للدراسة Stage4
 - Canonical Facts: 69 → 70 (9 brand + 37 product? Actually 9 brand + 37 product? Let's recalc: 9 brand + 36 product =45+24=69 → 9+37=46+24=70) — B-05 UPDATED — P-37 NEW
@@ -1762,7 +1598,7 @@
 
 ## Topic 13 — PD-I03 — CLOSED — DECISION-I03 ACCEPTED — Stage 4 — Multi-Accent Color System
 
-- Multi-Accent Color System — Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived + Success/Warning/Error قياسية + Accents اختيارية Amber افتراضي + Purple + Teal + Theme Day افتراضي + Night + Auto + Reduce Motion On/Off + Settings Modal "على ذوقك" + زر استعادة الإعدادات
+- Multi-Accent Color System — Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived + Success/Warning/Error قياسية + Accents اختيارية Amber افتراضي + Purple + Teal + Theme Day/Night/Auto — Auto الافتراضي الحالي وفق DECISION-5B.20 + Reduce Motion On/Off + واجهة إعدادات مستقلة؛ وصف الواجهة السابقة مؤرشف
 - Palette: Base Ink/Paper/Grey + Accent Qussasa-derived + Success/Warning/Error — Accents اختيارية Amber/Purple/Teal — Theme Day/Night/Auto — Reduce Motion On/Off — Settings Modal "على ذوقك"
 - Prototype مرجع بصري: Home Pinterest-like Masonry + Settings Modal 3 accents + theme + motion + Qussasa Mark Header + Captions لهجة يمنية + Flat Saves Bookmark + Duration badge — موقع تجريبي ليس نهائي — "الاستوديو" اسم مؤقت أدمن — البحث لاحقًا — تفاصيل نهائية مع بناء فعلي
 - Reason: 1) يحل PD-I03 2) متوافق Direction C الختم Modern Product First 3) متوافق Qussasa Mark v1.0 Qussasa-derived 4) تحكم للمستخدم Settings Modal 5) يرفض أنظمة محدودة 1/2/4 + 3 Accents ثابتة 6) يفتح PD-I04+I05+I06+I08+I09+Settings Modal 7) لا تعارض Stage3
@@ -1906,7 +1742,7 @@
 ...
 ```
 
-**التصحيح 2 — إلغاء Empty States:** لا تظهر أي رسائل فارغة للمستخدم — لا اسم شخصية → لا شيء — لا وصف → لا شيء — لا وصف ثنائي → لا زر ▼ — لا مجموعات → لا قسم — غير مضاف → لا شيء — **القاعدة: الصفحة نظيفة — الحقل يُحذف من DOM إذا كان فارغًا — لا placeholder — لا empty message**
+[نص سياسة منع Empty States السابقة نُقل إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I06؛ المرجع الحالي `DECISION-5B.25` و`DECISION-5B.29`.]
 
 **التوافق:** متوافق P-09 «وصف ثنائي مطوي **إن وجد**» + P-35 chips «اختياري تحت بعض البطاقات فقط» + P-34 المجموعات «إن وُجدت» + P-06 حفظ CTA أساسي يبقى ظاهرًا دائمًا — لا تعارض — لا حقائق جديدة — العدد ثابت 74
 
@@ -1933,7 +1769,7 @@
 ## Topic 15 — PD-I06 — CLOSED — DECISION-I06 ACCEPTED — Stage 4 — Reaction Card
 
 - البطاقة: وسائط + ✅ Duration أعلى يمين الوسائط فيديو فقط + العنوان + ⋮ — بدون Watermark
-- صفحة التفاصيل: 8 كتل — رجوع / وسائط ❌ بلا Duration / **عنوان H1 + أزرار على نفس السطر جهة اليسار في RTL** / شخصية+وصف أساسي يُحذف إذا فارغ / وصف ثنائي مطوي لا زر ▼ إن لم يوجد / مجموعات لا قسم إن لم توجد / ذات صلة / عشوائية محدودة 10-20 — **لا Empty States** — الحقل يُحذف من DOM إذا فارغ — لا placeholder ولا empty message
+- صفحة التفاصيل: 8 كتل — رجوع / وسائط ❌ بلا Duration / **عنوان H1 + أزرار على نفس السطر جهة اليسار في RTL** / شخصية+وصف أساسي يُحذف إذا فارغ / وصف ثنائي مطوي لا زر ▼ إن لم يوجد / مجموعات لا قسم إن لم توجد / ذات صلة / عشوائية محدودة 10-20 — [سياسة Empty States السابقة مؤرشفة؛ راجع قسم DECISION-I06.]
 - الأزرار الرئيسية: حفظ + تنزيل + مشاركة — ⋮: نسخ الرابط + إبلاغ فقط — CORRECTED 2026-09-24 حذف تعديل Admin
 - عشوائية: قسم محدود 10-20 رياكشن — تصحيح ثان 2026-09-25: كان 20-40 → أصبح 10-20 — ليس Infinite Scroll — لا Load More — P-40 CORRECTED
 - Reason: 1) يحسم PD-I06 2) متوافق P-06 حفظ CTA أساسي 3) متوافق P-23 نفس العناصر الخمسة 4) متوافق DECISION-I05 لا Watermark 5) متوافق P-11 لا Infinite Feed 6) يفتح PD-I04+I07+I08+I09+Settings Modal
@@ -2261,13 +2097,13 @@
 
 **7. States:** Empty **للصفحات فقط** (Lucide icon + عنوان + إجراء) · Loading = Skeleton + Spinner 16px · Error = نبرة فصحى هادئة · **Toast: Success + Error** (ليس Success فقط)
 
-**8. Icons:** **Lucide** · `1.5px` · `16/20/24px` · Bottom Nav: `layout-grid` · `layers` · `plus` · `bookmark` · `circle-user`
+**8. Icons:** **Lucide** · `1.5px` · `16/20/24px` · تعيينات Bottom Nav الواردة في DECISION-I10 أُحيلت إلى الأرشيف؛ التعيينات النافذة موثقة لاحقًا في Stage 5.2.
 
 **9. Navigation:**
 - Header Desktop: Mark + Logo + Nav + **Search Bar كامل** + Account
 - Header Mobile: Mark + **Search Bar كامل** (بلا Avatar)
 - Header Mobile: يختفي عند scroll down / يظهر عند scroll up
-- **Bottom Nav: 5 tabs** — المكتبة · المجموعات · **+** · المحفوظات · الحساب
+- صياغة Bottom Nav ذات الخمس وجهات في DECISION-I10 أُحيلت إلى الأرشيف؛ التكوين الحالي أعيد تثبيته وتفصيله لاحقًا في Stage 5.2 (5.2.0 وما بعدها).
 
 **10. Account Menu — 3 حالات:**
 - **الزائر:** Google Login + الإعدادات + المساعدة
@@ -2276,9 +2112,9 @@
 - Desktop = Popover · Mobile = Bottom Sheet
 - ❌ لا «المحفوظات» (مكررة) · ❌ لا «مساهماتي» (ميتة قبل الإطلاق)
 
-**11. زر (+):** محايد قبل الإطلاق + 🔒 · Bottom Sheet «الرفع يُفتح قريبًا» · Accent بعد الإطلاق · Desktop: زر «+ رفع» في Header **بعد الإطلاق فقط**
+**11. زر (+):** [سياسة زر (+) السابقة في DECISION-I10 نُقلت إلى الأرشيف؛ السياسة الحالية وفق `DECISION-5.2.76` تفتح `/submit` مباشرةً وتطلب Google login عند الإرسال مع استعادة النموذج.]
 
-**12. Search Bar:** Desktop حقل `44px` بعرض `420-480px` · Mobile حقل كامل في Header · Placeholder «ابحث عن رياكشن أو موقف...» · **بلا فلاتر في v1**
+**12. Search Bar:** Desktop حقل `44px` بعرض `420-480px` · Mobile حقل كامل في Header · Placeholder «[النص السابق لحقل البحث منقول إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» · **بلا فلاتر في v1**
 
 **13. Guest Save:** حفظ محلي `localStorage` للزائر · دمج عند الدخول · **Seal Motion يعمل فورًا**
 
@@ -2331,11 +2167,11 @@
 - Buttons 5 أنواع × 3 أحجام (40/44/48) × Radius 10px × 5 حالات — Inputs 44px + Radius 10 + Border 1px + shadow-sm + Focus ring 2px Accent
 - Cards: Reaction 14px + Collection Rail/Square + Mini 70×70 — Modals: Desktop Center + Mobile Bottom Sheet 22px
 - States: Empty للصفحات فقط Lucide + عنوان + إجراء — Loading Skeleton + Spinner 16px — Error فصحى هادئة — Toast Success + Error
-- Icons: Lucide 1.5px 16/20/24 — Bottom Nav 5 tabs: layout-grid/layers/plus/bookmark/circle-user
+- Icons: Lucide 1.5px 16/20/24 — تعيينات Bottom Nav السابقة مؤرشفة؛ راجع قسم DECISION-I10.
 - Navigation: Header Desktop Mark+Logo+Nav+Search+Account — Mobile Mark+Search بلا Avatar + يختفي↓/يظهر↑
 - Account Menu 3 حالات: زائر (Google+الإعدادات+المساعدة) · مستخدم (Identity+الإعدادات+المساعدة+Logout) · أدمن (+الاستوديو مجموعة منفصلة) — Popover ديسكتوب / Sheet جوال
-- زر (+): محايد+🔒 قبل الإطلاق + Sheet «قريبًا» + Accent بعد الإطلاق + «+ رفع» في Header بعد الإطلاق فقط
-- Search Bar: 44px عرض 420-480px ديسكتوب + حقل كامل جوال + Placeholder «ابحث عن رياكشن أو موقف...» + بلا فلاتر v1
+- سياسة زر (+) السابقة مؤرشفة؛ المرجع الحالي `DECISION-5.2.76`.
+- Search Bar: 44px عرض 420-480px ديسكتوب + حقل كامل جوال + Placeholder «[النص السابق لحقل البحث منقول إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» + بلا فلاتر v1
 - Guest Save: localStorage + دمج عند الدخول + Seal Motion فورًا — Mobile: لا معاينة تلقائية + Tap يفتح التفاصيل — Report Flow: Sheet radio 5 أسباب
 - 7 تصحيحات مؤجلة Stage 7 + قراران مؤجلان (Search Route → Stage 5 · Scroll Restoration → مستقبلي)
 - Rejected: Avatar جوال + المحفوظات/مساهماتي في Account + Toast للقريبًا + Emojis في UI + Infinite Scroll + Qussasa في Empty States + Linear نبرة Empty
@@ -2355,7 +2191,7 @@
 | PD-I03 | Multi-Accent | ✅ CLOSED | Base Ink/Paper/Grey + Amber/Purple/Teal + Day/Night/Auto |
 | PD-I04 | Typography | ✅ CLOSED | Lalezar + IBM Plex Sans Arabic + Inter + Plex Mono |
 | PD-I05 | Watermark | ❄️ **DEFERRED** | مُجمّد — PD-I05-R2 بعد الإطلاق |
-| PD-I06 | Card + Detail | ✅ CLOSED | Duration top-right · أزرار نفس السطر · لا Empty States |
+| PD-I06 | Card + Detail | ✅ CLOSED | Duration top-right · أزرار نفس السطر · سياسة Empty States السابقة مؤرشفة؛ المرجع الحالي DECISION-5B.25/5B.29 |
 | PD-I07 | Chips | ✅ CLOSED | وسم بصري · inline · غير قابل للنقر · لا في البطاقة |
 | PD-I08 | Light/Dark + Soft Depth | ✅ CLOSED | Dark دافئ Qishr · 4 مستويات ظل · Auto افتراضي |
 | PD-I09 | Motion | ✅ CLOSED | Hybrid Subtle + Seal Anchor |
@@ -2386,12 +2222,12 @@
  — PD-I01 CLOSED — PD-I02 CLOSED — PD-I03 CLOSED — PD-I04 CLOSED — PD-I05 DEFERRED — PD-I06 CLOSED — PD-I07 CLOSED
 
 - Stage 3 — Content & Editorial System — CLOSED — 2026-09-14 — 66 facts — PD-04+PD-05+PD-06 SKIPPED+PD-07+PD-08+PD-09+PD-10
-- Stage 4 — Experience & Identity — OPEN — Identity Re-Foundation — 2026-09-21 Brand Direction الختم PD-I01 CLOSED + 2026-09-23 Qussasa Mark v1.0 PD-I02 CLOSED + 2026-09-23 Multi-Accent Color System PD-I03 CLOSED + 2026-09-24 Watermark DEFERRED per DECISION-I05 + 2026-09-24 Reaction Card & Detail Page PD-I06 CLOSED per DECISION-I06 + 2026-09-25 Typography System PD-I04 CLOSED per DECISION-I04 + 2026-09-25 chips الشخصية PD-I07 CLOSED per DECISION-I07 — 74 facts ثابتة — Direction C Al-Khatm + Qussasa Mark v1.0 Logo هيدر فقط + Multi-Accent Base Ink/Paper/Grey + Accent Qussasa-derived Amber + Optional Amber/Purple/Teal + Theme Day/Night/Auto + Reduce Motion + Settings Modal على ذوقك + Reset + Watermark مُجمّد PD-I05-R2 بعد الإطلاق + البطاقة وسائط+Duration+عنوان+⋮ + التفاصيل 8 كتل + أزرار رئيسية حفظ+تنزيل+مشاركة + ⋮ نسخ رابط+إبلاغ فقط لا تعديل Admin + عشوائية محدودة 10-20 + أزرار التفاصيل على نفس سطر العنوان جهة اليسار في RTL + لا Empty States + Duration ✅ البطاقة فقط ❌ لا في التفاصيل + Related+More نفس بطاقة Reaction Card + Typography Lalezar Logo فقط + IBM Plex Sans Arabic + Inter + IBM Plex Mono + RTL كامل أرقام Western
+- Stage 4 — Experience & Identity — OPEN — Identity Re-Foundation — 2026-09-21 Brand Direction الختم PD-I01 CLOSED + 2026-09-23 Qussasa Mark v1.0 PD-I02 CLOSED + 2026-09-23 Multi-Accent Color System PD-I03 CLOSED + 2026-09-24 Watermark DEFERRED per DECISION-I05 + 2026-09-24 Reaction Card & Detail Page PD-I06 CLOSED per DECISION-I06 + 2026-09-25 Typography System PD-I04 CLOSED per DECISION-I04 + 2026-09-25 chips الشخصية PD-I07 CLOSED per DECISION-I07 — 74 facts ثابتة — Direction C Al-Khatm + Qussasa Mark v1.0 Logo هيدر فقط + Multi-Accent Base Ink/Paper/Grey + Accent Qussasa-derived Amber + Optional Amber/Purple/Teal + Theme Day/Night/Auto + Reduce Motion + وصف واجهة الإعدادات السابقة مؤرشف؛ القيم المعتمدة باقية + Watermark مُجمّد PD-I05-R2 بعد الإطلاق + البطاقة وسائط+Duration+عنوان+⋮ + التفاصيل 8 كتل + أزرار رئيسية حفظ+تنزيل+مشاركة + ⋮ نسخ رابط+إبلاغ فقط لا تعديل Admin + عشوائية محدودة 10-20 + أزرار التفاصيل على نفس سطر العنوان جهة اليسار في RTL + [قاعدة Empty States السابقة مؤرشفة؛ المرجع الحالي DECISION-5B.25 وDECISION-5B.29] + Duration ✅ البطاقة فقط ❌ لا في التفاصيل + Related+More نفس بطاقة Reaction Card + Typography Lalezar Logo فقط + IBM Plex Sans Arabic + Inter + IBM Plex Mono + RTL كامل أرقام Western
 - Stage 4 NEXT: PD-I08 Light/Dark + PD-I09 Motion + Settings Modal Topic مستقبلي + PD-I05-R2 بعد الإطلاق — HISTORY+EVIDENCE فقط — بانتظار أمر حمدان — لا كود/Git/DB — توثيق فقط — لا Migration — لا تنفيذ — لا تعديل Brand القديم — وثّق فقط لا تنفذ
  — PD-I01 CLOSED — PD-I02 CLOSED — PD-I03 CLOSED — PD-I04 CLOSED — PD-I05 DEFERRED — PD-I06 CLOSED
 
 - Stage 3 — Content & Editorial System — CLOSED — 2026-09-14 — 66 facts — PD-04+PD-05+PD-06 SKIPPED+PD-07+PD-08+PD-09+PD-10
-- Stage 4 — Experience & Identity — OPEN — Identity Re-Foundation — 2026-09-21 Brand Direction الختم PD-I01 CLOSED + 2026-09-23 Qussasa Mark v1.0 PD-I02 CLOSED + 2026-09-23 Multi-Accent Color System PD-I03 CLOSED + 2026-09-24 Watermark DEFERRED per DECISION-I05 + 2026-09-24 Reaction Card & Detail Page PD-I06 CLOSED per DECISION-I06 + 2026-09-25 Typography System PD-I04 CLOSED per DECISION-I04 — 73→74 facts — Direction C Al-Khatm + Qussasa Mark v1.0 Logo هيدر فقط + Multi-Accent Base Ink/Paper/Grey + Accent Qussasa-derived Amber + Optional Amber/Purple/Teal + Theme Day/Night/Auto + Reduce Motion + Settings Modal على ذوقك + Reset + Watermark مُجمّد PD-I05-R2 بعد الإطلاق + البطاقة وسائط+Duration+عنوان+⋮ + التفاصيل 8 كتل + أزرار رئيسية حفظ+تنزيل+مشاركة + ⋮ نسخ رابط+إبلاغ فقط لا تعديل Admin + عشوائية محدودة 10-20 + أزرار التفاصيل على نفس سطر العنوان جهة اليسار في RTL + لا Empty States + Duration ✅ البطاقة فقط ❌ لا في التفاصيل + Typography Lalezar Logo فقط + IBM Plex Sans Arabic + Inter + IBM Plex Mono + RTL كامل أرقام Western
+- Stage 4 — Experience & Identity — OPEN — Identity Re-Foundation — 2026-09-21 Brand Direction الختم PD-I01 CLOSED + 2026-09-23 Qussasa Mark v1.0 PD-I02 CLOSED + 2026-09-23 Multi-Accent Color System PD-I03 CLOSED + 2026-09-24 Watermark DEFERRED per DECISION-I05 + 2026-09-24 Reaction Card & Detail Page PD-I06 CLOSED per DECISION-I06 + 2026-09-25 Typography System PD-I04 CLOSED per DECISION-I04 — 73→74 facts — Direction C Al-Khatm + Qussasa Mark v1.0 Logo هيدر فقط + Multi-Accent Base Ink/Paper/Grey + Accent Qussasa-derived Amber + Optional Amber/Purple/Teal + Theme Day/Night/Auto + Reduce Motion + وصف واجهة الإعدادات السابقة مؤرشف؛ القيم المعتمدة باقية + Watermark مُجمّد PD-I05-R2 بعد الإطلاق + البطاقة وسائط+Duration+عنوان+⋮ + التفاصيل 8 كتل + أزرار رئيسية حفظ+تنزيل+مشاركة + ⋮ نسخ رابط+إبلاغ فقط لا تعديل Admin + عشوائية محدودة 10-20 + أزرار التفاصيل على نفس سطر العنوان جهة اليسار في RTL + [قاعدة Empty States السابقة مؤرشفة؛ المرجع الحالي DECISION-5B.25 وDECISION-5B.29] + Duration ✅ البطاقة فقط ❌ لا في التفاصيل + Typography Lalezar Logo فقط + IBM Plex Sans Arabic + Inter + IBM Plex Mono + RTL كامل أرقام Western
 - Stage 4 NEXT: PD-I07 chips الشخصية + PD-I08 Light/Dark + PD-I09 Motion + Settings Modal Topic مستقبلي + PD-I05-R2 بعد الإطلاق — HISTORY+EVIDENCE فقط — بانتظار أمر حمدان — لا كود/Git/DB — توثيق فقط — لا Migration — لا تنفيذ — لا تعديل Brand القديم — وثّق فقط لا تنفذ
 
 
@@ -2897,7 +2733,7 @@ P-14 بصيغته القديمة كان **Known-Item أصلًا** — مداخل
 لا يُحتفظ بالرياكشن المحذوف أو غير المنشور حتى نهاية الجلسة بوصف ذلك سلوكًا مضمونًا. يُزال عند تحديث النتائج أو التحقق من حالته، ويجب التحقق من كونه منشورًا ومتاحًا للعامة قبل فتح التفاصيل. إذا لم يعد عامًا فلا تُعرض تفاصيله. تُحدّث العناصر الباقية وفق 5.2.58 مع منع التكرار. سلامة الوصول وحالة النشر الحالية تتقدمان على الاحتفاظ بعنصر قديم.
 
 ### 5.2.67 — نص حقل البحث — ACTIVE; supersedes legacy placeholder
-يُستبعد «ابحث عن رياكشن أو موقف...» من الاستخدام الحالي؛ النص المعتمد «ابحث عن رياكشن...». يظل البحث Known-Item وفق P-48، و«الموقف» سببًا للمجيء لا آلية بحث مستقلة.
+يُستبعد «[النص السابق لحقل البحث منقول إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» من الاستخدام الحالي؛ النص المعتمد «ابحث عن رياكشن...». يظل البحث Known-Item وفق P-48، و«الموقف» سببًا للمجيء لا آلية بحث مستقلة.
 
 ### 5.2.68 — الكتابة مقابل تنفيذ البحث — CLARIFICATION
 الكتابة تحدّث الاقتراحات فقط. النتائج الكاملة تتحدث عند الإرسال أو Enter دون اقتراح محدد. اختيار اقتراح يفتح الرياكشن المطابق مباشرة. لا يغيّر ذلك قرارات Stage 5.1.
@@ -3282,3 +3118,9 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - **Scope:** Library, search, collections list, collection detail, and optional related/discovery sections. DECISION-5B.25 remains authoritative for Saved and My Contributions.
 - **Boundary:** Flow-specific upload/authentication/media/save/report failures, HTTP behavior, retry mechanics, implementation, and tests are not inferred or verified. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; no implementation or later stage is authorized.
 - **PR source:** PR #18, selectively adopted. PR #18 remains open; no merge or closure was performed.
+
+---
+
+## 2026-11-04 — Archive of Cancelled and Superseded Decision Scopes
+
+The retired decision scopes are indexed in `archive/superseded-decisions/DECISIONS-ARCHIVE-REGISTER.md`. Use that register to identify the replacement and the exact scope affected. This does not erase chronological evidence in this log; partially superseded decisions remain valid outside the explicitly retired scope.

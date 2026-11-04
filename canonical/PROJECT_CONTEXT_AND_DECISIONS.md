@@ -1,7 +1,7 @@
 # YemReact — ملف السياق والقرارات المرجعي
 > هذا الملف هو المرجع الحي الوحيد للمحادثة الحالية فقط (منذ بدايتها مع نِبراس حتى الآن). لا يحتوي على أي معلومات من محادثات كلود السابقة إلا إذا تم تأكيدها صراحة هنا. يتم تحديثه بعد كل قرار مهم.
 
-**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-10-29 — DECISION-5B.28 route boundaries + Stage 5 CLOSED FOR DOCUMENTATION ONLY; OPEN-Q-08/09 closed for documentation; technical gates unverified
+**تاريخ الإنشاء:** 2026-09-07 | **آخر تحديث:** 2026-11-05 — تنظيم أرشيف القرارات المستبدلة، وإحالة ملخص التنقل التاريخي في I10 إلى مرجع Stage 5.2؛ Stage 5 CLOSED FOR DOCUMENTATION ONLY; technical gates unverified
 **الحالة العامة:** مرحلة DISCUSSION — تحليل وهوية وتخطيط، لا كود ولا تنفيذ UI
 **المدير التنفيذي:** نِبراس | **شريك النقاش:** أرينا | **مهندس التنفيذ (لاحقًا):** أرينا كود | **حلقة الوصل:** المستخدم
 **آلية العمل الجديدة:** نقاش متناوب — نِبراس يناقش مع المستخدم مرة، ثم مع أرينا مرة، ثم يعود للمستخدم — حتى حسم كل محور.
@@ -17,9 +17,9 @@
 - **Buttons** 5 أنواع × 3 أحجام (40/44/48) × Radius 10 · **Inputs** 44px + Border 1px + shadow-sm + Focus ring 2px Accent
 - **Cards** Reaction 14px + Collection Rail/Square + Mini 70×70 · **Modals** Desktop Center / Mobile Sheet 22px
 - **States** Empty للصفحات فقط · Skeleton + Spinner 16 · Error فصحى هادئة · Toast Success+Error
-- **Icons** Lucide 1.5px 16/20/24 · **Bottom Nav** 5 tabs (المكتبة · المجموعات · + · المحفوظات · الحساب)
+- **Icons** Lucide 1.5px 16/20/24 · ملخص تعيينات Bottom Nav في I10 تاريخي؛ المرجع الحالي للتنقل هو Stage 5.2: المكتبة · المجموعات · إرسال · المحفوظات · الحساب (`5.2.0` وما بعده).
 - **Account Menu (P-45)** 3 حالات: زائر / مستخدم / أدمن (+الاستوديو) · Popover ديسكتوب · Sheet جوال
-- **زر (+)** محايد+🔒 قبل الإطلاق + Sheet «قريبًا» · **Search Bar** 44px بلا فلاتر v1
+- **زر (+):** الصياغة السابقة الخاصة بالقفل و«قريبًا» أُحيلت إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I10؛ السياسة الحالية وفق `DECISION-5.2.76`.
 - **Guest Save (P-46)** localStorage + دمج عند الدخول + Seal Motion فورًا
 - **7 تصحيحات Stage 7 + قراران مؤجلان** (Search Route → Stage 5 · Scroll Restoration → مستقبلي)
 - **Impact:** P-44 + P-45 + P-46 — **76→79 facts** — **PD-I10 CLOSED — Stage 4 CLOSED 100%**
@@ -79,7 +79,7 @@
 ## UPDATE 2026-09-25 — تصحيح PD-I06 (Detail Page Layout) — التصحيح الثالث
 
 - **التصحيح 1 — موضع الأزرار:** الأزرار (حفظ + تنزيل + مشاركة + [...]) **بجانب العنوان — في اليسار (RTL) — نفس السطر — ليست سطرًا منفصلًا**
-- **التصحيح 2 — إلغاء Empty States:** لا رسائل فارغة — لا اسم شخصية → لا شيء — لا وصف → لا شيء — لا وصف ثنائي → لا زر ▼ — لا مجموعات → لا قسم — **الحقل يُحذف من DOM إذا كان فارغًا** — لا placeholder — لا empty message — الصفحة نظيفة
+- **التصحيح 2 — سياسة Empty States السابقة:** النص الأصلي مؤرشف في `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I06؛ المرجع الحالي `DECISION-5B.25` و`DECISION-5B.29`.
 - **التوافق:** P-09 «إن وجد» + P-35 chips اختياري + P-34 «إن وُجدت» + P-06 حفظ CTA دائم — لا تعارض
 - **Impact:** P-39 CORRECTED — العدد ثابت 74 facts — PD-I06 يبقى CLOSED
 
@@ -118,13 +118,13 @@
 
 - DECISION-I03 Multi-Accent Color System ACCEPTED 2026-09-23 Stage 4 Identity Re-Foundation PD-I03 Color System CLOSED
 - Palette الأساسي: Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived Qishr Amber + Success/Warning/Error قياسية
-- Accents اختيارية من الإعدادات Settings Modal على ذوقك: كهرماني Amber افتراضي دافئ يمني + بنفسجي Purple حديث مميز + تيل Teal بارد هادئ
-- Theme: نهاري Day افتراضي + ليلي Night + تلقائي Auto يتبع النظام prefers-color-scheme
+- Accents اختيارية من إعدادات المستخدم: كهرماني Amber افتراضي دافئ يمني + بنفسجي Purple حديث مميز + تيل Teal بارد هادئ؛ واجهة الإعدادات الحالية صفحة مستقلة، والوصف السابق مؤرشف.
+- Theme: نهاري Day + ليلي Night + تلقائي Auto؛ Auto هو الافتراضي الحالي وفق `DECISION-5B.20`.
 - Reduce Motion: On/Off — يحترم prefers-reduced-motion — تفاصيل PD-I09
-- Settings Modal: موجود UI على ذوقك عنوان أنيق بلهجة يمنية + 3 Accents + Theme + Motion + زر استعادة الإعدادات Reset — Topic جديد يُفتح لاحقًا
-- المرجع البصري Prototype موقع تجريبي: Home Pinterest-like Masonry + Settings Modal + Qussasa Mark في Header + Captions بلهجة يمنية + Flat Saves Bookmark + Duration badge — موقع تجريبي ليس نهائي — الاستوديو اسم مؤقت أدمن — البحث لاحقًا — تفاصيل نهائية مع بناء فعلي
+- [وصف واجهة Settings Modal السابقة نُقل إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03؛ المرجع الحالي صفحة إعدادات مستقلة.]
+- المرجع البصري Prototype موقع تجريبي: Home Pinterest-like Masonry + وصف واجهة الإعدادات السابق مؤرشف — Qussasa Mark في Header + Captions بلهجة يمنية + Flat Saves Bookmark + Duration badge؛ بقية ملاحظات النموذج تاريخية.
 - Rejected: النظام 1 كهرماني فقط محدود + النظام 2 نيلي يفقد الدفء + النظام 4 رمادي فقط بلا شخصية + 3 Accents ثابتة نستخدم متعدد — كلها REJECTED per DECISION-I03
-- Impact: P-37 Multi-Accent Color System — B-05 UPDATED Brand colors foundation → Multi-Accent — B-06 9 colors محفوظ للدراسة — 69→70 facts — PD-I03 CLOSED يفتح PD-I04+PD-I05+PD-I06+PD-I08+PD-I09+Settings Modal — Prototype مرجع بصري ليس نهائي — ملاحظة موقع تجريبي + الاستوديو اسم مؤقت + البحث لاحقًا
+- Impact: P-37 Multi-Accent Color System — B-05 UPDATED Brand colors foundation → Multi-Accent — B-06 9 colors محفوظ للدراسة — 69→70 facts — PD-I03 CLOSED يفتح PD-I04+PD-I05+PD-I06+PD-I08+PD-I09 + صفحة إعدادات مستقلة (وصف النمط السابق مؤرشف) — Prototype مرجع بصري ليس نهائي — ملاحظة موقع تجريبي + الاستوديو اسم مؤقت + البحث لاحقًا
 - No code/Git/DB — documentation only — No conflict Stage 3 — Multi-Accent يبني فوق Brand Direction + Qussasa Mark — Direction C + Qussasa + Qussasa-derived Amber
 
 
@@ -212,7 +212,7 @@
 
 ### PROPOSED (مقترحة بانتظار اعتماد)
 
-- **BottomNav الخانة الرابعة = Saved:** تاريخ القرار: أولًا Submit (SUPERSEDED لأنه يضع إنشاء محتوى بنفس مستوى الاكتشاف)، ثم Collections (SUPERSEDED لأن 3 مجموعات لا تبرر مقعد تنقل دائم)، حاليًا Saved لأنه أقرب فعل شخصي متكرر لـ"خذها. حطها.".
+- **BottomNav التاريخي:** النصوص السابقة منقولة إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`.
 - **Categories = Data Only:** 9 فئات كبيانات/لون فقط، لا فلترة بارزة كوجهة مستقلة.
 - **Collections = Rail داخلي:** لا BottomNav Destination. Rail داخل تجربة المكتبة يكفي حتى يكبر العدد.
 - **Masonry Mixed Aspect:** فيديو فقط، لا Pinterest صور ثابتة.
@@ -230,10 +230,9 @@
 - Video Intro/Outro Bumper قبل اللقطة (أول فريم = بداية الرياكشن).
 - Ad Creative في مرحلة الإطلاق العضوي.
 
-### SUPERSEDED (مستبدلة مع تاريخ)
+### SUPERSEDED
 
-- BottomNav: Submit → Collections → Saved (كما موضح أعلاه).
-- انبهار كفئة عاشرة بلون مستقل → أُلحقت بعائلة استغراب (نفس التركواز) لتفادي تضخم التصنيف.
+النصوص التاريخية للقرارات المستبدلة نُقلت إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. لا تُعاد صياغتها أو عرضها هنا؛ المرجع الحالي هو الـCanonical Baseline وسجل القرارات النافذان.
 
 ### OPEN / DISCUSSION (مفتوحة)
 
@@ -378,7 +377,7 @@
 ## 11. أي تغييرات أو تحديثات طرأت على القرارات السابقة
 
 - Core Loop: من PROPOSED Utility (أداة عند الحاجة) → مقترح Hybrid Utility (Find right reaction, discover next, share naturally) → **حاليًا DISCUSSION** بانتظار تحليل أرينا المفتوح. الصيغة السابقة محفوظة كـSUPERSEDED إذا اعتمد الجديد.
-- BottomNav الرابعة: Submit (SUPERSEDED) → Collections (SUPERSEDED) → Saved (PROPOSED حاليًا).
+- تسلسل قرارات التنقل السابق مؤرشف؛ راجع `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`.
 - انبهار: من لون عاشر مستقل → أُلحقت بعائلة استغراب (SUPERSEDED).
 - Brand v1.0: من دليل هوية أولي (YemReact-دليل-الهوية.md) → نسخة LOCKED نهائية (YemReact-Brand-v1.0-LOCKED.html) مع Watermark مُقوّى وقاعدة قلب الكتلة — النسخة الأولى تعتبر تاريخية عند التعارض.
 - طريقة العمل: من تنفيذ مباشر (افتراض سابق) → مرحلة DISCUSSION محور بمحور، لا كود قبل اعتماد الخطة (ACCEPTED).
@@ -527,7 +526,7 @@
 ## CURRENT STATUS UPDATE — 2026-10-11 — Founder-approved
 
 - **Stage 5.2:** CLOSED **for documentation only**, by explicit founder approval.
-- **Next topic:** **C-01 — تعريف المحتوى اليمني (Content Axis)**. The deferred P-20 criterion #6 (“يكتمل معناه بلا شرح”) remains assigned to C-01.
+- **Next topic:** لا يوجد موضوع تالٍ معيّن، ولا يوجد تكليف نشط.
 - **Scope:** documentation and decision history only. No code, build, database changes, or claims of runtime verification.
 - **Security:** SEC-06 was not audited as part of this closure and remains separate.
 - **History:** earlier “Stage 5.2 OPEN / awaiting founder approval” statements remain as historical records and are superseded for current status by this dated update and the closure decision in YEMREACT-DECISIONS-LOG.md.
@@ -550,7 +549,7 @@
 - **Saved:** Inside Account; `/saved` is intended to redirect to Account with Saved selected while retaining guest access.
 - **Settings:** Dedicated page direction with Appearance, Account, Privacy; only approved functional options, no empty sections.
 - **Still open:** Theme default conflict (Day vs Auto), route names, exact Settings functions/reset scope, contribution identity fields, Help scope/workflow, invitation wording/close control, and final visual header comparison.
-- **Historical scope:** DECISION-I10's former five-item mobile navigation and DECISION-I03/P-37's modal-only Settings presentation are superseded only in the affected scope. Historical records remain intact.
+- **Historical scope:** نصوص نطاق التنقل وطريقة عرض الإعدادات المستبدلة نُقلت إلى الأرشيف؛ القرارات الحالية في الـCanonical Baseline.
 - **Stage status:** Stage 5.1 and Stage 5.2 remain closed. C-01 remains cancelled as an active topic; P-20 #6 remains DEFERRED with no replacement assignment. Do not create Stage 5.3.
 - **Verification boundary:** Documentation only. No code/build/database/runtime verification; technical redirect/return-destination behavior is not audited, and SEC-06 remains unaudited.
 
@@ -641,3 +640,9 @@ Accepted policy: render an empty state only after a successful load confirms no 
 - The submission-discussion source remains on `hamdanaltawaf-cpu-patch-1` under its earlier scope restriction; it was not merged or relocated by this closure.
 - C-01 remains cancelled; P-20 #6 remains deferred without reassignment. Legal obligations remain a separate scope. No Stage 5.3, Stage 6, or Stage 9 is created/started.
 - Technical implementation and verification remain UNVERIFIED and require a separate explicit task after documentation is complete.
+
+---
+
+## ARCHIVE POINTER — 2026-11-04
+
+This file contains historical context and earlier decision states. Cancelled and superseded scopes are now indexed in `archive/superseded-decisions/DECISIONS-ARCHIVE-REGISTER.md`. Read those entries as historical only and follow the named replacement. This pointer does not delete or rewrite the original historical record.
