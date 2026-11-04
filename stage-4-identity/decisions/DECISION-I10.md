@@ -28,7 +28,7 @@
 
 **7. States:** Empty **للصفحات فقط** (Lucide icon + عنوان + إجراء) · Loading = Skeleton + Spinner 16px · Error = نبرة فصحى هادئة · **Toast: Success + Error** (ليس Success فقط)
 
-**8. Icons:** **Lucide** · `1.5px` · `16/20/24px` · Bottom Nav: `layout-grid` · `layers` · `plus` · `bookmark` · `circle-user`
+**8. Icons:** **Lucide** · `1.5px` · `16/20/24px` · تعيينات أيقونات Bottom Nav السابقة أُحيلت إلى الأرشيف.
 
 **9. Navigation:**
 - Header Desktop: Mark + Logo + Nav + **Search Bar كامل** + Account
