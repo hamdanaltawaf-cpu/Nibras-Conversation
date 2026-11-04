@@ -19,7 +19,7 @@
 - **States** Empty للصفحات فقط · Skeleton + Spinner 16 · Error فصحى هادئة · Toast Success+Error
 - **Icons** Lucide 1.5px 16/20/24 · **Bottom Nav** 5 tabs (المكتبة · المجموعات · + · المحفوظات · الحساب)
 - **Account Menu (P-45)** 3 حالات: زائر / مستخدم / أدمن (+الاستوديو) · Popover ديسكتوب · Sheet جوال
-- **زر (+)** محايد+🔒 قبل الإطلاق + Sheet «قريبًا» · **Search Bar** 44px بلا فلاتر v1
+- **زر (+):** الصياغة السابقة الخاصة بالقفل و«قريبًا» أُحيلت إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I10؛ السياسة الحالية وفق `DECISION-5.2.76`.
 - **Guest Save (P-46)** localStorage + دمج عند الدخول + Seal Motion فورًا
 - **7 تصحيحات Stage 7 + قراران مؤجلان** (Search Route → Stage 5 · Scroll Restoration → مستقبلي)
 - **Impact:** P-44 + P-45 + P-46 — **76→79 facts** — **PD-I10 CLOSED — Stage 4 CLOSED 100%**
