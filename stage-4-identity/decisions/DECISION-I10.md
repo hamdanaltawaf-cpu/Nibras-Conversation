@@ -34,7 +34,7 @@
 - Header Desktop: Mark + Logo + Nav + **Search Bar كامل** + Account
 - Header Mobile: Mark + **Search Bar كامل** (بلا Avatar)
 - Header Mobile: يختفي عند scroll down / يظهر عند scroll up
-- **Bottom Nav:** الصياغة السابقة ذات الخمس وجهات أُحيلت إلى الأرشيف؛ المرجع الحالي هو التنقل المعتمد في Stage 5-B.
+- **Bottom Nav:** الصياغة السابقة ذات الخمس وجهات أُحيلت إلى الأرشيف؛ المرجع الحالي هو التنقل المعتمد لاحقًا في Stage 5.2 (`5.2.0` وما بعده).
 
 **10. Account Menu — 3 حالات:**
 - **الزائر:** Google Login + الإعدادات + المساعدة
@@ -43,7 +43,7 @@
 - Desktop = Popover · Mobile = Bottom Sheet
 - ❌ لا «المحفوظات» (مكررة) · ❌ لا «مساهماتي» (ميتة قبل الإطلاق)
 
-[سياسة زر (+) السابقة أُحيلت إلى الأرشيف؛ المرجع الحالي هو `DECISION-5.2.76` وقرارات Stage 5-B ذات الصلة.]
+[سياسة زر (+) السابقة أُحيلت إلى الأرشيف؛ المرجع الحالي هو `DECISION-5.2.76` وقرارات Stage 5.2 ذات الصلة.]
 
 **12. Search Bar:** Desktop حقل `44px` بعرض `420-480px` · Mobile حقل كامل في Header · Placeholder البحث السابق مؤرشف في `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. · **بلا فلاتر في v1**
 
