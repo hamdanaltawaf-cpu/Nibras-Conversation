@@ -102,7 +102,7 @@
 - Navigation: Header Desktop Mark+Logo+Nav+Search+Account — Mobile Mark+Search بلا Avatar + يختفي↓/يظهر↑
 - Account Menu 3 حالات: زائر (Google+الإعدادات+المساعدة) · مستخدم (Identity+الإعدادات+المساعدة+Logout) · أدمن (+الاستوديو مجموعة منفصلة) — Popover ديسكتوب / Sheet جوال
 - زر (+): محايد+🔒 قبل الإطلاق + Sheet «قريبًا» + Accent بعد الإطلاق + «+ رفع» في Header بعد الإطلاق فقط
-- Search Bar: 44px عرض 420-480px ديسكتوب + حقل كامل جوال + Placeholder «ابحث عن رياكشن أو موقف...» + بلا فلاتر v1
+- Search Bar: 44px عرض 420-480px ديسكتوب + حقل كامل جوال + Placeholder البحث السابق مؤرشف؛ المرجع الحالي `5.2.67` + بلا فلاتر v1
 - Guest Save: localStorage + دمج عند الدخول + Seal Motion فورًا — Mobile: لا معاينة تلقائية + Tap يفتح التفاصيل — Report Flow: Sheet radio 5 أسباب
 - 7 تصحيحات مؤجلة Stage 7 + قراران مؤجلان (Search Route → Stage 5 · Scroll Restoration → مستقبلي)
 - Rejected: Avatar جوال + المحفوظات/مساهماتي في Account + Toast للقريبًا + Emojis في UI + Infinite Scroll + Qussasa في Empty States + Linear نبرة Empty
