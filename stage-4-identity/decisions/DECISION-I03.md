@@ -10,7 +10,7 @@
 1. DECISION-I01 Brand Direction الختم Direction C ACCEPTED 2026-09-21 — Modern Product First — 3 Anchors — Modern UI Pinterest-like
 2. DECISION-I02 Qussasa Mark v1.0 Adopted As-Is ACCEPTED 2026-09-23 — مربع بزاوية مشطوفة + مثلث سالب — 16-512px — اجتاز 8 سيناريوهات
 3. Claude أنتج 4 أنظمة ألوان في H1-R2/H1-R3: النظام 1 كهرماني فقط + النظام 2 نيلي + النظام 3 متعدد Accents + النظام 4 رمادي فقط — مع 3 Accents ثابتة مقترحة
-4. Prototype موقع تجريبي يُظهر: Home Pinterest-like Masonry + Settings Modal (3 accents + theme + motion) + Qussasa Mark في Header + Captions بلهجة يمنية + Flat Saves Bookmark + Duration badge — المرجع البصري
+4. Prototype موقع تجريبي يُظهر: Home Pinterest-like Masonry + [وصف Settings Modal السابق مؤرشف] + Qussasa Mark في Header + Captions بلهجة يمنية + Flat Saves Bookmark + Duration badge — المرجع البصري
 5. حمدان اختار: نظام ألوان متعدد + إعدادات المستخدم — Multi-Accent Color System
 
 **Previous → New:**
@@ -21,7 +21,7 @@
   - B-01 Brand v1.0 LOCKED — Ink #121214 + Qishr Amber + Paper — S10 — 8 scenarios test
   - P-08 Presentation Pinterest-like Masonry Grid visual only — P-35 Brand Direction الختم Modern UI Foundation — P-36 Qussasa Mark v1.0 Header
   - PD-I03 Color System كان OPEN — HISTORY+EVIDENCE done — يحتاج قرار
-  - Settings Modal لم يكن موجود — الآن موجود — UI "على ذوقك" — عنوان أنيق بلهجة يمنية — زر استعادة الإعدادات
+  - [وصف واجهة Settings Modal السابقة محفوظ في الأرشيف؛ المرجع الحالي صفحة إعدادات مستقلة.]
 
 - **New:**
 
@@ -46,7 +46,7 @@
      - Warning: تنبيه
      - Error: خطأ/حذف
 
-  Accents اختيارية (من الإعدادات — Settings Modal):
+  Accents اختيارية (من صفحة الإعدادات؛ وصف العرض السابق مؤرشف):
 
   - كهرماني (Amber) — افتراضي — Default
     - دافئ — Qussasa-derived — Qishr — يمني بدون علم
@@ -74,7 +74,7 @@
 
   Reduce Motion:
 
-  - خيار (On/Off) — Settings Modal
+  - خيار (On/Off) — من صفحة الإعدادات
     - On: تقليل الحركة — يحترم prefers-reduced-motion
     - Off: حركة كاملة — Motion Signature 150-200ms ختم/قلب
     - تفاصيل الحركة → PD-I09 Motion
@@ -103,7 +103,7 @@
 
 **Reason:**
 
-1) يحل PD-I03 Color System — Stage 4 Identity Re-Foundation — رحلة: Claude 4 أنظمة ألوان — Prototype تجريبي يُظهر Home+Masonry+Settings Modal+Qussasa Mark+Captions+Flat Saves+Duration badge — حمدان اختار Multi-Accent — قرار مؤسس
+1) يحل PD-I03 Color System — Stage 4 Identity Re-Foundation — رحلة: Claude 4 أنظمة ألوان — Prototype تجريبي يُظهر Home+Masonry+[وصف واجهة الإعدادات السابقة مؤرشف]+Qussasa Mark+Captions+Flat Saves+Duration badge — حمدان اختار Multi-Accent — قرار مؤسس
 2) يتوافق مع DECISION-I01 Brand Direction الختم — Modern Product First, Yemeni Character Second — Modern UI Foundation Pinterest-like Masonry + Search فوري + Spacing Linear + نظام واحد صارم + Account flows قياسية + لا تراث في UI — Multi-Accent يعطي شخصية بدون تراث — حديث 100%
 3) يتوافق مع DECISION-I02 Qussasa Mark v1.0 Adopted As-Is — Qussasa Mark في Header — Accent الافتراضي قهري/كهرماني Qussasa-derived — مستمد من Qussasa — Qishr Amber — Brand v1.0 LOCKED — B-05 + B-04 — Ink/Paper/Grey Monochrome + Qussasa Amber
 4) يعطي تحكم للمستخدم — واجهة إعدادات للمستخدم (الوصف السابق مؤرشف) — 3 Accents اختيارية + Theme نهاري/ليلي/تلقائي + Reduce Motion On/Off + زر استعادة الإعدادات — يحترم تفضيلات — P-15 Audience أي شخص في موقف — Device جوال متوسط 30% قوي 10% ضعيف — Theme ليلي/تلقائي يحسن تجربة — Reduce Motion يحترم Accessibility
@@ -133,10 +133,10 @@
 - Stage 3 CLOSED — 66 facts — لا تعارض مع Stage 4 PD-I03 — Multi-Accent Color System يبني فوق Content & Editorial System — لا يلغيه
 - Stage 4 — Experience & Identity — الآن OPEN — PD-I01 CLOSED Brand Direction + PD-I02 CLOSED Qussasa Mark + PD-I03 CLOSED Multi-Accent — يفتح PD-I04 Typography + PD-I05 Watermark Qussasa-based + PD-I06 Reaction Card + PD-I08 Light/Dark + PD-I09 Motion + موضوع الإعدادات
 - YEMREACT-HISTORICAL-NOT-CURRENT.md: B-05 Brand colors foundation → UPDATED ACCEPTED — DECISION-I03 Multi-Accent — B-06 9 category colors → يبقى محفوظ للدراسة — لا يُستخدم كفلتر — PD-I03 CLOSED
-- YEMREACT-REFORMATION-MASTER-PLAN.md + PROJECT_CONTEXT_AND_DECISIONS.md + Roadmap — يحتاج تحديث — PD-I03 مغلق — Multi-Accent Color System — يفتح PD-I04+PD-I05+PD-I06+PD-I08+PD-I09+Settings Modal
+- YEMREACT-REFORMATION-MASTER-PLAN.md + PROJECT_CONTEXT_AND_DECISIONS.md + Roadmap — يحتاج تحديث — PD-I03 مغلق — Multi-Accent Color System — يفتح PD-I04+PD-I05+PD-I06+PD-I08+PD-I09 + صفحة إعدادات مستقلة
 - NEXT: Stage 4 — PD-I04 Typography + PD-I05 Watermark Qussasa-based + PD-I06 Reaction Card + PD-I08 Light/Dark + PD-I09 Motion + واجهة الإعدادات — HISTORY+EVIDENCE فقط — بانتظار أمر حمدان
 
-**Stage:** Stage 4 — PD-I03 — CLOSED — DECISION-I03 ACCEPTED 2026-09-23 — Multi-Accent Color System — NEXT PD-I04 + PD-I05 + PD-I06 + PD-I08 + PD-I09 + Settings Modal
+**Stage:** Stage 4 — PD-I03 — CLOSED — DECISION-I03 ACCEPTED 2026-09-23 — Multi-Accent Color System — NEXT PD-I04 + PD-I05 + PD-I06 + PD-I08 + PD-I09 + صفحة إعدادات مستقلة
 
 **Evidence:** B-05 Brand colors foundation Ink/Qishr Amber/Paper/Coral/Warm Grey Qishr from Yemeni coffee not flag, B-06 9 category colors #F4C430 #7C5CFF #C81E3A #2CB6C4 #F17FB2 #4CAF6D #6E8296 #D98E04 #E8712E, B-01 Brand v1.0 LOCKED, B-04 Qussasa Mark v1.0 Adopted As-Is, B-09 Brand Direction الختم Direction C, P-08 Pinterest-like Masonry, P-07 Flat Saves Bookmark, P-27 Duration 2-60s badge, P-35 Brand Direction + P-36 Qussasa Mark, Claude 4 color systems 1 Amber only + 2 Indigo + 3 Multi-Accent + 4 Grey only + 3 Accents fixed, Prototype موقع تجريبي Home Masonry + [وصف Settings Modal السابق محفوظ في الأرشيف] + Qussasa Mark Header + Captions لهجة يمنية + Flat Saves + Duration badge, Hamdan chose Multi-Accent Color System — Base Ink/Paper/Grey + Accent Qussasa-derived Amber + Success/Warning/Error + Optional Amber/Purple/Teal + Theme Day/Night/Auto + Reduce Motion + واجهة إعدادات للمستخدم (الوصف السابق مؤرشف) + Reset, Stage 4 OPEN PD-I01 CLOSED PD-I02 CLOSED 69 facts
 
@@ -147,7 +147,7 @@
 - Multi-Accent Color System — Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived + Success/Warning/Error قياسية + Accents اختيارية Amber افتراضي + Purple + Teal + Theme Day/Night/Auto + Reduce Motion On/Off + [وصف Settings Modal السابق محفوظ في الأرشيف]
 - Palette: Base Ink/Paper/Grey + Accent Qussasa-derived + Success/Warning/Error — Accents اختيارية Amber/Purple/Teal — Theme Day/Night/Auto — Reduce Motion On/Off — واجهة إعدادات للمستخدم (الوصف السابق مؤرشف)
 - Prototype مرجع بصري: Home Pinterest-like Masonry + [وصف Settings Modal السابق محفوظ في الأرشيف] + Qussasa Mark Header + Captions لهجة يمنية + Flat Saves Bookmark + Duration badge — موقع تجريبي ليس نهائي — "الاستوديو" اسم مؤقت أدمن — البحث لاحقًا — تفاصيل نهائية مع بناء فعلي
-- Reason: 1) يحل PD-I03 2) متوافق Direction C الختم Modern Product First 3) متوافق Qussasa Mark v1.0 Qussasa-derived 4) تحكم للمستخدم Settings Modal 5) يرفض أنظمة محدودة 1/2/4 + 3 Accents ثابتة 6) يفتح PD-I04+I05+I06+I08+I09+Settings Modal 7) لا تعارض Stage3
+- Reason: 1) يحل PD-I03 2) متوافق Direction C الختم Modern Product First 3) متوافق Qussasa Mark v1.0 Qussasa-derived 4) تحكم للمستخدم عبر صفحة إعدادات 5) يرفض أنظمة محدودة 1/2/4 + 3 Accents ثابتة 6) يفتح PD-I04+I05+I06+I08+I09+Settings Modal 7) لا تعارض Stage3
 - Rejected: النظام 1 كهرماني فقط محدود + النظام 2 نيلي يفقد الدفء + النظام 4 رمادي فقط بلا شخصية + 3 Accents ثابتة نستخدم متعدد
 - Impact: P-37 Multi-Accent — B-05 UPDATED — B-06 محفوظ للدراسة — 69→70 facts — PD-I03 CLOSED يفتح PD-I04 Typography + PD-I05 Watermark Qussasa-based + PD-I06 Reaction Card + PD-I08 Light/Dark + PD-I09 Motion + موضوع الإعدادات — Prototype مرجع بصري
 - NEXT: PD-I04 + PD-I05 + PD-I06 + PD-I08 + PD-I09 + واجهة الإعدادات — HISTORY+EVIDENCE فقط — بانتظار أمر حمدان — لا كود/Git/DB
