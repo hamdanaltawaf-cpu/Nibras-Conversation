@@ -2191,7 +2191,7 @@
 | PD-I03 | Multi-Accent | ✅ CLOSED | Base Ink/Paper/Grey + Amber/Purple/Teal + Day/Night/Auto |
 | PD-I04 | Typography | ✅ CLOSED | Lalezar + IBM Plex Sans Arabic + Inter + Plex Mono |
 | PD-I05 | Watermark | ❄️ **DEFERRED** | مُجمّد — PD-I05-R2 بعد الإطلاق |
-| PD-I06 | Card + Detail | ✅ CLOSED | Duration top-right · أزرار نفس السطر · لا Empty States |
+| PD-I06 | Card + Detail | ✅ CLOSED | Duration top-right · أزرار نفس السطر · سياسة Empty States السابقة مؤرشفة؛ المرجع الحالي DECISION-5B.25/5B.29 |
 | PD-I07 | Chips | ✅ CLOSED | وسم بصري · inline · غير قابل للنقر · لا في البطاقة |
 | PD-I08 | Light/Dark + Soft Depth | ✅ CLOSED | Dark دافئ Qishr · 4 مستويات ظل · Auto افتراضي |
 | PD-I09 | Motion | ✅ CLOSED | Hybrid Subtle + Seal Anchor |
