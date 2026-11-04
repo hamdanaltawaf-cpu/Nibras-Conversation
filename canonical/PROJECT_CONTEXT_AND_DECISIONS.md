@@ -212,7 +212,7 @@
 
 ### PROPOSED (مقترحة بانتظار اعتماد)
 
-- **BottomNav الخانة الرابعة = Saved:** تاريخ القرار: أولًا Submit (SUPERSEDED لأنه يضع إنشاء محتوى بنفس مستوى الاكتشاف)، ثم Collections (SUPERSEDED لأن 3 مجموعات لا تبرر مقعد تنقل دائم)، حاليًا Saved لأنه أقرب فعل شخصي متكرر لـ"خذها. حطها.".
+- **BottomNav التاريخي:** النصوص السابقة منقولة إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`.
 - **Categories = Data Only:** 9 فئات كبيانات/لون فقط، لا فلترة بارزة كوجهة مستقلة.
 - **Collections = Rail داخلي:** لا BottomNav Destination. Rail داخل تجربة المكتبة يكفي حتى يكبر العدد.
 - **Masonry Mixed Aspect:** فيديو فقط، لا Pinterest صور ثابتة.
@@ -230,10 +230,9 @@
 - Video Intro/Outro Bumper قبل اللقطة (أول فريم = بداية الرياكشن).
 - Ad Creative في مرحلة الإطلاق العضوي.
 
-### SUPERSEDED (مستبدلة مع تاريخ)
+### SUPERSEDED
 
-- BottomNav: Submit → Collections → Saved (كما موضح أعلاه).
-- انبهار كفئة عاشرة بلون مستقل → أُلحقت بعائلة استغراب (نفس التركواز) لتفادي تضخم التصنيف.
+النصوص التاريخية للقرارات المستبدلة نُقلت إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. لا تُعاد صياغتها أو عرضها هنا؛ المرجع الحالي هو الـCanonical Baseline وسجل القرارات النافذان.
 
 ### OPEN / DISCUSSION (مفتوحة)
 
@@ -378,7 +377,7 @@
 ## 11. أي تغييرات أو تحديثات طرأت على القرارات السابقة
 
 - Core Loop: من PROPOSED Utility (أداة عند الحاجة) → مقترح Hybrid Utility (Find right reaction, discover next, share naturally) → **حاليًا DISCUSSION** بانتظار تحليل أرينا المفتوح. الصيغة السابقة محفوظة كـSUPERSEDED إذا اعتمد الجديد.
-- BottomNav الرابعة: Submit (SUPERSEDED) → Collections (SUPERSEDED) → Saved (PROPOSED حاليًا).
+- تسلسل قرارات التنقل السابق مؤرشف؛ راجع `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`.
 - انبهار: من لون عاشر مستقل → أُلحقت بعائلة استغراب (SUPERSEDED).
 - Brand v1.0: من دليل هوية أولي (YemReact-دليل-الهوية.md) → نسخة LOCKED نهائية (YemReact-Brand-v1.0-LOCKED.html) مع Watermark مُقوّى وقاعدة قلب الكتلة — النسخة الأولى تعتبر تاريخية عند التعارض.
 - طريقة العمل: من تنفيذ مباشر (افتراض سابق) → مرحلة DISCUSSION محور بمحور، لا كود قبل اعتماد الخطة (ACCEPTED).
@@ -527,7 +526,7 @@
 ## CURRENT STATUS UPDATE — 2026-10-11 — Founder-approved
 
 - **Stage 5.2:** CLOSED **for documentation only**, by explicit founder approval.
-- **Next topic:** **C-01 — تعريف المحتوى اليمني (Content Axis)**. The deferred P-20 criterion #6 (“يكتمل معناه بلا شرح”) remains assigned to C-01.
+- **Next topic:** لا يوجد موضوع تالٍ معيّن، ولا يوجد تكليف نشط.
 - **Scope:** documentation and decision history only. No code, build, database changes, or claims of runtime verification.
 - **Security:** SEC-06 was not audited as part of this closure and remains separate.
 - **History:** earlier “Stage 5.2 OPEN / awaiting founder approval” statements remain as historical records and are superseded for current status by this dated update and the closure decision in YEMREACT-DECISIONS-LOG.md.
@@ -550,7 +549,7 @@
 - **Saved:** Inside Account; `/saved` is intended to redirect to Account with Saved selected while retaining guest access.
 - **Settings:** Dedicated page direction with Appearance, Account, Privacy; only approved functional options, no empty sections.
 - **Still open:** Theme default conflict (Day vs Auto), route names, exact Settings functions/reset scope, contribution identity fields, Help scope/workflow, invitation wording/close control, and final visual header comparison.
-- **Historical scope:** DECISION-I10's former five-item mobile navigation and DECISION-I03/P-37's modal-only Settings presentation are superseded only in the affected scope. Historical records remain intact.
+- **Historical scope:** نصوص نطاق التنقل وطريقة عرض الإعدادات المستبدلة نُقلت إلى الأرشيف؛ القرارات الحالية في الـCanonical Baseline.
 - **Stage status:** Stage 5.1 and Stage 5.2 remain closed. C-01 remains cancelled as an active topic; P-20 #6 remains DEFERRED with no replacement assignment. Do not create Stage 5.3.
 - **Verification boundary:** Documentation only. No code/build/database/runtime verification; technical redirect/return-destination behavior is not audited, and SEC-06 remains unaudited.
 
