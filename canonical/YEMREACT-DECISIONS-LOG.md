@@ -2097,13 +2097,13 @@
 
 **7. States:** Empty **للصفحات فقط** (Lucide icon + عنوان + إجراء) · Loading = Skeleton + Spinner 16px · Error = نبرة فصحى هادئة · **Toast: Success + Error** (ليس Success فقط)
 
-**8. Icons:** **Lucide** · `1.5px` · `16/20/24px` · Bottom Nav: `layout-grid` · `layers` · `plus` · `bookmark` · `circle-user`
+**8. Icons:** **Lucide** · `1.5px` · `16/20/24px` · تعيينات Bottom Nav الواردة في DECISION-I10 أُحيلت إلى الأرشيف؛ التعيينات النافذة موثقة لاحقًا في Stage 5.2.
 
 **9. Navigation:**
 - Header Desktop: Mark + Logo + Nav + **Search Bar كامل** + Account
 - Header Mobile: Mark + **Search Bar كامل** (بلا Avatar)
 - Header Mobile: يختفي عند scroll down / يظهر عند scroll up
-- **Bottom Nav: 5 tabs** — المكتبة · المجموعات · **+** · المحفوظات · الحساب
+- صياغة Bottom Nav ذات الخمس وجهات في DECISION-I10 أُحيلت إلى الأرشيف؛ التكوين الحالي أعيد تثبيته وتفصيله لاحقًا في Stage 5.2 (5.2.0 وما بعدها).
 
 **10. Account Menu — 3 حالات:**
 - **الزائر:** Google Login + الإعدادات + المساعدة
@@ -2112,7 +2112,7 @@
 - Desktop = Popover · Mobile = Bottom Sheet
 - ❌ لا «المحفوظات» (مكررة) · ❌ لا «مساهماتي» (ميتة قبل الإطلاق)
 
-**11. زر (+):** محايد قبل الإطلاق + 🔒 · Bottom Sheet «الرفع يُفتح قريبًا» · Accent بعد الإطلاق · Desktop: زر «+ رفع» في Header **بعد الإطلاق فقط**
+**11. زر (+):** [سياسة زر (+) السابقة في DECISION-I10 نُقلت إلى الأرشيف؛ السياسة الحالية وفق `DECISION-5.2.76` تفتح `/submit` مباشرةً وتطلب Google login عند الإرسال مع استعادة النموذج.]
 
 **12. Search Bar:** Desktop حقل `44px` بعرض `420-480px` · Mobile حقل كامل في Header · Placeholder «[النص السابق لحقل البحث منقول إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» · **بلا فلاتر في v1**
 
