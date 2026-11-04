@@ -1475,7 +1475,7 @@
   - B-01 Brand v1.0 LOCKED — Ink #121214 + Qishr Amber + Paper — S10 — 8 scenarios test
   - P-08 Presentation Pinterest-like Masonry Grid visual only — P-35 Brand Direction الختم Modern UI Foundation — P-36 Qussasa Mark v1.0 Header
   - PD-I03 Color System كان OPEN — HISTORY+EVIDENCE done — يحتاج قرار
-  - Settings Modal لم يكن موجود — الآن موجود — UI "على ذوقك" — عنوان أنيق بلهجة يمنية — زر استعادة الإعدادات
+  - [وصف واجهة Settings Modal السابقة مؤرشف؛ راجع قسم DECISION-I03 في ملف النصوص المنقولة.]
 
 - **New:**
 
@@ -1500,7 +1500,7 @@
      - Warning: تنبيه
      - Error: خطأ/حذف
 
-  Accents اختيارية (من الإعدادات — Settings Modal):
+  Accents اختيارية (من إعدادات المستخدم):
 
   - كهرماني (Amber) — افتراضي — Default
     - دافئ — Qussasa-derived — Qishr — يمني بدون علم
@@ -1516,8 +1516,7 @@
 
   Theme:
 
-  - نهاري (Day) — افتراضي — Default
-    - Paper فاتح — Ink داكن — Qussasa Mark واضح
+  - نهاري (Day) — خيار متاح؛ Auto هو الافتراضي الحالي وفق `DECISION-5B.20`.
 
   - ليلي (Night)
     - Ink داكن خلفية — Paper فاتح نص — Qussasa Mark مضيء
@@ -1529,26 +1528,17 @@
 
   Reduce Motion:
 
-  - خيار (On/Off) — Settings Modal
+  - خيار (On/Off) — من إعدادات المستخدم.
     - On: تقليل الحركة — يحترم prefers-reduced-motion
     - Off: حركة كاملة — Motion Signature 150-200ms ختم/قلب
     - تفاصيل الحركة → PD-I09 Motion
 
-  Settings Modal:
-
-  - موجود — UI: "على ذوقك" — عنوان أنيق بلهجة يمنية
-  - يحتوي:
-    - 3 Accents: كهرماني (افتراضي) + بنفسجي + تيل
-    - Theme: نهاري (افتراضي) + ليلي + تلقائي
-    - Reduce Motion: On/Off
-    - زر "استعادة الإعدادات" — Reset to defaults
-  - Prototype يُظهر Modal — مرجع بصري — ليس نهائي
-  - Topic جديد — Settings Modal — يُفتح لاحقًا — Stage 4/5
+  [وصف واجهة Settings Modal السابقة نُقل حرفيًا إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03؛ المرجع الحالي صفحة إعدادات مستقلة.]
 
   المرجع البصري — Prototype موقع تجريبي:
 
   - Home: Pinterest-like Masonry — P-08 — Masonry Grid visual only
-  - Settings Modal: 3 accents + theme + motion — "على ذوقك" — استعادة الإعدادات
+  - وصف واجهة الإعدادات السابقة مؤرشف؛ المرجع الحالي صفحة إعدادات مستقلة.
   - Qussasa Mark في Header — B-04 ACCEPTED — 16-512px
   - Captions بلهجة يمنية — P-35 Content Art Direction — قصيرة بلهجة يمنية
   - Flat Saves (Bookmark) — P-07 Flat Saves — Bookmark icon
@@ -1585,7 +1575,7 @@
 **Impact:**
 
 - PD-I03 CLOSED — Stage 4 Identity Re-Foundation — PD-I03 Color System — ACCEPTED 2026-09-23 — 69 → 70 facts
-- P-37 NEW: Multi-Accent Color System — Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived + Success/Warning/Error قياسية + Accents اختيارية Amber افتراضي + Purple + Teal + Theme Day افتراضي + Night + Auto + Reduce Motion On/Off + Settings Modal "على ذوقك" + زر استعادة الإعدادات — Prototype مرجع بصري Home Masonry + Settings Modal + Qussasa Mark Header + Captions لهجة يمنية + Flat Saves Bookmark + Duration badge — ملاحظة موقع تجريبي ليس نهائي — "الاستوديو" اسم مؤقت أدمن — البحث لاحقًا — تفاصيل نهائية مع بناء فعلي
+- P-37 NEW: Multi-Accent Color System — Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived + Success/Warning/Error قياسية + Accents اختيارية Amber افتراضي + Purple + Teal + Theme Day/Night/Auto — Auto الافتراضي الحالي وفق DECISION-5B.20 + Reduce Motion On/Off + واجهة إعدادات مستقلة؛ وصف الواجهة السابقة مؤرشف — Prototype مرجع بصري Home Masonry + وصف واجهة الإعدادات السابقة مؤرشف + Qussasa Mark Header + Captions لهجة يمنية + Flat Saves Bookmark + Duration badge — ملاحظة موقع تجريبي ليس نهائي — "الاستوديو" اسم مؤقت أدمن — البحث لاحقًا — تفاصيل نهائية مع بناء فعلي
 - B-05 UPDATED: Brand colors foundation — من CONFIRMED as foundation intent → ACCEPTED — DECISION-I03 — Base Ink/Paper/Grey Monochrome + Accent Qussasa-derived Qishr Amber + Success/Warning/Error قياسية + Optional Amber/Purple/Teal + Theme Day/Night/Auto + Reduce Motion — Settings Modal "على ذوقك" — B-04 Qussasa Mark Header — B-09 Brand Direction الختم
 - B-06 9 category colors: يبقى محفوظ للدراسة — لا يُستخدم كفلتر — Categories Removed per DECISION-014 — يبقى للدراسة Visual Accents/Mood Tags — لا علاقة مباشرة بـ Multi-Accent — لكن Purple/Teal/Amber قد تُستلهم منه مستقبلًا — للدراسة Stage4
 - Canonical Facts: 69 → 70 (9 brand + 37 product? Actually 9 brand + 37 product? Let's recalc: 9 brand + 36 product =45+24=69 → 9+37=46+24=70) — B-05 UPDATED — P-37 NEW
@@ -1608,7 +1598,7 @@
 
 ## Topic 13 — PD-I03 — CLOSED — DECISION-I03 ACCEPTED — Stage 4 — Multi-Accent Color System
 
-- Multi-Accent Color System — Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived + Success/Warning/Error قياسية + Accents اختيارية Amber افتراضي + Purple + Teal + Theme Day افتراضي + Night + Auto + Reduce Motion On/Off + Settings Modal "على ذوقك" + زر استعادة الإعدادات
+- Multi-Accent Color System — Base Ink/Paper/Grey Monochrome + Accent افتراضي قهري/كهرماني Qussasa-derived + Success/Warning/Error قياسية + Accents اختيارية Amber افتراضي + Purple + Teal + Theme Day/Night/Auto — Auto الافتراضي الحالي وفق DECISION-5B.20 + Reduce Motion On/Off + واجهة إعدادات مستقلة؛ وصف الواجهة السابقة مؤرشف
 - Palette: Base Ink/Paper/Grey + Accent Qussasa-derived + Success/Warning/Error — Accents اختيارية Amber/Purple/Teal — Theme Day/Night/Auto — Reduce Motion On/Off — Settings Modal "على ذوقك"
 - Prototype مرجع بصري: Home Pinterest-like Masonry + Settings Modal 3 accents + theme + motion + Qussasa Mark Header + Captions لهجة يمنية + Flat Saves Bookmark + Duration badge — موقع تجريبي ليس نهائي — "الاستوديو" اسم مؤقت أدمن — البحث لاحقًا — تفاصيل نهائية مع بناء فعلي
 - Reason: 1) يحل PD-I03 2) متوافق Direction C الختم Modern Product First 3) متوافق Qussasa Mark v1.0 Qussasa-derived 4) تحكم للمستخدم Settings Modal 5) يرفض أنظمة محدودة 1/2/4 + 3 Accents ثابتة 6) يفتح PD-I04+I05+I06+I08+I09+Settings Modal 7) لا تعارض Stage3
@@ -1752,7 +1742,7 @@
 ...
 ```
 
-**التصحيح 2 — إلغاء Empty States:** لا تظهر أي رسائل فارغة للمستخدم — لا اسم شخصية → لا شيء — لا وصف → لا شيء — لا وصف ثنائي → لا زر ▼ — لا مجموعات → لا قسم — غير مضاف → لا شيء — **القاعدة: الصفحة نظيفة — الحقل يُحذف من DOM إذا كان فارغًا — لا placeholder — لا empty message**
+[نص سياسة منع Empty States السابقة نُقل إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I06؛ المرجع الحالي `DECISION-5B.25` و`DECISION-5B.29`.]
 
 **التوافق:** متوافق P-09 «وصف ثنائي مطوي **إن وجد**» + P-35 chips «اختياري تحت بعض البطاقات فقط» + P-34 المجموعات «إن وُجدت» + P-06 حفظ CTA أساسي يبقى ظاهرًا دائمًا — لا تعارض — لا حقائق جديدة — العدد ثابت 74
 
@@ -1779,7 +1769,7 @@
 ## Topic 15 — PD-I06 — CLOSED — DECISION-I06 ACCEPTED — Stage 4 — Reaction Card
 
 - البطاقة: وسائط + ✅ Duration أعلى يمين الوسائط فيديو فقط + العنوان + ⋮ — بدون Watermark
-- صفحة التفاصيل: 8 كتل — رجوع / وسائط ❌ بلا Duration / **عنوان H1 + أزرار على نفس السطر جهة اليسار في RTL** / شخصية+وصف أساسي يُحذف إذا فارغ / وصف ثنائي مطوي لا زر ▼ إن لم يوجد / مجموعات لا قسم إن لم توجد / ذات صلة / عشوائية محدودة 10-20 — **لا Empty States** — الحقل يُحذف من DOM إذا فارغ — لا placeholder ولا empty message
+- صفحة التفاصيل: 8 كتل — رجوع / وسائط ❌ بلا Duration / **عنوان H1 + أزرار على نفس السطر جهة اليسار في RTL** / شخصية+وصف أساسي يُحذف إذا فارغ / وصف ثنائي مطوي لا زر ▼ إن لم يوجد / مجموعات لا قسم إن لم توجد / ذات صلة / عشوائية محدودة 10-20 — [سياسة Empty States السابقة مؤرشفة؛ راجع قسم DECISION-I06.]
 - الأزرار الرئيسية: حفظ + تنزيل + مشاركة — ⋮: نسخ الرابط + إبلاغ فقط — CORRECTED 2026-09-24 حذف تعديل Admin
 - عشوائية: قسم محدود 10-20 رياكشن — تصحيح ثان 2026-09-25: كان 20-40 → أصبح 10-20 — ليس Infinite Scroll — لا Load More — P-40 CORRECTED
 - Reason: 1) يحسم PD-I06 2) متوافق P-06 حفظ CTA أساسي 3) متوافق P-23 نفس العناصر الخمسة 4) متوافق DECISION-I05 لا Watermark 5) متوافق P-11 لا Infinite Feed 6) يفتح PD-I04+I07+I08+I09+Settings Modal
@@ -2177,10 +2167,10 @@
 - Buttons 5 أنواع × 3 أحجام (40/44/48) × Radius 10px × 5 حالات — Inputs 44px + Radius 10 + Border 1px + shadow-sm + Focus ring 2px Accent
 - Cards: Reaction 14px + Collection Rail/Square + Mini 70×70 — Modals: Desktop Center + Mobile Bottom Sheet 22px
 - States: Empty للصفحات فقط Lucide + عنوان + إجراء — Loading Skeleton + Spinner 16px — Error فصحى هادئة — Toast Success + Error
-- Icons: Lucide 1.5px 16/20/24 — Bottom Nav 5 tabs: layout-grid/layers/plus/bookmark/circle-user
+- Icons: Lucide 1.5px 16/20/24 — تعيينات Bottom Nav السابقة مؤرشفة؛ راجع قسم DECISION-I10.
 - Navigation: Header Desktop Mark+Logo+Nav+Search+Account — Mobile Mark+Search بلا Avatar + يختفي↓/يظهر↑
 - Account Menu 3 حالات: زائر (Google+الإعدادات+المساعدة) · مستخدم (Identity+الإعدادات+المساعدة+Logout) · أدمن (+الاستوديو مجموعة منفصلة) — Popover ديسكتوب / Sheet جوال
-- زر (+): محايد+🔒 قبل الإطلاق + Sheet «قريبًا» + Accent بعد الإطلاق + «+ رفع» في Header بعد الإطلاق فقط
+- سياسة زر (+) السابقة مؤرشفة؛ المرجع الحالي `DECISION-5.2.76`.
 - Search Bar: 44px عرض 420-480px ديسكتوب + حقل كامل جوال + Placeholder «[النص السابق لحقل البحث منقول إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» + بلا فلاتر v1
 - Guest Save: localStorage + دمج عند الدخول + Seal Motion فورًا — Mobile: لا معاينة تلقائية + Tap يفتح التفاصيل — Report Flow: Sheet radio 5 أسباب
 - 7 تصحيحات مؤجلة Stage 7 + قراران مؤجلان (Search Route → Stage 5 · Scroll Restoration → مستقبلي)
