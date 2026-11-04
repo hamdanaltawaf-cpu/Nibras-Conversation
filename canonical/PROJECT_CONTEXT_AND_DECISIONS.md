@@ -641,3 +641,9 @@ Accepted policy: render an empty state only after a successful load confirms no 
 - The submission-discussion source remains on `hamdanaltawaf-cpu-patch-1` under its earlier scope restriction; it was not merged or relocated by this closure.
 - C-01 remains cancelled; P-20 #6 remains deferred without reassignment. Legal obligations remain a separate scope. No Stage 5.3, Stage 6, or Stage 9 is created/started.
 - Technical implementation and verification remain UNVERIFIED and require a separate explicit task after documentation is complete.
+
+---
+
+## ARCHIVE POINTER — 2026-11-04
+
+This file contains historical context and earlier decision states. Cancelled and superseded scopes are now indexed in `archive/superseded-decisions/DECISIONS-ARCHIVE-REGISTER.md`. Read those entries as historical only and follow the named replacement. This pointer does not delete or rewrite the original historical record.

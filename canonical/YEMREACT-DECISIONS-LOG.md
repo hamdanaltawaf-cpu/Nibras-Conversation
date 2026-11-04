@@ -3282,3 +3282,9 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - **Scope:** Library, search, collections list, collection detail, and optional related/discovery sections. DECISION-5B.25 remains authoritative for Saved and My Contributions.
 - **Boundary:** Flow-specific upload/authentication/media/save/report failures, HTTP behavior, retry mechanics, implementation, and tests are not inferred or verified. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; no implementation or later stage is authorized.
 - **PR source:** PR #18, selectively adopted. PR #18 remains open; no merge or closure was performed.
+
+---
+
+## 2026-11-04 — Archive of Cancelled and Superseded Decision Scopes
+
+The retired decision scopes are indexed in `archive/superseded-decisions/DECISIONS-ARCHIVE-REGISTER.md`. Use that register to identify the replacement and the exact scope affected. This does not erase chronological evidence in this log; partially superseded decisions remain valid outside the explicitly retired scope.

@@ -43,3 +43,14 @@ No application or database changes, technical verification, tests, build, deploy
 - PR #17 remains a historical closure-gate proposal; PR #6 remains the source discussion on its authorized branch; PR #2 remains a historical Stage 5-A proposal.
 - All four PRs remain OPEN and unmerged. No PR lifecycle action was taken.
 - No app/database changes, technical verification, tests, build, deployment, or future-stage work.
+
+---
+
+## 2026-11-04 — إنشاء أرشيف القرارات الملغاة والمستبدلة
+
+- إنشاء `archive/superseded-decisions/` وإضافة فهرس وسجل موحد للقرارات الملغاة أو المستبدلة ونطاق كل استبدال.
+- تسجيل الاستبدالات الكاملة والجزئية وإلغاء C-01 كموضوع نشط، وإلغاء إسناد P-20 #6 إليه مع إبقاء المعيار DEFERRED.
+- إضافة إحالات من سجل القرارات والـCanonical Baseline وملف السياق وخارطة الطريق.
+- إبقاء السجلات الزمنية الأصلية دون حذف؛ لأنها تثبت تاريخ القرار، مع منع التعامل مع الصياغات القديمة كقرارات حالية.
+- لم تُنقل أي وثيقة قرار كاملة ما زالت نافذة جزئيًا أو كليًا؛ ولم تتغير قرارات Stage 5 الحالية أو حالة PRs.
+- لا كود أو قاعدة بيانات أو اختبارات أو بناء أو نشر. Stage 5 تبقى مغلقة توثيقيًا فقط.

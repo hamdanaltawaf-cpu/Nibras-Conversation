@@ -637,3 +637,9 @@ Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage
 - DECISION-5B.25 remains authoritative for Saved and My Contributions. Flow-specific upload/authentication/media/save/report errors remain deferred or governed by their own decisions.
 - This is product/content documentation only. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; implementation and technical behavior remain UNVERIFIED.
 - Source: `canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
+
+---
+
+## 2026-11-04 — Historical Decision Archive
+
+The dedicated archive for cancelled and superseded decision scopes is `archive/superseded-decisions/DECISIONS-ARCHIVE-REGISTER.md`. Current product truth remains in this Baseline and the current decision records. Historical wording retained in older records must not override a newer decision; partial supersession applies only to the scope stated in the archive.
