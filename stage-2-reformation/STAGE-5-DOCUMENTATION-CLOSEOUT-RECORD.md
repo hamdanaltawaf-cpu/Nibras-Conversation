@@ -13,7 +13,7 @@ Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** for its current product/IA/navigati
 - Stage 5.1 Search Route: `/?q=` on the library surface and `/search` redirect direction recorded.
 - Stage 5.2 Bottom Navigation: closed for documentation on 2026-10-11 by the founder's explicit approval.
 - Stage 5-B product decisions: DECISION-5B.19 through DECISION-5B.28 are reflected in the canonical baseline, roadmap, decision log, and route/flow inventory.
-- Reaction-submission discussion: product/documentation closure recorded on 2026-10-24. The original source file was later preserved unchanged on `main` on 2026-11-05 at `docs/product/discussions/reaction-submission-discussion.md`. This relocation preserves the historical discussion only; it does not change the 2026-10-24 closure scope or imply technical implementation.
+- Reaction-submission discussion: product/documentation closure recorded on 2026-10-24. The original source file was later preserved unchanged on `main` on 2026-11-05 at `docs/product/discussions/reaction-submission-discussion.md`, later moved to `stage-5-ia-navigation/reaction-submission-discussion.md`. This relocation preserves the historical discussion only; it does not change the 2026-10-24 closure scope or imply technical implementation.
 - OPEN-Q-08: search/indexing policy is closed for documentation only in its own canonical document.
 - OPEN-Q-09: speech-extraction policy is closed for documentation only in its own separate canonical document; it remains distinct from OPEN-Q-08.
 - Page/flow inventory: PR #16 merged on 2026-10-29.
@@ -50,7 +50,7 @@ The following remain UNVERIFIED and are not closure criteria for this documentat
 
 ## 6. Final documentation completeness audit — 2026-10-30
 
-The final documentation completeness audit is recorded in `STAGE-5-DOCUMENTATION-COMPLETENESS-AUDIT-2026-10-30.md`, with its append-only changelog companion in `canonical/YEMREACT-DOCUMENTATION-CHANGELOG-ADDENDUM-2026-10-30.md`. The operational roadmap and closeout checklist were updated to reflect the audit outcome.
+The final documentation completeness audit is recorded in `STAGE-5-DOCUMENTATION-COMPLETENESS-AUDIT-2026-10-30.md`, with its append-only changelog companion in `stage-5-ia-navigation/YEMREACT-DOCUMENTATION-CHANGELOG-ADDENDUM-2026-10-30.md`. The operational roadmap and closeout checklist were updated to reflect the audit outcome.
 
 The audit found stale historical status wording in detailed decision documents. Dated reconciliation notes were added to OPEN-Q-08, OPEN-Q-09, and DECISION-5B.23 through DECISION-5B.28; original text was preserved as historical context. `PROJECT_CONTEXT_AND_DECISIONS.md` remains a large historical record and was not rewritten in place. Its old status labels and proposed next steps are subordinate to current governing records and do not constitute open Stage 5 product decisions or authorization.
 
