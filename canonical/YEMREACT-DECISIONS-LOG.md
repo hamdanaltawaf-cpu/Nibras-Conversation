@@ -2963,7 +2963,7 @@ Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-0
 - Guests see no account statistics or empty My Contributions panel. Submissions with statuses are items; show contributor-facing status/reasons only, never internal moderation notes.
 - Unavailable saved codes do not make content available or discard valid saves. Human review remains required; no implication of automatic publication.
 - Scope: Saved and My Contributions only. Product policy, not implementation evidence. DECISION-5B-CANONICAL and 5B.22–5B.24 remain in force. Stage 5 remains OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06 and technical verification boundaries remain unverified.
-- Full decision: `canonical/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`.
+- Full decision: `stage-5-ia-navigation/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`.
 
 
 ## DECISION-5B.26 — Help Center and Issue Reporting — ACCEPTED — 2026-10-28
@@ -2980,7 +2980,7 @@ Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-0
 7. **Launch gate:** accurate static Help content can launch independently. Reporting controls must not be presented as working until end-to-end submission, persistence, authorized review access, failure handling, and basic abuse controls are verified. If unavailable, do not ship a dead button or fake form; mention an alternative contact channel only if an approved real destination exists.
 8. **Reconciliation and boundaries:** DECISION-5B.19’s `/help` route and DECISION-5B.22’s privacy boundaries remain in force. Stage 5 remains OPEN; no Stage 5.3 or Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06, routes, tests, builds, runtime, and end-to-end reporting remain unverified.
 
-Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
+Full decision: `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 
 
 ---
@@ -3028,7 +3028,7 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 
 - **Authority:** Hamdan explicitly instructed the assistant to resolve the remaining open decisions and maintain the roadmap/change log after each work item in the current workflow (message received 2026-10-28). This is a delegated resolution of the four named open UX topics, not an independent expansion of scope.
 - **Status:** ACCEPTED — product/UI policy only. No implementation, test, build, or runtime claim.
-- **Canonical detail:** `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
+- **Canonical detail:** `stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 
 ### Previous → New
 
@@ -3064,7 +3064,7 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - **Unavailable links:** Invalid/unavailable reaction codes use an unavailable/not-found state within `/r/[code]`; unknown app paths use the general not-found state. Do not render fake empty details or expose internal moderation notes. Default concise copy may be «هذا الرياكشن غير متاح».
 - **Still unverified:** actual admin route tree, HTTP status/SEO/crawl behavior, permission enforcement, report workflow, route rendering, tests/build/runtime.
 - **Stage boundary:** Stage 5 remains OPEN pending documentation closeout review and Hamdan's explicit decision. No Stage 5.3/Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only.
-- **Full decision:** `canonical/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
+- **Full decision:** `stage-5-ia-navigation/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
 
 
 ---
@@ -3114,7 +3114,7 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 
 - **Status:** ACCEPTED — product/content policy only.
 - **Authority:** Selective adoption from PR #18 under Hamdan's explicit authorization to process its documentation content.
-- **Decision:** Initial Arabic empty/read-failure copy and the rules distinguishing successful empty responses from request failures are recorded in `canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
+- **Decision:** Initial Arabic empty/read-failure copy and the rules distinguishing successful empty responses from request failures are recorded in `stage-5-ia-navigation/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
 - **Scope:** Library, search, collections list, collection detail, and optional related/discovery sections. DECISION-5B.25 remains authoritative for Saved and My Contributions.
 - **Boundary:** Flow-specific upload/authentication/media/save/report failures, HTTP behavior, retry mechanics, implementation, and tests are not inferred or verified. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; no implementation or later stage is authorized.
 - **PR source:** PR #18, selectively adopted. PR #18 remains open; no merge or closure was performed.
