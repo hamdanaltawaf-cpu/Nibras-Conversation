@@ -91,3 +91,14 @@ At the time of this review, PRs #18, #17, #6, and #2 remain OPEN and unmerged. N
 ### Revised audit conclusion
 
 The prior “complete” result is now qualified by this supplemental PR review. The identified compatible PR #18 documentation content has been selectively incorporated into `main` and cross-referenced. The four pull requests remain open pending a separate explicit decision about their lifecycle. No application or database work, technical verification, tests, build, deployment, or stage progression was performed.
+
+
+## 8. Later documentation reconciliation — 2026-11-05
+
+This section records changes after the 2026-10-30 snapshot; it does not rewrite the findings as they stood on the audit date.
+
+- The reaction-submission discussion was preserved on `main` on 2026-11-05 and its current path is `stage-5-ia-navigation/reaction-submission-discussion.md`. The earlier statement in section 3.3 that it remained on `hamdanaltawaf-cpu-patch-1` is historically accurate for the 2026-10-30 audit snapshot, not its current location.
+- PRs #6, #2, #17, and #18 were subsequently closed without merging, as recorded in the 2026-11-05 documentation changelog. Their unique historical material was preserved under `archive/historical-stage5-proposals/` with explicit non-approved/superseded labels. The 2026-10-30 PR state statement remains a dated snapshot only.
+- `PROJECT_CONTEXT_AND_DECISIONS.md` was updated on 2026-11-05 to define its role as a context/continuity record and to clarify the hierarchy of current governing references. Its historical entries were preserved; the file no longer claims to be the sole governing project reference or presents `DISCUSSION` as the current overall status.
+- The Stage 5-B decision inventory now extends through `DECISION-5B.29`; current files `DECISION-5B.23`–`DECISION-5B.29` and the submission discussion are located under `stage-5-ia-navigation/`.
+- These are documentation-location and authority clarifications only. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; technical implementation and verification remain UNVERIFIED/DEFERRED. No stage progression or technical work is authorized.
