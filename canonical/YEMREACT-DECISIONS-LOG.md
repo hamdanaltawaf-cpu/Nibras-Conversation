@@ -3077,7 +3077,7 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - مرجع العمل: PR #19 — https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/19.
 
 - Cross-reference review checked Stage 5 decisions through DECISION-5B.28, roadmap, inventory, deferred/cancelled register, and the separate OPEN-Q-08/OPEN-Q-09 decisions. Corrected stale OPEN-Q-09 wording in the OPEN-Q-08 document and updated the Stage 5-B status label to DECISION-5B.28.
-- The submission discussion source was confirmed on `hamdanaltawaf-cpu-patch-1`; it was not found on `main`. It remains on that branch under the earlier scope boundary and was not merged or relocated by this work.
+- Historical note at the time of the earlier closure: the submission discussion source was on `hamdanaltawaf-cpu-patch-1` and had not been relocated to `main`. On 2026-11-05, the original file was copied unchanged to `main` at `docs/product/discussions/reaction-submission-discussion.md`; this later preservation does not alter the earlier closure decision.
 - Current documentation review outcome: ready to present for an explicit documentation-only closure decision; Stage 5 remains OPEN until Hamdan decides.
 
 
@@ -3089,7 +3089,7 @@ Full decision: `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 - **Evidence:** Cross-reference review and checklist recorded in `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-CHECKLIST.md`; closure record in `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`.
 - **Scope:** Stage 5 product/IA/navigation documentation only. Stage 5.1 and 5.2 remain historically closed within their own scopes; Stage 5 overall is now closed for documentation only.
 - **Decision set:** DECISION-5B.19–.28 documented; OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. C-01 remains cancelled; P-20 #6 remains deferred without reassignment.
-- **Exception retained:** The submission-discussion source remains on `hamdanaltawaf-cpu-patch-1` under the earlier scope restriction and was not merged or relocated.
+- **Historical exception:** the source was not relocated during the earlier closure task. It was subsequently preserved unchanged on `main` on 2026-11-05 at `docs/product/discussions/reaction-submission-discussion.md`; no technical implementation is implied.
 - **Unverified:** SEC-06, actual route behavior, permissions, guest-save reconciliation, report workflow, speech extraction, tests, build, runtime, and release readiness. No implementation was performed.
 - **Stage boundary:** No Stage 5.3, Stage 6, or Stage 9 is created or started. Any technical task requires separate explicit authorization.
 
