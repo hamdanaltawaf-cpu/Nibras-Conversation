@@ -93,7 +93,7 @@
 
 ## 6. حالة القرارات بعد DECISION-5B.27
 
-تم حسم الموضوعات الأربعة التي كانت مفتوحة في خارطة الطريق، بتفويض صريح من حمدان. التفاصيل الكاملة والنصوص المعتمدة في `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
+تم حسم الموضوعات الأربعة التي كانت مفتوحة في خارطة الطريق، بتفويض صريح من حمدان. التفاصيل الكاملة والنصوص المعتمدة في `stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 
 | الموضوع | الحالة | القرار المختصر |
 |---|---|---|
@@ -126,12 +126,12 @@
 - `canonical/PROJECT_CONTEXT_AND_DECISIONS.md` — سياق القرارات والقرارات التاريخية؛ لا تتقدم اللقطات القديمة على القرارات الأحدث.
 - `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md` — سياسة البحث والفهرسة.
 - `canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md` — سياسة استخراج الكلام.
-- `canonical/DECISION-5B.23-NUMBER-FORMATTING.md` — سياسة الأعداد والتواريخ والأوقات والعدادات المرئية؛ القرار ACCEPTED وليس بندًا مفتوحًا.
-- `canonical/DECISION-5B.24-GUEST-SAVE-RECONCILIATION.md` — دمج محفوظات الزائر وعزلها بعد الدخول.
-- `canonical/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md` — حالات المحفوظات و«مساهماتي».
-- `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md` — سياسة المساعدة والإبلاغ.
-- `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md` — حسم دعوات التسجيل والترويسة وعرض المجموعات ونص المساعدة العربي.
-- `canonical/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md` — حدود مسارات الإدارة والسياسات/الحقوق وحالات الروابط غير المتاحة.
+- `stage-5-ia-navigation/DECISION-5B.23-NUMBER-FORMATTING.md` — سياسة الأعداد والتواريخ والأوقات والعدادات المرئية؛ القرار ACCEPTED وليس بندًا مفتوحًا.
+- `stage-5-ia-navigation/DECISION-5B.24-GUEST-SAVE-RECONCILIATION.md` — دمج محفوظات الزائر وعزلها بعد الدخول.
+- `stage-5-ia-navigation/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md` — حالات المحفوظات و«مساهماتي».
+- `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md` — سياسة المساعدة والإبلاغ.
+- `stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md` — حسم دعوات التسجيل والترويسة وعرض المجموعات ونص المساعدة العربي.
+- `stage-5-ia-navigation/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md` — حدود مسارات الإدارة والسياسات/الحقوق وحالات الروابط غير المتاحة.
 - `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-CHECKLIST.md` — بوابات المراجعة التوثيقية.
 - `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md` — سجل الإغلاق التوثيقي فقط.
 
