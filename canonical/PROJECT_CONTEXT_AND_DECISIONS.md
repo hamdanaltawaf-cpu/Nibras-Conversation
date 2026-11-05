@@ -646,3 +646,10 @@ Accepted policy: render an empty state only after a successful load confirms no 
 ## ARCHIVE POINTER — 2026-11-04
 
 This file contains historical context and earlier decision states. Cancelled and superseded scopes are now indexed in `archive/superseded-decisions/DECISIONS-ARCHIVE-REGISTER.md`. Read those entries as historical only and follow the named replacement. This pointer does not delete or rewrite the original historical record.
+
+
+## تحديث 2026-11-05 — توضيح المسارات الحالية لمواد Stage 5
+
+- الإشارة السابقة إلى حفظ نقاش الإرسال في `docs/product/discussions/reaction-submission-discussion.md` تصف وجهته التاريخية على `main` بتاريخ 2026-11-05. مساره الحالي بعد النقل التنظيمي هو `stage-5-ia-navigation/reaction-submission-discussion.md`.
+- ملفات القرارات `DECISION-5B.23` إلى `DECISION-5B.29` موجودة حاليًا في `stage-5-ia-navigation/`. أي إحالة أقدم إلى `canonical/` تصف موقعها السابق وقت كتابة السجل؛ وقد صُححت الإحالات التشغيلية الحالية.
+- هذه تحديثات مسارات فقط، ولا تعدّل القرارات أو تمنح هذا الملف سلطة تتجاوز الـBaseline أو ملفات القرار المعتمدة أو سجل القرارات.
