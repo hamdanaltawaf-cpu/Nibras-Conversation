@@ -53,7 +53,7 @@
 - **DECISION-5B.24:** دمج محفوظات الزائر بعد نجاح الدخول إضافي وقابل لإعادة المحاولة دون تكرار؛ تبقى المحفوظات المحلية حتى تأكيد الحفظ، ويجب عزلها عن محفوظات الحسابات الأخرى.
 - **DECISION-5B.25:** حالات «المحفوظات» و«مساهماتي» ونصوصها معتمدة؛ لا تُعرض الحالة الفارغة إلا بعد نجاح التحميل، وتظل الأخطاء والتحميل حالات منفصلة.
 - **DECISION-5B.26:** سياسة مركز المساعدة والإبلاغ معتمدة؛ محتوى المساعدة الثابت يمكن إطلاقه منفصلًا، أما الإبلاغ فيتطلب تحققًا كاملًا قبل عرضه كوظيفة عاملة.
-- **DECISION-5B.27:** حُسمت تفاصيل دعوات التسجيل، والمرجع البصري للترويسة، وعرض المجموعات، والنص العربي الأولي للمساعدة بتفويض صريح من حمدان؛ القرار موثق في `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`. هذا قرار منتج فقط، ولا يثبت التنفيذ.
+- **DECISION-5B.27:** حُسمت تفاصيل دعوات التسجيل، والمرجع البصري للترويسة، وعرض المجموعات، والنص العربي الأولي للمساعدة بتفويض صريح من حمدان؛ القرار موثق في `stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md`. هذا قرار منتج فقط، ولا يثبت التنفيذ.
 - **DECISION-5B.28:** صُنفت حدود جرد المسارات: `/admin` مظلة المنتج دون أسماء فرعية مفترضة؛ لا مسارات مستقلة للخصوصية/الحقوق/الإبلاغ ضمن Stage 5؛ الروابط غير المتاحة حالات داخل المسارات الحالية. الالتزامات القانونية المستقبلية منفصلة، والتنفيذ غير متحقق.
 - **OPEN-Q-08:** مغلق لأغراض التوثيق فقط — سياسة البحث والفهرسة معتمدة في وثيقتها المستقلة.
 - **OPEN-Q-09:** مغلق لأغراض التوثيق فقط — سياسة استخراج الكلام معتمدة في وثيقتها العربية المستقلة.
@@ -136,16 +136,16 @@
 2. [YEMREACT-DECISIONS-LOG.md](../canonical/YEMREACT-DECISIONS-LOG.md) — سجل القرارات وحالاتها وحدود ما استُبدل.
 3. [PROJECT_CONTEXT_AND_DECISIONS.md](../canonical/PROJECT_CONTEXT_AND_DECISIONS.md) — سياق القرارات وتحديثات الحالة؛ تُراجع تواريخ التحديث والنطاق.
 4. [PR #4 — Stage 5-B canonicalization](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/4) ودمجه `1ee2335f1abbe09b007cb1e028c366d281d10cc8` — دليل دمج تحديث الملفات المرجعية بتاريخ 2026-10-18، لا دليل تنفيذ.
-5. [DECISION-5B.25 — Saved and My Contributions Empty States](../canonical/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md) — نصوص الحالات الفارغة ونطاقها.
-6. [DECISION-5B.26 — Help Center and Issue Reporting](../canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md) — سياسة المساعدة والإبلاغ وبوابة جاهزية الإطلاق.
+5. [DECISION-5B.25 — Saved and My Contributions Empty States](../stage-5-ia-navigation/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md) — نصوص الحالات الفارغة ونطاقها.
+6. [DECISION-5B.26 — Help Center and Issue Reporting](../stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md) — سياسة المساعدة والإبلاغ وبوابة جاهزية الإطلاق.
 7. [OPEN-Q-08 — Search and Indexing](../canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md) — البحث والفهرسة؛ مغلق لأغراض التوثيق فقط.
 8. [OPEN-Q-09 — Speech Extraction](../canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md) — سياسة استخراج الكلام بالعربية؛ مغلق لأغراض التوثيق فقط.
 9. [PR #13 — OPEN-Q-08 documentation](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/13) و[PR #14 — OPEN-Q-09 Arabic documentation](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/14) — توثيق القرارات ومراجعها، لا دليل تنفيذ تقني.
 
-- [DECISION-5B.27 — Remaining UX Details](../canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md) — حسم دعوات التسجيل والترويسة وعرض المجموعات ونص المساعدة العربي.
+- [DECISION-5B.27 — Remaining UX Details](../stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md) — حسم دعوات التسجيل والترويسة وعرض المجموعات ونص المساعدة العربي.
 
 ### سجل نقاش صفحة الإرسال — مصدر لتتبع الحوار لا مرجع كانوني
-- [reaction-submission-discussion.md](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/blob/main/docs/product/discussions/reaction-submission-discussion.md) — سجل النقاش الذي أُغلق بتاريخ 2026-10-24 على مستوى قرارات المنتج والتوثيق الخاص بصفحة الإرسال فقط. راجع [Commit الإغلاق `aad45e5086df50d726c7d7b8f214842c9f887450`](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/commit/aad45e5086df50d726c7d7b8f214842c9f887450). يحتفظ السجل بالإجابات التاريخية والتصحيحات؛ ولا يعني إغلاقه أن قراراته أُدمجت في الملفات الكانونية أو أن الصفحة نُفذت أو اختُبرت. تبقى بوابات الجاهزية التقنية غير متحققة.
+- [reaction-submission-discussion.md](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/blob/main/stage-5-ia-navigation/reaction-submission-discussion.md) — سجل النقاش الذي أُغلق بتاريخ 2026-10-24 على مستوى قرارات المنتج والتوثيق الخاص بصفحة الإرسال فقط. راجع [Commit الإغلاق `aad45e5086df50d726c7d7b8f214842c9f887450`](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/commit/aad45e5086df50d726c7d7b8f214842c9f887450). يحتفظ السجل بالإجابات التاريخية والتصحيحات؛ ولا يعني إغلاقه أن قراراته أُدمجت في الملفات الكانونية أو أن الصفحة نُفذت أو اختُبرت. تبقى بوابات الجاهزية التقنية غير متحققة.
 
 ### مصادر التخطيط والمساندة
 - [YEMREACT-REFORMATION-MASTER-PLAN.md](./YEMREACT-REFORMATION-MASTER-PLAN.md) — إطار المراحل الثماني؛ لا يثبت بدء المستقبلية.
@@ -199,7 +199,7 @@
 - Reviewed the closeout checklist and record, roadmap, canonical baseline, decision log, page/flow inventory, DECISION-5B.27/.28, and separate OPEN-Q-08/OPEN-Q-09 decision documents.
 - Identified stale status wording in decision documents 5B.23–5B.28 and OPEN-Q-08/OPEN-Q-09 that reflected their original recording date rather than current governance status. Added dated current-status reconciliation notes while preserving the original historical wording.
 - Current status remains **Stage 5 CLOSED FOR DOCUMENTATION ONLY**; OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. Technical implementation/verification remains unverified/deferred.
-- Completed the final reference pass and recorded the outcome in `stage-2-reformation/STAGE-5-DOCUMENTATION-COMPLETENESS-AUDIT-2026-10-30.md` and `canonical/YEMREACT-DOCUMENTATION-CHANGELOG-ADDENDUM-2026-10-30.md`.
+- Completed the final reference pass and recorded the outcome in `stage-2-reformation/STAGE-5-DOCUMENTATION-COMPLETENESS-AUDIT-2026-10-30.md` and `stage-5-ia-navigation/YEMREACT-DOCUMENTATION-CHANGELOG-ADDENDUM-2026-10-30.md`.
 - The large `canonical/PROJECT_CONTEXT_AND_DECISIONS.md` remains a historical context record and was not rewritten in place; its older status labels and next-step suggestions are explicitly subordinate to current governing records. This exception does not leave a Stage 5 product decision open.
 - Documentation package for the reviewed Stage 5 product/IA/navigation scope is complete. Technical gates remain UNVERIFIED/DEFERRED; no app or database work is authorized.
 
