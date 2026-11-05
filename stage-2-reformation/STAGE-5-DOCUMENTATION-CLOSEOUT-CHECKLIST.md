@@ -21,8 +21,9 @@ Stage 5 documentation closure covers the approved product routes, information ar
 | Help and reporting | DECISION-5B.26 governs Help/reporting; no separate public report route is invented, and reporting is not called operational before its gate passes. | RECORDED — workflow implementation unverified. |
 | Remaining UX details | DECISION-5B.27 records signup invitations, header authority, collection presentation, and initial Arabic Help copy. | RECORDED — implementation unverified. |
 | Route inventory boundaries | DECISION-5B.28 classifies admin subroutes, legal/privacy route scope, report route, and unavailable/unknown links without inventing paths. | RECORDED — actual route tree/status/SEO unverified. |
+| Empty and error-state copy | DECISION-5B.29 records the agreed Arabic copy for the defined empty/error states and preserves flow-specific errors as deferred or governed elsewhere. | RECORDED — implementation and runtime behavior unverified. |
 | Page/flow inventory | `YEMREACT-PAGE-AND-FLOW-INVENTORY-DRAFT.md` matches current decisions and keeps implementation claims marked UNVERIFIED. | CROSS-REFERENCE REVIEW COMPLETED 2026-10-30; current Stage 5 status reconciled. |
-| Submission discussion | Product decisions closed/documented on 2026-10-24; Google return restores form fields and selected file; no general autosave, upload-before-submit, or automatic resume is implied. Source document is on the authorized branch `hamdanaltawaf-cpu-patch-1`, not `main`; this work leaves it there under the earlier scope boundary. | RECORDED — implementation unverified; source remains on its existing branch per prior scope. |
+| Submission discussion | Product decisions closed/documented on 2026-10-24; Google return restores form fields and selected file; no general autosave, upload-before-submit, or automatic resume is implied. Source is preserved on `main` at `stage-5-ia-navigation/reaction-submission-discussion.md`; the former branch and `docs/product/discussions/` path are historical. | RECORDED — implementation unverified; current source path verified. |
 | OPEN-Q-08 | Search/indexing policy is in its own canonical document and marked CLOSED FOR DOCUMENTATION only. | RECORDED — search/index implementation unverified. |
 | OPEN-Q-09 | Speech-extraction policy is in its own canonical document, separate from OPEN-Q-08, and marked CLOSED FOR DOCUMENTATION only. | RECORDED — extraction implementation/accuracy/cost/privacy unverified. |
 | Roadmap and decision log | Roadmap, canonical baseline, project context, decision log, and inventory reference the same current decisions and record changes. | CROSS-REFERENCE REVIEW COMPLETED 2026-10-30; dated historical entries retained and distinguished from current status. |
@@ -38,7 +39,7 @@ Stage 5 documentation closure covers the approved product routes, information ar
 
 ## 3. Consistency review completed — documentation boundary
 
-- [x] Cross-checked current Stage 5 decisions through DECISION-5B.28 against the canonical baseline, decision log, and individual decision documents; newer accepted decisions supersede historical wording only within their stated scope.
+- [x] Cross-checked current Stage 5 decisions through DECISION-5B.29 against the canonical baseline, decision log, and individual decision documents; newer accepted decisions supersede historical wording only within their stated scope.
 - [x] Reviewed the roadmap status summary, current-item table, deferred/cancelled register, source hierarchy, and change log; corrected the stale Stage 5-B version label and added the route-boundary/checklist records.
 - [x] Reviewed inventory routes, navigation, states, source references, and remaining UNKNOWN/OPEN/UNVERIFIED labels; clarified that remaining unknowns concern technical implementation or separate future legal scope, not an unmade Stage 5 product route.
 - [x] Confirmed OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only; corrected stale OPEN-Q-09 wording in the OPEN-Q-08 decision document.
@@ -58,7 +59,7 @@ This checklist does not:
 
 ## 5. Current outcome
 
-**Documentation closeout: CLOSED FOR DOCUMENTATION ONLY (2026-10-29); final reference consistency and boundary audit recorded 2026-10-30.** The cross-reference review is complete and the closure is recorded in `STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`. The submission-discussion source remains on its existing authorized branch rather than being merged or relocated. Legal obligations remain a separate legal-scope item; technical implementation/verification remains deferred and unverified.
+**Documentation closeout: CLOSED FOR DOCUMENTATION ONLY (2026-10-29); final reference consistency and boundary audit recorded 2026-10-30.** The cross-reference review is complete and the closure is recorded in `STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`. The submission-discussion source is preserved on `main` at `stage-5-ia-navigation/reaction-submission-discussion.md`; earlier branch/path references are historical. Legal obligations remain a separate legal-scope item; technical implementation/verification remains deferred and unverified.
 
 
 ## 6. Final documentation / execution boundary — 2026-10-30
@@ -76,3 +77,10 @@ This checklist does not:
 - [x] The append-only documentation changelog companion is `stage-5-ia-navigation/YEMREACT-DOCUMENTATION-CHANGELOG-ADDENDUM-2026-10-30.md`; the roadmap also records the completed audit.
 - [x] `PROJECT_CONTEXT_AND_DECISIONS.md` is treated as a historical context record where old OPEN/DISCUSSION labels or next-step proposals appear. Its historical content was not rewritten in place; current governing status is supplied by the current baseline, decisions log, roadmap, and closeout record.
 - [x] Final outcome: the reviewed Stage 5 product/IA/navigation documentation package is complete. This does not verify implementation or authorize technical work.
+
+
+## 8. Current-location and inventory clarification — 2026-11-05
+
+- [x] Current submission-discussion path verified as `stage-5-ia-navigation/reaction-submission-discussion.md`; references to `hamdanaltawaf-cpu-patch-1` and `docs/product/discussions/` describe earlier locations only.
+- [x] Stage 5-B documentation inventory includes `DECISION-5B.29` after `DECISION-5B.28`.
+- [x] These updates clarify current documentation references only; they do not change product decisions, implementation status, or stage authorization.
