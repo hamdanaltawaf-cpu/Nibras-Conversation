@@ -73,6 +73,6 @@ This checklist does not:
 
 - [x] Detailed decision documents OPEN-Q-08, OPEN-Q-09, and DECISION-5B.23 through DECISION-5B.28 have dated current-status reconciliation notes; their original wording remains as historical context.
 - [x] The audit outcome is recorded in `STAGE-5-DOCUMENTATION-COMPLETENESS-AUDIT-2026-10-30.md`.
-- [x] The append-only documentation changelog companion is `canonical/YEMREACT-DOCUMENTATION-CHANGELOG-ADDENDUM-2026-10-30.md`; the roadmap also records the completed audit.
+- [x] The append-only documentation changelog companion is `stage-5-ia-navigation/YEMREACT-DOCUMENTATION-CHANGELOG-ADDENDUM-2026-10-30.md`; the roadmap also records the completed audit.
 - [x] `PROJECT_CONTEXT_AND_DECISIONS.md` is treated as a historical context record where old OPEN/DISCUSSION labels or next-step proposals appear. Its historical content was not rewritten in place; current governing status is supplied by the current baseline, decisions log, roadmap, and closeout record.
 - [x] Final outcome: the reviewed Stage 5 product/IA/navigation documentation package is complete. This does not verify implementation or authorize technical work.
