@@ -40,13 +40,13 @@
 
 ## 4. ملفات لم تُنقل لأنها ما زالت تحتوي قرارات نافذة
 
-- `canonical/DECISION-5B.23-NUMBER-FORMATTING.md`
-- `canonical/DECISION-5B.24-GUEST-SAVE-RECONCILIATION.md`
-- `canonical/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`
-- `canonical/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`
-- `canonical/DECISION-5B.27-REMAINING-UX-DETAILS.md`
-- `canonical/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`
-- `canonical/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`
+- `stage-5-ia-navigation/DECISION-5B.23-NUMBER-FORMATTING.md`
+- `stage-5-ia-navigation/DECISION-5B.24-GUEST-SAVE-RECONCILIATION.md`
+- `stage-5-ia-navigation/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`
+- `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`
+- `stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md`
+- `stage-5-ia-navigation/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`
+- `stage-5-ia-navigation/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`
 - `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`
 - `canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md`
 - قرارات Stage 4 المستقلة `DECISION-I01–I10`؛ لم تُنقل كملفات كاملة لأن التغييرات التي طالت I03 وI10 جزئية فقط، وبقية قرارات الهوية ما زالت مرجعًا.
