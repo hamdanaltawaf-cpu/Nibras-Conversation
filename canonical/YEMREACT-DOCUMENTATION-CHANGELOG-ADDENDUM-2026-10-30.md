@@ -137,3 +137,10 @@ No application or database changes, technical verification, tests, build, deploy
 - تم الدمج بطريقة Merge commit للحفاظ على تاريخ Git: `e9abbfc91b2f9fa8314f990c44a61801e8c87db7`.
 - تأكد بعد الدمج أن PR أصبح `closed` مع `merged=true` وأن رأس `main` يطابق Merge commit.
 - لم تتغير حالة Stage 5؛ الإغلاق توثيقي فقط، ولا توجد موافقة ضمنية على التنفيذ أو بدء Stage 5.3 أو Stage 6 أو Stage 9.
+
+
+### 2026-11-05 — حفظ سجل نقاش الإرسال على main
+
+- نُقل الملف `docs/product/discussions/reaction-submission-discussion.md` من الفرع `hamdanaltawaf-cpu-patch-1` إلى `main` دون أي تعديل على نصه التاريخي؛ تطابق SHA للملف في المصدر والوجهة.
+- حُدّثت إحالات خارطة الطريق وملف السياق وسجل القرارات وسجل إغلاق Stage 5 لتشير إلى مسار الملف على `main`، مع الحفاظ على التمييز بين تاريخ الإغلاق في 2026-10-24 وتاريخ نقل الملف في 2026-11-05.
+- هذا الإجراء حفظ توثيقي فقط؛ لم يُغلق PR #6 ولم يُحذف الفرع القديم، ولم تتغير حالة Stage 5 أو أي مرحلة لاحقة.
