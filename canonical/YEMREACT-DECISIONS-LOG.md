@@ -3124,3 +3124,10 @@ Full decision: `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPOR
 ## 2026-11-04 — Archive of Cancelled and Superseded Decision Scopes
 
 The retired decision scopes are indexed in `archive/superseded-decisions/DECISIONS-ARCHIVE-REGISTER.md`. Use that register to identify the replacement and the exact scope affected. This does not erase chronological evidence in this log; partially superseded decisions remain valid outside the explicitly retired scope.
+
+
+## 2026-11-05 — Current Path Clarification — Stage 5 Documentation Files
+
+- Earlier entries record the submission-discussion file being preserved on `main` at `docs/product/discussions/reaction-submission-discussion.md` on 2026-11-05. That is the historical destination at the time of preservation; its current path is `stage-5-ia-navigation/reaction-submission-discussion.md` after the subsequent organization move.
+- The current paths for `DECISION-5B.23` through `DECISION-5B.29` are under `stage-5-ia-navigation/`. References to their former `canonical/` locations in dated historical records describe their location at that earlier time; current operational references have been corrected.
+- No decision text, authority, or product scope was changed by these path corrections. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; implementation and technical verification remain separate and unauthorized by this update.
