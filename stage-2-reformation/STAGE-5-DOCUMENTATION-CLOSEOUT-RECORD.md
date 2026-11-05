@@ -12,8 +12,8 @@ Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** for its current product/IA/navigati
 
 - Stage 5.1 Search Route: `/?q=` on the library surface and `/search` redirect direction recorded.
 - Stage 5.2 Bottom Navigation: closed for documentation on 2026-10-11 by the founder's explicit approval.
-- Stage 5-B product decisions: DECISION-5B.19 through DECISION-5B.28 are reflected in the canonical baseline, roadmap, decision log, and route/flow inventory.
-- Reaction-submission discussion: product/documentation closure recorded on 2026-10-24. The original source file was later preserved unchanged on `main` on 2026-11-05 at `docs/product/discussions/reaction-submission-discussion.md`, later moved to `stage-5-ia-navigation/reaction-submission-discussion.md`. This relocation preserves the historical discussion only; it does not change the 2026-10-24 closure scope or imply technical implementation.
+- Stage 5-B product decisions: DECISION-5B.19 through DECISION-5B.29 are reflected in the current canonical baseline, roadmap, decision log, and route/flow inventory; decisions 5B.23–5B.29 are stored under `stage-5-ia-navigation/`.
+- Reaction-submission discussion: product/documentation closure recorded on 2026-10-24. The source was preserved unchanged on `main` on 2026-11-05, first at `docs/product/discussions/reaction-submission-discussion.md`, then relocated to its current path `stage-5-ia-navigation/reaction-submission-discussion.md`. The earlier path is historical only. This relocation preserves the discussion; it does not change the 2026-10-24 closure scope or imply technical implementation.
 - OPEN-Q-08: search/indexing policy is closed for documentation only in its own canonical document.
 - OPEN-Q-09: speech-extraction policy is closed for documentation only in its own separate canonical document; it remains distinct from OPEN-Q-08.
 - Page/flow inventory: PR #16 merged on 2026-10-29.
@@ -25,7 +25,7 @@ Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** for its current product/IA/navigati
 - **C-01:** remains cancelled as an active topic.
 - **P-20 #6:** remains DEFERRED with no replacement destination.
 - **Legal obligations:** terms, rights/takedown, and any required disclosures remain a separate legal-scope review. This closure does not waive legal obligations or decide whether a future legal page is required.
-- **Submission discussion source:** remains on its previously authorized branch; this record does not merge or relocate it.
+- **Submission discussion source:** preserved on `main` at `stage-5-ia-navigation/reaction-submission-discussion.md`; its earlier branch/path locations are historical. The 2026-10-24 product/documentation closure remains unchanged.
 - **No stage expansion:** no Stage 5.3 is created; Stage 6 and Stage 9 are not started or authorized by this record.
 
 ## 4. Technical and implementation boundary — still pending
@@ -55,3 +55,10 @@ The final documentation completeness audit is recorded in `STAGE-5-DOCUMENTATION
 The audit found stale historical status wording in detailed decision documents. Dated reconciliation notes were added to OPEN-Q-08, OPEN-Q-09, and DECISION-5B.23 through DECISION-5B.28; original text was preserved as historical context. `PROJECT_CONTEXT_AND_DECISIONS.md` remains a large historical record and was not rewritten in place. Its old status labels and proposed next steps are subordinate to current governing records and do not constitute open Stage 5 product decisions or authorization.
 
 **Final documentation outcome:** the reviewed Stage 5 product/IA/navigation documentation package is complete. Technical implementation, security, tests, build, runtime, and release readiness remain **UNVERIFIED / DEFERRED**. No implementation or future-stage work is authorized by this audit.
+
+
+## 7. Documentation clarification — 2026-11-05
+
+- Current Stage 5-B decision inventory extends through `DECISION-5B.29`; the closeout scope remains documentation-only.
+- The current location of `reaction-submission-discussion.md` is `stage-5-ia-navigation/`. The former `docs/product/discussions/` path and the earlier branch location describe its preservation/move history, not its current location.
+- No product decision, closure date, technical status, or stage boundary changed through this clarification.
