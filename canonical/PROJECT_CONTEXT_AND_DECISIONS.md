@@ -637,7 +637,7 @@ Accepted policy: render an empty state only after a successful load confirms no 
 
 - Stage 5 is closed for documentation only after the route inventory and cross-reference checklist were reviewed and Hamdan explicitly directed this closure scope.
 - Record: `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`. The closure does not imply implementation, tests, security review, build, runtime, or release readiness.
-- The submission-discussion source remains on `hamdanaltawaf-cpu-patch-1` under its earlier scope restriction; it was not merged or relocated by this closure.
+- The submission-discussion source was preserved without content edits at `docs/product/discussions/reaction-submission-discussion.md` on `main` on 2026-11-05. Its earlier location on `hamdanaltawaf-cpu-patch-1` is historical; this relocation preserves the discussion and does not change its product/documentation closure scope or imply technical implementation.
 - C-01 remains cancelled; P-20 #6 remains deferred without reassignment. Legal obligations remain a separate scope. No Stage 5.3, Stage 6, or Stage 9 is created/started.
 - Technical implementation and verification remain UNVERIFIED and require a separate explicit task after documentation is complete.
 
