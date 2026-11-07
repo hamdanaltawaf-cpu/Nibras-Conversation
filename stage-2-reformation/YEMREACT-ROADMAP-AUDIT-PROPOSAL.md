@@ -150,7 +150,7 @@
 ### مصادر التخطيط والمساندة
 - [YEMREACT-REFORMATION-MASTER-PLAN.md](./YEMREACT-REFORMATION-MASTER-PLAN.md) — إطار المراحل الثماني؛ لا يثبت بدء المستقبلية.
 - [YEMREACT-STAGE5-5.1-SEARCH-ROUTE-DISCUSSION.md](../stage-5-ia-navigation/YEMREACT-STAGE5-5.1-SEARCH-ROUTE-DISCUSSION.md) — نقاش تاريخي يُقرأ وفق القرار الأحدث.
-- [YEMREACT-STAGE-5B-ACCOUNT-NAVIGATION-PROPOSAL-2026-10-18.md](../proposals/YEMREACT-STAGE-5B-ACCOUNT-NAVIGATION-PROPOSAL-2026-10-18.md) — تفاصيل المقترح الذي قُنّن لاحقًا؛ لا يتقدم على الكانوني.
+- [YEMREACT-STAGE-5B-ACCOUNT-NAVIGATION-PROPOSAL-2026-10-18.md](../stage-5-ia-navigation/YEMREACT-STAGE-5B-ACCOUNT-NAVIGATION-PROPOSAL-2026-10-18.md) — تفاصيل المقترح الذي قُنّن لاحقًا؛ لا يتقدم على الكانوني.
 - [README.md](../README.md)، وملفات `reference/` و`reference/uploads/` — سياق ومصادر مساندة أو تاريخية؛ لا تتغلب اللقطات القديمة على القرار الأحدث.
 - `stage-1-source-reconciliation/` و`stage-4-identity/` — أدلة وتقارير وقرارات المراحل السابقة بحسب موضوعها.
 
