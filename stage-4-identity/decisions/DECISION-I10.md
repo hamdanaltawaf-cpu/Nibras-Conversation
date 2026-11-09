@@ -45,7 +45,7 @@
 
 [سياسة زر (+) السابقة أُحيلت إلى الأرشيف؛ المرجع الحالي هو `DECISION-5.2.76` وقرارات Stage 5.2 ذات الصلة.]
 
-**12. Search Bar:** Desktop حقل `44px` بعرض `420-480px` · Mobile حقل كامل في Header · Placeholder البحث السابق مؤرشف في `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. · **بلا فلاتر في v1**
+**12. Search Bar:** Desktop حقل `44px` بعرض `420-480px` · Mobile حقل كامل في Header · Placeholder البحث السابق مؤرشف في `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. · **بلا فلاتر في v1**
 
 **13. Guest Save:** حفظ محلي `localStorage` للزائر · دمج عند الدخول · **Seal Motion يعمل فورًا**
 

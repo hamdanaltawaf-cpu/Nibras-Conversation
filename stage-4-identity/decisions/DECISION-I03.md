@@ -79,7 +79,7 @@
     - Off: حركة كاملة — Motion Signature 150-200ms ختم/قلب
     - تفاصيل الحركة → PD-I09 Motion
 
-  [أُحيل وصف واجهة الإعدادات القديمة إلى الأرشيف؛ المرجع الحالي صفحة إعدادات مستقلة. راجع `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03.]
+  [أُحيل وصف واجهة الإعدادات القديمة إلى الأرشيف؛ المرجع الحالي صفحة إعدادات مستقلة. راجع `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03.]
 
   المرجع البصري — Prototype موقع تجريبي:
 

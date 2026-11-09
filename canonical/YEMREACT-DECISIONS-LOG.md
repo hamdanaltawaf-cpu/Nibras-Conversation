@@ -74,7 +74,7 @@
 
 **Previous → New:**
 
-- **Previous:** [النص السابق منقول إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`].
+- **Previous:** [النص السابق منقول إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`].
 
 - **New:** فيديو + صور — نوعا محتوى متكافئان — كلاهما منتج أساسي
 
@@ -813,7 +813,7 @@
   - Arena-Agent لا يرفع محتوى — فقط يجهّز النظام
   - Reason: Arena-Agent دوره برمجي/هندسي. الرفع عملية تحريرية تحتاج عين بشرية.
   ⚠️ هذا يُعدّل P-18 جزئيًا:
-    - [الصياغة السابقة منقولة إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`].
+    - [الصياغة السابقة منقولة إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`].
     - P-18 المُعدّل: "Arena-Agent يبني ويجهّز وينشر. حمدان يرفع 300-500."
 
   3. Submissions Timing — توقيت المساهمات:
@@ -842,7 +842,7 @@
 **Reason:**
 
 1) يحل PD-05 Pipeline — CONFLICT-038 — Submit tension A/B/C — كيف نجمع 300-500؟ — Source لقطات قصيرة من مواقع التواصل + ليست ذاتية + قص مناسب فقط + منصة حرة لا حقوق — يطابق DECISION-009 تعديل 1 المنصة حرة تجمع رياكشنات عشوائية + P-24 حذف قانوني → Stage8
-2) يصحح P-18 — Arena-Agent يبني النظام كاملًا (كود + بنية + اختبار + BUG-1 + نشر) — حمدان يرفع 300-500 بنفسه بعد اكتمال البناء والنشر — Arena-Agent لا يرفع محتوى — فقط يجهّز — دوره برمجي/هندسي — الرفع تحريري يحتاج عين بشرية — الصياغة السابقة منقولة إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`؛ القرار النافذ موضح في هذا القسم. — تعديل جزئي CONFIRMED
+2) يصحح P-18 — Arena-Agent يبني النظام كاملًا (كود + بنية + اختبار + BUG-1 + نشر) — حمدان يرفع 300-500 بنفسه بعد اكتمال البناء والنشر — Arena-Agent لا يرفع محتوى — فقط يجهّز — دوره برمجي/هندسي — الرفع تحريري يحتاج عين بشرية — الصياغة السابقة منقولة إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`؛ القرار النافذ موضح في هذا القسم. — تعديل جزئي CONFIRMED
 3) يحل Submissions Timing — قبل الإطلاق زر (+) يظهر لكنه مقفل فعليًا blur + "قريبًا" — عند الإطلاق حذف كود بسيط → يعمل — بعد الإطلاق مفتوحة من أول إطلاق — حماية الجودة أثناء البناء — الإطلاق يفتح الباب — يطابق Recent Axis C "زر المساهمة (+) يظهر الآن للجميع" لكن مع blur قبل الإطلاق
 4) يحل Rights — المنصة حرة لا حقوق — Report Button DECISION-010 يحمي بعد النشر — Legal كامل Stage 8 Terms + Privacy + Takedown + Content Policy — المحتوى لقطات قصيرة ليست تجارة — الإبلاغ يحمي
 5) يوضح Quality/Speed — لا يهم — التنوع والتغطية أهم من السرعة — Rubric 6 يُطبق على كل لقطة — 300-500 هدف إطلاق — الجودة عبر Rubric لكن التنوع أولاً — يطابق DECISION-009 Rubric 6 + DECISION-008 "المكتبة تكبر ليست مؤشر منتج"
@@ -1160,7 +1160,7 @@
 - P-29 Aspect Ratio + P-30 Aspect Criterion — 60 → 62 facts — Stage 3 PD-08 CLOSED — CONFLICT-021 CLOSED
 - NEXT: PD-09 Categories — HISTORY + EVIDENCE فقط — بانتظار أمر حمدان — لا تعارض مع PD-08
 
-[النص الكامل للقرار التاريخي والتكرار التابع له نُقل إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. المرجع الحالي لإزالة الفئات هو DECISION-4R01.]
+[النص الكامل للقرار التاريخي والتكرار التابع له نُقل إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. المرجع الحالي لإزالة الفئات هو DECISION-4R01.]
 
 ## DECISION-015 — Collections as Primary Taxonomy — ACCEPTED — Stage 3 — PD-10
 
@@ -1533,7 +1533,7 @@
     - Off: حركة كاملة — Motion Signature 150-200ms ختم/قلب
     - تفاصيل الحركة → PD-I09 Motion
 
-  [وصف واجهة Settings Modal السابقة نُقل حرفيًا إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03؛ المرجع الحالي صفحة إعدادات مستقلة.]
+  [وصف واجهة Settings Modal السابقة نُقل حرفيًا إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03؛ المرجع الحالي صفحة إعدادات مستقلة.]
 
   المرجع البصري — Prototype موقع تجريبي:
 
@@ -1742,7 +1742,7 @@
 ...
 ```
 
-[نص سياسة منع Empty States السابقة نُقل إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I06؛ المرجع الحالي `DECISION-5B.25` و`DECISION-5B.29`.]
+[نص سياسة منع Empty States السابقة نُقل إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I06؛ المرجع الحالي `DECISION-5B.25` و`DECISION-5B.29`.]
 
 **التوافق:** متوافق P-09 «وصف ثنائي مطوي **إن وجد**» + P-35 chips «اختياري تحت بعض البطاقات فقط» + P-34 المجموعات «إن وُجدت» + P-06 حفظ CTA أساسي يبقى ظاهرًا دائمًا — لا تعارض — لا حقائق جديدة — العدد ثابت 74
 
@@ -2114,7 +2114,7 @@
 
 **11. زر (+):** [سياسة زر (+) السابقة في DECISION-I10 نُقلت إلى الأرشيف؛ السياسة الحالية وفق `DECISION-5.2.76` تفتح `/submit` مباشرةً وتطلب Google login عند الإرسال مع استعادة النموذج.]
 
-**12. Search Bar:** Desktop حقل `44px` بعرض `420-480px` · Mobile حقل كامل في Header · Placeholder «[النص السابق لحقل البحث منقول إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» · **بلا فلاتر في v1**
+**12. Search Bar:** Desktop حقل `44px` بعرض `420-480px` · Mobile حقل كامل في Header · Placeholder «[النص السابق لحقل البحث منقول إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» · **بلا فلاتر في v1**
 
 **13. Guest Save:** حفظ محلي `localStorage` للزائر · دمج عند الدخول · **Seal Motion يعمل فورًا**
 
@@ -2171,7 +2171,7 @@
 - Navigation: Header Desktop Mark+Logo+Nav+Search+Account — Mobile Mark+Search بلا Avatar + يختفي↓/يظهر↑
 - Account Menu 3 حالات: زائر (Google+الإعدادات+المساعدة) · مستخدم (Identity+الإعدادات+المساعدة+Logout) · أدمن (+الاستوديو مجموعة منفصلة) — Popover ديسكتوب / Sheet جوال
 - سياسة زر (+) السابقة مؤرشفة؛ المرجع الحالي `DECISION-5.2.76`.
-- Search Bar: 44px عرض 420-480px ديسكتوب + حقل كامل جوال + Placeholder «[النص السابق لحقل البحث منقول إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» + بلا فلاتر v1
+- Search Bar: 44px عرض 420-480px ديسكتوب + حقل كامل جوال + Placeholder «[النص السابق لحقل البحث منقول إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» + بلا فلاتر v1
 - Guest Save: localStorage + دمج عند الدخول + Seal Motion فورًا — Mobile: لا معاينة تلقائية + Tap يفتح التفاصيل — Report Flow: Sheet radio 5 أسباب
 - 7 تصحيحات مؤجلة Stage 7 + قراران مؤجلان (Search Route → Stage 5 · Scroll Restoration → مستقبلي)
 - Rejected: Avatar جوال + المحفوظات/مساهماتي في Account + Toast للقريبًا + Emojis في UI + Infinite Scroll + Qussasa في Empty States + Linear نبرة Empty
@@ -2733,7 +2733,7 @@ P-14 بصيغته القديمة كان **Known-Item أصلًا** — مداخل
 لا يُحتفظ بالرياكشن المحذوف أو غير المنشور حتى نهاية الجلسة بوصف ذلك سلوكًا مضمونًا. يُزال عند تحديث النتائج أو التحقق من حالته، ويجب التحقق من كونه منشورًا ومتاحًا للعامة قبل فتح التفاصيل. إذا لم يعد عامًا فلا تُعرض تفاصيله. تُحدّث العناصر الباقية وفق 5.2.58 مع منع التكرار. سلامة الوصول وحالة النشر الحالية تتقدمان على الاحتفاظ بعنصر قديم.
 
 ### 5.2.67 — نص حقل البحث — ACTIVE; supersedes legacy placeholder
-يُستبعد «[النص السابق لحقل البحث منقول إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» من الاستخدام الحالي؛ النص المعتمد «ابحث عن رياكشن...». يظل البحث Known-Item وفق P-48، و«الموقف» سببًا للمجيء لا آلية بحث مستقلة.
+يُستبعد «[النص السابق لحقل البحث منقول إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`]» من الاستخدام الحالي؛ النص المعتمد «ابحث عن رياكشن...». يظل البحث Known-Item وفق P-48، و«الموقف» سببًا للمجيء لا آلية بحث مستقلة.
 
 ### 5.2.68 — الكتابة مقابل تنفيذ البحث — CLARIFICATION
 الكتابة تحدّث الاقتراحات فقط. النتائج الكاملة تتحدث عند الإرسال أو Enter دون اقتراح محدد. اختيار اقتراح يفتح الرياكشن المطابق مباشرة. لا يغيّر ذلك قرارات Stage 5.1.
@@ -3123,7 +3123,7 @@ Full decision: `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPOR
 
 ## 2026-11-04 — Archive of Cancelled and Superseded Decision Scopes
 
-The retired decision scopes are indexed in `archive/superseded-decisions/DECISIONS-ARCHIVE-REGISTER.md`. Use that register to identify the replacement and the exact scope affected. This does not erase chronological evidence in this log; partially superseded decisions remain valid outside the explicitly retired scope.
+The retired decision scopes are indexed in `الأرشيف/قرارات-متجاوزة/DECISIONS-ARCHIVE-REGISTER.md`. Use that register to identify the replacement and the exact scope affected. This does not erase chronological evidence in this log; partially superseded decisions remain valid outside the explicitly retired scope.
 
 
 ## 2026-11-05 — Current Path Clarification — Stage 5 Documentation Files

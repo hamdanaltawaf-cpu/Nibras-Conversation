@@ -23,7 +23,7 @@
 - **States** Empty للصفحات فقط · Skeleton + Spinner 16 · Error فصحى هادئة · Toast Success+Error
 - **Icons** Lucide 1.5px 16/20/24 · ملخص تعيينات Bottom Nav في I10 تاريخي؛ المرجع الحالي للتنقل هو Stage 5.2: المكتبة · المجموعات · إرسال · المحفوظات · الحساب (`5.2.0` وما بعده).
 - **Account Menu (P-45)** 3 حالات: زائر / مستخدم / أدمن (+الاستوديو) · Popover ديسكتوب · Sheet جوال
-- **زر (+):** الصياغة السابقة الخاصة بالقفل و«قريبًا» أُحيلت إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I10؛ السياسة الحالية وفق `DECISION-5.2.76`.
+- **زر (+):** الصياغة السابقة الخاصة بالقفل و«قريبًا» أُحيلت إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I10؛ السياسة الحالية وفق `DECISION-5.2.76`.
 - **Guest Save (P-46)** localStorage + دمج عند الدخول + Seal Motion فورًا
 - **7 تصحيحات Stage 7 + قراران مؤجلان** (Search Route → Stage 5 · Scroll Restoration → مستقبلي)
 - **Impact:** P-44 + P-45 + P-46 — **76→79 facts** — **PD-I10 CLOSED — Stage 4 CLOSED 100%**
@@ -83,7 +83,7 @@
 ## UPDATE 2026-09-25 — تصحيح PD-I06 (Detail Page Layout) — التصحيح الثالث
 
 - **التصحيح 1 — موضع الأزرار:** الأزرار (حفظ + تنزيل + مشاركة + [...]) **بجانب العنوان — في اليسار (RTL) — نفس السطر — ليست سطرًا منفصلًا**
-- **التصحيح 2 — سياسة Empty States السابقة:** النص الأصلي مؤرشف في `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I06؛ المرجع الحالي `DECISION-5B.25` و`DECISION-5B.29`.
+- **التصحيح 2 — سياسة Empty States السابقة:** النص الأصلي مؤرشف في `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I06؛ المرجع الحالي `DECISION-5B.25` و`DECISION-5B.29`.
 - **التوافق:** P-09 «إن وجد» + P-35 chips اختياري + P-34 «إن وُجدت» + P-06 حفظ CTA دائم — لا تعارض
 - **Impact:** P-39 CORRECTED — العدد ثابت 74 facts — PD-I06 يبقى CLOSED
 
@@ -125,7 +125,7 @@
 - Accents اختيارية من إعدادات المستخدم: كهرماني Amber افتراضي دافئ يمني + بنفسجي Purple حديث مميز + تيل Teal بارد هادئ؛ واجهة الإعدادات الحالية صفحة مستقلة، والوصف السابق مؤرشف.
 - Theme: نهاري Day + ليلي Night + تلقائي Auto؛ Auto هو الافتراضي الحالي وفق `DECISION-5B.20`.
 - Reduce Motion: On/Off — يحترم prefers-reduced-motion — تفاصيل PD-I09
-- [وصف واجهة Settings Modal السابقة نُقل إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03؛ المرجع الحالي صفحة إعدادات مستقلة.]
+- [وصف واجهة Settings Modal السابقة نُقل إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md` — قسم DECISION-I03؛ المرجع الحالي صفحة إعدادات مستقلة.]
 - المرجع البصري Prototype موقع تجريبي: Home Pinterest-like Masonry + وصف واجهة الإعدادات السابق مؤرشف — Qussasa Mark في Header + Captions بلهجة يمنية + Flat Saves Bookmark + Duration badge؛ بقية ملاحظات النموذج تاريخية.
 - Rejected: النظام 1 كهرماني فقط محدود + النظام 2 نيلي يفقد الدفء + النظام 4 رمادي فقط بلا شخصية + 3 Accents ثابتة نستخدم متعدد — كلها REJECTED per DECISION-I03
 - Impact: P-37 Multi-Accent Color System — B-05 UPDATED Brand colors foundation → Multi-Accent — B-06 9 colors محفوظ للدراسة — 69→70 facts — PD-I03 CLOSED يفتح PD-I04+PD-I05+PD-I06+PD-I08+PD-I09 + صفحة إعدادات مستقلة (وصف النمط السابق مؤرشف) — Prototype مرجع بصري ليس نهائي — ملاحظة موقع تجريبي + الاستوديو اسم مؤقت + البحث لاحقًا
@@ -216,7 +216,7 @@
 
 ### PROPOSED (مقترحة بانتظار اعتماد)
 
-- **BottomNav التاريخي:** النصوص السابقة منقولة إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`.
+- **BottomNav التاريخي:** النصوص السابقة منقولة إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`.
 - **Categories = Data Only:** 9 فئات كبيانات/لون فقط، لا فلترة بارزة كوجهة مستقلة.
 - **Collections = Rail داخلي:** لا BottomNav Destination. Rail داخل تجربة المكتبة يكفي حتى يكبر العدد.
 - **Masonry Mixed Aspect:** فيديو فقط، لا Pinterest صور ثابتة.
@@ -236,7 +236,7 @@
 
 ### SUPERSEDED
 
-النصوص التاريخية للقرارات المستبدلة نُقلت إلى `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. لا تُعاد صياغتها أو عرضها هنا؛ المرجع الحالي هو الـCanonical Baseline وسجل القرارات النافذان.
+النصوص التاريخية للقرارات المستبدلة نُقلت إلى `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`. لا تُعاد صياغتها أو عرضها هنا؛ المرجع الحالي هو الـCanonical Baseline وسجل القرارات النافذان.
 
 ### OPEN / DISCUSSION (مفتوحة)
 
@@ -381,7 +381,7 @@
 ## 11. أي تغييرات أو تحديثات طرأت على القرارات السابقة
 
 - Core Loop: من PROPOSED Utility (أداة عند الحاجة) → مقترح Hybrid Utility (Find right reaction, discover next, share naturally) → **حاليًا DISCUSSION** بانتظار تحليل أرينا المفتوح. الصيغة السابقة محفوظة كـSUPERSEDED إذا اعتمد الجديد.
-- تسلسل قرارات التنقل السابق مؤرشف؛ راجع `archive/superseded-decisions/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`.
+- تسلسل قرارات التنقل السابق مؤرشف؛ راجع `الأرشيف/قرارات-متجاوزة/MOVED-RETIRED-DECISION-TEXTS-2026-11-04.md`.
 - انبهار: من لون عاشر مستقل → أُلحقت بعائلة استغراب (SUPERSEDED).
 - Brand v1.0: من دليل هوية أولي (YemReact-دليل-الهوية.md) → نسخة LOCKED نهائية (YemReact-Brand-v1.0-LOCKED.html) مع Watermark مُقوّى وقاعدة قلب الكتلة — النسخة الأولى تعتبر تاريخية عند التعارض.
 - طريقة العمل: من تنفيذ مباشر (افتراض سابق) → مرحلة DISCUSSION محور بمحور، لا كود قبل اعتماد الخطة (ACCEPTED).
@@ -649,7 +649,7 @@ Accepted policy: render an empty state only after a successful load confirms no 
 
 ## ARCHIVE POINTER — 2026-11-04
 
-This file contains historical context and earlier decision states. Cancelled and superseded scopes are now indexed in `archive/superseded-decisions/DECISIONS-ARCHIVE-REGISTER.md`. Read those entries as historical only and follow the named replacement. This pointer does not delete or rewrite the original historical record.
+This file contains historical context and earlier decision states. Cancelled and superseded scopes are now indexed in `الأرشيف/قرارات-متجاوزة/DECISIONS-ARCHIVE-REGISTER.md`. Read those entries as historical only and follow the named replacement. This pointer does not delete or rewrite the original historical record.
 
 
 ## تحديث 2026-11-05 — توضيح المسارات الحالية لمواد Stage 5
