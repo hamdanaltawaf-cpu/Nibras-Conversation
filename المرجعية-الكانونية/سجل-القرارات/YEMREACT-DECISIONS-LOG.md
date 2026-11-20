@@ -2999,7 +2999,7 @@ Full decision: `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPOR
 - **Evaluation:** use a fixed representative set covering exact embedded speech, spelling/dialect variations, title/character queries, semantic paraphrases, no-match queries, and shared phrases. Assess top-result success, ranking quality, misleading results, and semantic-search impact before numeric tuning.
 - **Boundary at the time of this entry:** OPEN-Q-08 only defines that extracted speech can be used for search when available and sufficiently reliable. OPEN-Q-09 was then still open; it was subsequently closed for documentation only in its separate decision later on 2026-10-28. The two decisions remain separate, and extraction implementation is unverified.
 - **Verification:** no claim that indexing, transcription, semantic search, tests, build, or runtime have been implemented or verified. Stage 5 remains OPEN; no Stage 5.3/Stage 6. SEC-06 and server-side upload enforcement remain unverified.
-- **Full specification:** `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
+- **Full specification:** `المرجعية-الكانونية/القرارات/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
 
 
 ---
@@ -3018,7 +3018,7 @@ Full decision: `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPOR
 - **الصلاحيات:** الاستخراج وإعادة المحاولة والتعديل والنشر للمشرفين المخوّلين فقط، مع فرض الصلاحيات فعليًا في النظام.
 - **التكلفة والخصوصية:** الهدف عدم التكلفة قدر الإمكان. لا تُفعّل خدمات مدفوعة أو ذات رسوم متغيرة دون موافقة مستقلة، ولا تُرسل الملفات إلى مزود خارجي قبل مراجعة الخصوصية والتكلفة. لم يُختَر نموذج أو مزود أو تقنية.
 - **الحدود:** OPEN-Q-08 منفصل ويحدد سياسة البحث. OPEN-Q-09 مغلق لأغراض التوثيق فقط؛ لا ادعاء بتنفيذ أو اختبار أو دقة مثبتة. Stage 5 تبقى OPEN، ولا تُنشأ Stage 5.3 أو Stage 6. SEC-06 وفرض صلاحيات الخادم والمسارات والاختبارات والبناء والتشغيل ما تزال غير متحققة.
-- **الوثيقة الكاملة:** `canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md`.
+- **الوثيقة الكاملة:** `المرجعية-الكانونية/القرارات/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md`.
 
 
 
