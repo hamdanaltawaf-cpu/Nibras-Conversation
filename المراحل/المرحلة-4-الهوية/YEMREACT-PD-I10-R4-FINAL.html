@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>يمن رياكت — Mockup نهائي (PD-I10-R4)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAFAF8;--sf:#FFFFFF;--s2:#F1EEE8;--ink:#121214;--t2:#6B6B70;--bd:rgba(0,0,0,.06);--onac:#fff;--ac:#C1592E;--acr:193,89,46;--teal:#0F8B8D;--pur:#6B4EFF;--red:#D64545;
+--sh1:0 1px 3px rgba(0,0,0,.04);--sh2:0 2px 8px rgba(0,0,0,.06);--sh3:0 4px 16px rgba(0,0,0,.08);--sh4:0 8px 24px rgba(0,0,0,.12)}
+:root[data-accent=teal]{--ac:var(--teal);--acr:15,139,141}
+:root[data-accent=purple]{--ac:var(--pur);--acr:107,78,255}
+:root[data-theme=dark]{--bg:#18140F;--sf:#221C16;--s2:#2B241C;--ink:#F3ECE2;--t2:#A99E8E;--bd:rgba(255,255,255,.06);--onac:#18140F;--ac:#E0824B;--acr:224,130,75;--teal:#3FBFB9;--pur:#9C8CFF;--sh1:0 1px 3px rgba(0,0,0,.3);--sh2:0 2px 8px rgba(0,0,0,.38);--sh3:0 4px 16px rgba(0,0,0,.42);--sh4:0 8px 24px rgba(0,0,0,.5)}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){--bg:#18140F;--sf:#221C16;--s2:#2B241C;--ink:#F3ECE2;--t2:#A99E8E;--bd:rgba(255,255,255,.06);--onac:#18140F;--ac:#E0824B;--acr:224,130,75;--teal:#3FBFB9;--pur:#9C8CFF;--sh1:0 1px 3px rgba(0,0,0,.3);--sh2:0 2px 8px rgba(0,0,0,.38);--sh3:0 4px 16px rgba(0,0,0,.42);--sh4:0 8px 24px rgba(0,0,0,.5)}:root:not([data-theme])[data-accent=teal]{--ac:var(--teal);--acr:63,191,185}:root:not([data-theme])[data-accent=purple]{--ac:var(--pur);--acr:156,140,255}:root:not([data-theme]) body{background:#0c0a08}}
+:root[data-theme=dark][data-accent=teal]{--ac:var(--teal);--acr:63,191,185}
+:root[data-theme=dark][data-accent=purple]{--ac:var(--pur);--acr:156,140,255}
+*{box-sizing:border-box;transition:background-color .15s,color .15s,border-color .15s,box-shadow .15s,transform .12s,opacity .15s}
+html,body{margin:0;background:#dcd9d3;font-family:'IBM Plex Sans Arabic',sans-serif;color:var(--ink)}
+:root[data-theme=dark] body{background:#0c0a08}
+button{font-family:inherit;cursor:pointer;color:inherit}
+.ctl{position:sticky;top:0;z-index:99;background:var(--bg);border-bottom:1px solid var(--bd);padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.seg{display:flex;background:var(--s2);border-radius:18px;padding:3px;gap:2px}
+.seg button{border:0;background:none;color:var(--t2);font-size:11px;padding:5px 10px;border-radius:14px}
+.seg button.on{background:var(--sf);color:var(--ink);box-shadow:var(--sh1)}
+.sw{width:18px;height:18px;border-radius:50%;border:2px solid transparent}.sw.on{border-color:var(--ink)}
+.stage{display:flex;justify-content:center;padding:22px 10px 50px}
+.frame{position:relative;display:flex;flex-direction:column;background:var(--bg);overflow:hidden;box-shadow:var(--sh4)}
+.frame.desktop{width:1280px;max-width:100%;height:760px;border-radius:14px}
+.frame.mobile{width:390px;height:800px;border-radius:44px;border:9px solid #0b0b0c}
+.sc{flex:1;overflow:auto;position:relative}
+.hd{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:16px;padding:12px 24px;transition:transform .25s}
+.hd.m{padding:10px 14px;gap:10px}.hd.hide{transform:translateY(-100%)}
+.mk{width:20px;height:20px;background:var(--ink);clip-path:polygon(0 0,100% 0,100% 78%,78% 100%,0 100%);position:relative;flex:none;display:inline-block}
+.mk::after{content:"";position:absolute;left:38%;top:32%;border:solid transparent;border-width:4px 0 4px 6px;border-left-color:var(--bg)}
+.logo{font-family:'Lalezar';font-size:21px;font-weight:400}
+nav{display:flex;gap:18px;font-size:13px;color:var(--t2)}nav a{cursor:pointer}nav a.on{color:var(--ink);font-weight:600}
+.sf2{position:relative;flex:1;max-width:480px;margin-inline:auto}.hd.m .sf2{max-width:none;margin:0}
+.sf2>i{position:absolute;right:13px;top:14px;color:var(--t2);font-style:normal}
+.sf2 input{width:100%;height:44px;border-radius:10px;border:1px solid var(--bd);background:var(--sf);box-shadow:var(--sh1);padding:0 38px 0 12px;font-family:inherit;font-size:13px;color:var(--ink)}
+.sf2 input:focus{outline:2px solid var(--ac);outline-offset:2px}
+.sg{display:none;position:absolute;top:50px;right:0;left:0;background:var(--sf);border:1px solid var(--bd);border-radius:12px;box-shadow:var(--sh2);padding:10px;z-index:9;font-size:12px}
+.sf2:focus-within .sg{display:block}.sg b{display:block;color:var(--t2);font-weight:500;font-size:10.5px;margin:4px 0}
+.sg a{display:block;padding:6px 4px;cursor:pointer;border-radius:6px}.sg a:hover{background:var(--s2)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.chp{background:var(--s2);border-radius:14px;padding:5px 12px;font-size:12px;cursor:pointer;border:0}
+.b{height:44px;border-radius:10px;border:1px solid var(--bd);background:var(--s2);font-weight:600;font-size:13px;padding:0 16px;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.b.pri{background:var(--ac);color:var(--onac);border-color:transparent;box-shadow:var(--sh1)}.b.sm{height:40px}
+.ib{width:38px;height:38px;border-radius:50%;border:1px solid var(--bd);background:var(--sf);box-shadow:var(--sh1);display:inline-flex;align-items:center;justify-content:center;flex:none}
+.ib.pri{background:var(--ac);color:var(--onac);border-color:transparent}.ib.on{color:var(--ac);box-shadow:0 0 0 1px rgba(var(--acr),.2),var(--sh2)}
+.av{width:30px;height:30px;border-radius:50%;background:var(--ac);color:var(--onac);display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+.pg{max-width:1120px;margin:0 auto;padding:20px 24px}.frame.mobile .pg{padding:14px}
+h1{font-size:19px;margin:0 0 14px}h3{font-size:14px;margin:22px 0 10px}
+.ms{column-count:4;column-gap:14px}.frame.mobile .ms{column-count:2;column-gap:12px}
+.rc{break-inside:avoid;margin-bottom:14px;background:var(--sf);border:1px solid var(--bd);border-radius:14px;overflow:hidden;box-shadow:var(--sh1);cursor:pointer}.frame.mobile .rc{margin-bottom:12px}
+.frame.desktop .rc:hover{box-shadow:var(--sh2);transform:translateY(-2px)}
+.m{position:relative;background:#8f8a80;overflow:hidden}.m img{width:100%;height:100%;object-fit:cover;display:block;animation:fi .15s}
+@keyframes fi{from{opacity:0}}
+.dur{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.65);color:#fff;font:500 10px 'IBM Plex Mono';padding:2px 6px;border-radius:5px}
+.sv{position:absolute;top:6px;left:6px;width:30px;height:30px;border-radius:50%;border:0;background:rgba(0,0,0,.5);color:#fff;display:flex;align-items:center;justify-content:center}
+.sv.on{background:var(--ac);color:var(--onac)}
+.rw{display:flex;align-items:center;gap:4px;padding:6px 6px 6px 10px}.t{flex:1;font-size:12.5px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mb{width:30px;height:30px;border:0;background:none;border-radius:50%;color:var(--t2);display:flex;align-items:center;justify-content:center}.mb:hover{background:var(--s2)}
+.frame.desktop .sv,.frame.desktop .mb{opacity:0}.frame.desktop .rc:hover .sv,.frame.desktop .rc:hover .mb{opacity:1}.frame.desktop .sv.on{opacity:1}
+.failed{display:flex;align-items:center;justify-content:center;background:var(--s2);color:var(--t2);opacity:.9}
+.sk .m,.sk .ln{background:linear-gradient(100deg,var(--s2) 30%,var(--sf) 50%,var(--s2) 70%);background-size:200% 100%;animation:sh 1.3s infinite}
+.ln{height:14px;border-radius:6px;margin-bottom:10px}@keyframes sh{to{background-position:-200% 0}}
+.st{text-align:center;padding:60px 20px;max-width:340px;margin:0 auto}.st .ic{width:56px;height:56px;border-radius:50%;background:var(--s2);color:var(--t2);display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.st b{font-size:15px}.st p{font-size:12.5px;color:var(--t2);margin:6px 0 16px;line-height:1.7}
+.ban{display:flex;align-items:center;gap:10px;justify-content:space-between;background:var(--sf);border:1px solid var(--bd);box-shadow:var(--sh2);border-radius:14px;padding:12px 14px;margin-bottom:16px;font-size:12.5px;flex-wrap:wrap}
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.frame.mobile .cg{grid-template-columns:repeat(2,1fr);gap:12px}
+.cc{aspect-ratio:1;border-radius:14px;overflow:hidden;position:relative;box-shadow:var(--sh1);background:#8f8a80}.cc img{width:100%;height:100%;object-fit:cover}
+.cc span{position:absolute;bottom:0;right:0;left:0;background:linear-gradient(transparent,rgba(0,0,0,.65));color:#fff;font-size:12.5px;font-weight:600;padding:16px 10px 8px}
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.frame.mobile .dg{grid-template-columns:1fr;gap:14px}
+.dm{border-radius:14px;overflow:hidden;box-shadow:var(--sh2)}
+.tr{display:flex;align-items:flex-start;gap:8px;margin-bottom:12px}.tr h2{flex:1;font-size:22px;margin:0;line-height:1.3}
+.meta{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--t2);margin-bottom:14px;flex-wrap:wrap}
+.cp{background:color-mix(in srgb,var(--teal) 14%,var(--sf));color:var(--teal);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:500}
+.dot{width:4px;height:4px;border-radius:50%;background:var(--t2)}
+details{border:1px solid var(--bd);border-radius:10px;margin-bottom:14px}details summary{padding:11px 12px;font-size:13px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+details summary::-webkit-details-marker{display:none}details summary::after{content:"▾"}details[open] summary::after{content:"▴"}
+details div{padding:0 12px 12px;font-size:12.5px;color:var(--t2);line-height:1.7}
+.gr{display:flex;gap:8px;flex-wrap:wrap}.gr span{padding:6px 12px;background:var(--s2);border-radius:20px;font-size:11.5px}
+.rel{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:520px}.rel div{aspect-ratio:1;border-radius:10px;overflow:hidden;cursor:pointer;background:#8f8a80}.rel img{width:100%;height:100%;object-fit:cover}
+.back{margin-bottom:14px}
+footer{text-align:center;font-size:11px;color:var(--t2);padding:18px;border-top:1px solid var(--bd)}
+.bn{display:flex;align-items:center;justify-content:space-around;background:var(--sf);border-top:1px solid var(--bd);padding:8px 4px 16px;box-shadow:var(--sh4);z-index:6}
+.bn>button{border:0;background:none;color:var(--t2);font-size:10px;display:flex;flex-direction:column;align-items:center;gap:3px;min-width:56px;min-height:44px;justify-content:center}.bn>button.on{color:var(--ac)}
+.bn .plus{width:46px;height:46px;min-width:0;border-radius:50%;background:var(--s2);color:var(--t2);margin-top:-22px;box-shadow:var(--sh3);position:relative}.bn .plus.on{background:var(--ac);color:var(--onac)}
+.lk{position:absolute;bottom:-1px;left:-1px;width:16px;height:16px;border-radius:50%;background:var(--sf);border:1px solid var(--bd);display:flex;align-items:center;justify-content:center}
+.ov{position:absolute;inset:0;z-index:30;display:none}.ov.show{display:block}.ov .bk{position:absolute;inset:0}.ov.dim .bk{background:rgba(0,0,0,.35)}
+.pop{position:absolute;width:264px;background:var(--sf);border:1px solid var(--bd);border-radius:14px;box-shadow:var(--sh2);padding:6px;animation:fi .24s}
+.modal{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:360px;max-width:92%;background:var(--sf);border-radius:18px;box-shadow:var(--sh3);padding:20px}
+.sheet{position:absolute;bottom:0;right:0;left:0;background:var(--sf);border-radius:22px 22px 0 0;box-shadow:var(--sh4);padding:10px 16px 26px;animation:up .24s cubic-bezier(0,0,.2,1)}
+@keyframes up{from{transform:translateY(100%)}}.sheet::before{content:"";display:block;width:36px;height:4px;border-radius:2px;background:var(--bd);margin:0 auto 14px;background:var(--t2);opacity:.35}
+.mi{width:100%;display:flex;align-items:center;gap:10px;text-align:right;border:0;background:none;font-size:13px;padding:0 10px;min-height:44px;border-radius:10px}.mi:hover{background:var(--s2)}
+.mi .ic{width:30px;height:30px;border-radius:50%;background:var(--s2);display:flex;align-items:center;justify-content:center;color:var(--t2);flex:none}
+hr{border:0;border-top:1px solid var(--bd);margin:6px 4px}.idh{display:flex;align-items:center;gap:10px;padding:10px}.idh small{display:block;color:var(--t2);font-size:11.5px}.idh p{margin:2px 0 0;color:var(--t2);font-size:11.5px;line-height:1.6}
+.badge{font:600 9px 'IBM Plex Mono';background:var(--s2);border-radius:5px;padding:2px 6px;margin-inline-start:6px}
+.cn h3{margin:4px 0 8px;font-size:16px}.cn p{font-size:12.5px;color:var(--t2);line-height:1.7;margin:0 0 16px}.cn .b{width:100%}
+.rd{display:flex;align-items:center;gap:10px;min-height:44px;font-size:13px}.rd input{accent-color:var(--ac);width:16px;height:16px}
+.two{display:flex;gap:8px;margin-top:10px}.two .b{flex:1}.b.dis{opacity:.4}
+.toast{position:absolute;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:20px;font-size:12.5px;z-index:60;opacity:0;pointer-events:none;box-shadow:var(--sh4);display:flex;gap:8px;align-items:center;white-space:nowrap}
+.frame.mobile .toast{bottom:92px}.toast.show{opacity:1;transform:translate(-50%,0)}
+.sym{display:inline-flex;transition:opacity .18s,transform .18s}.sym.fd{opacity:0;transform:scale(.5)}
+.mkk{width:16px;height:16px;background:var(--ink);clip-path:polygon(0 0,100% 0,100% 78%,78% 100%,0 100%);display:block}
+.spin .mkk{background:var(--ac);animation:sp .32s cubic-bezier(.34,1.56,.64,1) forwards}@keyframes sp{50%{transform:rotate(190deg) scale(1.3)}to{transform:rotate(360deg)}}
+.sp16{width:16px;height:16px;border:2px solid var(--bd);border-top-color:var(--ink);border-radius:50%;animation:r .7s linear infinite}@keyframes r{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){*{transition-duration:0s!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="ctl" id="ctl"></div>
+<div class="stage"><div class="frame desktop" id="frame"><div class="sc" id="sc"></div><div class="bn" id="bn" style="display:none"></div><div class="ov" id="ov"></div><div class="toast" id="toast"></div></div></div>
+<script>
+const $=i=>document.getElementById(i);
+const P={grid:'<rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/>',layers:'<path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/>',plus:'<path d="M12 5v14M5 12h14"/>',bookmark:'<path d="M6 3h12v18l-6-4-6 4V3Z"/>',user:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="10" r="3"/><path d="M6.5 18.5c1.5-2.5 4-3.5 5.5-3.5s4 1 5.5 3.5"/>',search:'<circle cx="10.5" cy="10.5" r="6"/><path d="m20 20-4.3-4.3"/>',back:'<path d="M5 12h14m-6-6 6 6-6 6"/>',download:'<path d="M12 3v12m0 0-4-4m4 4 4-4M4 19h16"/>',heart:'<path d="M12 20s-7-4.4-9-8.5C1.5 8 4 5 7 5c2 0 3.5 1 5 3 1.5-2 3-3 5-3 3 0 5.5 3 4 6.5-2 4.1-9 8.5-9 8.5Z"/>',more:'<circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/>',settings:'<path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/>',help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5M12 17h.01"/>',logout:'<path d="M9 4H5v16h4M14 8l4 4-4 4M18 12H8"/>',studio:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M3 7l2.5-4M9 7l2.5-4M15 7l2.5-4M21 7l-1-4"/>',x:'<path d="M6 6l12 12M18 6 6 18"/>',check:'<path d="M5 12.5l4.5 4.5L19 7"/>',alert:'<path d="M12 4 2.5 20h19L12 4Z"/><path d="M12 10v4M12 17h.01"/>',wifi:'<path d="M2 8.5a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0M12 19h.01M3 3l18 18"/>',server:'<rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/>',q:'<path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v4h4M10 12.5a2 2 0 1 1 3 1.7c-.5.3-1 .6-1 1.3M12 18h.01"/>',imgoff:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 17l5-5 4 4 3-3 6 6"/><circle cx="9" cy="9" r="1.5"/>',flag:'<path d="M5 21V4m0 1h13l-3 4 3 4H5"/>',lock:'<rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>',link:'<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',edit:'<path d="m16 4 4 4-11 11H5v-4L16 4Z"/>'};
+const ic=(n,s=20,f)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="${f?'currentColor':'none'}" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${P[n]}</svg>`;
+const R=[
+{id:1,ratio:'4/5',dur:'3s',title:'يا حليل قلبي 😩',char:'مصطفى المومري',desc:'لما حد يقولك بكرة إن شاء الله',dual:1,groups:['مواقف العائلة']},
+{id:2,ratio:'1/1',dur:'',title:'معك حق',char:'هديل مانع',desc:'لما القرار مو بيدك',dual:1,groups:['ضحك']},
+{id:3,ratio:'16/9',dur:'6s',title:'كفاية!',char:'',desc:'أول يوم دوام',dual:1,groups:['شغل']},
+{id:4,ratio:'4/5',dur:'',title:'اقرب اقرب لو انت رجال',char:'مصطفى المومري',desc:'',dual:0,groups:['تحدي']},
+{id:5,ratio:'1/1',dur:'4s',title:'طيب وبعدين؟',char:'هديل مانع',desc:'لما الخطة تتغير فجأة',dual:0,groups:[]},
+{id:6,ratio:'4/5',dur:'2s',title:'يا حليل قلبي 😩',char:'',desc:'',dual:0,groups:[]},
+{id:7,ratio:'16/9',dur:'',title:'معك حق',char:'مصطفى المومري',desc:'أول يوم دوام',dual:1,groups:['ضحك','شغل']},
+{id:8,ratio:'1/1',dur:'5s',title:'كفاية!',char:'هديل مانع',desc:'',dual:0,groups:['رفض']},
+{id:9,ratio:'4/5',dur:'3s',title:'طيب وبعدين؟',char:'',desc:'لما القرار مو بيدك',dual:0,groups:[],broken:1},
+{id:10,ratio:'1/1',dur:'',title:'اقرب اقرب لو انت رجال',char:'',desc:'',dual:0,groups:['تحدي']},
+{id:11,ratio:'16/9',dur:'8s',title:'يا حليل قلبي 😩',char:'هديل مانع',desc:'لما حد يقولك بكرة إن شاء الله',dual:1,groups:['مواقف العائلة']},
+{id:12,ratio:'4/5',dur:'2s',title:'معك حق',char:'',desc:'',dual:0,groups:['ضحك']}];
+const COLS=['مواقف العائلة','تسويف','شغل','ضحك','رفض','تحدي'];
+const S={dev:'desktop',theme:'light',acc:'amber',acct:'guest',data:'ok',launched:0,page:'home',from:'home',id:1,q:'',more:10,saved:new Set([1,3,5,8])};
+const byId=i=>R.find(r=>r.id===i)||R[0];
+const media=(r,ra)=>r.broken?`<div class="failed" style="aspect-ratio:${ra||r.ratio}">${ic('imgoff',26)}</div>`:`<img src="https://picsum.photos/seed/yr${r.key||r.id}/300/380" alt="" onerror="this.outerHTML='<div class=failed style=height:100%;min-height:120px>'+ic('imgoff',26)+'</div>'">`;
+const card=r=>{const sv=S.saved.has(r.id);return`<div class="rc" onclick="go('detail',${r.id})"><div class="m" style="aspect-ratio:${r.ratio}">${media(r)}${r.dur?`<span class="dur">${r.dur}</span>`:''}<button class="sv ${sv?'on':''}" aria-label="حفظ" onclick="event.stopPropagation();save(${r.id},this)">${ic('heart',15,sv)}</button></div><div class="rw"><span class="t">${r.title}</span><button class="mb" aria-label="المزيد" onclick="event.stopPropagation();cmenu(${r.id},this)">${ic('more',16)}</button></div></div>`};
+const grid=l=>`<div class="ms">${l.map(card).join('')}</div>`;
+const skel=()=>`<div class="ms">${['4/5','1/1','16/9','4/5','1/1','4/5','16/9','1/1','4/5','1/1'].map(r=>`<div class="rc sk"><div class="m" style="aspect-ratio:${r}"></div><div class="rw"><span class="t ln" style="margin:6px 0"></span></div></div>`).join('')}</div>`;
+const state=(i,t,p,btn,fn)=>`<div class="st"><div class="ic">${ic(i,24)}</div><b>${t}</b><p>${p||''}</p>${btn?`<button class="b pri" onclick="${fn}">${btn}</button>`:''}</div>`;
+const fix=pg=>{S.data='ok';ctl();go(pg)};
+function gate(fn){
+ if(S.data==='load')return skel();
+ if(S.data==='net')return state('wifi','تعذّر الاتصال','تحقق من الإنترنت ثم حاول مجددًا','إعادة المحاولة',"fix(S.page)");
+ if(S.data==='500')return state('server','حدث خطأ من جهتنا','','العودة للرئيسية',"fix('home')");
+ if(S.data==='404')return S.page==='detail'?state('q','لم نعد نجد هذا الرياكشن','','العودة إلى المكتبة',"fix('home')"):state('q','الصفحة غير موجودة','','العودة إلى المكتبة',"fix('home')");
+ return fn()}
+function hdr(){
+ const sf=`<div class="sf2"><i>${ic('search',16)}</i><input id="q" placeholder="ابحث عن رياكشن أو موقف…" value="${S.q}" onkeydown="if(event.key==='Enter')dosearch(this.value)"><div class="sg"><b>بحث حديث</b><a onpointerdown="dosearch('كفاية')">كفاية</a><a onpointerdown="dosearch('مصطفى المومري')">مصطفى المومري</a><b>المجموعات</b><div class="chips">${COLS.slice(0,4).map(c=>`<button class="chp" onpointerdown="dosearch('${c}')">${c}</button>`).join('')}</div></div></div>`;
+ if(S.dev==='mobile')return`<div class="hd m" id="hdr"><span class="mk"></span>${sf}</div>`;
+ const n=(p,l)=>`<a class="${S.page===p||(p==='home'&&['detail','search'].includes(S.page))?'on':''}" onclick="go('${p}')">${l}</a>`;
+ return`<div class="hd" id="hdr"><span class="mk"></span><span class="logo">يمن رياكت</span><nav>${n('home','المكتبة')}${n('collections','المجموعات')}${n('saved','المحفوظات')}</nav>${sf}${S.launched?`<button class="b pri sm" onclick="plus()">${ic('plus',16)} رفع</button>`:''}<button class="ib" aria-label="الحساب" onclick="acct(this)">${S.acct==='guest'?ic('user',20):'<span class="av">ح</span>'}</button></div>`}
+function bnav(){
+ const a=p=>S.page===p||(p==='home'&&['detail','search'].includes(S.page))?'on':'';
+ return`<button class="${a('home')}" onclick="go('home')">${ic('grid')}<span>المكتبة</span></button><button class="${a('collections')}" onclick="go('collections')">${ic('layers')}<span>المجموعات</span></button><button class="plus ${S.launched?'on':''}" aria-label="رفع" aria-disabled="${!S.launched}" onclick="plus()">${ic('plus',22)}${S.launched?'':`<i class="lk">${ic('lock',9)}</i>`}</button><button class="${a('saved')}" onclick="go('saved')">${ic('bookmark')}<span>المحفوظات</span></button><button onclick="acct(this)">${S.acct==='guest'?ic('user'):'<span class="av" style="width:22px;height:22px;font-size:10px">ح</span>'}<span>الحساب</span></button>`}
+function detailH(){
+ const r=byId(S.id),sv=S.saved.has(r.id);
+ const rel=R.filter(x=>x.id!==r.id&&x.groups.some(g=>r.groups.includes(g))).concat(R.filter(x=>x.id!==r.id)).filter((x,i,a)=>a.indexOf(x)===i).slice(0,3);
+ const meta=(r.char||r.desc)?`<div class="meta">${r.char?`<span class="cp">${r.char}</span>`:''}${r.char&&r.desc?'<span class="dot"></span>':''}${r.desc?`<span>${r.desc}</span>`:''}</div>`:'';
+ S.rel=rel.map(x=>x.id);
+ return`<div class="pg"><button class="ib back" aria-label="رجوع" onclick="go(S.from)">${ic('back',18)}</button>
+ <div class="dg"><div class="dm"><div class="m" style="aspect-ratio:4/5">${media(r,'4/5')}${r.dur?`<span class="dur" style="font-size:11px">${r.dur}</span>`:''}</div></div>
+ <div><div class="tr"><h2>${r.title}</h2><button class="ib pri" aria-label="تنزيل" onclick="toast('بدأ التنزيل')">${ic('download',16)}</button><button class="ib ${sv?'on':''}" id="sealb" aria-label="حفظ" onclick="save(${r.id},this,1)"><span class="sym">${ic('heart',17,sv)}</span></button><button class="ib" aria-label="المزيد" onclick="cmenu(${r.id},this)">${ic('more',16)}</button></div>
+ ${meta}${r.dual?`<details><summary>الوصف الثنائي</summary><div>الموقف: ${r.desc||r.title}.<br>الرياكشن: ${r.title}.</div></details>`:''}
+ ${r.groups.length?`<div class="gr">${r.groups.map(g=>`<span>${g}</span>`).join('')}</div>`:''}</div></div>
+ <h3>رياكشنات ذات صلة</h3><div class="rel">${rel.map(x=>`<div onclick="go('detail',${x.id})">${media(x,'1/1')}</div>`).join('')}</div>
+ <h3>المزيد من المكتبة</h3><div id="more">${moreH()}</div></div>`}
+function moreH(){
+ const o=R.filter(x=>x.id!==S.id&&!(S.rel||[]).includes(x.id));
+ const l=Array.from({length:S.more},(_,i)=>({...o[(i+S.id)%o.length],key:o[(i+S.id)%o.length].id+'_'+Math.floor(i/o.length)}));
+ return grid(l)+`<div style="text-align:center;margin:8px 0 20px">${S.more<50?`<button class="b" onclick="loadMore(this)">تحميل المزيد</button>`:`<button class="b" onclick="go('home')">العودة إلى المكتبة</button>`}</div>`}
+function loadMore(b){b.innerHTML='<i class="sp16"></i>';setTimeout(()=>{S.more+=10;$('more').innerHTML=moreH()},500)}
+function body(){
+ const p=S.page;
+ if(p==='home')return`<div class="pg">${gate(()=>grid(R))}</div><footer>يمن رياكت © 2026 — خذها. حطها. يمنية.</footer>`;
+ if(p==='detail')return S.data==='load'?`<div class="pg"><div class="dg"><div class="m sk" style="aspect-ratio:4/5;border-radius:14px"></div><div class="sk"><div class="ln" style="width:60%;height:22px"></div><div class="ln" style="width:80%"></div><div class="ln" style="width:40%"></div></div></div></div>`:S.data==='ok'||S.data==='empty'?detailH():`<div class="pg">${gate(()=>'')}</div>`;
+ if(p==='collections')return`<div class="pg"><h1>المجموعات</h1>${gate(()=>S.data==='empty'?state('layers','لا مجموعات بعد'):`<div class="cg">${COLS.map((c,i)=>`<div class="cc"><img src="https://picsum.photos/seed/col${i}/300/300" alt=""><span>${c}</span></div>`).join('')}</div>`)}</div>`;
+ if(p==='saved'){const l=R.filter(r=>S.saved.has(r.id));return`<div class="pg"><h1>المحفوظات</h1>${S.acct==='guest'&&l.length&&S.data==='ok'?`<div class="ban"><span>محفوظاتك محلية — سجّل للمزامنة</span><button class="b pri sm" onclick="login()">الدخول بـ Google</button></div>`:''}${gate(()=>S.data==='empty'||!l.length?state('bookmark','لا محفوظات بعد',`اضغط ${ic('heart',13)} على أي رياكشن ليظهر هنا`,'تصفح المكتبة',"go('home')"):grid(l))}</div>`}
+ const q=S.q.trim(),l=R.filter(r=>[r.title,r.desc,r.char].join(' ').includes(q));
+ return`<div class="pg"><h1>نتائج البحث${q?` «${q}»`:''}</h1>${gate(()=>S.data==='empty'||!l.length?`<div class="st"><div class="ic">${ic('search',24)}</div><b>لا نتائج لـ «${q}»</b><p>جرّب:</p><div class="chips" style="justify-content:center"><button class="chp" onclick="dosearch('ضحك')">ضحك</button><button class="chp" onclick="dosearch('صدمة')">صدمة</button><button class="chp" onclick="go('home')">المكتبة</button></div></div>`:grid(l))}</div>`}
+function render(){
+ const m=S.dev==='mobile';
+ $('sc').innerHTML=hdr()+body();$('bn').style.display=m?'flex':'none';$('bn').innerHTML=m?bnav():'';
+}
+function go(p,id){if(p==='detail'){S.id=id||S.id;S.more=10}else if(p!=='home'||S.page!=='detail')S.from=p==='detail'?S.from:p;if(S.page!=='detail'&&p==='detail')S.from=S.page;S.page=p;closeOv();render();$('sc').scrollTop=0}
+function dosearch(v){S.q=v;S.from='home';S.page='search';render();$('sc').scrollTop=0}
+let ly=0;$('sc').addEventListener('scroll',e=>{if(S.dev!=='mobile')return;const y=e.target.scrollTop,h=$('hdr');if(h)h.classList.toggle('hide',y>ly&&y>60);ly=y});
+function toast(m,err){const t=$('toast');t.innerHTML=ic(err?'alert':'check',16)+m;t.classList.add('show');clearTimeout(t.h);t.h=setTimeout(()=>t.classList.remove('show'),3000)}
+function closeOv(){$('ov').className='ov';$('ov').innerHTML=''}
+function present(h,anchor){
+ const ov=$('ov'),mob=S.dev==='mobile';
+ if(mob){ov.className='ov show dim';ov.innerHTML=`<div class="bk" onclick="closeOv()"></div><div class="sheet">${h}</div>`;return}
+ if(anchor){const f=$('frame').getBoundingClientRect(),a=anchor.getBoundingClientRect();
+  let l=Math.max(8,Math.min(a.left-f.left,f.width-272)),t=a.bottom-f.top+6;
+  ov.className='ov show';ov.innerHTML=`<div class="bk" onclick="closeOv()"></div><div class="pop" style="left:${l}px;top:${t}px">${h}</div>`;return}
+ ov.className='ov show dim';ov.innerHTML=`<div class="bk" onclick="closeOv()"></div><div class="modal">${h}</div>`}
+const mi=(i,l,fn)=>`<button class="mi" onclick="${fn}"><span class="ic">${ic(i,16)}</span>${l}</button>`;
+function acct(a){
+ const A=S.acct,g=A==='guest';
+ const idh=g?`<div class="idh"><span class="ic" style="width:38px;height:38px;border-radius:50%;background:var(--s2);display:flex;align-items:center;justify-content:center">${ic('user',18)}</span><div><b style="font-size:13px">أنت زائر</b><p>سجّل لحفظ رياكشناتك والوصول إليها من أي جهاز</p></div></div><hr><button class="mi" onclick="login()"><span class="ic"><b style="font-size:12px">G</b></span>الدخول بـ Google</button>`
+  :`<div class="idh"><span class="av" style="width:38px;height:38px">ح</span><div><b style="font-size:13px">حمدان${A==='admin'?'<span class="badge">ADMIN</span>':''}</b><small>hamdan@gmail.com</small></div></div>${A==='admin'?'<hr>'+mi('studio','الاستوديو',"info('الاستوديو','لوحة الإدارة خارج نطاق هذا الـMockup.')"):''}`;
+ present(idh+'<hr>'+mi('settings','الإعدادات',"settings()")+mi('help','المساعدة',"info('المساعدة','للمساعدة تواصل معنا عبر صفحة الدعم.')")+(g?'':'<hr>'+mi('logout','تسجيل الخروج',"logout()")),a)}
+function login(){S.acct='user';closeOv();ctl();render();toast('تم تسجيل الدخول — تمت مزامنة محفوظاتك')}
+function logout(){S.acct='guest';closeOv();ctl();render()}
+function info(t,p){present(`<div class="cn"><h3>${t}</h3><p>${p}</p><button class="b pri" onclick="closeOv()">حسنًا</button></div>`)}
+function settings(){present(`<div class="cn"><h3>الإعدادات</h3><p>المظهر</p><div class="seg" style="justify-content:space-around">${[['light','نهاري'],['dark','ليلي'],['auto','تلقائي']].map(x=>`<button class="${S.theme===x[0]?'on':''}" onclick="setTheme('${x[0]}');settings()">${x[1]}</button>`).join('')}</div><p style="margin-top:14px">اللون</p><div class="chips" style="margin-bottom:16px">${[['amber','كهرماني'],['purple','بنفسجي'],['teal','تيل']].map(x=>`<button class="chp" style="${S.acc===x[0]?'outline:2px solid var(--ac)':''}" onclick="setAcc('${x[0]}');settings()">${x[1]}</button>`).join('')}</div><button class="b pri" onclick="closeOv()">تم</button></div>`)}
+function plus(){info(S.launched?'رفع رياكشن':'الرفع يُفتح قريبًا',S.launched?'صفحة الرفع لم تُصمَّم ضمن هذا الـMockup.':'سيفتح الرفع بعد الإطلاق مع 300-500 رياكشن.')}
+function cmenu(id,a){present(mi('link','نسخ الرابط',"closeOv();toast('تم نسخ الرابط')")+mi('flag','إبلاغ',"report()")+(S.acct==='admin'?mi('edit','تعديل',"info('تعديل','التعديل متاح من الاستوديو.')"):''),a)}
+function report(){closeOv();setTimeout(()=>present(`<div class="cn"><h3>الإبلاغ عن الرياكشن</h3>${['محتوى غير لائق','إساءة لشخص','حقوق ملكية','محتوى مضلل','سبب آخر'].map(x=>`<label class="rd"><input type="radio" name="rp" onchange="$('snd').classList.remove('dis')">${x}</label>`).join('')}<div class="two"><button class="b" onclick="closeOv()">إلغاء</button><button class="b pri dis" id="snd" onclick="if(!this.classList.contains('dis')){closeOv();toast('تم إرسال البلاغ')}">إرسال</button></div></div>`),10)}
+const sleep=(ms)=>new Promise(r=>setTimeout(r,matchMedia('(prefers-reduced-motion:reduce)').matches?0:ms));
+async function seal(b){
+ const y=b.querySelector('.sym'),sw=async(h,d)=>{y.classList.add('fd');await sleep(d);y.innerHTML=h;y.classList.remove('fd')};
+ await sw('<i class="mkk"></i>',240);b.classList.add('spin');await sleep(320);b.classList.remove('spin');
+ await sw(ic('check',17),180);toast('تم الحفظ');await sleep(1000);await sw(ic('heart',17,1),180);b.classList.add('on')}
+function save(id,b,useSeal){
+ if(S.data==='net'){toast('تعذّر الحفظ',1);return}
+ if(S.saved.has(id)){S.saved.delete(id);b.classList.remove('on');const s=b.querySelector('.sym');(s||b).innerHTML=ic('heart',useSeal?17:15);toast('تمت الإزالة');return}
+ S.saved.add(id);
+ if(useSeal)seal(b);else{b.classList.add('on');b.innerHTML=ic('heart',15,1);toast('تم الحفظ')}}
+function seg(id,opts,cur,fn){return`<div class="seg" title="${id}">${opts.map(o=>`<button class="${cur===o[0]?'on':''}" onclick="${fn}('${o[0]}')">${o[1]}</button>`).join('')}</div>`}
+function ctl(){
+ $('ctl').innerHTML=seg('الجهاز',[['desktop','Desktop'],['mobile','Mobile']],S.dev,'setDev')+seg('المظهر',[['light','نهاري'],['dark','ليلي'],['auto','تلقائي']],S.theme,'setTheme')
+ +`<div style="display:flex;gap:6px">${[['amber','#C1592E'],['purple','#6B4EFF'],['teal','#0F8B8D']].map(a=>`<button class="sw ${S.acc===a[0]?'on':''}" style="background:${a[1]}" aria-label="${a[0]}" onclick="setAcc('${a[0]}')"></button>`).join('')}</div>`
+ +seg('الحساب',[['guest','زائر'],['user','مستخدم'],['admin','أدمن']],S.acct,'setAcct')
+ +seg('الحالة',[['ok','طبيعي'],['empty','فارغ'],['load','تحميل'],['net','اتصال'],['500','500'],['404','404']],S.data,'setData')
+ +seg('الإطلاق',[['0','قبل الإطلاق'],['1','بعد الإطلاق']],String(S.launched),'setLaunch')}
+function setDev(d){S.dev=d;$('frame').className='frame '+d;closeOv();ctl();render()}
+function setTheme(t){S.theme=t;t==='auto'?document.documentElement.removeAttribute('data-theme'):document.documentElement.setAttribute('data-theme',t);ctl()}
+function setAcc(a){S.acc=a;document.documentElement.setAttribute('data-accent',a);ctl()}
+function setAcct(a){S.acct=a;closeOv();ctl();render()}
+function setLaunch(v){S.launched=+v;ctl();render()}
+function setData(d){S.data=d;if(d==='empty'&&['home','detail'].includes(S.page))S.page='saved';if(d==='404'&&S.page!=='detail')S.page='detail';closeOv();ctl();render()}
+ctl();render();
+</script>
+</body>
+</html>
