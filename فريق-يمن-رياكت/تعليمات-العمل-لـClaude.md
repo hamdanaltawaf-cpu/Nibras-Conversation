@@ -1,6 +1,6 @@
 # برومبت تعريفي لـ Claude — المهندس المسؤول عن التأسيس الكامل لمشروع YemReact
 
-انسخ هذا البرومبت وأرسله مع الملف الجامع YemReact_Claude_Foundation_Package.md وملف PROJECT_CONTEXT_AND_DECISIONS.md وكل ملفات uploads/response_axis*
+انسخ هذا البرومبت وأرسله مع الملف الجامع الحزمة-التأسيسية-لـClaude.md وملف PROJECT_CONTEXT_AND_DECISIONS.md وكل ملفات uploads/response_axis*
 
 ---
 
@@ -33,7 +33,7 @@
 
 المطلوب منك الآن:
 
-1. **افحص الملف الجامع YemReact_Claude_Foundation_Package.md كاملًا + ملف PROJECT_CONTEXT_AND_DECISIONS.md (43107 بايت) + كل ملفات uploads/response_axis***
+1. **افحص الملف الجامع الحزمة-التأسيسية-لـClaude.md كاملًا + ملف PROJECT_CONTEXT_AND_DECISIONS.md (43107 بايت) + كل ملفات uploads/response_axis***
 2. **استخرج كل الملاحظات والمقترحات التي ناقشناها مع نِبراس وأرينا — لا تتجاهل أي ملف**
 3. **طبقها على المشروع الأساسي:**
    - اعتمد ما يناسب كـ ACCEPTED
@@ -50,7 +50,7 @@
 - هذه مرحلة تأسيس وتوثيق فقط
 
 **الملفات المرفقة:**
-- YemReact_Claude_Foundation_Package.md (الملف الجامع)
+- الحزمة-التأسيسية-لـClaude.md (الملف الجامع)
 - PROJECT_CONTEXT_AND_DECISIONS.md
 - uploads/response_axis_a_alternating_turn.md
 - uploads/response_axis_c_notes_only.md (27008 بايت — الأهم)
