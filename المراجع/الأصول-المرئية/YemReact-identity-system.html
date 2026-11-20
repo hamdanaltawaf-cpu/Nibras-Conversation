@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YemReact — نظام الهوية البصرية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Cairo:wght@400;600;700;800&family=Archivo+Black&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#121214; --ink-2:#1a1a1d; --ink-3:#232327;
+    --amber:#c1592e; --amber-light:#e0824b;
+    --paper:#f3eae0; --paper-dim:#c9bfb4;
+    --coral:#ff5a36;
+    --grey:#6b625c; --grey-light:#9c9289;
+    --cat-laugh:#f4c430; --cat-shock:#7c5cff; --cat-anger:#c81e3a;
+    --cat-surprise:#2cb6c4; --cat-embarrass:#f17fb2; --cat-approve:#4caf6d;
+    --cat-reject:#6e8296; --cat-sarcasm:#d98e04; --cat-hype:#e8712e;
+    --f-disp-ar:'Lalezar', sans-serif;
+    --f-body-ar:'Cairo', sans-serif;
+    --f-disp-en:'Archivo Black', sans-serif;
+    --f-body-en:'Inter', sans-serif;
+    --f-mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{transition:none !important; animation:none !important;} }
+  body{
+    background:var(--ink); color:var(--paper);
+    font-family:var(--f-body-ar);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  .ltr{ direction:ltr; unicode-bidi:isolate; font-family:var(--f-body-en); }
+  .mono{ font-family:var(--f-mono); direction:ltr; unicode-bidi:isolate; letter-spacing:0.01em; }
+
+  /* ---- structure ---- */
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 24px; }
+  .topbar{
+    position:sticky; top:0; z-index:50;
+    background:rgba(18,18,20,0.92); backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(243,234,224,0.08);
+  }
+  .topbar-inner{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 24px; max-width:1180px; margin:0 auto; }
+  .topbar-brand{ display:flex; align-items:center; gap:10px; }
+  .topbar-title{ font-size:13px; color:var(--grey-light); }
+  .topnav{ display:flex; gap:18px; overflow-x:auto; scrollbar-width:none; }
+  .topnav::-webkit-scrollbar{ display:none; }
+  .topnav a{ color:var(--grey-light); text-decoration:none; font-size:13px; white-space:nowrap; font-family:var(--f-body-ar); font-weight:600; transition:color .15s; }
+  .topnav a:hover{ color:var(--paper); }
+
+  section{ padding:88px 0; border-bottom:1px solid rgba(243,234,224,0.06); }
+  section:last-of-type{ border-bottom:none; }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--f-mono); font-size:12px; letter-spacing:0.08em;
+    color:var(--amber-light); text-transform:uppercase; margin-bottom:14px;
+  }
+  .eyebrow::before{ content:''; width:16px; height:2px; background:var(--amber-light); display:inline-block; }
+  h2{ font-family:var(--f-disp-ar); font-size:38px; font-weight:400; color:var(--paper); margin-bottom:10px; line-height:1.3; }
+  .lede{ color:var(--grey-light); font-size:16px; max-width:640px; margin-bottom:44px; }
+  .lede strong{ color:var(--paper); font-weight:700; }
+
+  /* ---- torn shapes ---- */
+  .torn-lg{ clip-path: polygon(0% 6%, 6% 0%, 78% 0%, 83% 5%, 88% 1%, 93% 6%, 97% 2%, 100% 11%, 100% 94%, 94% 100%, 6% 100%, 0% 94%); }
+  .torn-sm{ clip-path: polygon(0% 9%, 9% 0%, 76% 0%, 85% 7%, 100% 15%, 100% 92%, 92% 100%, 8% 100%, 0% 92%); }
+
+  /* ---- hero ---- */
+  .hero{ padding-top:64px; }
+  .hero-kicker{ font-family:var(--f-mono); font-size:13px; color:var(--coral); letter-spacing:0.04em; margin-bottom:22px; }
+  .hero-lockup{ display:flex; flex-wrap:wrap; align-items:baseline; gap:18px; margin-bottom:20px; }
+  .hero-lockup .ar{ font-family:var(--f-disp-ar); font-size:74px; color:var(--paper); line-height:1; }
+  .hero-lockup .en{ font-family:var(--f-disp-en); font-size:30px; color:var(--amber-light); }
+  .hero-tagline{ font-family:var(--f-disp-ar); font-size:30px; color:var(--amber); margin-bottom:28px; }
+  .hero-desc{ color:var(--grey-light); max-width:620px; font-size:16px; }
+
+  /* ---- transformation diagram ---- */
+  .transform-row{ display:flex; align-items:center; gap:22px; flex-wrap:wrap; }
+  .raw-clip{
+    flex:1 1 320px; min-width:280px; aspect-ratio:21/9; background:var(--ink-2);
+    border:1px solid rgba(243,234,224,0.1); position:relative; overflow:hidden;
+    display:flex; align-items:flex-end; padding:16px;
+  }
+  .raw-clip::before{
+    content:''; position:absolute; inset:0;
+    background:repeating-linear-gradient(135deg, rgba(243,234,224,0.03) 0 2px, transparent 2px 14px);
+  }
+  .raw-clip .cap{ position:relative; z-index:1; }
+  .raw-clip .cap .t1{ font-size:13px; color:var(--grey-light); }
+  .raw-clip .cap .t2{ font-family:var(--f-mono); font-size:12px; color:var(--grey); }
+  .cut-icon{ flex:0 0 auto; color:var(--paper-dim); opacity:0.7; }
+  .arrow-dash{ flex:0 0 40px; height:1px; background:repeating-linear-gradient(90deg, var(--grey) 0 6px, transparent 6px 11px); }
+  .qusasa-result{
+    flex:0 0 200px; aspect-ratio:1/1; background:var(--amber);
+    display:flex; flex-direction:column; justify-content:flex-end; padding:16px; position:relative;
+  }
+  .qusasa-result .t1{ font-family:var(--f-disp-ar); font-size:19px; color:var(--ink); line-height:1.2; }
+  .qusasa-result .mk{ position:absolute; top:10px; left:10px; width:28px; height:28px; opacity:0.5; }
+
+  .logic-line{ margin-top:28px; text-align:center; font-family:var(--f-mono); font-size:14px; color:var(--grey-light); }
+  .logic-line span{ color:var(--paper); }
+
+  /* ---- cards / grid ---- */
+  .grid{ display:grid; gap:20px; }
+  .grid-3{ grid-template-columns:repeat(3, 1fr); }
+  .grid-4{ grid-template-columns:repeat(4, 1fr); }
+  .grid-2{ grid-template-columns:repeat(2, 1fr); }
+  @media (max-width:920px){ .grid-3, .grid-4{ grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:620px){ .grid-3, .grid-4, .grid-2{ grid-template-columns:1fr;} }
+
+  .card{ background:var(--ink-2); border:1px solid rgba(243,234,224,0.08); padding:28px; }
+  .card-title{ font-family:var(--f-body-ar); font-weight:700; font-size:15px; color:var(--paper); margin-bottom:6px; }
+  .card-note{ font-size:13.5px; color:var(--grey-light); line-height:1.65; }
+
+  /* ---- logo directions ---- */
+  .dir-card{ background:var(--ink-2); border:1px solid rgba(243,234,224,0.08); padding:0; overflow:hidden; }
+  .dir-stage{ background:var(--ink-3); height:180px; display:flex; align-items:center; justify-content:center; }
+  .dir-stage svg{ width:96px; height:96px; }
+  .dir-body{ padding:22px; }
+  .dir-tag{ font-family:var(--f-mono); font-size:11px; color:var(--grey-light); margin-bottom:8px; }
+  .dir-name{ font-family:var(--f-body-ar); font-weight:700; font-size:16px; margin-bottom:8px; }
+  .dir-card.chosen{ border-color:var(--amber); position:relative; }
+  .badge{
+    position:absolute; top:14px; left:14px; background:var(--amber); color:var(--ink);
+    font-family:var(--f-mono); font-size:11px; padding:4px 10px; font-weight:600; z-index:2;
+  }
+
+  /* ---- size / test ladder ---- */
+  .test-row{ display:flex; align-items:flex-end; gap:28px; flex-wrap:wrap; margin-top:8px; }
+  .test-item{ text-align:center; }
+  .test-item .box{ display:flex; align-items:center; justify-content:center; background:var(--ink-3); border-radius:50%; margin:0 auto 10px; }
+  .test-item .label{ font-family:var(--f-mono); font-size:11px; color:var(--grey-light); }
+  .test-item.square .box{ border-radius:6px; }
+  .gray{ filter:grayscale(1); }
+
+  .test-table{ width:100%; border-collapse:collapse; margin-top:8px; }
+  .test-table td, .test-table th{ text-align:right; padding:14px 10px; border-bottom:1px solid rgba(243,234,224,0.08); font-size:14px; }
+  .test-table th{ font-family:var(--f-mono); font-size:11px; color:var(--grey-light); text-transform:uppercase; font-weight:500; }
+  .test-table td.res{ color:var(--paper); }
+  .test-table td.pass{ color:var(--cat-approve); font-family:var(--f-mono); font-size:12px; }
+
+  /* ---- color swatches ---- */
+  .swatch{ height:110px; position:relative; display:flex; align-items:flex-end; padding:12px; }
+  .swatch-name{ font-size:13px; font-weight:700; }
+  .swatch-hex{ font-family:var(--f-mono); font-size:12px; opacity:0.85; }
+  .swatch-meta{ padding:14px 4px 0; }
+  .swatch-role{ font-size:12.5px; color:var(--grey-light); margin-top:4px; }
+
+  /* ---- type specimens ---- */
+  .type-block{ margin-bottom:40px; }
+  .type-lockup{ display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; margin-bottom:10px; }
+  .spec-ar{ font-family:var(--f-disp-ar); font-size:56px; color:var(--paper); }
+  .spec-tagline{ font-family:var(--f-disp-ar); font-size:26px; color:var(--amber); margin-bottom:6px; }
+  .spec-label{ font-family:var(--f-mono); font-size:11px; color:var(--grey-light); margin-bottom:10px; text-transform:uppercase; }
+  .body-compare{ display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:24px; }
+  @media (max-width:700px){ .body-compare{ grid-template-columns:1fr; } }
+  .body-compare p{ font-size:14.5px; color:var(--grey-light); }
+  .body-compare .ar-sample{ font-family:var(--f-body-ar); }
+  .body-compare .en-sample{ font-family:var(--f-body-en); direction:ltr; text-align:left; }
+
+  /* ---- visual language gallery ---- */
+  .vl-item{ background:var(--ink-2); padding:24px; display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center; }
+  .vl-item .name{ font-size:13px; font-weight:700; }
+  .vl-item .desc{ font-size:12.5px; color:var(--grey-light); }
+
+  /* ---- reaction clip templates ---- */
+  .clip-stage{ display:flex; gap:36px; flex-wrap:wrap; align-items:flex-start; }
+  .phone{
+    width:220px; aspect-ratio:9/16; background:linear-gradient(160deg,#2a2320,#171412);
+    position:relative; overflow:hidden; flex:0 0 auto; border:1px solid rgba(243,234,224,0.12);
+  }
+  .square-frame{ width:260px; aspect-ratio:1/1; background:linear-gradient(160deg,#2a2320,#171412); position:relative; overflow:hidden; flex:0 0 auto; }
+  .thumb-frame{ width:280px; aspect-ratio:16/9; background:linear-gradient(160deg,#2a2320,#171412); position:relative; overflow:hidden; flex:0 0 auto; }
+
+  .safe-guide{ position:absolute; border:1px dashed rgba(243,234,224,0.28); pointer-events:none; }
+  .peel{
+    position:absolute; top:0; right:0; width:34px; height:34px;
+    clip-path:polygon(100% 0, 0 0, 100% 100%);
+    background:var(--paper); opacity:0.85;
+  }
+  .peel svg{ position:absolute; width:16px; height:16px; top:6px; left:6px; opacity:0.55; }
+  .dur-tag{
+    position:absolute; top:8px; right:8px; background:rgba(18,18,20,0.72);
+    color:var(--paper); font-family:var(--f-mono); font-size:10px; padding:3px 7px; direction:ltr;
+  }
+  .phone .dur-tag{ right:auto; left:8px; }
+  .square-frame .dur-tag, .thumb-frame .dur-tag{ right:auto; left:8px; }
+  .cat-dot{
+    position:absolute; bottom:9px; left:9px; width:13px; height:13px; border-radius:50%;
+    border:2px solid var(--paper); box-shadow:0 0 0 1px rgba(0,0,0,0.3);
+  }
+  .clip-caption{
+    position:absolute; bottom:44px; right:14px; left:14px;
+    font-family:var(--f-disp-ar); font-size:19px; color:var(--paper); text-align:center;
+  }
+  .clip-note{ margin-top:14px; }
+  .clip-note .k{ font-family:var(--f-mono); font-size:11px; color:var(--amber-light); }
+  .clip-note ul{ margin-top:8px; padding-right:18px; font-size:13px; color:var(--grey-light); line-height:1.8; }
+  .clip-col{ display:flex; flex-direction:column; align-items:center; gap:14px; }
+  .clip-col .frame-label{ font-family:var(--f-body-ar); font-weight:700; font-size:14px; }
+
+  /* ---- classification chips ---- */
+  .cat-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  @media (max-width:700px){ .cat-grid{ grid-template-columns:repeat(2,1fr);} }
+  .cat-chip{
+    background:var(--ink-2); padding:16px; display:flex; align-items:center; gap:12px;
+    border-right:3px solid var(--chip-color, var(--amber));
+  }
+  .cat-chip svg{ width:22px; height:22px; flex:0 0 auto; color:var(--chip-color); }
+  .cat-chip .cn{ font-weight:700; font-size:14px; }
+  .cat-chip .ce{ font-family:var(--f-mono); font-size:10.5px; color:var(--grey-light); direction:ltr; }
+
+  /* ---- applications ---- */
+  .app-card{ background:var(--ink-2); overflow:hidden; }
+  .app-stage{ background:linear-gradient(160deg,#2a2320,#171412); aspect-ratio:1/1; position:relative; display:flex; align-items:center; justify-content:center; }
+  .app-label{ padding:14px 16px; font-size:13px; font-weight:700; }
+  .avatar-circle{ width:110px; height:110px; border-radius:50%; background:var(--ink); display:flex; align-items:center; justify-content:center; border:2px solid var(--amber); }
+  .avatar-circle svg{ width:52px; height:52px; }
+  .post-card{ position:absolute; inset:14px; background:var(--ink); }
+  .post-card .cap{ position:absolute; bottom:18px; right:16px; left:16px; text-align:center; font-family:var(--f-disp-ar); color:var(--amber-light); font-size:20px; }
+  .sticker{ width:130px; aspect-ratio:1/1; background:var(--paper); padding:8px; }
+  .sticker-inner{ width:100%; height:100%; background:var(--amber); display:flex; align-items:center; justify-content:center; }
+  .sticker-inner span{ font-family:var(--f-disp-ar); font-size:22px; color:var(--ink); }
+  .meme-tmpl{ position:absolute; inset:14px; background:var(--ink); display:flex; flex-direction:column; justify-content:space-between; padding:10px; }
+  .meme-bar{ font-family:var(--f-disp-ar); font-size:15px; color:var(--paper-dim); text-align:center; opacity:0.5; border:1px dashed rgba(243,234,224,0.2); padding:6px; }
+
+  .lib-ui{ background:var(--ink-2); padding:22px; }
+  .lib-search{ background:var(--ink); border:1px solid rgba(243,234,224,0.12); padding:10px 14px; font-size:13px; color:var(--grey-light); font-family:var(--f-body-ar); margin-bottom:16px; }
+  .lib-pills{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
+  .lib-pill{ font-size:11.5px; padding:6px 12px; background:var(--ink); border:1px solid var(--chip-color); color:var(--chip-color); }
+  .lib-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  @media (max-width:700px){ .lib-grid{ grid-template-columns:repeat(2,1fr);} }
+  .lib-cell{ aspect-ratio:9/12; background:linear-gradient(160deg,#2a2320,#171412); position:relative; }
+
+  /* ---- guidelines ---- */
+  .rules{ display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+  @media (max-width:700px){ .rules{ grid-template-columns:1fr; } }
+  .rules h3{ font-family:var(--f-body-ar); font-size:15px; margin-bottom:14px; }
+  .rules.do h3{ color:var(--cat-approve); }
+  .rules.dont h3{ color:var(--cat-anger); }
+  .rules ul{ list-style:none; }
+  .rules li{ font-size:13.5px; color:var(--grey-light); padding:9px 0; border-bottom:1px solid rgba(243,234,224,0.06); }
+
+  footer{ padding:60px 0 100px; text-align:center; }
+  footer p{ color:var(--grey); font-size:12.5px; font-family:var(--f-mono); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-brand">
+      <svg width="26" height="26" viewBox="0 0 120 120"><path fill="var(--amber)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg>
+      <span class="topbar-title">YemReact — نظام الهوية البصرية v1</span>
+    </div>
+    <nav class="topnav">
+      <a href="#logo">الشعار</a>
+      <a href="#color">الألوان</a>
+      <a href="#type">الخطوط</a>
+      <a href="#clip">قالب الكليب</a>
+      <a href="#cats">التصنيف</a>
+      <a href="#apps">التطبيقات</a>
+      <a href="#rules">القواعد</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-kicker mono">THE REACTION = A DIGITAL PROVERB</div>
+    <div class="hero-lockup">
+      <span class="ar">يمن رياكت</span>
+      <span class="en ltr">YemReact</span>
+    </div>
+    <div class="hero-tagline">خذها. حطها. يمنية.</div>
+    <p class="hero-desc">هذا المستند يحوّل استراتيجية الهوية إلى نظام تصميم مُختبر بصريًا وقابل للتنفيذ مباشرة: اتجاهات شعار فعلية، ألوان وخطوط مُختبرة، ومواصفات دقيقة لقالب الـ Reaction Clip — جاهزة لتُسلَّم لمصمم جرافيك ومصمم موشن ومطوّر واجهة.</p>
+  </section>
+
+  <!-- QUSASA LOGIC -->
+  <section id="qusasa">
+    <div class="eyebrow">01 / منطق النظام</div>
+    <h2>نظام "القُصاصة"</h2>
+    <p class="lede">الحافة الممزقة ليست زخرفة. هي ترجمة بصرية حرفية لما يحدث فعليًا: <strong>لحظة داخل فيديو طويل تُقتطع، تصبح مستقلة، وتصير جاهزة لأن يأخذها أحد.</strong> كل عنصر في هذا الدليل يخدم هذه الجملة فقط — أي عنصر لا يخدمها تم حذفه.</p>
+
+    <div class="transform-row">
+      <div class="raw-clip">
+        <div class="cap">
+          <div class="t1">لحظة داخل فيديو طويل</div>
+          <div class="t2 mono">00:14:32 — unedited footage</div>
+        </div>
+      </div>
+      <svg class="cut-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="2.4"/><circle cx="6" cy="18" r="2.4"/><path d="M8 8 L20 20 M8 16 L14.5 9.5 M20 4 L11 13"/></svg>
+      <div class="arrow-dash"></div>
+      <div class="qusasa-result torn-lg">
+        <svg class="mk" viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg>
+        <div class="t1">رياكشن مستقل. جاهز يُؤخذ.</div>
+      </div>
+    </div>
+    <div class="logic-line">لقطة خام <span>→</span> اقتطاع <span>→</span> قُصاصة مستقلة <span>→</span> جاهزة تُستخدم في مكان جديد</div>
+  </section>
+
+  <!-- LOGO DIRECTIONS -->
+  <section id="logo">
+    <div class="eyebrow">02 / اتجاهات الشعار</div>
+    <h2>ثلاثة اتجاهات، اختبار واحد</h2>
+    <p class="lede">كل اتجاه يُختبر بسؤال واحد: هل يظل مفهومًا بحجم أيقونة تطبيق 32px؟ الاتجاهات التي فشلت في هذا الاختبار الذهني (فقاعة حوار كاملة التفاصيل، مونوغرام مزدحم) استُبعدت من الترشح الرئيسي رغم جاذبيتها.</p>
+
+    <div class="grid grid-3">
+      <div class="dir-card chosen">
+        <div class="badge">الاتجاه المعتمد</div>
+        <div class="dir-stage">
+          <svg viewBox="0 0 120 120"><path fill="var(--amber)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg>
+        </div>
+        <div class="dir-body">
+          <div class="dir-tag mono">01 — CLIP + PLAY</div>
+          <div class="dir-name">القُصاصة</div>
+          <p class="card-note">إطار مُمزّق الزاوية بثقب تشغيل مثلث في المنتصف. يترجم "الاقتطاع" و"الفيديو" في رمز واحد. يبقى مقروءًا حتى داخل دائرة 24px لأن الشكل الخارجي (مربع مشطوف) والثقب الداخلي (مثلث) يتصرفان ككتلتين واضحتين حتى عند فقدان تفاصيل التسنين.</p>
+        </div>
+      </div>
+
+      <div class="dir-card">
+        <div class="dir-stage">
+          <svg viewBox="0 0 120 120" width="90" height="90"><path fill="none" stroke="var(--paper-dim)" stroke-width="4" d="M16,8 L104,8 L112,16 L112,80 L104,88 L36,88 L23,111 L19,88 L8,80 L8,16 Z"/></svg>
+        </div>
+        <div class="dir-body">
+          <div class="dir-tag mono">02 — CLIP + BUBBLE</div>
+          <div class="dir-name">القُصاصة + فقاعة الحوار</div>
+          <p class="card-note">فقاعة حوار كلاسيكية بذيل مقصوص بدل الذيل الناعم المعتاد. أكثر تعبيرًا عن "الكلام"، لكنها أثقل خطوطًا وتفقد وضوحها تحت 28px — مناسبة كعنصر ثانوي (مثلاً في واجهة المكتبة) لا كشعار أساسي.</p>
+        </div>
+      </div>
+
+      <div class="dir-card">
+        <div class="dir-stage">
+          <svg viewBox="0 0 120 120" width="90" height="90">
+            <path fill="none" stroke="var(--paper-dim)" stroke-width="4" d="M14,0 L106,0 L120,10 L120,120 L0,120 L0,0 Z" />
+            <text x="60" y="76" font-family="Archivo Black" font-size="46" fill="var(--paper-dim)" text-anchor="middle">YR</text>
+          </svg>
+        </div>
+        <div class="dir-body">
+          <div class="dir-tag mono">03 — MONOGRAM</div>
+          <div class="dir-name">مونوغرام YR</div>
+          <p class="card-note">حل مختصر جدًا يعتمد على الحروف مباشرة. أوضح الثلاثة كأيقونة تطبيق مجردة، لكنه لا يحمل أي إشارة لفكرة "الاقتطاع/الفيديو" — يتحول لشعار عام يمكن أن ينتمي لأي علامة. احتياطي جيد، ليس الاتجاه الأساسي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO TESTING -->
+  <section>
+    <div class="eyebrow">03 / اختبار الاتجاه المعتمد</div>
+    <h2>هل "القُصاصة" تصمد؟</h2>
+    <p class="lede">الاختبارات الست التي طلبتها، منفّذة فعليًا على الرمز نفسه لا موصوفة نظريًا.</p>
+
+    <div class="test-row">
+      <div class="test-item">
+        <div class="box" style="width:96px;height:96px;background:var(--amber);border-radius:0;"><svg width="52" height="52" viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+        <div class="label mono">120px — كبير</div>
+      </div>
+      <div class="test-item">
+        <div class="box" style="width:56px;height:56px;background:var(--amber);"><svg width="30" height="30" viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+        <div class="label mono">56px — بروفايل</div>
+      </div>
+      <div class="test-item">
+        <div class="box" style="width:32px;height:32px;background:var(--amber);"><svg width="17" height="17" viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+        <div class="label mono">32px — Favicon</div>
+      </div>
+      <div class="test-item">
+        <div class="box" style="width:56px;height:56px;background:var(--amber);" class="gray"><svg width="30" height="30" viewBox="0 0 120 120" style="filter:grayscale(1)"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+        <div class="label mono">أبيض/أسود</div>
+      </div>
+      <div class="test-item">
+        <div class="box" style="width:56px;height:56px;background:var(--ink-3);border:1px solid var(--grey);"><svg width="30" height="30" viewBox="0 0 120 120"><path fill="none" stroke="var(--paper)" stroke-width="6" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+        <div class="label mono">نسخة Watermark</div>
+      </div>
+    </div>
+
+    <table class="test-table">
+      <tr><th>الاختبار</th><th>النتيجة</th><th></th></tr>
+      <tr><td>الحجم الكبير</td><td class="res">قوي وواثق — المثلث والزاوية الممزقة يشكّلان تباينًا داخليًا واضحًا</td><td class="pass mono">PASS</td></tr>
+      <tr><td>الحجم الصغير جدًا (32–24px)</td><td class="res">التسنين يختفي بصريًا، يتبقى "مربع بثقب مثلث" — لا يزال مميزًا وغير عام</td><td class="pass mono">PASS</td></tr>
+      <tr><td>واترمارك فوق فيديو</td><td class="res">النسخة الخطية (Stroke) بشفافية جزئية لا تحجب المحتوى خلفها</td><td class="pass mono">PASS</td></tr>
+      <tr><td>دائرة (بروفايل)</td><td class="res">القص الدائري يزيل حواف المربع لكن يُبقي المثلث المركزي واضحًا — يُنصح بتكبير هامش أمان 10% داخل الدائرة</td><td class="pass mono">PASS مع ملاحظة</td></tr>
+      <tr><td>أبيض وأسود بالكامل</td><td class="res">التباين قائم على الشكل لا اللون، فالرمز لا يعتمد على الكهرمان ليكون مفهومًا</td><td class="pass mono">PASS</td></tr>
+      <tr><td>الرمز بلا اسم العلامة</td><td class="res">مفهوم بذاته كـ"فيديو مقتطع" — لا يحتاج كلمة YemReact ليُقرأ</td><td class="pass mono">PASS</td></tr>
+    </table>
+  </section>
+
+  <!-- COLOR -->
+  <section id="color">
+    <div class="eyebrow">04 / نظام الألوان</div>
+    <h2>لوحة القشر — مُختبرة ومُعدّلة</h2>
+    <p class="lede">اللوحة الأساسية من الدليل السابق صمدت في الاختبار، لكن اختبار التباين على خلفية داكنة كشف مشكلتين تم تصحيحهما أدناه: الرمادي الدافئ كان منخفض التباين كنص، والكهرمان يحتاج درجة أفتح للاستخدام في النصوص الصغيرة (وليس فقط الشعار والأسطح الكبيرة).</p>
+
+    <div class="grid grid-4">
+      <div>
+        <div class="swatch" style="background:var(--ink)"><div><div class="swatch-name">Ink Base</div><div class="swatch-hex mono">#121214</div></div></div>
+        <div class="swatch-meta"><div class="swatch-role">الخلفية الأساسية — بلا تغيير</div></div>
+      </div>
+      <div>
+        <div class="swatch" style="background:var(--amber)"><div><div class="swatch-name" style="color:var(--ink)">Qishr Amber</div><div class="swatch-hex mono" style="color:var(--ink)">#C1592E</div></div></div>
+        <div class="swatch-meta"><div class="swatch-role">الشعار، الأسطح الكبيرة فقط — بلا تغيير</div></div>
+      </div>
+      <div>
+        <div class="swatch" style="background:var(--amber-light)"><div><div class="swatch-name" style="color:var(--ink)">Amber Light</div><div class="swatch-hex mono" style="color:var(--ink)">#E0824B</div></div></div>
+        <div class="swatch-meta"><div class="swatch-role">⚡ جديد — نصوص وروابط على خلفية داكنة (تباين أعلى)</div></div>
+      </div>
+      <div>
+        <div class="swatch" style="background:var(--paper)"><div><div class="swatch-name" style="color:var(--ink)">Frankincense Paper</div><div class="swatch-hex mono" style="color:var(--ink)">#F3EAE0</div></div></div>
+        <div class="swatch-meta"><div class="swatch-role">النص الأساسي على الخلفية الداكنة — بلا تغيير</div></div>
+      </div>
+      <div>
+        <div class="swatch" style="background:var(--coral)"><div><div class="swatch-name" style="color:var(--ink)">Reaction Coral</div><div class="swatch-hex mono" style="color:var(--ink)">#FF5A36</div></div></div>
+        <div class="swatch-meta"><div class="swatch-role">تأكيد/طاقة، بحذر شديد — بلا تغيير</div></div>
+      </div>
+      <div>
+        <div class="swatch" style="background:var(--grey)"><div><div class="swatch-name">Warm Grey</div><div class="swatch-hex mono">#6B625C</div></div></div>
+        <div class="swatch-meta"><div class="swatch-role">حدود وفواصل فقط — لم يعد يُستخدم كنص</div></div>
+      </div>
+      <div>
+        <div class="swatch" style="background:var(--grey-light)"><div><div class="swatch-name" style="color:var(--ink)">Grey Light</div><div class="swatch-hex mono" style="color:var(--ink)">#9C9289</div></div></div>
+        <div class="swatch-meta"><div class="swatch-role">⚡ جديد — نص ثانوي/وصفي، تباين مقبول على الحبر الداكن</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPOGRAPHY -->
+  <section id="type">
+    <div class="eyebrow">05 / الخطوط</div>
+    <h2>Lalezar + Cairo تعمل معًا — بتعديل واحد</h2>
+    <p class="lede">اختبار الاسم والشعار اللفظي فعليًا كشف أن Lalezar ممتاز للكلمات القصيرة جدًا لكنه يبدأ يفقد الإيقاع في جمل تتجاوز 4-5 كلمات — لذلك قاعدة الاستخدام حُصرت رسميًا بـ"خمس كلمات كحد أقصى"، ولا بديل مطلوب: الثنائي يعمل.</p>
+
+    <div class="type-block">
+      <div class="spec-label">اللوغوتايب</div>
+      <div class="type-lockup">
+        <span class="spec-ar">يمن رياكت</span>
+        <span class="en ltr" style="font-size:26px;color:var(--amber-light)">YemReact</span>
+      </div>
+      <div class="spec-tagline">خذها. حطها. يمنية.</div>
+      <div class="card-note">Lalezar للعربي / Archivo Black للإنجليزي — الوزنان المتينان يتوازيان بصريًا رغم اختلاف شكل الحروف بين اللغتين.</div>
+    </div>
+
+    <div class="body-compare">
+      <div>
+        <div class="spec-label">Cairo — نص عربي</div>
+        <p class="ar-sample">كل لقطة داخل المكتبة تُختار يدويًا. الهدف مو الكمية، الهدف إنك تلقى بالضبط اللقطة اللي تقول كلامك، وتاخذها، وتحطها.</p>
+      </div>
+      <div>
+        <div class="spec-label">Inter — English</div>
+        <p class="en-sample">Every clip in the library is hand-picked. Not volume — precision. Find the exact reaction that says what you mean, take it, and use it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISUAL LANGUAGE -->
+  <section>
+    <div class="eyebrow">06 / اللغة البصرية</div>
+    <h2>عائلة العنصر الواحد</h2>
+    <p class="lede">كل هذه العناصر مشتقة من نفس القص الواحد — لا عناصر زخرفية إضافية بلا وظيفة.</p>
+
+    <div class="grid grid-4">
+      <div class="vl-item">
+        <svg width="70" height="70" viewBox="0 0 120 120"><path fill="var(--amber)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg>
+        <div class="name">الرمز الأساسي</div>
+        <div class="desc">إطار + ثقب تشغيل</div>
+      </div>
+      <div class="vl-item">
+        <div style="width:70px;height:70px;background:var(--paper);position:relative;clip-path:polygon(100% 0,0 0,100% 100%)"></div>
+        <div class="name">قصاصة الواترمارك</div>
+        <div class="desc">تقشّر ورقي بزاوية اللقطة</div>
+      </div>
+      <div class="vl-item">
+        <div style="width:80px;height:80px;background:var(--ink-3);" class="torn-sm"></div>
+        <div class="name">إطار البطاقة</div>
+        <div class="desc">torn-lg / torn-sm للأحجام المختلفة</div>
+      </div>
+      <div class="vl-item">
+        <div style="padding:8px 16px;background:var(--ink-3);color:var(--cat-shock);border-right:3px solid var(--cat-shock);font-size:12px;font-family:var(--f-mono)">tag</div>
+        <div class="name">تاغ التصنيف</div>
+        <div class="desc">شريط لون + أيقونة، بلا نص زائد</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REACTION CLIP TEMPLATE -->
+  <section id="clip">
+    <div class="eyebrow">07 / الأهم — قالب Reaction Clip</div>
+    <h2>اللقطة هي البطل. الهوية تقف على الحافة فقط</h2>
+    <p class="lede">تفريق مهم بعد الاختبار: على <strong>الفيديو المُصدَّر</strong> (المرفوع فعليًا لإنستغرام/تيك توك)، الحافة الممزقة لا يمكن أن "تقص" الفيديو حرفيًا — المنصات تتحكم بالأبعاد. لذلك تتحول هناك إلى عنصر تقشّر ورقي صغير شفاف في الزاوية (وهو نفسه حامل الواترمارك). أما في <strong>البطاقات التي نتحكم بها</strong> (منشورات، واجهة المكتبة المستقبلية)، القص الحقيقي للزاوية مسموح ومرغوب.</p>
+
+    <div class="clip-stage">
+      <div class="clip-col">
+        <div class="phone">
+          <div class="safe-guide" style="top:6%;right:14%;bottom:20%;left:6%;"></div>
+          <div class="peel"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur-tag mono">3s</div>
+          <div class="cat-dot" style="background:var(--cat-shock)"></div>
+        </div>
+        <div class="frame-label">9:16 — Reels / Shorts / TikTok</div>
+      </div>
+
+      <div class="clip-col">
+        <div class="square-frame torn-lg">
+          <div class="peel"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur-tag mono">3s</div>
+          <div class="cat-dot" style="background:var(--cat-laugh)"></div>
+          <div class="clip-caption">قوية!</div>
+        </div>
+        <div class="frame-label">1:1 — منشور Instagram</div>
+      </div>
+
+      <div class="clip-col">
+        <div class="thumb-frame torn-lg">
+          <div class="peel"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="dur-tag mono">3s</div>
+          <div class="cat-dot" style="background:var(--cat-surprise)"></div>
+        </div>
+        <div class="frame-label">Thumbnail — بطاقة مكتبة</div>
+      </div>
+    </div>
+
+    <div class="clip-note">
+      <div class="k mono">SPEC SHEET</div>
+      <ul>
+        <li><strong style="color:var(--paper)">تقشّر/واترمارك:</strong> أعلى يمين، حجم ≈ 9% من عرض الإطار، شفافية 80–85%، ثابت دائمًا بنفس الموضع والحجم.</li>
+        <li><strong style="color:var(--paper)">تاغ المدة:</strong> أعلى يسار، Cairo Bold صغير، خلفية داكنة شفافة، لا يتغير موضعه أبدًا.</li>
+        <li><strong style="color:var(--paper)">نقطة التصنيف:</strong> أسفل يسار، لون الفئة فقط بلا نص، حلقة ورقية رفيعة حولها للتباين.</li>
+        <li><strong style="color:var(--paper)">Safe Area (9:16):</strong> هامش 6% أعلى، 20% أسفل (تعليقات/يوزرنيم المنصة)، 14% يمين (أيقونات المنصة)، 6% يسار.</li>
+        <li><strong style="color:var(--paper)">الكابشن (اختياري):</strong> Lalezar فقط، سطر واحد، داخل الهامش الآمن السفلي، بلون فئة التصنيف.</li>
+        <li><strong style="color:var(--paper)">قاعدة صارمة:</strong> لا يلمس أي عنصر تصميمي الوجه أو التعبير — كل العناصر تعيش في الزوايا والحواف فقط.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CLASSIFICATION -->
+  <section id="cats">
+    <div class="eyebrow">08 / نظام التصنيف</div>
+    <h2>ألوان الفئات — بلغة القُصاصة لا بلغة تطبيق عام</h2>
+    <p class="lede">كل فئة نقطة لون + أيقونة خطية بسيطة فقط، بلا صناديق أو أشكال واجهة تطبيق تقليدية — نفس الحد الأدنى المستخدم على القالب نفسه.</p>
+
+    <div class="cat-grid">
+      <div class="cat-chip" style="--chip-color:var(--cat-laugh)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2v5M12 17v5M2 12h5M17 12h5M5 5l3.5 3.5M19 5l-3.5 3.5M5 19l3.5-3.5M19 19l-3.5-3.5"/></svg><div><div class="cn">ضحك</div><div class="ce mono">laugh</div></div></div>
+      <div class="cat-chip" style="--chip-color:var(--cat-shock)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M11 3l-1.5 8M13 13l-1.5 7"/><circle cx="11.7" cy="21" r="0.9" fill="currentColor" stroke="none"/></svg><div><div class="cn">صدمة</div><div class="ce mono">shock</div></div></div>
+      <div class="cat-chip" style="--chip-color:var(--cat-anger)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 5c2 3-2 5 0 8M12 4c2 3-2 5 0 8M18 5c2 3-2 5 0 8"/></svg><div><div class="cn">غضب</div><div class="ce mono">anger</div></div></div>
+      <div class="cat-chip" style="--chip-color:var(--cat-surprise)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 8c0-3 8-3 8 1 0 3-4 3-4 6"/><circle cx="12" cy="19.5" r="0.9" fill="currentColor" stroke="none"/></svg><div><div class="cn">استغراب</div><div class="ce mono">surprise</div></div></div>
+      <div class="cat-chip" style="--chip-color:var(--cat-embarrass)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4c4 5 4 9 0 13-4-4-4-8 0-13Z"/></svg><div><div class="cn">إحراج</div><div class="ce mono">awkward</div></div></div>
+      <div class="cat-chip" style="--chip-color:var(--cat-approve)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg><div><div class="cn">موافقة</div><div class="ce mono">approve</div></div></div>
+      <div class="cat-chip" style="--chip-color:var(--cat-reject)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg><div><div class="cn">رفض</div><div class="ce mono">reject</div></div></div>
+      <div class="cat-chip" style="--chip-color:var(--cat-sarcasm)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 10c3-3 7-3 9 0M15 16c2 1 4 0 5-2"/></svg><div><div class="cn">سخرية</div><div class="ce mono">sarcasm</div></div></div>
+      <div class="cat-chip" style="--chip-color:var(--cat-hype)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V4M12 4l-5 5M12 4l5 5M4 15l3-1M20 15l-3-1"/></svg><div><div class="cn">حماس</div><div class="ce mono">hype</div></div></div>
+    </div>
+  </section>
+
+  <!-- APPLICATIONS -->
+  <section id="apps">
+    <div class="eyebrow">09 / تطبيقات حقيقية</div>
+    <h2>الهوية على الأرض</h2>
+
+    <div class="grid grid-4">
+      <div class="app-card">
+        <div class="app-stage"><div class="avatar-circle"><svg viewBox="0 0 120 120"><path fill="var(--amber)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div></div>
+        <div class="app-label">صورة الحساب</div>
+      </div>
+      <div class="app-card">
+        <div class="app-stage">
+          <div class="post-card torn-lg">
+            <div class="peel" style="width:26px;height:26px"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+            <div class="cap">يا ساتر!</div>
+          </div>
+        </div>
+        <div class="app-label">منشور Instagram</div>
+      </div>
+      <div class="app-card">
+        <div class="app-stage"><div class="sticker"><div class="sticker-inner torn-sm"><span>عاد شي عقل؟</span></div></div></div>
+        <div class="app-label">Sticker</div>
+      </div>
+      <div class="app-card">
+        <div class="app-stage">
+          <div class="meme-tmpl">
+            <div class="meme-bar">مساحة النص العلوي</div>
+            <div class="meme-bar">مساحة النص السفلي</div>
+          </div>
+        </div>
+        <div class="app-label">قالب ميم فارغ</div>
+      </div>
+    </div>
+
+    <div style="height:24px"></div>
+
+    <div class="lib-ui">
+      <div class="app-label" style="padding:0 0 14px">واجهة مكتبة الريأكشنات — تصور مستقبلي</div>
+      <div class="lib-search">دوّر على الرياكشن اللي يقول كلامك...</div>
+      <div class="lib-pills">
+        <span class="lib-pill" style="--chip-color:var(--cat-laugh)">ضحك</span>
+        <span class="lib-pill" style="--chip-color:var(--cat-shock)">صدمة</span>
+        <span class="lib-pill" style="--chip-color:var(--cat-anger)">غضب</span>
+        <span class="lib-pill" style="--chip-color:var(--cat-approve)">موافقة</span>
+        <span class="lib-pill" style="--chip-color:var(--cat-sarcasm)">سخرية</span>
+      </div>
+      <div class="lib-grid">
+        <div class="lib-cell torn-sm"><div class="cat-dot" style="background:var(--cat-laugh)"></div></div>
+        <div class="lib-cell torn-sm"><div class="cat-dot" style="background:var(--cat-shock)"></div></div>
+        <div class="lib-cell torn-sm"><div class="cat-dot" style="background:var(--cat-anger)"></div></div>
+        <div class="lib-cell torn-sm"><div class="cat-dot" style="background:var(--cat-approve)"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RULES -->
+  <section id="rules">
+    <div class="eyebrow">10 / قواعد الاستخدام</div>
+    <h2>الأساسيات فقط</h2>
+    <div class="rules">
+      <div class="rules do">
+        <h3>افعل</h3>
+        <ul>
+          <li>حافظ على القص/التقشّر في زاوية واحدة ثابتة دائمًا.</li>
+          <li>واترمارك بنفس الحجم والشفافية في كل مرة، بلا استثناء.</li>
+          <li>Lalezar للجمل القصيرة فقط (٥ كلمات كحد أقصى).</li>
+          <li>لون سيادي واحد فقط لكل تصميم (كهرمان أو مرجان، لا الاثنين بنفس الوزن).</li>
+        </ul>
+      </div>
+      <div class="rules dont">
+        <h3>لا تفعل</h3>
+        <ul>
+          <li>لا تلمس الهوية وجه أو تعبير الشخص في اللقطة أبدًا.</li>
+          <li>لا تكرر القص الممزق في أكثر من زاوية بنفس العنصر.</li>
+          <li>لا تخلط ألوان التصنيف مع ألوان الهوية الأساسية.</li>
+          <li>لا تُستخدم علم اليمن أو زخارف تراثية مباشرة كبديل عن هوية النظام.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="mono">YEMREACT / IDENTITY SYSTEM v1 — READY FOR HANDOFF</p>
+  </footer>
+
+</div>
+</body>
+</html>
