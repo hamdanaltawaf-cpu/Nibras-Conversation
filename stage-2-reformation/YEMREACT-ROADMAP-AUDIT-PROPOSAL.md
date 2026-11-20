@@ -113,8 +113,8 @@
 | **UNASSIGNED** | الموضوع التالي | لا يوجد موضوع تالٍ معيّن. |
 | **NOT STARTED** | Stages 6–8 | إطار مستقبلي فقط. |
 | **UNVERIFIED** | SEC-06 وسلوك التطبيق | لا تسجل كأنها اجتازت تدقيقًا أو اختبارًا. |
-| **CLOSED FOR DOCUMENTATION** | OPEN-Q-08 — البحث والفهرسة | القرار موثق في `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`؛ لا يثبت تنفيذ البحث أو الفهرسة أو الاختبار. يبقى منفصلًا عن OPEN-Q-09. |
-| **CLOSED FOR DOCUMENTATION** | OPEN-Q-09 — استخراج الكلام | القرار موثق بالعربية في `canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md`؛ لا يثبت اختيار تقنية أو تنفيذ الاستخراج أو اختبار الدقة والتكلفة والخصوصية. يبقى منفصلًا عن OPEN-Q-08. |
+| **CLOSED FOR DOCUMENTATION** | OPEN-Q-08 — البحث والفهرسة | القرار موثق في `المرجعية-الكانونية/القرارات/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`؛ لا يثبت تنفيذ البحث أو الفهرسة أو الاختبار. يبقى منفصلًا عن OPEN-Q-09. |
+| **CLOSED FOR DOCUMENTATION** | OPEN-Q-09 — استخراج الكلام | القرار موثق بالعربية في `المرجعية-الكانونية/القرارات/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md`؛ لا يثبت اختيار تقنية أو تنفيذ الاستخراج أو اختبار الدقة والتكلفة والخصوصية. يبقى منفصلًا عن OPEN-Q-08. |
 | **ACCEPTED — documentation only** | DECISION-5B.28 — Route Inventory Boundaries | يصنف فجوات المسارات في Stage 5 دون اختراع مسارات؛ لا يثبت وجود المسارات أو عمل الحالات في التطبيق. |
 
 قواعد عدم إعادة الفتح بسبب ملفات أقدم:
@@ -132,14 +132,14 @@
 ## 7. المصادر وترتيب الحجية
 
 ### مصادر القرار الحالية — الأعلى حجية
-1. [YEMREACT-CANONICAL-BASELINE.md](../canonical/YEMREACT-CANONICAL-BASELINE.md) — الحقائق والقرارات النافذة.
-2. [YEMREACT-DECISIONS-LOG.md](../canonical/YEMREACT-DECISIONS-LOG.md) — سجل القرارات وحالاتها وحدود ما استُبدل.
-3. [PROJECT_CONTEXT_AND_DECISIONS.md](../canonical/PROJECT_CONTEXT_AND_DECISIONS.md) — سياق القرارات وتحديثات الحالة؛ تُراجع تواريخ التحديث والنطاق.
+1. [YEMREACT-CANONICAL-BASELINE.md](../المرجعية-الكانونية/خط-الأساس/YEMREACT-CANONICAL-BASELINE.md) — الحقائق والقرارات النافذة.
+2. [YEMREACT-DECISIONS-LOG.md](../المرجعية-الكانونية/سجل-القرارات/YEMREACT-DECISIONS-LOG.md) — سجل القرارات وحالاتها وحدود ما استُبدل.
+3. [PROJECT_CONTEXT_AND_DECISIONS.md](../المرجعية-الكانونية/سياق-المشروع/PROJECT_CONTEXT_AND_DECISIONS.md) — سياق القرارات وتحديثات الحالة؛ تُراجع تواريخ التحديث والنطاق.
 4. [PR #4 — Stage 5-B canonicalization](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/4) ودمجه `1ee2335f1abbe09b007cb1e028c366d281d10cc8` — دليل دمج تحديث الملفات المرجعية بتاريخ 2026-10-18، لا دليل تنفيذ.
 5. [DECISION-5B.25 — Saved and My Contributions Empty States](../stage-5-ia-navigation/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md) — نصوص الحالات الفارغة ونطاقها.
 6. [DECISION-5B.26 — Help Center and Issue Reporting](../stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md) — سياسة المساعدة والإبلاغ وبوابة جاهزية الإطلاق.
-7. [OPEN-Q-08 — Search and Indexing](../canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md) — البحث والفهرسة؛ مغلق لأغراض التوثيق فقط.
-8. [OPEN-Q-09 — Speech Extraction](../canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md) — سياسة استخراج الكلام بالعربية؛ مغلق لأغراض التوثيق فقط.
+7. [OPEN-Q-08 — Search and Indexing](../المرجعية-الكانونية/القرارات/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md) — البحث والفهرسة؛ مغلق لأغراض التوثيق فقط.
+8. [OPEN-Q-09 — Speech Extraction](../المرجعية-الكانونية/القرارات/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md) — سياسة استخراج الكلام بالعربية؛ مغلق لأغراض التوثيق فقط.
 9. [PR #13 — OPEN-Q-08 documentation](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/13) و[PR #14 — OPEN-Q-09 Arabic documentation](https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/14) — توثيق القرارات ومراجعها، لا دليل تنفيذ تقني.
 
 - [DECISION-5B.27 — Remaining UX Details](../stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md) — حسم دعوات التسجيل والترويسة وعرض المجموعات ونص المساعدة العربي.
@@ -191,7 +191,7 @@
 - لم يُفحص مستودع تطبيق YemReact أو قاعدة بياناته، ولم تُشغّل اختبارات أو بناء، ولم يُجرَ تدقيق أمني. تبقى ادعاءات التنفيذ والحالة التقنية غير مثبتة هنا.
 - اعتُمدت الخارطة تشغيليًا لتوجيه ChatGPT الجديد؛ لا يعني ذلك اعتماد البنود المفتوحة أو المقترحة، ولا بدء مرحلة جديدة أو منح تكليف تنفيذ.
 
-| 2026-10-30 | **الخطوة الثانية — تدقيق اتساق المراجع النهائية:** اكتُشف تعارض قديم في جرد الصفحات والـCanonical Baseline كان يصنف Stage 5 على أنها OPEN ويعرض مراجعة الإغلاق كأنها ما تزال معلقة. حُدثت صياغة الحالة الحالية في `canonical/YEMREACT-CANONICAL-BASELINE.md` و`stage-2-reformation/YEMREACT-PAGE-AND-FLOW-INVENTORY-DRAFT.md` لتتفق مع سجل الإغلاق المؤرخ 2026-10-29: **CLOSED FOR DOCUMENTATION ONLY**. بقيت تفاصيل التنفيذ والأمان والاختبارات UNVERIFIED؛ لا كود أو قاعدة بيانات أو مرحلة جديدة. |
+| 2026-10-30 | **الخطوة الثانية — تدقيق اتساق المراجع النهائية:** اكتُشف تعارض قديم في جرد الصفحات والـCanonical Baseline كان يصنف Stage 5 على أنها OPEN ويعرض مراجعة الإغلاق كأنها ما تزال معلقة. حُدثت صياغة الحالة الحالية في `المرجعية-الكانونية/خط-الأساس/YEMREACT-CANONICAL-BASELINE.md` و`stage-2-reformation/YEMREACT-PAGE-AND-FLOW-INVENTORY-DRAFT.md` لتتفق مع سجل الإغلاق المؤرخ 2026-10-29: **CLOSED FOR DOCUMENTATION ONLY**. بقيت تفاصيل التنفيذ والأمان والاختبارات UNVERIFIED؛ لا كود أو قاعدة بيانات أو مرحلة جديدة. |
 
 | 2026-10-30 | **الخطوة الثالثة — تثبيت الحد الفاصل بين التوثيق والتنفيذ:** توحيد قائمة تحقق الإغلاق والـCanonical Baseline وسجل القرارات على قاعدة صريحة: Stage 5 مغلقة توثيقيًا فقط، ولا يُعد ذلك تفويضًا للتنفيذ. توثيق البوابات التقنية المتبقية كـUNVERIFIED/DEFERRED، وأن أي عمل تقني يحتاج تكليفًا منفصلًا وصريحًا بعد اكتمال التوثيق. لا تغييرات في التطبيق أو قاعدة البيانات، ولا اختبارات أو بناء أو نشر. |
 
@@ -200,7 +200,7 @@
 - Identified stale status wording in decision documents 5B.23–5B.28 and OPEN-Q-08/OPEN-Q-09 that reflected their original recording date rather than current governance status. Added dated current-status reconciliation notes while preserving the original historical wording.
 - Current status remains **Stage 5 CLOSED FOR DOCUMENTATION ONLY**; OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. Technical implementation/verification remains unverified/deferred.
 - Completed the final reference pass and recorded the outcome in `stage-2-reformation/STAGE-5-DOCUMENTATION-COMPLETENESS-AUDIT-2026-10-30.md` and `stage-5-ia-navigation/YEMREACT-DOCUMENTATION-CHANGELOG-ADDENDUM-2026-10-30.md`.
-- The large `canonical/PROJECT_CONTEXT_AND_DECISIONS.md` remains a historical context record and was not rewritten in place; its older status labels and next-step suggestions are explicitly subordinate to current governing records. This exception does not leave a Stage 5 product decision open.
+- The large `المرجعية-الكانونية/سياق-المشروع/PROJECT_CONTEXT_AND_DECISIONS.md` remains a historical context record and was not rewritten in place; its older status labels and next-step suggestions are explicitly subordinate to current governing records. This exception does not leave a Stage 5 product decision open.
 - Documentation package for the reviewed Stage 5 product/IA/navigation scope is complete. Technical gates remain UNVERIFIED/DEFERRED; no app or database work is authorized.
 
 ### 2026-10-30 — تدقيق طلبات السحب الأربعة ومعالجة PR #18 انتقائيًا
@@ -333,7 +333,7 @@
 
 ## 2026-11-05 — توضيح سلطة الوثائق وإحالات إغلاق Stage 5
 
-- `canonical/PROJECT_CONTEXT_AND_DECISIONS.md` هو سجل سياق واستمرارية، وليس المرجع الحاكم الوحيد. تُحدد الحالة الحالية بالرجوع إلى الـCanonical Baseline ووثيقة القرار الموضوعية وسجل القرارات، كلٌ ضمن وظيفته؛ خارطة الطريق مرجع متابعة، وسجل إغلاق Stage 5 يحكم نطاق الإغلاق التوثيقي.
+- `المرجعية-الكانونية/سياق-المشروع/PROJECT_CONTEXT_AND_DECISIONS.md` هو سجل سياق واستمرارية، وليس المرجع الحاكم الوحيد. تُحدد الحالة الحالية بالرجوع إلى الـCanonical Baseline ووثيقة القرار الموضوعية وسجل القرارات، كلٌ ضمن وظيفته؛ خارطة الطريق مرجع متابعة، وسجل إغلاق Stage 5 يحكم نطاق الإغلاق التوثيقي.
 - الحالة العامة الحالية: Stage 5 **CLOSED FOR DOCUMENTATION ONLY**. التنفيذ والاختبارات والأمان والبناء ووقت التشغيل ما زالت **UNVERIFIED / DEFERRED**.
 - سجل نقاش الإرسال موجود حالياً في `stage-5-ia-navigation/reaction-submission-discussion.md`. المسار `docs/product/discussions/` والفرع السابق مراجع تاريخية لمراحل الحفظ والنقل.
 - جرد قرارات Stage 5-B يمتد إلى `DECISION-5B.29`؛ القرارات 5B.23–5B.29 موجودة في `stage-5-ia-navigation/`.
