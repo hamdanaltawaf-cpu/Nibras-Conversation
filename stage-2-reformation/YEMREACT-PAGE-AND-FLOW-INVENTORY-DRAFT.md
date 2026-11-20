@@ -121,11 +121,11 @@
 ## 8. المصادر المستخدمة
 
 - `stage-2-reformation/YEMREACT-ROADMAP-AUDIT-PROPOSAL.md` — حالة Stage 5، المسارات والقرارات المفتوحة وحدود التحقق.
-- `canonical/YEMREACT-CANONICAL-BASELINE.md` — حقائق المنتج والواجهة، تفاصيل البطاقة وصفحة الرياكشن والتنقل.
-- `canonical/YEMREACT-DECISIONS-LOG.md` — سجل القرارات وتاريخها وحدود ما استُبدل.
-- `canonical/PROJECT_CONTEXT_AND_DECISIONS.md` — سياق القرارات والقرارات التاريخية؛ لا تتقدم اللقطات القديمة على القرارات الأحدث.
-- `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md` — سياسة البحث والفهرسة.
-- `canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md` — سياسة استخراج الكلام.
+- `المرجعية-الكانونية/خط-الأساس/YEMREACT-CANONICAL-BASELINE.md` — حقائق المنتج والواجهة، تفاصيل البطاقة وصفحة الرياكشن والتنقل.
+- `المرجعية-الكانونية/سجل-القرارات/YEMREACT-DECISIONS-LOG.md` — سجل القرارات وتاريخها وحدود ما استُبدل.
+- `المرجعية-الكانونية/سياق-المشروع/PROJECT_CONTEXT_AND_DECISIONS.md` — سياق القرارات والقرارات التاريخية؛ لا تتقدم اللقطات القديمة على القرارات الأحدث.
+- `المرجعية-الكانونية/القرارات/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md` — سياسة البحث والفهرسة.
+- `المرجعية-الكانونية/القرارات/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md` — سياسة استخراج الكلام.
 - `stage-5-ia-navigation/DECISION-5B.23-NUMBER-FORMATTING.md` — سياسة الأعداد والتواريخ والأوقات والعدادات المرئية؛ القرار ACCEPTED وليس بندًا مفتوحًا.
 - `stage-5-ia-navigation/DECISION-5B.24-GUEST-SAVE-RECONCILIATION.md` — دمج محفوظات الزائر وعزلها بعد الدخول.
 - `stage-5-ia-navigation/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md` — حالات المحفوظات و«مساهماتي».
