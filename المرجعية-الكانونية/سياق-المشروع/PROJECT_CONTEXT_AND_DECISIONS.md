@@ -612,14 +612,14 @@ Accepted policy: render an empty state only after a successful load confirms no 
 - Evaluate exact embedded speech, spelling/dialect variants, title/character queries, semantically equivalent wording, no-match queries, and shared phrases. Measure first-result success, ranking quality, misleading results, and semantic-search impact.
 - At the time of the OPEN-Q-08 update, OPEN-Q-09 was still open; it was subsequently documented and closed for documentation only in its own separate decision on 2026-10-28. The two decisions remain separate; extraction implementation remains unverified.
 - Product policy only; no implementation/test/build/runtime claim. Stage 5 remains OPEN; no Stage 5.3/Stage 6. SEC-06 and server-side upload enforcement remain unverified.
-- Full specification: `canonical/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
+- Full specification: `المرجعية-الكانونية/القرارات/DECISION-OPEN-Q-08-SEARCH-AND-INDEXING.md`.
 
 
 ---
 
 ## تحديث 2026-10-28 — OPEN-Q-09 سياسة استخراج الكلام — مُعتمد لأغراض التوثيق فقط
 
-- جُمعت قرارات OPEN-Q-09 في `canonical/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md`.
+- جُمعت قرارات OPEN-Q-09 في `المرجعية-الكانونية/القرارات/DECISION-OPEN-Q-09-SPEECH-EXTRACTION.md`.
 - استخراج الكلام عملية إدارية يبدأها مشرف مخوّل يدويًا؛ لا يُنشر النص تلقائيًا، ويحتفظ النظام بالنص النهائي فقط بعد تعديل المشرف.
 - تُحفظ المسودات والتعديلات غير المنشورة لاستعادتها، ولا تدخل البحث العام قبل نشر الرياكشن. بعد النشر يظهر النص النهائي في صفحة تفاصيل الرياكشن، ويجوز استخدامه في البحث وفق OPEN-Q-08.
 - حالات الاستخراج منفصلة: لم يبدأ، جارٍ الاستخراج، اكتمل، فشل، ولا يوجد كلام قابل للاستخراج. إعادة المحاولة يدوية، مع التعامل الآمن مع مغادرة الصفحة وانقطاع الاتصال والمهلة وتغيير المقطع وتعارض التعديلات.
