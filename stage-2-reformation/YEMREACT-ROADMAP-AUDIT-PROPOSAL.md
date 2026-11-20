@@ -152,7 +152,7 @@
 - [YEMREACT-STAGE5-5.1-SEARCH-ROUTE-DISCUSSION.md](../stage-5-ia-navigation/YEMREACT-STAGE5-5.1-SEARCH-ROUTE-DISCUSSION.md) — نقاش تاريخي يُقرأ وفق القرار الأحدث.
 - [YEMREACT-STAGE-5B-ACCOUNT-NAVIGATION-PROPOSAL-2026-10-18.md](../stage-5-ia-navigation/YEMREACT-STAGE-5B-ACCOUNT-NAVIGATION-PROPOSAL-2026-10-18.md) — تفاصيل المقترح الذي قُنّن لاحقًا؛ لا يتقدم على الكانوني.
 - [README.md](../README.md)، وملفات `reference/` و`reference/uploads/` — سياق ومصادر مساندة أو تاريخية؛ لا تتغلب اللقطات القديمة على القرار الأحدث.
-- `stage-1-source-reconciliation/` و`stage-4-identity/` — أدلة وتقارير وقرارات المراحل السابقة بحسب موضوعها.
+- `stage-1-source-reconciliation/` (الملفات المتبقية)، و`المراحل/المرحلة-1-توحيد-المصادر/` (سجلا التعارضات المنقولان)، و`stage-4-identity/` — أدلة وتقارير وقرارات تاريخية بحسب موضوعها.
 
 **عند التعارض:** يُرجع إلى قرار صريح من حمدان كما هو مسجل في الكانوني، مع فحص تاريخ القرار ونطاقه؛ ثم سجل القرارات والـbaseline والسياق الكانوني؛ ثم خطط المراحل والتقارير؛ ثم الملفات التاريخية والنماذج والأصول. حداثة التاريخ وحدها لا تتغلب على قرار صريح. هذه الخارطة لا تعدل الكانوني.
 
