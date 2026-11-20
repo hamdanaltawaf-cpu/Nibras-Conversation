@@ -1,7 +1,7 @@
 # YEMREACT-REFORMATION-MASTER-PLAN.md — Phase 2A — Product Re-Foundation Orientation
 
 > Phase 2A only — No product decisions, no UX decisions, no technical decisions, no code/Git/DB modification.
-> Inputs: YEMREACT-CANONICAL-BASELINE.md (37 facts), YEMREACT-OPEN-DECISIONS-FINAL.md (61 open: 20 Product + 15 UX/IA + 18 Technical + 8 Blocked), YEMREACT-HISTORICAL-NOT-CURRENT.md (43 items), YEMREACT-UNKNOWNS-FINAL.md (49 unknowns: Must Before 10 / During 21 / Deferred Technical 17 / Informational 1), YEMREACT-REFOUNDATION-ORDER.md (49 ordered), YEMREACT-PHASE-1C-REPORT.md (PARTIAL), plus 12 original sources when needed.
+> Inputs: YEMREACT-CANONICAL-BASELINE.md (37 facts), YEMREACT-OPEN-DECISIONS-FINAL.md (61 open: 20 Product + 15 UX/IA + 18 Technical + 8 Blocked), YEMREACT-HISTORICAL-NOT-CURRENT.md (43 items), YEMREACT-UNKNOWNS-FINAL.md (49 unknowns: Must Before 10 / During 21 / Deferred Technical 17 / Informational 1), YEMREACT-REFOUNDATION-ORDER.md (49 ordered), المراحل/المرحلة-1-توحيد-المصادر/تقرير-المرحلة-1c.md (PARTIAL), plus 12 original sources when needed.
 > Date: 2026-09-11
 
 ---
