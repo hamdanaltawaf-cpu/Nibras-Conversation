@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YemReact — Social Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Cairo:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#121214; --ink-2:#1a1a1d; --ink-3:#232327;
+    --amber:#c1592e; --amber-light:#e0824b;
+    --paper:#f3eae0; --paper-dim:#c9bfb4;
+    --coral:#ff5a36; --grey:#6b625c; --grey-light:#9c9289;
+    --cat-laugh:#f4c430; --cat-shock:#7c5cff; --cat-anger:#c81e3a;
+    --cat-surprise:#2cb6c4; --cat-embarrass:#f17fb2; --cat-approve:#4caf6d;
+    --cat-reject:#6e8296; --cat-sarcasm:#d98e04; --cat-hype:#e8712e;
+    --f-disp-ar:'Lalezar', sans-serif; --f-body-ar:'Cairo', sans-serif;
+    --f-mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{ background:var(--ink); color:var(--paper); font-family:var(--f-body-ar); line-height:1.7; -webkit-font-smoothing:antialiased; }
+  .mono{ font-family:var(--f-mono); direction:ltr; unicode-bidi:isolate; }
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 24px; }
+  section{ padding:64px 0; border-bottom:1px solid rgba(243,234,224,.07); }
+  section:last-of-type{ border-bottom:none; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:8px; font-family:var(--f-mono); font-size:12px; letter-spacing:.08em; color:var(--amber-light); text-transform:uppercase; margin-bottom:14px; }
+  .eyebrow::before{ content:''; width:16px; height:2px; background:var(--amber-light); }
+  h2{ font-family:var(--f-disp-ar); font-size:32px; font-weight:400; margin-bottom:8px; }
+  .lede{ color:var(--grey-light); font-size:15px; max-width:680px; margin-bottom:36px; }
+  .note{ background:var(--ink-2); border-right:3px solid var(--amber-light); padding:14px 18px; font-size:13.5px; color:var(--grey-light); margin-bottom:36px; max-width:680px; }
+  .note b{ color:var(--paper); }
+
+  .torn-lg{ clip-path: polygon(0% 6%, 6% 0%, 78% 0%, 83% 5%, 88% 1%, 93% 6%, 97% 2%, 100% 11%, 100% 94%, 94% 100%, 6% 100%, 0% 94%); }
+  .torn-sm{ clip-path: polygon(0% 9%, 9% 0%, 76% 0%, 85% 7%, 100% 15%, 100% 92%, 92% 100%, 8% 100%, 0% 92%); }
+
+  .peel{ position:absolute; top:0; right:0; width:9%; aspect-ratio:1/1; clip-path:polygon(100% 0,0 0,100% 100%); background:var(--paper); filter:drop-shadow(0 1px 2px rgba(0,0,0,.6)) drop-shadow(0 0 2px rgba(0,0,0,.4)); }
+  .peel svg{ position:absolute; width:55%; top:16%; right:14%; opacity:.55; }
+
+  .mockrow{ display:flex; gap:24px; flex-wrap:wrap; align-items:flex-start; }
+  .frame-label{ font-size:12.5px; font-weight:700; margin-top:10px; text-align:center; }
+  .frame-sub{ font-size:11px; color:var(--grey-light); text-align:center; margin-top:2px; }
+
+  /* STORY */
+  .story{ width:200px; aspect-ratio:9/16; background:linear-gradient(160deg,#2a2320,#171412); position:relative; overflow:hidden; border:1px solid rgba(243,234,224,.12); }
+  .story-safe-top{ position:absolute; top:0; left:0; right:0; height:12%; border-bottom:1px dashed rgba(243,234,224,.2); display:flex; align-items:center; padding:0 10px; gap:6px; }
+  .story-avatar{ width:16px; height:16px; border-radius:50%; background:var(--amber); }
+  .story-name{ font-size:9px; color:var(--paper-dim); }
+  .story-safe-bottom{ position:absolute; bottom:0; left:0; right:0; height:18%; border-top:1px dashed rgba(243,234,224,.2); display:flex; align-items:center; justify-content:center; }
+  .story-reply{ background:rgba(243,234,224,.08); border:1px solid rgba(243,234,224,.2); border-radius:20px; padding:6px 14px; font-size:9px; color:var(--grey-light); }
+  .story-prompt{ position:absolute; top:20%; left:8%; right:8%; text-align:center; }
+  .story-prompt .h{ font-family:var(--f-disp-ar); font-size:17px; color:var(--paper); }
+  .story-prompt .s{ font-size:10px; color:var(--grey-light); margin-top:4px; }
+  .story-dot{ position:absolute; bottom:20%; width:10px; height:10px; border-radius:50%; border:2px solid var(--paper); right:8%; }
+
+  /* CAROUSEL */
+  .carousel-row{ display:flex; gap:12px; overflow-x:auto; padding-bottom:8px; }
+  .slide{ flex:0 0 130px; aspect-ratio:1/1; background:var(--ink-2); position:relative; overflow:hidden; }
+  .slide-cover{ background:var(--amber); display:flex; flex-direction:column; justify-content:flex-end; padding:12px; }
+  .slide-cover .k{ font-family:var(--f-mono); font-size:8px; color:rgba(18,18,20,.6); }
+  .slide-cover .t{ font-family:var(--f-disp-ar); font-size:16px; color:var(--ink); line-height:1.2; margin-top:4px; }
+  .slide-content{ background:linear-gradient(160deg,#2a2320,#171412); }
+  .slide-num{ position:absolute; top:6px; left:6px; font-family:var(--f-mono); font-size:8px; background:rgba(18,18,20,.7); padding:2px 5px; }
+  .slide-quote{ position:absolute; bottom:8px; right:8px; left:8px; font-family:var(--f-disp-ar); font-size:13px; text-align:center; }
+  .slide-close{ background:var(--ink-3); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; }
+  .slide-close .t{ font-family:var(--f-disp-ar); font-size:15px; }
+
+  /* ANNOUNCEMENT */
+  .ann{ width:220px; aspect-ratio:1/1; background:var(--ink-2); position:relative; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; text-align:center; padding:20px; }
+  .ann .headline{ font-family:var(--f-disp-ar); font-size:30px; color:var(--paper); }
+  .ann .sub{ font-size:12px; color:var(--grey-light); max-width:170px; }
+  .ann.milestone .headline{ color:var(--amber-light); }
+  .ann-num{ font-family:var(--f-mono); font-size:11px; color:var(--amber-light); }
+
+  /* CATEGORY COLLECTION */
+  .catpost{ width:260px; aspect-ratio:1/1; background:var(--ink-2); position:relative; overflow:hidden; padding:18px; display:flex; flex-direction:column; }
+  .catpost .head{ font-family:var(--f-disp-ar); font-size:26px; margin-bottom:4px; }
+  .catpost .desc{ font-size:11px; color:var(--grey-light); margin-bottom:14px; }
+  .catpost .mini-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:6px; flex:1; }
+  .catpost .mini-cell{ background:linear-gradient(160deg,#2a2320,#171412); }
+
+  footer{ padding:56px 0 90px; text-align:center; }
+  footer p{ color:var(--grey); font-size:12px; font-family:var(--f-mono); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <section style="padding-top:56px;">
+    <div class="eyebrow">05 / Social Design System</div>
+    <h2>القوالب الجاهزة للنشر</h2>
+    <p class="lede">مبنية فوق YemReact Brand v1.0 — بلا أي تعديل على الشعار أو الألوان أو الخطوط. هذا تنفيذ، لا إعادة تصميم.</p>
+    <div class="note"><b>إعادة استخدام مباشرة:</b> قالب Reaction Clip (9:16) يُستخدم كما هو لثلاث منصات — Reels وTikTok وYouTube Shorts — بلا حاجة لنسخة منفصلة لكل منصة. قالب Thumbnail وقالب منشور Instagram المربّع جاهزان أيضًا من النسخة السابقة. الأربعة أدناه فقط جديدة.</div>
+  </section>
+
+  <!-- STORY -->
+  <section>
+    <div class="eyebrow">Story</div>
+    <h2>قصة — نسختان</h2>
+    <p class="lede">مساحة آمنة مختلفة عن الريلز: ١٢٪ أعلى (بروفايل/إغلاق)، ١٨٪ أسفل (شريط الرد)، بلا عمود أيقونات جانبي.</p>
+    <div class="mockrow">
+      <div>
+        <div class="story">
+          <div class="story-safe-top"><div class="story-avatar"></div><span class="story-name mono">yemreact</span></div>
+          <div class="peel"><svg viewBox="0 0 120 120"><path fill="var(--ink)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg></div>
+          <div class="story-dot" style="background:var(--cat-shock)"></div>
+          <div class="story-safe-bottom"><div class="story-reply">أرسل رسالة</div></div>
+        </div>
+        <div class="frame-label">إعادة نشر رياكشن</div>
+        <div class="frame-sub">نفس ملف الفيديو، بلا تعديل</div>
+      </div>
+      <div>
+        <div class="story">
+          <div class="story-safe-top"><div class="story-avatar"></div><span class="story-name mono">yemreact</span></div>
+          <div class="story-prompt">
+            <div class="h">أي رياكشن ناقصكم؟</div>
+            <div class="s">قولوا الموقف، نلقالكم اللقطة</div>
+          </div>
+          <div class="story-safe-bottom"><div class="story-reply">اكتب موقفك...</div></div>
+        </div>
+        <div class="frame-label">قصة تفاعلية — اطلب رياكشن</div>
+        <div class="frame-sub">بلا فيديو، نص فقط + خلفية العلامة</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAROUSEL -->
+  <section>
+    <div class="eyebrow">Carousel</div>
+    <h2>مكتبة الأسبوع — تسلسل كامل</h2>
+    <p class="lede">غلاف بلون الفئة → 3–4 لقطات → سلايد إغلاق يدفع للحفظ.</p>
+    <div class="carousel-row">
+      <div class="slide slide-cover">
+        <div class="k mono">01 / 06</div>
+        <div class="t">٥ رياكشنات جاهزة للرفض</div>
+      </div>
+      <div class="slide slide-content">
+        <div class="slide-num mono">02</div>
+        <div class="slide-quote">عاد شي عقل؟</div>
+      </div>
+      <div class="slide slide-content">
+        <div class="slide-num mono">03</div>
+        <div class="slide-quote">برضه؟</div>
+      </div>
+      <div class="slide slide-content">
+        <div class="slide-num mono">04</div>
+        <div class="slide-quote">لأ والله</div>
+      </div>
+      <div class="slide slide-content">
+        <div class="slide-num mono">05</div>
+        <div class="slide-quote">كفاية كذا</div>
+      </div>
+      <div class="slide slide-close">
+        <svg width="30" height="30" viewBox="0 0 120 120"><path fill="var(--amber-light)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg>
+        <div class="t">احفظها كاملة.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANNOUNCEMENT -->
+  <section>
+    <div class="eyebrow">Announcement</div>
+    <h2>إعلانات العلامة — بلا لقطة</h2>
+    <p class="lede">النوع الوحيد الذي لا يحتوي فيديو — كهرمان/ورق فقط، بدون لون فئة، لأنه لا يمثّل رياكشن واحدًا.</p>
+    <div class="mockrow">
+      <div>
+        <div class="ann">
+          <svg width="34" height="34" viewBox="0 0 120 120"><path fill="var(--amber)" fill-rule="evenodd" d="M10,0 L86,0 L92,6 L98,1 L104,7 L110,3 L120,14 L120,106 L106,120 L14,120 L0,106 L0,10 Z M46,38 L46,82 L82,60 Z"/></svg>
+          <div class="headline">قريبًا</div>
+          <div class="sub">مكتبة رياكشنات كاملة، بحث بالموقف، جاهزة تاخذها.</div>
+        </div>
+        <div class="frame-label">إعلان — قريبًا</div>
+      </div>
+      <div>
+        <div class="ann milestone">
+          <div class="ann-num mono">100 CLIPS</div>
+          <div class="headline">١٠٠ رياكشن</div>
+          <div class="sub">في المكتبة، وكل واحد فيها انتقيناه بإيدنا.</div>
+        </div>
+        <div class="frame-label">إعلان — إنجاز</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY COLLECTION -->
+  <section>
+    <div class="eyebrow">Category Collection</div>
+    <h2>منشور فئة — واجهة الرفّ</h2>
+    <p class="lede">منشور واحد ثابت (لا متسلسل كالكاروسيل) يعرض فئة كاملة كمجموعة منتقاة.</p>
+    <div class="mockrow">
+      <div>
+        <div class="catpost">
+          <div class="head" style="color:var(--cat-sarcasm)">سخرية</div>
+          <div class="desc">للحظات اللي تحتاج رد هادئ وذكي.</div>
+          <div class="mini-grid">
+            <div class="mini-cell"></div><div class="mini-cell"></div>
+            <div class="mini-cell"></div><div class="mini-cell"></div>
+          </div>
+        </div>
+        <div class="frame-label">منشور فئة — سخرية</div>
+      </div>
+    </div>
+  </section>
+
+  <footer><p class="mono">YEMREACT — SOCIAL DESIGN SYSTEM — EXTENDS v1.0, ZERO REDESIGN</p></footer>
+
+</div>
+</body>
+</html>
