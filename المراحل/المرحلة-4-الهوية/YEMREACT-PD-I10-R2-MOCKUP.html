@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>يمن رياكت — معاينة حقيقية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAFAF8; --surface:#FFFFFF; --surface-2:#F1EEE8; --ink:#121214; --text-2:#6B6B70;
+  --border:rgba(0,0,0,.06); --on-accent:#fff; --accent:#C1592E; --accent-rgb:193,89,46;
+  --accent-teal:#0F8B8D; --accent-purple:#6B4EFF;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.04); --shadow-md:0 2px 8px rgba(0,0,0,.06);
+  --shadow-lg:0 4px 16px rgba(0,0,0,.08); --shadow-float:0 8px 24px rgba(0,0,0,.12);
+  --r-card:14px; --r-btn:10px;
+}
+:root[data-accent="teal"]{--accent:var(--accent-teal); --accent-rgb:15,139,141}
+:root[data-accent="purple"]{--accent:var(--accent-purple); --accent-rgb:107,78,255}
+:root[data-theme="dark"]{
+  --bg:#18140F; --surface:#221C16; --surface-2:#2B241C; --ink:#F3ECE2; --text-2:#A99E8E;
+  --border:rgba(255,255,255,.06); --on-accent:#18140F; --accent:#E0824B; --accent-rgb:224,130,75;
+  --accent-teal:#3FBFB9; --accent-purple:#9C8CFF;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.30); --shadow-md:0 2px 8px rgba(0,0,0,.38);
+  --shadow-lg:0 4px 16px rgba(0,0,0,.42); --shadow-float:0 8px 24px rgba(0,0,0,.50);
+}
+:root[data-theme="dark"][data-accent="teal"]{--accent:var(--accent-teal); --accent-rgb:63,191,185}
+:root[data-theme="dark"][data-accent="purple"]{--accent:var(--accent-purple); --accent-rgb:156,140,255}
+*{box-sizing:border-box;transition:background-color .15s,color .15s,border-color .15s,box-shadow .15s,transform .12s}
+html,body{margin:0;background:#e5e3de;font-family:'IBM Plex Sans Arabic',sans-serif;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"] body, [data-theme="dark"] body{background:#0e0c09}
+.ctrlbar{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--border);
+  padding:12px 20px;display:flex;align-items:center;gap:12px;color:var(--ink)}
+.seg{display:flex;background:var(--surface-2);border-radius:20px;padding:3px;gap:2px}
+.seg button{border:none;background:transparent;color:var(--text-2);font-family:inherit;font-size:11.5px;
+  padding:6px 12px;border-radius:16px;cursor:pointer;display:flex;align-items:center;gap:5px}
+.seg button.active{background:var(--surface);color:var(--ink);box-shadow:var(--shadow-sm)}
+.swatches{display:flex;gap:5px;margin-inline-start:auto}
+.swatch{width:18px;height:18px;border-radius:50%;border:2px solid transparent;cursor:pointer}
+.swatch.active{border-color:var(--ink)}
+.sw-amber{background:#C1592E}.sw-purple{background:#6B4EFF}.sw-teal{background:#0F8B8D}
+
+.stage{display:flex;justify-content:center;padding:30px 16px 60px}
+.frame{background:var(--bg);color:var(--ink);overflow:auto;transition:width .25s ease}
+.frame.desktop{width:1220px;max-width:100%;border-radius:14px;box-shadow:var(--shadow-lg);height:720px}
+.frame.mobile{width:390px;border-radius:36px;box-shadow:var(--shadow-lg);height:780px;border:8px solid var(--ink)}
+
+.mark{width:20px;height:20px;background:var(--ink);clip-path:polygon(0 0,100% 0,100% 78%,78% 100%,0 100%);position:relative;flex:0 0 auto}
+.mark::after{content:"";position:absolute;left:38%;top:32%;width:0;height:0;border-style:solid;
+  border-width:4px 0 4px 6px;border-color:transparent transparent transparent var(--bg)}
+
+.header-d{display:flex;align-items:center;gap:18px;padding:14px 26px;border-bottom:1px solid var(--border)}
+.header-d nav{display:flex;gap:20px;font-size:13px;color:var(--text-2)}
+.header-d .r{margin-inline-start:auto;display:flex;gap:14px;align-items:center;color:var(--text-2)}
+.header-m{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--border)}
+.avatar{width:24px;height:24px;border-radius:50%;background:var(--surface-2)}
+
+.masonry{column-count:4;column-gap:14px;padding:20px 26px}
+.frame.mobile .masonry{column-count:2;padding:14px}
+.rcard{width:100%;margin-bottom:14px;break-inside:avoid;background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--r-card);overflow:hidden;box-shadow:var(--shadow-sm);cursor:pointer}
+.rcard:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.rcard .m{position:relative;background:#8f8a80}
+.rcard .m img{width:100%;display:block;object-fit:cover}
+.rcard .dur{position:absolute;top:7px;right:7px;background:rgba(0,0,0,.65);color:#fff;font-family:'IBM Plex Mono',monospace;
+  font-size:10px;padding:2px 6px;border-radius:5px}
+.rcard .t{padding:8px 9px;font-size:12.5px;font-weight:500}
+.footer{text-align:center;font-size:11px;color:var(--text-2);padding:16px;border-top:1px solid var(--border)}
+
+.detail-body{padding:20px 26px;max-width:520px}
+.back{width:34px;height:34px;border-radius:50%;background:var(--surface);border:1px solid var(--border);
+  box-shadow:var(--shadow-sm);display:flex;align-items:center;justify-content:center;cursor:pointer;margin:14px 26px 0}
+.d-media{position:relative;background:#8f8a80;border-radius:var(--r-card);overflow:hidden;margin-bottom:14px;box-shadow:var(--shadow-sm)}
+.d-media img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.d-media .dur{position:absolute;top:9px;right:9px;background:rgba(0,0,0,.65);color:#fff;font-family:'IBM Plex Mono',monospace;
+  font-size:11px;padding:2px 7px;border-radius:6px}
+.title-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:10px}
+.title-row h3{font-size:19px;margin:0;flex:1}
+.icon-btn{width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:var(--surface);
+  display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow-sm)}
+.icon-btn.primary{background:var(--accent);color:var(--on-accent);border-color:transparent}
+.meta{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text-2);margin-bottom:12px}
+.chip{background:color-mix(in srgb, var(--accent-teal) 14%, var(--surface));color:var(--accent-teal);
+  border-radius:999px;padding:3px 10px;font-size:12px;font-weight:500}
+details.dual{border:1px solid var(--border);border-radius:10px;margin-bottom:14px;overflow:hidden}
+details.dual summary{padding:10px 12px;font-size:13px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+details.dual summary::-webkit-details-marker{display:none}
+details.dual summary::after{content:"▾"}
+details.dual[open] summary::after{content:"▴"}
+details.dual .dc{padding:0 12px 12px;font-size:12px;color:var(--text-2);line-height:1.6}
+.chips-row{display:flex;gap:8px;margin-bottom:16px}
+.grp{padding:6px 12px;background:var(--surface-2);border-radius:20px;font-size:11.5px}
+.section-lbl{font-size:12.5px;font-weight:700;margin:16px 0 8px}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.related-grid div{aspect-ratio:1/1;background:#8f8a80;border-radius:8px;overflow:hidden}
+.related-grid img{width:100%;height:100%;object-fit:cover}
+
+.collections-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:20px 26px}
+.frame.mobile .collections-grid{grid-template-columns:repeat(2,1fr);padding:14px}
+.col-card{aspect-ratio:1/1;border-radius:var(--r-card);overflow:hidden;position:relative;box-shadow:var(--shadow-sm)}
+.col-card img{width:100%;height:100%;object-fit:cover}
+.col-card .cap{position:absolute;bottom:0;right:0;left:0;background:linear-gradient(transparent,rgba(0,0,0,.65));
+  color:#fff;font-size:12.5px;font-weight:600;padding:8px 10px}
+
+.bottomnav{position:sticky;bottom:0;background:var(--surface);border-top:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-around;padding:10px 6px 14px;box-shadow:var(--shadow-float)}
+.bottomnav .tab{font-size:9.5px;color:var(--text-2);display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;background:none;border:none;font-family:inherit}
+.bottomnav .tab.active{color:var(--accent)}
+.bottomnav .center{width:42px;height:42px;border-radius:50%;background:var(--surface-2);color:var(--text-2);
+  display:flex;align-items:center;justify-content:center;margin-top:-20px;box-shadow:var(--shadow-md);position:relative;cursor:pointer}
+.lock-badge{position:absolute;bottom:-2px;left:-2px;width:14px;height:14px;border-radius:50%;background:var(--surface);
+  border:1px solid var(--border);display:flex;align-items:center;justify-content:center}
+
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);
+  padding:9px 16px;border-radius:20px;font-size:12px;z-index:80;opacity:0;transition:opacity .2s,transform .2s;box-shadow:var(--shadow-float)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+.seal-symbol{transition:opacity .24s, transform .24s}
+.seal-symbol.fading{opacity:0;transform:scale(.5)}
+.seal-mark{width:16px;height:16px;background:var(--text-2);clip-path:polygon(0 0,100% 0,100% 78%,78% 100%,0 100%)}
+.icon-btn.spin .seal-mark{animation:sealspin .32s cubic-bezier(.34,1.56,.64,1) forwards;background:var(--accent)}
+@keyframes sealspin{0%{transform:rotate(0) scale(1)}50%{transform:rotate(190deg) scale(1.3)}100%{transform:rotate(360deg) scale(1)}}
+.icon-btn.checked{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="ctrlbar">
+  <span class="mark"></span>
+  <div class="seg" id="deviceSeg">
+    <button class="active" onclick="setDevice('desktop',this)">🖥 Desktop</button>
+    <button onclick="setDevice('mobile',this)">📱 Mobile</button>
+  </div>
+  <div class="seg" id="themeSeg">
+    <button class="active" onclick="setTheme('light',this)">نهاري</button>
+    <button onclick="setTheme('dark',this)">ليلي</button>
+    <button onclick="setTheme('auto',this)">تلقائي</button>
+  </div>
+  <div class="swatches">
+    <button class="swatch sw-amber active" onclick="setAccent('amber',this)"></button>
+    <button class="swatch sw-purple" onclick="setAccent('purple',this)"></button>
+    <button class="swatch sw-teal" onclick="setAccent('teal',this)"></button>
+  </div>
+</div>
+
+<div class="stage">
+  <div class="frame desktop" id="frame">
+    <div id="frameContent"></div>
+  </div>
+</div>
+<div class="toast" id="toastEl">تم الحفظ</div>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="ic-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="ic-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m3 13 9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="ic-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4V3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c1.5-4 5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="ic-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m20 20-4.3-4.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="ic-back" viewBox="0 0 24 24"><path d="M14 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 19h16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="ic-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6" fill="currentColor"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/><circle cx="19" cy="12" r="1.6" fill="currentColor"/></symbol>
+  <symbol id="ic-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+</svg>
+
+<script>
+const REACTIONS = [
+  {id:1, ratio:'4/5', dur:'3s', title:'يا حليل قلبي 😩', char:'مصطفى المومري', desc:'لما حد يقولك بكرة إن شاء الله', dual:true, groups:['مواقف العائلة']},
+  {id:2, ratio:'1/1', dur:'', title:'معك حق', char:'هديل مانع', desc:'لما القرار مو بيدك', dual:false, groups:[]},
+  {id:3, ratio:'16/9', dur:'6s', title:'كفاية!', char:null, desc:'أول يوم دوام', dual:true, groups:['شغل']},
+  {id:4, ratio:'4/5', dur:'', title:'اقرب اقرب لو انت رجال', char:'مصطفى المومري', desc:null, dual:false, groups:['تحدي']},
+  {id:5, ratio:'1/1', dur:'4s', title:'طيب وبعدين؟', char:'هديل مانع', desc:'لما الخطة تتغير فجأة', dual:false, groups:[]},
+  {id:6, ratio:'4/5', dur:'2s', title:'يا حليل قلبي 😩', char:null, desc:null, dual:false, groups:[]},
+  {id:7, ratio:'16/9', dur:'', title:'معك حق', char:'مصطفى المومري', desc:'أول يوم دوام', dual:true, groups:['ضحك']},
+  {id:8, ratio:'1/1', dur:'5s', title:'كفاية!', char:'هديل مانع', desc:null, dual:false, groups:['رفض']},
+];
+const COLLECTIONS = [
+  {id:1,name:'مواقف العائلة'},{id:2,name:'تسويف'},{id:3,name:'شغل'},{id:4,name:'ضحك'},{id:5,name:'رفض'},{id:6,name:'تحدي'}
+];
+let device='desktop', page='home', activeTab='home';
+
+function iconBtn(id,size){return `<svg width="${size}" height="${size}"><use href="#ic-${id}"/></svg>`}
+
+function headerDesktop(){
+  return `<div class="header-d"><span class="mark"></span><b style="font-size:14px">يمن رياكت</b>
+    <nav><span style="color:var(--ink);font-weight:600">المكتبة</span><span onclick="go('collections')" style="cursor:pointer">المجموعات</span><span>المحفوظات</span></nav>
+    <div class="r">${iconBtn('search',18)}<span class="avatar"></span></div></div>`;
+}
+function headerMobile(){
+  return `<div class="header-m"><span class="mark"></span><span style="font-size:13px;font-weight:600;flex:1">يمن رياكت</span>
+    ${iconBtn('search',18)}<span class="avatar"></span></div>`;
+}
+function bottomNav(){
+  const tabs=[['home','grid','المكتبة'],['collections','layers','المجموعات']];
+  let left = `<button class="tab ${activeTab==='home'?'active':''}" onclick="go('home')">${iconBtn('grid',20)}<span>المكتبة</span></button>
+    <button class="tab ${activeTab==='collections'?'active':''}" onclick="go('collections')">${iconBtn('layers',20)}<span>المجموعات</span></button>`;
+  let right = `<button class="tab" onclick="fireToast('لا محفوظات بعد')">${iconBtn('bookmark',20)}<span>المحفوظات</span></button>
+    <button class="tab" onclick="fireToast('تسجيل الدخول قريبًا')">${iconBtn('user',20)}<span>الحساب</span></button>`;
+  return `<div class="bottomnav">${left}
+    <div class="center" onclick="fireToast('الرفع مقفل قبل الإطلاق')">${iconBtn('plus',20)}<span class="lock-badge">${iconBtn('lock',9)}</span></div>
+    ${right}</div>`;
+}
+function cardHtml(r){
+  return `<div class="rcard" onclick="go('detail',${r.id})">
+    <div class="m" style="aspect-ratio:${r.ratio}"><img src="https://picsum.photos/seed/yr${r.id}/300/380">${r.dur?`<span class="dur">${r.dur}</span>`:''}</div>
+    <div class="t">${r.title}</div></div>`;
+}
+function renderHome(){
+  return headerCurrent()+`<div class="masonry">${REACTIONS.map(cardHtml).join('')}</div>
+    <div class="footer">يمن رياكت © 2026 — خذها. حطها. يمنية.</div>`+navCurrent();
+}
+function renderCollections(){
+  return headerCurrent()+`<div style="padding:18px 26px 0"><h2 style="font-size:17px;margin:0 0 4px">المجموعات</h2></div>
+    <div class="collections-grid">${COLLECTIONS.map(c=>`<div class="col-card"><img src="https://picsum.photos/seed/col${c.id}/300/300"><div class="cap">${c.name}</div></div>`).join('')}</div>`+navCurrent();
+}
+function renderDetail(id){
+  const r = REACTIONS.find(x=>x.id===id) || REACTIONS[0];
+  const metaParts=[]; if(r.char) metaParts.push(`<span class="chip">${r.char}</span>`); if(r.desc) metaParts.push(`<span>${r.desc}</span>`);
+  const meta = metaParts.length?`<div class="meta">${metaParts.join('<span>—</span>')}</div>`:'';
+  const dual = r.dual?`<details class="dual"><summary>الوصف الثنائي</summary><div class="dc">الموقف: ${r.desc||r.title}.<br>الرياكشن: ${r.title}.</div></details>`:'';
+  const groups = r.groups.length?`<div><div class="section-lbl">المجموعات</div><div class="chips-row">${r.groups.map(g=>`<span class="grp">${g}</span>`).join('')}</div></div>`:'';
+  const related = REACTIONS.filter(x=>x.id!==r.id).slice(0,3);
+  return headerCurrent()+`<div class="back" onclick="go('home')">${iconBtn('back',16)}</div>
+    <div class="detail-body">
+      <div class="d-media"><img src="https://picsum.photos/seed/yr${r.id}/420/525">${r.dur?`<span class="dur">${r.dur}</span>`:''}</div>
+      <div class="title-row"><h3>${r.title}</h3><div style="display:flex;gap:6px">
+        <button class="icon-btn primary">${iconBtn('download',15)}</button>
+        <button class="icon-btn" id="sealBtn" onclick="runSeal(this)"><span class="seal-symbol" id="sealSym">♡</span></button>
+        <button class="icon-btn">${iconBtn('more',15)}</button></div></div>
+      ${meta}${dual}${groups}
+      <div class="section-lbl">رياكشنات ذات صلة</div>
+      <div class="related-grid">${related.map(x=>`<div onclick="go('detail',${x.id})"><img src="https://picsum.photos/seed/yr${x.id}/200/200"></div>`).join('')}</div>
+    </div>`+navCurrent();
+}
+function headerCurrent(){ return device==='desktop'? headerDesktop() : headerMobile(); }
+function navCurrent(){ return device==='mobile' ? bottomNav() : ''; }
+function go(p, id){ page=p; if(p!=='detail') activeTab=p; render(); }
+function render(){
+  const c = document.getElementById('frameContent');
+  c.innerHTML = page==='home'?renderHome(): page==='collections'?renderCollections(): renderDetail(window._detailId||1);
+}
+const _go = go;
+go = function(p,id){ if(p==='detail') window._detailId=id; _go(p,id); };
+
+function setDevice(d, el){
+  device=d;
+  document.getElementById('frame').className = 'frame '+d;
+  document.querySelectorAll('#deviceSeg button').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active'); render();
+}
+function setTheme(t, el){
+  if(t==='auto') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.setAttribute('data-theme', t);
+  document.querySelectorAll('#themeSeg button').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+}
+function setAccent(a, el){
+  document.documentElement.setAttribute('data-accent', a);
+  document.querySelectorAll('.swatch').forEach(s=>s.classList.remove('active'));
+  el.classList.add('active');
+}
+let toastT;
+function fireToast(msg){
+  const t=document.getElementById('toastEl'); t.textContent=msg||'تم الحفظ'; t.classList.add('show');
+  clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'),3000);
+}
+let sealing=false;
+function runSeal(btn){
+  if(sealing) return; sealing=true;
+  const sym=document.getElementById('sealSym');
+  sym.classList.add('fading');
+  setTimeout(()=>{
+    sym.innerHTML='<span class="seal-mark"></span>'; sym.classList.remove('fading'); btn.classList.add('spin');
+    setTimeout(()=>{
+      btn.classList.remove('spin'); sym.classList.add('fading');
+      setTimeout(()=>{
+        sym.innerHTML='✓'; sym.classList.remove('fading'); btn.classList.add('checked'); fireToast('تم الحفظ');
+        setTimeout(()=>{
+          sym.classList.add('fading');
+          setTimeout(()=>{ sym.innerHTML='♡'; sym.classList.remove('fading'); btn.classList.remove('checked'); sealing=false; }, 180);
+        }, 1000);
+      }, 180);
+    }, 320);
+  }, 240);
+}
+render();
+</script>
+</body>
+</html>
