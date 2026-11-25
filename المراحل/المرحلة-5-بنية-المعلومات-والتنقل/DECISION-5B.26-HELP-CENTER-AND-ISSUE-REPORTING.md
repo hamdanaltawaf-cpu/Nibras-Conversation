@@ -1,79 +1,84 @@
-# DECISION-5B.26 — Help Center and Issue Reporting
+# DECISION-5B.26 — مركز المساعدة والإبلاغ عن المشكلات
 
-**Status:** ACCEPTED — founder authorized proceeding on 2026-10-28  
-**Scope:** Product policy and launch requirements for `/help` and issue reporting. This decision does not imply that any UI, reporting endpoint, moderation queue, or operational workflow has been implemented or tested.
+**Status:** ACCEPTED — فوّض المؤسس بالمضي في هذا القرار بتاريخ 2026-10-28.  
+**Scope:** سياسة المنتج ومتطلبات الإطلاق لمساري /help والإبلاغ عن المشكلات. ولا يعني هذا القرار أن أي واجهة أو نقطة استقبال للبلاغات أو قائمة إشراف أو سير عمل تشغيلي قد نُفّذ أو اختُبر.
 
-## 1. Help center purpose and structure
+## 1. الغرض من مركز المساعدة وبنيته
 
-The approved `/help` direction is a concise, searchable-or-scannable help center (search within Help is optional and must not be added as a fake control). Organize its initial content around:
+الاتجاه المعتمد لمسار /help هو مركز مساعدة موجز، يمكن البحث فيه أو تصفحه بسهولة. البحث داخل مركز المساعدة اختياري، ويجب ألا يُضاف كعنصر تحكم شكلي لا يعمل. نظّم المحتوى الأولي حول الموضوعات التالية:
 
-1. **Getting started:** what YemReact is and how to browse the curated Yemeni reaction library.
-2. **Finding reactions:** search, category filtering, and opening a reaction's shareable detail page.
-3. **Saving reactions:** explain guest-local saves versus account-associated saves, including the approved additive guest-save reconciliation after successful sign-in. Do not imply that guest saves are synchronized to an account before confirmation.
-4. **Collections and sharing:** explain only the real, released behavior; do not promise features that are merely planned.
-5. **Submitting a reaction:** explain the submission path, Google sign-in requirement at submission, and human review. Never imply that submission guarantees acceptance or immediate publication.
-6. **Account and settings:** explain approved sign-in, Saved, My Contributions, and settings behavior, while clearly marking providers or controls that are still being prepared.
-7. **Reporting a problem:** explain how to report a technical issue or a problem with a reaction.
+1. **البدء:** ما هو YemReact، وكيفية تصفح مكتبة الرياكشنات اليمنية المنتقاة.
+2. **العثور على الرياكشنات:** البحث، والتصفية بحسب الفئات، وفتح صفحة تفاصيل الرياكشن القابلة للمشاركة.
+3. **حفظ الرياكشنات:** شرح الفرق بين محفوظات الزائر المحلية والمحفوظات المرتبطة بالحساب، بما في ذلك الدمج الإضافي المعتمد لمحفوظات الزائر بعد نجاح تسجيل الدخول. لا توحِ بأن محفوظات الزائر قد تزامنت مع الحساب قبل تأكيد نجاح المزامنة.
+4. **المجموعات والمشاركة:** اشرح السلوك الفعلي المتاح والمُطلق فقط؛ ولا تعد بميزات لا تزال مجرد خطط.
+5. **إرسال رياكشن:** اشرح مسار الإرسال، واشتراط تسجيل الدخول عبر Google عند الإرسال، ومرور كل مساهمة بمراجعة بشرية. لا توحِ بأن الإرسال يضمن القبول أو النشر الفوري.
+6. **الحساب والإعدادات:** اشرح سلوك تسجيل الدخول والمحفوظات ومساهماتي والإعدادات المعتمد، مع توضيح مقدمي الخدمة أو عناصر التحكم التي لا تزال قيد الإعداد.
+7. **الإبلاغ عن مشكلة:** اشرح كيفية الإبلاغ عن مشكلة تقنية أو مشكلة في أحد الرياكشنات.
 
-FAQ copy must reflect accepted product decisions and verified current behavior. If implementation status is unknown, phrase the answer as guidance about the intended product only when clearly labeled, or leave that answer out until verified. Do not claim a feature exists solely because a decision document specifies it.
+يجب أن يعكس نص الأسئلة الشائعة قرارات المنتج المقبولة والسلوك الحالي الذي تم التحقق منه. وإذا كانت حالة التنفيذ مجهولة، فإما أن تُصاغ الإجابة بوصفها إرشادًا للسلوك المقصود مع وسمها بوضوح، أو تُحذف إلى أن يتم التحقق. لا تدّعِ وجود ميزة لمجرد أن وثيقة قرار نصّت عليها.
 
-## 2. Issue-reporting entry points and scope
+## 2. نقاط بدء الإبلاغ عن المشكلات ونطاقه
 
-- The Help center is the central explanatory entry point for reporting a problem.
-- Where the existing reaction overflow menu provides **إبلاغ**, it should open the same reporting workflow with the relevant reaction code/URL prefilled. Do not create a second, inconsistent reporting process.
-- Do not invent a separate public route for reports as part of this decision; route names beyond the already approved routes remain outside scope.
-- Reports are operational messages for review, not public posts, comments, ratings, or social interactions.
+- مركز المساعدة هو المدخل التفسيري الرئيسي للإبلاغ عن مشكلة.
+- عندما تتضمن قائمة الخيارات الإضافية في الرياكشن الحالية خيار **إبلاغ**، ينبغي أن يفتح مسار الإبلاغ نفسه، مع تعبئة رمز الرياكشن/رابطه مسبقًا. لا تنشئ مسار إبلاغ ثانيًا ومختلفًا.
+- لا تخترع مسارًا عامًا منفصلًا للبلاغات بموجب هذا القرار؛ فأسماء المسارات التي تتجاوز المسارات المعتمدة مسبقًا تبقى خارج النطاق.
+- البلاغات رسائل تشغيلية للمراجعة، وليست منشورات عامة أو تعليقات أو تقييمات أو تفاعلات اجتماعية.
 
-## 3. Report categories and minimum data
+## 3. فئات البلاغ والحد الأدنى من البيانات
 
-Provide a required report category, with these initial options:
+يجب طلب اختيار فئة البلاغ، مع الخيارات الأولية التالية:
+
 - مشكلة تقنية في الموقع
 - مشكلة في الرياكشن (مثل رابط معطّل أو محتوى لا يعمل)
 - ملاحظة تتعلق بالحقوق أو الإذن باستخدام المحتوى
 - محتوى مخالف أو يحتاج إلى مراجعة
 - أخرى
 
-Required data:
-- Category.
-- A concise description of the issue.
-- The affected reaction code or internal page URL when relevant; prefill it when the report starts from a reaction page.
+**البيانات المطلوبة:**
 
-Optional data:
-- Contact method/address, only if the reporter wants a reply.
-- Do not require account sign-in solely to report an issue.
-- Do not request passwords, authentication codes, sensitive personal information, or unrelated personal details.
-- Do not support file attachments in the first release unless a separate security and privacy review explicitly approves them.
+- فئة البلاغ.
+- وصف موجز للمشكلة.
+- رمز الرياكشن المتأثر أو رابط الصفحة الداخلية عند الحاجة؛ ويُعبّأ مسبقًا إذا بدأ البلاغ من صفحة رياكشن.
 
-## 4. Submission feedback and reliability
+**البيانات الاختيارية:**
 
-- Show a success confirmation only after the server confirms the report was accepted and persisted.
-- If submission fails, clearly say the report was not sent and offer a safe retry where possible; do not silently discard the report or falsely show success.
-- Prevent accidental duplicate submissions where practical, and apply basic server-side abuse controls such as rate limiting and input validation.
-- Do not promise a response, resolution, or response time unless an operational support process has actually been established.
-- Do not expose internal moderation notes, triage details, or other reporters' information to the reporter or the public.
+- وسيلة/عنوان تواصل، فقط إذا رغب المبلّغ في تلقي رد.
+- لا تشترط تسجيل الدخول إلى الحساب لمجرد الإبلاغ عن مشكلة.
+- لا تطلب كلمات مرور أو رموز مصادقة أو معلومات شخصية حساسة أو تفاصيل شخصية لا صلة لها بالبلاغ.
+- لا تدعم إرفاق الملفات في الإصدار الأول ما لم تعتمد مراجعة منفصلة للأمان والخصوصية ذلك صراحةً.
 
-## 5. Administration, privacy, and handling
+## 4. تأكيد الإرسال وموثوقيته
 
-- Reports are visible only to authorized personnel who need them to review and resolve the issue.
-- Separate the reporter-facing confirmation/communication from internal notes.
-- Collect only the data necessary to understand and handle the report. Optional contact data is used only for the stated follow-up purpose.
-- Establish appropriate retention and deletion handling before production use; this decision does not invent a retention duration or substitute for a real privacy policy.
-- Rights-related reports must be routed for human review. Do not automatically remove or publish content solely because a report was submitted.
+- لا تعرض تأكيد النجاح إلا بعد أن يؤكد الخادم قبول البلاغ وحفظه.
+- إذا فشل الإرسال، وضّح بجلاء أن البلاغ لم يُرسل، وأتح إعادة المحاولة الآمنة حيثما أمكن؛ ولا تتخلص من البلاغ بصمت ولا تعرض نجاحًا غير حقيقي.
+- امنع الإرسال المكرر غير المقصود حيثما كان ذلك عمليًا، وطبّق ضوابط أساسية لمنع إساءة الاستخدام من جهة الخادم، مثل تحديد معدل الطلبات والتحقق من المدخلات.
+- لا تعد برد أو حل أو مدة استجابة ما لم تكن هناك عملية دعم تشغيلية قائمة بالفعل.
+- لا تكشف للمبلّغ أو للعامة ملاحظات الإشراف الداخلية أو تفاصيل الفرز والمعالجة أو معلومات المبلّغين الآخرين.
 
-## 6. First-release gate
+## 5. الإدارة والخصوصية ومعالجة البلاغات
 
-The initial Help center may publish its static, accurate FAQ content independently. However:
-- A report form or **إبلاغ** action must not be presented as operational unless the end-to-end submission path, persistence, authorized review access, failure handling, and basic abuse controls work.
-- If reporting is not ready, do not ship a fake form, a dead button, or a success message that is not backed by server confirmation. Keep the explanatory content honest about the available reporting channel; provide an alternative contact link only if a real, approved destination exists.
-- Before marking reporting launch-ready, verify it technically and review the privacy/security implications. Documentation alone is not verification.
+- لا تظهر البلاغات إلا للأشخاص المخولين الذين يحتاجون إلى الاطلاع عليها لمراجعتها وحل المشكلة.
+- افصل بين تأكيد/تواصل المبلّغ الموجّه إليه وبين الملاحظات الداخلية.
+- اجمع البيانات الضرورية فقط لفهم البلاغ ومعالجته. ولا تُستخدم بيانات التواصل الاختيارية إلا للغرض المعلن، وهو المتابعة.
+- ضع سياسة مناسبة للاحتفاظ بالبيانات وحذفها قبل الاستخدام الإنتاجي؛ فهذا القرار لا يخترع مدة للاحتفاظ ولا يحل محل سياسة خصوصية فعلية.
+- يجب توجيه البلاغات المتعلقة بالحقوق إلى مراجعة بشرية. ولا تحذف المحتوى أو تنشره تلقائيًا لمجرد تقديم بلاغ.
 
-## 7. Boundaries and reconciliation
+## 6. بوابة الإصدار الأول
 
-- This decision defines the Help content direction and issue-reporting product requirements; exact FAQ wording may be refined without changing the policy.
-- The previously accepted `/help` route and help-center direction in DECISION-5B.19 remain in force.
-- Existing reaction overflow-menu direction that includes **نسخ الرابط** and **إبلاغ** is retained; this decision defines the intended reporting destination/workflow, not proof that it currently works.
-- DECISION-5B.22 remains in force for contributor data visibility and internal moderation notes. This decision does not make reports public or expand contributor visibility.
-- Stage 5 remains OPEN. Do not create Stage 5.3 or start Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and OPEN. SEC-06, server-side upload enforcement, route behavior, tests, builds, runtime, and end-to-end reporting remain unverified unless separately tested.
+يمكن نشر المحتوى الثابت والدقيق للأسئلة الشائعة في مركز المساعدة بشكل مستقل. لكن:
 
-## Current status reconciliation — 2026-10-30
-Any statement above that Stage 5 remains open or that OPEN-Q-08/OPEN-Q-09 remain open reflects the state when this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY**; OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. The reporting workflow and its persistence, access controls, and end-to-end behavior remain unverified/deferred; do not claim reporting is operational. This addendum does not authorize implementation.
+- يجب ألا يُعرض نموذج البلاغ أو إجراء **إبلاغ** بوصفه فعالًا تشغيليًا ما لم يعمل مسار الإرسال من البداية إلى النهاية، بما يشمل الحفظ، وإتاحة المراجعة للمخولين، ومعالجة الإخفاقات، وضوابط منع إساءة الاستخدام الأساسية.
+- إذا لم يكن الإبلاغ جاهزًا، فلا تنشر نموذجًا وهميًا أو زرًا لا يعمل أو رسالة نجاح لا تستند إلى تأكيد من الخادم. اجعل المحتوى التفسيري صادقًا بشأن قناة الإبلاغ المتاحة؛ ولا توفر رابط تواصل بديلًا إلا إذا كان هناك وجهة حقيقية ومعتمدة.
+- قبل وصف الإبلاغ بأنه جاهز للإطلاق، يجب التحقق منه تقنيًا ومراجعة آثاره على الخصوصية والأمان. التوثيق وحده ليس تحققًا.
+
+## 7. الحدود والمواءمة مع القرارات الأخرى
+
+- يحدد هذا القرار اتجاه محتوى مركز المساعدة ومتطلبات المنتج للإبلاغ عن المشكلات؛ ويمكن تحسين الصياغة الدقيقة للأسئلة الشائعة دون تغيير السياسة.
+- يظل اتجاه مركز المساعدة ومسار /help المقبول سابقًا في DECISION-5B.19 ساريًا.
+- يُحتفظ بالاتجاه القائم لقائمة الخيارات الإضافية في الرياكشن، والذي يتضمن **نسخ الرابط** و**إبلاغ**؛ ويحدد هذا القرار وجهة الإبلاغ وسير العمل المقصود، ولا يثبت أن ذلك يعمل حاليًا.
+- يظل DECISION-5B.22 ساريًا فيما يتعلق بظهور بيانات المساهم وملاحظات الإشراف الداخلية. ولا يجعل هذا القرار البلاغات عامة، ولا يوسع نطاق المعلومات الظاهرة للمساهم.
+- في وقت تسجيل هذا القرار كانت Stage 5 بحالة OPEN، وكان OPEN-Q-08 وOPEN-Q-09 منفصلين ومفتوحين OPEN. وتظل SEC-06 وإنفاذ الرفع من جهة الخادم وسلوك المسارات والاختبارات والبناء وبيئة التشغيل والإبلاغ من البداية إلى النهاية غير متحققة، ما لم تخضع لاختبار منفصل.
+
+## مواءمة الحالة الحالية — 2026-10-30
+
+أي عبارة أعلاه تقول إن Stage 5 ما زالت مفتوحة، أو إن OPEN-Q-08 وOPEN-Q-09 ما زالا مفتوحين، تصف الحالة وقت تسجيل هذا القرار. الحالة الحالية: Stage 5 **CLOSED FOR DOCUMENTATION ONLY**؛ وOPEN-Q-08 وOPEN-Q-09 كل منهما **CLOSED FOR DOCUMENTATION ONLY** في وثيقته المستقلة. ويظل سير الإبلاغ وحفظه وضوابط الوصول إليه وسلوكه من البداية إلى النهاية غير متحقق منها تقنيًا/مؤجلة؛ فلا تدّعِ أن الإبلاغ يعمل تشغيليًا. ولا يمنح هذا الملحق إذنًا بالتنفيذ.
