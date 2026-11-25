@@ -1,10 +1,10 @@
-## DECISION-I08 — Light/Dark + Soft Depth — ACCEPTED — Stage 4 — PD-I08
+## DECISION-I08 — الوضع الفاتح/الداكن والعمق الناعم — ACCEPTED — Stage 4 — PD-I08
 
-**Date:** 2026-09-25
-**Stage:** Stage 4 — Experience & Identity — Identity Re-Foundation
-**Decided by:** حمدان (Founder)
-**Status:** ACCEPTED — CLOSED
-**Topic:** PD-I08 — Light / Dark System
+**التاريخ:** 2026-09-25
+**المرحلة:** Stage 4 — Experience & Identity — Identity Re-Foundation
+**صاحب القرار:** حمدان (Founder)
+**الحالة:** ACCEPTED — CLOSED
+**الموضوع:** PD-I08 — Light / Dark System
 
 ── القرار ──
 
@@ -55,11 +55,11 @@
 - 74→75 facts — PD-I08 CLOSED
 - يفتح: PD-I09 Motion + Settings Modal Topic جديد
 
-**Stage:** Stage 4 — PD-I08 — CLOSED — DECISION-I08 ACCEPTED 2026-09-25 — Light/Dark + Soft Depth — NEXT PD-I09 + Settings Modal
+**المرحلة:** Stage 4 — PD-I08 — CLOSED — DECISION-I08 ACCEPTED 2026-09-25 — الوضع الفاتح/الداكن والعمق الناعم — NEXT PD-I09 + Settings Modal
 
 ---
 
-## Topic 18 — PD-I08 — CLOSED — DECISION-I08 ACCEPTED — Stage 4 — Light/Dark + Soft Depth
+## الموضوع 18 — PD-I08 — CLOSED — DECISION-I08 ACCEPTED — Stage 4 — الوضع الفاتح/الداكن والعمق الناعم
 
 - Color Tokens: Light `#FAFAF8` / `#FFFFFF` / `#121214` — Dark `#18140F` / `#221C16` / `#F3ECE2` — Dark دافئ شخصية Qishr
 - Soft Depth R2: sm .04 + md .06 + lg .08 + float .12 + Dark .30-.50 معايرة + Border .04/.06 + Active ring+4% surface+shadow-lg + Icon 36px دائرة .03 + Nested Depth كل طبقة بظلها
