@@ -41,13 +41,13 @@
 **Status:** ACCEPTED — resolution explicitly delegated by Hamdan in the current roadmap workflow.  
 **Scope:** Product/UI policy only; no implementation or test claim.
 
-- **Signup invitations:** optional and non-blocking; compact inline/banner presentation, explicit dismiss and continue-as-guest actions, no repetitive prompts in the same browser context. Login via Google only. Guest saves remain local until server-confirmed reconciliation per DECISION-5B.24. Approved copy and contextual account-only prompt are recorded in `stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
+- **Signup invitations:** optional and non-blocking; compact inline/banner presentation, explicit dismiss and continue-as-guest actions, no repetitive prompts in the same browser context. Login via Google only. Guest saves remain local until server-confirmed reconciliation per DECISION-5B.24. Approved copy and contextual account-only prompt are recorded in `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 - **Header visual reference:** locked YemReact Brand v1.0 + Qussasa Mark + accepted Stage 5-B responsive navigation. Pinterest is inspiration for the masonry content grid only, not the header/navigation design.
 - **Collections:** admin-curated, explicitly ordered published collection list; compact horizontal strip on the Library before the reaction grid; admin-selected cover or deterministic reaction thumbnail fallback; title and optional description; actual clip count may be shown per DECISION-5B.23; no follower/engagement counts. Signed-in followed collections appear privately in a labelled section at the top of `/collections`; no new route or Account tab.
 - **Help:** initial Arabic copy and content boundaries are defined in DECISION-5B.27. Help text must not claim unverified behavior; reporting must satisfy DECISION-5B.26 before being presented as operational.
 - **Governance:** DECISION-5B.19–5B.28 remain in force. Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** as recorded on 2026-10-29; this does not verify implementation. No Stage 5.3 or Stage 6 is created or started. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only. SEC-06, app behavior, permissions, reporting, tests, build, and runtime remain unverified.
 
-Source: `stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
+Source: `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 
 ## UPDATE 2026-10-29 — DECISION-5B.28 — Route Inventory Boundaries — ACCEPTED
 
@@ -58,15 +58,15 @@ Source: `stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 - HTTP status, SEO/crawl behavior, actual route tree, permissions, and rendering remain unverified.
 - Stage 5 is CLOSED FOR DOCUMENTATION ONLY per the 2026-10-29 closeout record. This decision is documentation/product scope only; no Stage 5.3, Stage 6, app code, database, tests, or build.
 
-Source: `stage-5-ia-navigation/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
+Source: `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
 
 ## UPDATE 2026-10-29 — Stage 5 Documentation-Only Closure
 
 - Stage 5 is closed for documentation only after the cross-reference review and Hamdan's explicit direction.
-- The page/flow inventory, route boundaries, current decisions, deferred/cancelled register, and closeout checklist are recorded in the roadmap and `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`.
+- The page/flow inventory, route boundaries, current decisions, deferred/cancelled register, and closeout checklist are recorded in the roadmap and `حوكمة-المراحل/سجل-إغلاق-المرحلة-5-توثيقياً.md`.
 - This does not prove implementation, tests, build, runtime, security, or release readiness. SEC-06 and technical gates remain unverified. No Stage 5.3 or Stage 6 is created.
 
-Source: `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`.
+Source: `حوكمة-المراحل/سجل-إغلاق-المرحلة-5-توثيقياً.md`.
 
 ---
 
@@ -624,7 +624,7 @@ Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage
 
 ## CURRENT GOVERNANCE STATUS — 2026-10-30 — Documentation / Execution Boundary
 
-- **Stage 5 documentation:** CLOSED FOR DOCUMENTATION ONLY, per `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md` (2026-10-29), cross-checked on 2026-10-30.
+- **Stage 5 documentation:** CLOSED FOR DOCUMENTATION ONLY, per `حوكمة-المراحل/سجل-إغلاق-المرحلة-5-توثيقياً.md` (2026-10-29), cross-checked on 2026-10-30.
 - **Implementation:** NOT AUTHORIZED by the documentation closeout. No implementation, code changes, database changes, technical audit, test run, build, deployment, or runtime verification is claimed by these records.
 - **Still UNVERIFIED/DEFERRED:** SEC-06 and server-side upload validation; actual route tree and redirects; safe `returnTo` handling; guest-save merge and account isolation; admin/contributor permission enforcement; report persistence and end-to-end workflow; speech extraction technology/accuracy/cost/privacy; keyboard/focus accessibility; tests, build, runtime, and release readiness.
 - **Authorization boundary:** any technical work requires a separate explicit task from Hamdan after the documentation set is complete. An unresolved technical gate is not permission to begin implementation.
@@ -636,7 +636,7 @@ Stage 5 remains OPEN. These decisions do not create Stage 5.3 or authorize Stage
 - Empty states are shown only after successful loads; read failures remain distinct. Optional related/discovery sections may be omitted when successfully empty, but failures must not be silently treated as empty.
 - DECISION-5B.25 remains authoritative for Saved and My Contributions. Flow-specific upload/authentication/media/save/report errors remain deferred or governed by their own decisions.
 - This is product/content documentation only. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; implementation and technical behavior remain UNVERIFIED.
-- Source: `stage-5-ia-navigation/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
+- Source: `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
 
 ---
 
