@@ -1,10 +1,10 @@
-## DECISION-I06 — Reaction Card & Detail Page — ACCEPTED — Stage 4 — PD-I06
+## DECISION-I06 — بطاقة الرياكشن وصفحة التفاصيل — ACCEPTED — Stage 4 — PD-I06
 
-**Date:** 2026-09-24
-**Stage:** Stage 4 — Experience & Identity — Identity Re-Foundation
-**Decided by:** حمدان (Founder)
-**Status:** ACCEPTED
-**Topic:** PD-I06 — Reaction Card
+**التاريخ:** 2026-09-24
+**المرحلة:** Stage 4 — Experience & Identity — Identity Re-Foundation
+**صاحب القرار:** حمدان (Founder)
+**الحالة:** ACCEPTED
+**الموضوع:** PD-I06 — Reaction Card
 
 ── القرار: البطاقة (Card) — النسخة النهائية ──
 
@@ -41,7 +41,7 @@
 
 ── الأثر ──
 
-- P-39 NEW — Reaction Card & Detail Page Spec — البطاقة + صفحة التفاصيل + الأزرار
+- P-39 NEW — بطاقة الرياكشن وصفحة التفاصيل Spec — البطاقة + صفحة التفاصيل + الأزرار
 - P-40 NEW — رياكشنات ذات صلة + رياكشنات عشوائية محدودة 10-20 — P-11 UPDATED
 - P-23 UPDATED — CORRECTED — توزيع الأزرار: رئيسية 3 + ⋮ عنصران فقط نسخ الرابط + إبلاغ — لا تعديل Admin
 
@@ -90,11 +90,11 @@
 - 71→73 facts — PD-I06 CLOSED — يفتح PD-I04 Typography + PD-I07 chips الشخصية + PD-I08 Light/Dark + PD-I09 Motion + Settings Modal Topic جديد
 - التفاصيل البصرية الدقيقة (الخطوط PD-I04 + الحركة PD-I09 + ألوان P-37) تُحسم في مواضيعها
 
-**Stage:** Stage 4 — PD-I06 — CLOSED — DECISION-I06 ACCEPTED 2026-09-24 — Reaction Card & Detail Page — NEXT PD-I04 + PD-I07 + PD-I08 + PD-I09 + Settings Modal
+**المرحلة:** Stage 4 — PD-I06 — CLOSED — DECISION-I06 ACCEPTED 2026-09-24 — بطاقة الرياكشن وصفحة التفاصيل — NEXT PD-I04 + PD-I07 + PD-I08 + PD-I09 + Settings Modal
 
 ---
 
-## Topic 15 — PD-I06 — CLOSED — DECISION-I06 ACCEPTED — Stage 4 — Reaction Card
+## الموضوع 15 — PD-I06 — CLOSED — DECISION-I06 ACCEPTED — Stage 4 — Reaction Card
 
 - البطاقة: وسائط + ✅ Duration أعلى يمين الوسائط فيديو فقط + العنوان + ⋮ — بدون Watermark
 - صفحة التفاصيل: 8 كتل — رجوع / وسائط ❌ بلا Duration / **عنوان H1 + أزرار على نفس السطر جهة اليسار في RTL** / شخصية+وصف أساسي يُحذف إذا فارغ / وصف ثنائي مطوي لا زر ▼ إن لم يوجد / مجموعات لا قسم إن لم توجد / ذات صلة / عشوائية محدودة 10-20 — [سياسة Empty States السابقة مؤرشفة؛ راجع قسم DECISION-I06 في ملف الأرشيف.]
