@@ -1,40 +1,41 @@
-# DECISION-5B.24 — Guest Saves Reconciliation at Sign-in
+# DECISION-5B.24 — التوفيق بين محفوظات الزائر والمحفوظات بعد تسجيل الدخول
 
 **Status:** ACCEPTED  
 **Date:** 2026-10-28  
-**Authority:** Founder delegated full decision authority after review of conflicts and likely effects.  
-**Scope:** Stage 5-B product behavior; not implementation evidence.
+**Authority:** فوّض المؤسس سلطة اتخاذ القرار كاملة بعد مراجعة التعارضات والآثار المحتملة.  
+**Scope:** سلوك المنتج في Stage 5-B؛ وليس دليلًا على التنفيذ.
 
-## Decision
+## القرار
 
-1. **Additive merge:** after successful sign-in, merge guest-local saved reaction codes into the signed-in account's existing saved reactions. Neither set overwrites the other.
-2. **Deduplication:** deduplicate by unique reaction code. The same reaction saved locally and in the account appears only once.
-3. **Safe persistence:** do not clear or discard guest-local saves until the server confirms successful persistence of guest-only additions. If synchronization fails or the network is unavailable, preserve local data and allow retry. Retrying must be idempotent and must not create duplicates.
-4. **Account isolation:** keep guest-local saves distinct from account-associated saves. Never copy a signed-in account's saves into the shared guest-local set on sign-out. A different account signing in on the same device must not inherit the previous account's saves.
-5. **Unavailable content:** a saved code does not make deleted, unpublished, or otherwise unavailable content available. Handle unavailable entries under the content-availability rules without discarding other valid saves.
-6. **Guest access and routing:** preserve guest access to local saves and the intended /saved behavior (Account with Saved selected).
+1. **الدمج الإضافي:** بعد نجاح تسجيل الدخول، تُدمج رموز الرياكشنات المحفوظة محليًا لدى الزائر مع الرياكشنات المحفوظة الموجودة أصلًا في حساب المستخدم المسجل. لا تستبدل أي من المجموعتين الأخرى.
+2. **إزالة التكرار:** تُزال التكرارات وفق رمز الرياكشن الفريد. وإذا كان الرياكشن نفسه محفوظًا محليًا وفي الحساب، فيظهر مرة واحدة فقط.
+3. **الحفظ الآمن:** لا تمسح محفوظات الزائر المحلية ولا تتخلص منها قبل أن يؤكد الخادم نجاح حفظ الإضافات الخاصة بالزائر. وإذا فشلت المزامنة أو انقطع الاتصال بالشبكة، احتفظ بالبيانات المحلية وأتح إعادة المحاولة. ويجب أن تكون إعادة المحاولة آمنة عند تكرارها (idempotent)، وألا تنشئ عناصر مكررة.
+4. **عزل الحسابات:** أبقِ محفوظات الزائر المحلية منفصلة عن المحفوظات المرتبطة بالحساب. لا تنسخ مطلقًا محفوظات حساب مسجل الدخول إلى مجموعة المحفوظات المحلية المشتركة عند تسجيل الخروج. ولا يجوز لحساب آخر يسجل الدخول على الجهاز نفسه أن يرث محفوظات الحساب السابق.
+5. **المحتوى غير المتاح:** لا يجعل رمز محفوظ محتوى محذوفًا أو غير منشور أو غير متاح بطريقة أخرى متاحًا من جديد. عالج العناصر غير المتاحة وفق قواعد إتاحة المحتوى، من دون التخلص من بقية المحفوظات الصالحة.
+6. **وصول الزائر والمسارات:** حافظ على وصول الزائر إلى محفوظاته المحلية وعلى سلوك /saved المقصود (الحساب مع تحديد المحفوظات).
 
-## Conflict review and technical implications
+## مراجعة التعارضات والآثار التقنية
 
-The canonical technical record T-07 currently states that the implementation uses localStorage key yr:saved, merges it with /api/me/saves, and does not clear local storage on logout. A shared local key can conflict with account isolation if account data is written into it or treated as guest data. The implementation must distinguish the guest-local set from account-scoped saves and must only merge the independent guest set into the account that signs in.
+ينص السجل التقني الكانوني T-07 حاليًا على أن التنفيذ يستخدم مفتاح localStorage باسم yr:saved، ويدمجه مع /api/me/saves، ولا يمسح التخزين المحلي عند تسجيل الخروج. وقد يتعارض المفتاح المحلي المشترك مع عزل الحسابات إذا كُتبت بيانات الحساب فيه أو عوملت باعتبارها بيانات زائر. يجب أن يميز التنفيذ بين مجموعة محفوظات الزائر المحلية والمحفوظات الخاصة بالحساب، وألا يدمج إلا مجموعة الزائر المستقلة مع الحساب الذي يسجل الدخول.
 
-The merge should be safe under repeated login callbacks, retries, and partial network failures. Server confirmation is required before guest data is considered synchronized and eligible for cleanup. If the existing design cannot distinguish guest-local from account-associated saves, it must be corrected before claiming this decision is implemented.
+ينبغي أن يكون الدمج آمنًا عند تكرار استدعاءات تسجيل الدخول، وعمليات إعادة المحاولة، والإخفاقات الجزئية للشبكة. ويجب الحصول على تأكيد الخادم قبل اعتبار بيانات الزائر متزامنة ومؤهلة للمسح. وإذا كان التصميم الحالي لا يستطيع التمييز بين محفوظات الزائر المحلية والمحفوظات المرتبطة بالحساب، فيجب تصحيحه قبل الادعاء بأن هذا القرار قد نُفذ.
 
-## Acceptance criteria
+## معايير القبول
 
-- Existing account saves remain intact.
-- Guest-only saves are added to the signed-in account.
-- Duplicate reaction codes are stored/displayed once.
-- A failed sync does not lose guest-local saves.
-- Retrying sync is idempotent.
-- Signing out does not place account saves in the shared guest store.
-- A different account on the same device cannot see the previous account's private saves.
-- Unavailable reactions are not falsely presented as available, and their state does not delete unrelated valid saves.
-- Guest saves remain accessible without login.
+- تبقى محفوظات الحساب الموجودة أصلًا دون تغيير.
+- تُضاف محفوظات الزائر التي لا توجد في الحساب إلى حساب المستخدم المسجل.
+- تُحفظ رموز الرياكشن المكررة/تُعرض مرة واحدة فقط.
+- لا يؤدي فشل المزامنة إلى فقدان محفوظات الزائر المحلية.
+- إعادة محاولة المزامنة آمنة عند تكرارها ولا تنشئ تكرارات.
+- لا يؤدي تسجيل الخروج إلى وضع محفوظات الحساب في مخزن الزائر المشترك.
+- لا يستطيع حساب آخر على الجهاز نفسه رؤية محفوظات الحساب السابق الخاصة.
+- لا تُعرض الرياكشنات غير المتاحة على أنها متاحة، ولا تؤدي حالتها إلى حذف محفوظات أخرى صالحة.
+- تظل محفوظات الزائر متاحة من دون تسجيل الدخول.
 
-## Governance and verification boundary
+## الحوكمة وحدود التحقق
 
-This is product policy only. It does not establish that code, tests, builds, redirects, database behavior, or runtime have been changed or verified. Stage 5 remains OPEN. Do not create Stage 5.3 or start Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and open. SEC-06, server-side upload enforcement, routes, tests, builds, and runtime remain unverified.
+هذه سياسة منتج فقط. ولا تثبت أن الشيفرة أو الاختبارات أو عمليات البناء أو التحويلات أو قاعدة البيانات أو بيئة التشغيل قد تغيرت أو جرى التحقق منها. في وقت تسجيل هذا القرار كانت Stage 5 بحالة OPEN، وكان OPEN-Q-08 وOPEN-Q-09 منفصلين ومفتوحين OPEN. لا تنشئ Stage 5.3 ولا تبدأ Stage 6. وتظل SEC-06 وإنفاذ الرفع من جهة الخادم والمسارات والاختبارات والبناء وبيئة التشغيل غير متحققة.
 
-## Current status reconciliation — 2026-10-30
-Any statement above that Stage 5 remains open or that OPEN-Q-08/OPEN-Q-09 remain open reflects the state when this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY**; OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. Guest-save merge, retries, deduplication, and account isolation remain technically unverified/deferred. This addendum does not authorize implementation.
+## مواءمة الحالة الحالية — 2026-10-30
+
+أي عبارة أعلاه تقول إن Stage 5 ما زالت مفتوحة، أو إن OPEN-Q-08 وOPEN-Q-09 ما زالا مفتوحين، تصف الحالة وقت تسجيل هذا القرار. الحالة الحالية: Stage 5 **CLOSED FOR DOCUMENTATION ONLY**؛ وOPEN-Q-08 وOPEN-Q-09 كل منهما **CLOSED FOR DOCUMENTATION ONLY** في وثيقته المستقلة. ويظل دمج محفوظات الزائر وإعادة المحاولة وإزالة التكرار وعزل الحسابات غير متحقق منها تقنيًا/مؤجلة. ولا يمنح هذا الملحق إذنًا بالتنفيذ.
