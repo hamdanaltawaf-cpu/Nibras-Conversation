@@ -1,10 +1,10 @@
-## DECISION-I09 — Motion Language — ACCEPTED — Stage 4 — PD-I09
+## DECISION-I09 — لغة الحركة — ACCEPTED — Stage 4 — PD-I09
 
-**Date:** 2026-09-26
-**Stage:** Stage 4 — Experience & Identity — Identity Re-Foundation
-**Decided by:** حمدان (Founder)
-**Status:** ACCEPTED — CLOSED
-**Topic:** PD-I09 — Motion Language
+**التاريخ:** 2026-09-26
+**المرحلة:** Stage 4 — Experience & Identity — Identity Re-Foundation
+**صاحب القرار:** حمدان (Founder)
+**الحالة:** ACCEPTED — CLOSED
+**الموضوع:** PD-I09 — لغة الحركة
 
 ── القرار ──
 
@@ -68,16 +68,16 @@
 
 ── الأثر ──
 
-- **P-43 NEW:** Motion Language
+- **P-43 NEW:** لغة الحركة
 - 75→76 facts
 - **PD-I09 CLOSED**
 - يفتح: **PD-I10 (UI Language)** — آخر Topic
 
-**Stage:** Stage 4 — PD-I09 — CLOSED — DECISION-I09 ACCEPTED 2026-09-26 — Motion Language — NEXT PD-I10
+**المرحلة:** Stage 4 — PD-I09 — CLOSED — DECISION-I09 ACCEPTED 2026-09-26 — لغة الحركة — NEXT PD-I10
 
 ---
 
-## Topic 19 — PD-I09 — CLOSED — DECISION-I09 ACCEPTED — Stage 4 — Motion Language
+## الموضوع 19 — PD-I09 — CLOSED — DECISION-I09 ACCEPTED — Stage 4 — لغة الحركة
 
 - الفلسفة Hybrid — Subtle في UI Linear/Vercel-style + Anchor مميز Seal Motion
 - Durations: Micro 120ms + Small 180ms + Medium 240ms + Large 320ms Seal فقط
