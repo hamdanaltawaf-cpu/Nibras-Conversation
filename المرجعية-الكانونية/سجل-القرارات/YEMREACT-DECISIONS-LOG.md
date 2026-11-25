@@ -2963,7 +2963,7 @@ Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-0
 - Guests see no account statistics or empty My Contributions panel. Submissions with statuses are items; show contributor-facing status/reasons only, never internal moderation notes.
 - Unavailable saved codes do not make content available or discard valid saves. Human review remains required; no implication of automatic publication.
 - Scope: Saved and My Contributions only. Product policy, not implementation evidence. DECISION-5B-CANONICAL and 5B.22–5B.24 remain in force. Stage 5 remains OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06 and technical verification boundaries remain unverified.
-- Full decision: `stage-5-ia-navigation/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`.
+- Full decision: `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`.
 
 
 ## DECISION-5B.26 — Help Center and Issue Reporting — ACCEPTED — 2026-10-28
@@ -2980,7 +2980,7 @@ Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-0
 7. **Launch gate:** accurate static Help content can launch independently. Reporting controls must not be presented as working until end-to-end submission, persistence, authorized review access, failure handling, and basic abuse controls are verified. If unavailable, do not ship a dead button or fake form; mention an alternative contact channel only if an approved real destination exists.
 8. **Reconciliation and boundaries:** DECISION-5B.19’s `/help` route and DECISION-5B.22’s privacy boundaries remain in force. Stage 5 remains OPEN; no Stage 5.3 or Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06, routes, tests, builds, runtime, and end-to-end reporting remain unverified.
 
-Full decision: `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
+Full decision: `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPORTING.md`.
 
 
 ---
@@ -3028,7 +3028,7 @@ Full decision: `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPOR
 
 - **Authority:** Hamdan explicitly instructed the assistant to resolve the remaining open decisions and maintain the roadmap/change log after each work item in the current workflow (message received 2026-10-28). This is a delegated resolution of the four named open UX topics, not an independent expansion of scope.
 - **Status:** ACCEPTED — product/UI policy only. No implementation, test, build, or runtime claim.
-- **Canonical detail:** `stage-5-ia-navigation/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
+- **Canonical detail:** `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.27-REMAINING-UX-DETAILS.md`.
 
 ### Previous → New
 
@@ -3064,7 +3064,7 @@ Full decision: `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPOR
 - **Unavailable links:** Invalid/unavailable reaction codes use an unavailable/not-found state within `/r/[code]`; unknown app paths use the general not-found state. Do not render fake empty details or expose internal moderation notes. Default concise copy may be «هذا الرياكشن غير متاح».
 - **Still unverified:** actual admin route tree, HTTP status/SEO/crawl behavior, permission enforcement, report workflow, route rendering, tests/build/runtime.
 - **Stage boundary:** Stage 5 remains OPEN pending documentation closeout review and Hamdan's explicit decision. No Stage 5.3/Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only.
-- **Full decision:** `stage-5-ia-navigation/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
+- **Full decision:** `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.28-ROUTE-INVENTORY-BOUNDARIES.md`.
 
 
 ---
@@ -3114,7 +3114,7 @@ Full decision: `stage-5-ia-navigation/DECISION-5B.26-HELP-CENTER-AND-ISSUE-REPOR
 
 - **Status:** ACCEPTED — product/content policy only.
 - **Authority:** Selective adoption from PR #18 under Hamdan's explicit authorization to process its documentation content.
-- **Decision:** Initial Arabic empty/read-failure copy and the rules distinguishing successful empty responses from request failures are recorded in `stage-5-ia-navigation/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
+- **Decision:** Initial Arabic empty/read-failure copy and the rules distinguishing successful empty responses from request failures are recorded in `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.29-EMPTY-AND-ERROR-STATE-COPY.md`.
 - **Scope:** Library, search, collections list, collection detail, and optional related/discovery sections. DECISION-5B.25 remains authoritative for Saved and My Contributions.
 - **Boundary:** Flow-specific upload/authentication/media/save/report failures, HTTP behavior, retry mechanics, implementation, and tests are not inferred or verified. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; no implementation or later stage is authorized.
 - **PR source:** PR #18, selectively adopted. PR #18 remains open; no merge or closure was performed.
@@ -3129,5 +3129,10 @@ The retired decision scopes are indexed in `الأرشيف/قرارات-متجا
 ## 2026-11-05 — Current Path Clarification — Stage 5 Documentation Files
 
 - Earlier entries record the submission-discussion file being preserved on `main` at `docs/product/discussions/reaction-submission-discussion.md` on 2026-11-05. That is the historical destination at the time of preservation; its current path is `stage-5-ia-navigation/reaction-submission-discussion.md` after the subsequent organization move.
-- The current paths for `DECISION-5B.23` through `DECISION-5B.29` are under `stage-5-ia-navigation/`. References to their former `canonical/` locations in dated historical records describe their location at that earlier time; current operational references have been corrected.
+- The current paths for `DECISION-5B.23` through `DECISION-5B.29` are under `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/`. References to their former `canonical/` locations in dated historical records describe their location at that earlier time; current operational references have been corrected.
 - No decision text, authority, or product scope was changed by these path corrections. Stage 5 remains CLOSED FOR DOCUMENTATION ONLY; implementation and technical verification remain separate and unauthorized by this update.
+
+
+## 2026-11-26 — Current Path Reconciliation
+
+The current paths for DECISION-5B.23 through DECISION-5B.29 are under `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/`. The submission discussion is `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/نقاش-إرسال-الرياكشن.md`, and the search discussion is `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/نقاش-مسار-البحث-5-1.md`. The non-approved account/navigation proposal is archived at `الأرشيف/مقترحات-غير-معتمدة/مقترح-الحساب-والتنقل-2026-10-18.md`. The Stage 5 closeout record and checklist, inventory, and audit are in `حوكمة-المراحل/`. Dated entries above preserve their original paths as historical evidence; these current locations supersede any earlier “current path” wording.
