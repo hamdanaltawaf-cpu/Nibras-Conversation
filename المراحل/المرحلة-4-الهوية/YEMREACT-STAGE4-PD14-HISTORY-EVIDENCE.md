@@ -1,8 +1,10 @@
-# PD-14 — Watermark Spec — HISTORY + EVIDENCE — Stage 4 — Experience & Identity
+# PD-14 — مواصفة العلامة المائية — التاريخ والأدلة — Stage 4 — التجربة والهوية
 
-> STATUS: OPEN — HISTORY + EVIDENCE فقط — لا DISCUSSION — لا OPTIONS — لا قرار
-> Date: 2026-09-14 — Stage 4 — PD-14 Watermark Spec
-> Founder: حمدان — بانتظار DISCUSSION ثم DECISION
+> **تنبيه منهجي:** هذه وثيقة HISTORY + EVIDENCE فقط؛ لا تتضمن نقاشًا حاسمًا ولا خيارات معتمدة ولا قرارًا. حالتها OPEN كما في المصدر. لا تستنتج منها مواصفة نهائية لحجم العلامة المائية أو موقعها أو ظلها؛ يجب أن تبقى هذه التفاصيل وفق القرار الكانوني الصريح عند حسمها.
+
+> **الحالة:** OPEN — التاريخ والأدلة فقط — لا DISCUSSION — لا OPTIONS — لا قرار
+> **التاريخ:** 2026-09-14 — Stage 4 — مواصفة العلامة المائية PD-14
+> **صاحب القرار:** حمدان — بانتظار DISCUSSION ثم DECISION
 > Sources checked: YemReact-Brand-v1.0-LOCKED.html + YemReact-identity-system.html + YemReact_Claude_Foundation_Package.md + ARENA-TECHNICAL-HANDOFF.md + YEMREACT-CONFLICT-REGISTER-V2.md + YEMREACT-CONFLICT-REGISTER.md + YEMREACT-CANONICAL-BASELINE.md + YEMREACT-DECISIONS-LOG.md (DECISION-013) + S09 T-04 technical
 
 ---
@@ -45,7 +47,7 @@
 
 ## 2. المصادر الأخرى — S10 + S06 + S09 + CONFLICT-019 + DECISION-013
 
-### S10 — Claude Foundation Package — YemReact_Claude_Foundation_Package.md
+### S10 — حزمة تأسيس Claude — YemReact_Claude_Foundation_Package.md
 
 - **ما يقوله عن Watermark (حسب CONFLICT-REGISTER-V2 + CANONICAL):**
   - Spec A: 11% من العرض — أعلى-يمين (top-right) — بظل مزدوج (double shadow)
@@ -54,7 +56,7 @@
   - Evidence: S10 says strengthened after failure — S09 shows watermark/qs.png 200 — B-04 Qussasa Mark + B-07 Watermark LOCKED concept
   - **الخلاصة:** S10 يتوافق مع LOCKED HTML في المبدأ: نسخة مقواة + ظل مزدوج + أعلى + قاعدة قلب — لكن الرقم 11% مذكور في arena.md §8.2 كرقم محدد — بينما LOCKED HTML يقول 9–15% range
 
-### S06 — Content Pipeline — Overlays + Safe Area Guides
+### S06 — خط إنتاج المحتوى — طبقات التراكب وأدلة المنطقة الآمنة
 
 - **ما يقوله (حسب DECISION-013 Evidence):**
   - Overlays 9:16 + 1:1 + Safe Area Guides x4 Default/Mirrored ×2
@@ -62,7 +64,7 @@
   - Evidence في DECISION-013: `S10 Brand v1.0 LOCKED 9:16 Safe Area 6% top 20% bottom 14% right 6% left + Qussasa 6-15% + Watermark 9-15% double shadow`
   - **الخلاصة:** S06 يؤكد Safe Area Guides + Overlays + Qussasa 6-15% + Watermark 9-15% double shadow — يطابق LOCKED HTML range 9-15% — ليس 11% ثابت ولا 14% ثابت
 
-### S09 — Technical T-04 — ffmpeg watermark 14% bottom-right no shadow
+### S09 — التدقيق التقني T-04 — علامة مائية بنسبة 14% أسفل اليمين دون ظل (وفق التنفيذ الذي رصده المصدر)
 
 - **ما يقوله CANONICAL T-04:**
   - Media pipeline local: LocalMediaService.validate MIME/size/magic bytes, storage.put LocalStorage ./storage default (829 files / 11MB, 282 reactions/, 546 submissions/, 216 pairs .wm.mp4 + .thumb.jpg, watermark/qs.png), S3Storage via minio optional, processor ffprobe/ffmpeg thumbnail + watermark 14% bottom-right no shadow, states idle→processing→done|failed, public DTO WATERMARKED > PROCESSED > ORIGINAL fallback — CURRENT local — S09 CODE + .storage count + unit tests 9+10+2+11
@@ -225,7 +227,7 @@
 
 ---
 
-## 6. ملخص HISTORY + EVIDENCE — بدون قرار
+## 6. ملخص التاريخ والأدلة — دون قرار
 
 ### ما يقوله LOCKED HTML — المعتمد:
 
@@ -286,7 +288,7 @@
 
 ---
 
-## 8. Conclusion — HISTORY + EVIDENCE فقط — لا قرار
+## 8. الخلاصة — التاريخ والأدلة فقط — لا قرار
 
 - **قراءة LOCKED HTML تمت:** نعم — Spec الرسمي: 9–15% من العرض، أعلى الزاوية الافتراضية (default top-right)، مع ظل مزدوج `drop-shadow 0 1px 2px + 0 0 2px opacity .6/.4`، تقشّر Paper #f3eae0 بداخله Qussasa Ink #121214، Safe Area 6% top 20% bottom 14% right 6% left (9:16)، قاعدة قلب الكتلة (تقشّر+مدة+تصنيف) كوحدة واحدة للجهة المقابلة عند الحاجة، النسخة بلا ظل أُلغيت — هذا هو المعتمد من الآن فصاعدًا
 - **Spec A (11% top-right double shadow) يتوافق مع LOCKED HTML:** 11% ضمن 9-15% + أعلى-يمين + ظل مزدوج — يطابق LOCKED — arena.md §8.2 يذكر 11% كمثال داخل range
