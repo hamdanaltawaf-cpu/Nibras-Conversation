@@ -1,74 +1,80 @@
-# DECISION-5B.29 — Empty and Error State Copy
+# القرار 5B.29 — نصوص حالات الفراغ والخطأ
 
-**Status:** ACCEPTED — product/content policy only  
-**Date:** 2026-10-30  
-**Authority:** Selective adoption from PR #18 under Hamdan's explicit authorization to process its documentation content.  
-**Scope:** Initial Arabic copy and display rules for empty states and recoverable read failures not already specified by an earlier canonical decision. This does not prove implementation or authorize code changes.
+**الحالة:** ACCEPTED — سياسة المنتج والمحتوى فقط  
+**التاريخ:** 2026-10-30  
+**السلطة:** تبنٍّ انتقائي من PR #18، بموجب التفويض الصريح من حمدان لمعالجة محتواه التوثيقي.  
+**النطاق:** النصوص العربية الأولية وقواعد العرض لحالات الفراغ وإخفاقات القراءة القابلة للاستعادة التي لم يسبق أن حددها قرار كانوني. لا يثبت ذلك التنفيذ ولا يجيز تغييرات في الكود.
 
-## 1. General rules
+## 1. القواعد العامة
 
-1. Loading, empty, error, permission-denied, and success states remain distinct.
-2. Show an empty state only after a successful load confirms there is nothing to display. A failed request must never appear as an empty list.
-3. Show retry only where retrying is safe; never show success before confirmation.
-4. Do not show counts, social engagement numbers, or invented content to make an empty state look populated.
-5. DECISION-5B.25 remains authoritative for Saved and My Contributions; this decision does not replace its copy.
-6. For optional sections, omit a section-level empty panel when omission loses no essential information. A request failure must not be silently treated as empty content.
+1. تظل حالات التحميل والفراغ والخطأ ورفض الإذن والنجاح حالات منفصلة.
+2. لا تُعرض حالة الفراغ إلا بعد تحميل ناجح يؤكد عدم وجود ما يمكن عرضه. ويُمنع تمامًا إظهار الطلب الفاشل على أنه قائمة فارغة.
+3. لا يُعرض خيار إعادة المحاولة إلا عندما تكون إعادة المحاولة آمنة؛ ولا يُعرض النجاح قبل تأكيده.
+4. لا تعرض أعدادًا أو أرقام تفاعل اجتماعي أو محتوى مختلقًا لجعل حالة الفراغ تبدو وكأنها ممتلئة.
+5. يظل القرار 5B.25 هو المرجع الحاكم للمحفوظات و«مساهماتي»؛ ولا يستبدل هذا القرار النصوص الواردة فيه.
+6. في الأقسام الاختيارية، لا تعرض لوحة فراغ خاصة بالقسم إذا كان إغفال القسم لا يفقد المستخدم معلومات أساسية. ولا يجوز التعامل مع فشل الطلب بصمت على أنه محتوى فارغ.
 
-## 2. Approved initial copy
+## 2. النصوص الأولية المعتمدة
 
-### Library
-- Empty after successful load: «ما في رياكشنات متاحة حاليًا.»
-- Supporting text: «جرّب البحث أو استكشف المجموعات.»
-- Actions: «البحث في المكتبة» → `/?q=`; «استكشف المجموعات» → `/collections`.
-- Read failure: «تعذّر تحميل المكتبة. حاول مرة ثانية.»
-- Retry: «إعادة المحاولة».
+### المكتبة
 
-### Search
-- No useful results: «ما لقينا رياكشن مطابق.»
-- Supporting text: «جرّب كلمات مختلفة أو ارجع للمكتبة.»
-- Actions: «مسح البحث» (clears the query) and «العودة للمكتبة» → `/`.
-- Search failure: «تعذّر إكمال البحث. حاول مرة ثانية.»
-- Retry: «إعادة المحاولة».
-- Do not describe weak results as confirmed matches; follow OPEN-Q-08 retrieval policy.
+- الفراغ بعد تحميل ناجح: «ما في رياكشنات متاحة حاليًا.»
+- النص المساند: «جرّب البحث أو استكشف المجموعات.»
+- الإجراءات: «البحث في المكتبة» ← \`/?q=\`؛ «استكشف المجموعات» ← \`/collections\`.
+- فشل القراءة: «تعذّر تحميل المكتبة. حاول مرة ثانية.»
+- إعادة المحاولة: «إعادة المحاولة».
 
-### Collections list
-- Empty after successful load: «ما في مجموعات متاحة حاليًا.»
-- Supporting text: «ارجع للمكتبة لاستكشاف الرياكشنات.»
-- Action: «العودة للمكتبة» → `/`.
-- Read failure: «تعذّر تحميل المجموعات. حاول مرة ثانية.»
-- Retry: «إعادة المحاولة».
-- For signed-in users, absence of followed collections does not make the whole page empty; show the full admin-ordered collection list.
+### البحث
 
-### Collection detail
-- Empty after successful load: «ما في رياكشنات في هذه المجموعة حاليًا.»
-- Action: «استكشف المجموعات» → `/collections`.
-- Read failure: «تعذّر تحميل المجموعة. حاول مرة ثانية.»
-- Retry: «إعادة المحاولة».
-- Omit an absent optional description; do not replace it with placeholder text.
+- عدم العثور على نتائج مفيدة: «ما لقينا رياكشن مطابق.»
+- النص المساند: «جرّب كلمات مختلفة أو ارجع للمكتبة.»
+- الإجراءات: «مسح البحث» (يمسح عبارة البحث) و«العودة للمكتبة» ← \`/\`.
+- فشل البحث: «تعذّر إكمال البحث. حاول مرة ثانية.»
+- إعادة المحاولة: «إعادة المحاولة».
+- لا تصف النتائج الضعيفة بأنها تطابقات مؤكدة؛ واتبع سياسة الاسترجاع في OPEN-Q-08.
 
-### Optional related/discovery sections
-- If a successful response contains no items, omit the optional section rather than displaying a standalone empty panel.
-- If the request fails, do not treat it as a successful empty response; use the page's recoverable error behavior.
-- Do not expose counts of related/random items, per DECISION-5B.23.
+### قائمة المجموعات
 
-### Shared recoverable read failure
-- Message: «تعذّر تحميل المحتوى. حاول مرة ثانية.»
-- Action: «إعادة المحاولة».
-- Use only for recoverable read failures. Permission, authentication, media playback, save, upload, and report-submission failures require truthful flow-specific states and must not be mislabeled as generic empty states.
+- الفراغ بعد تحميل ناجح: «ما في مجموعات متاحة حاليًا.»
+- النص المساند: «ارجع للمكتبة لاستكشاف الرياكشنات.»
+- الإجراء: «العودة للمكتبة» ← \`/\`.
+- فشل القراءة: «تعذّر تحميل المجموعات. حاول مرة ثانية.»
+- إعادة المحاولة: «إعادة المحاولة».
+- بالنسبة إلى المستخدمين المسجلين، لا يعني غياب المجموعات التي يتابعونها أن الصفحة كلها فارغة؛ بل تُعرض قائمة المجموعات كاملة وفق ترتيب الإدارة.
 
-## 3. Existing decisions remain authoritative
+### تفاصيل المجموعة
 
-- Saved and My Contributions: DECISION-5B.25.
-- Help copy and report reliability: DECISION-5B.26 and DECISION-5B.27.
-- Signup prompts, collection presentation, and initial Help copy: DECISION-5B.27.
-- Route boundaries and unavailable/not-found states: DECISION-5B.28.
-- Number/count display: DECISION-5B.23.
-- Search quality and weak/no-result handling: OPEN-Q-08, CLOSED FOR DOCUMENTATION ONLY.
+- الفراغ بعد تحميل ناجح: «ما في رياكشنات في هذه المجموعة حاليًا.»
+- الإجراء: «استكشف المجموعات» ← \`/collections\`.
+- فشل القراءة: «تعذّر تحميل المجموعة. حاول مرة ثانية.»
+- إعادة المحاولة: «إعادة المحاولة».
+- احذف الوصف الاختياري إذا لم يكن موجودًا؛ ولا تستبدله بنص مؤقت.
 
-## 4. Deferred and unverified
+### الأقسام الاختيارية للمواد ذات الصلة/الاكتشاف
 
-- Exact messages for upload validation, authentication cancellation, media playback, save failure, and ambiguous network outcomes remain governed by their relevant flow decisions or require separate documentation; this decision does not invent them.
-- This decision does not define HTTP status codes, server responses, retry mechanics, analytics, or UI implementation.
-- Stage 5 remains CLOSED FOR DOCUMENTATION ONLY under the existing closeout record; this decision is an additive documentation clarification, not a reopening.
-- No Stage 5.3 is created and Stage 6/9 are not started.
-- No app code, database changes, security review, tests, build, or runtime verification is authorized or implied.
+- إذا لم يتضمن الرد الناجح أي عناصر، فأخفِ القسم الاختياري بدلًا من عرض لوحة فراغ مستقلة.
+- إذا فشل الطلب، فلا تتعامل معه على أنه رد ناجح وفارغ؛ بل استخدم سلوك الخطأ القابل للاستعادة الخاص بالصفحة.
+- لا تعرض أعداد العناصر ذات الصلة أو العشوائية، وفق القرار 5B.23.
+
+### فشل القراءة العام القابل للاستعادة
+
+- الرسالة: «تعذّر تحميل المحتوى. حاول مرة ثانية.»
+- الإجراء: «إعادة المحاولة».
+- يستخدم هذا النص لإخفاقات القراءة القابلة للاستعادة فقط. أما فشل الإذن والمصادقة وتشغيل الوسائط والحفظ والرفع وإرسال البلاغ، فيحتاج إلى حالات صادقة خاصة بكل مسار، ولا يجوز وصفه خطأً بأنه حالة فراغ عامة.
+
+## 3. تظل القرارات القائمة هي المرجع الحاكم
+
+- المحفوظات و«مساهماتي»: القرار 5B.25.
+- نصوص المساعدة وموثوقية الإبلاغ: القراران 5B.26 و5B.27.
+- دعوات التسجيل وعرض المجموعات والنصوص الأولية للمساعدة: القرار 5B.27.
+- حدود المسارات وحالات عدم التوفر/عدم العثور: القرار 5B.28.
+- عرض الأرقام/الأعداد: القرار 5B.23.
+- جودة البحث والتعامل مع النتائج الضعيفة أو غياب النتائج: OPEN-Q-08، وحالته CLOSED FOR DOCUMENTATION ONLY.
+
+## 4. المؤجل وغير المتحقق منه
+
+- تظل الرسائل الدقيقة للتحقق من الرفع، وإلغاء المصادقة، وتشغيل الوسائط، وفشل الحفظ، ونتائج الشبكة الملتبسة خاضعة لقرارات المسارات ذات الصلة أو تحتاج إلى توثيق منفصل؛ ولا يختلق هذا القرار نصوصًا لها.
+- لا يحدد هذا القرار رموز HTTP أو استجابات الخادم أو آليات إعادة المحاولة أو التحليلات أو تنفيذ واجهة المستخدم.
+- تظل المرحلة 5 **CLOSED FOR DOCUMENTATION ONLY** وفق سجل الإغلاق القائم؛ وهذا القرار توضيح توثيقي إضافي، وليس إعادة فتح للمرحلة.
+- لا تُنشأ مرحلة 5.3، ولا تبدأ المرحلة 6 أو 9.
+- لا يجيز هذا القرار ولا يثبت أي تغيير في كود التطبيق أو قاعدة البيانات أو مراجعة الأمان أو الاختبارات أو البناء أو بيئة التشغيل.
