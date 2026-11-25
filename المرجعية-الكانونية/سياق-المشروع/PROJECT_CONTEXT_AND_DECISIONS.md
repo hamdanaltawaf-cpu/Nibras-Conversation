@@ -585,7 +585,7 @@
 
 
 ## DECISION-5B.25 — Saved and My Contributions Empty States
-Accepted policy: render an empty state only after a successful load confirms no displayable items; loading/errors/permission failures are distinct. Guest and signed-in Saved have separate approved Arabic copy and link to `/`; signed-in My Contributions has approved copy and links to `/submit`. Guests must not see account stats or an empty My Contributions panel. Submissions with statuses are items; expose contributor-facing status/reasons only, never internal moderation notes. Unavailable saved codes do not unlock unavailable content or discard valid saves. Human review remains required. Scope is Saved/My Contributions only. Full specification: `stage-5-ia-navigation/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`. Product policy only, not implementation evidence. Stage 5 remains OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06 and technical verification remain unverified.
+Accepted policy: render an empty state only after a successful load confirms no displayable items; loading/errors/permission failures are distinct. Guest and signed-in Saved have separate approved Arabic copy and link to `/`; signed-in My Contributions has approved copy and links to `/submit`. Guests must not see account stats or an empty My Contributions panel. Submissions with statuses are items; expose contributor-facing status/reasons only, never internal moderation notes. Unavailable saved codes do not unlock unavailable content or discard valid saves. Human review remains required. Scope is Saved/My Contributions only. Full specification: `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`. Product policy only, not implementation evidence. Stage 5 remains OPEN; no Stage 5.3/Stage 6. OPEN-Q-08/09 remain separate/open; SEC-06 and technical verification remain unverified.
 
 
 ## UPDATE 2026-10-28 — DECISION-5B.26 — Help Center and Issue Reporting — ACCEPTED
@@ -640,7 +640,7 @@ Accepted policy: render an empty state only after a successful load confirms no 
 ## UPDATE 2026-10-29 — Stage 5 Documentation-Only Closure
 
 - Stage 5 is closed for documentation only after the route inventory and cross-reference checklist were reviewed and Hamdan explicitly directed this closure scope.
-- Record: `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`. The closure does not imply implementation, tests, security review, build, runtime, or release readiness.
+- Record: `حوكمة-المراحل/سجل-إغلاق-المرحلة-5-توثيقياً.md`. The closure does not imply implementation, tests, security review, build, runtime, or release readiness.
 - The submission-discussion source was preserved without content edits at `docs/product/discussions/reaction-submission-discussion.md` on `main` on 2026-11-05. Its earlier location on `hamdanaltawaf-cpu-patch-1` is historical; this relocation preserves the discussion and does not change its product/documentation closure scope or imply technical implementation.
 - C-01 remains cancelled; P-20 #6 remains deferred without reassignment. Legal obligations remain a separate scope. No Stage 5.3, Stage 6, or Stage 9 is created/started.
 - Technical implementation and verification remain UNVERIFIED and require a separate explicit task after documentation is complete.
@@ -654,6 +654,14 @@ This file contains historical context and earlier decision states. Cancelled and
 
 ## تحديث 2026-11-05 — توضيح المسارات الحالية لمواد Stage 5
 
-- الإشارة السابقة إلى حفظ نقاش الإرسال في `docs/product/discussions/reaction-submission-discussion.md` تصف وجهته التاريخية على `main` بتاريخ 2026-11-05. مساره الحالي بعد النقل التنظيمي هو `stage-5-ia-navigation/reaction-submission-discussion.md`.
-- ملفات القرارات `DECISION-5B.23` إلى `DECISION-5B.29` موجودة حاليًا في `stage-5-ia-navigation/`. أي إحالة أقدم إلى `canonical/` تصف موقعها السابق وقت كتابة السجل؛ وقد صُححت الإحالات التشغيلية الحالية.
+- الإشارة السابقة إلى حفظ نقاش الإرسال في `docs/product/discussions/reaction-submission-discussion.md` تصف وجهته التاريخية على `main` بتاريخ 2026-11-05. مساره الحالي بعد النقل التنظيمي هو `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/نقاش-إرسال-الرياكشن.md`.
+- ملفات القرارات `DECISION-5B.23` إلى `DECISION-5B.29` موجودة حاليًا في `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/`. أي إحالة أقدم إلى `canonical/` تصف موقعها السابق وقت كتابة السجل؛ وقد صُححت الإحالات التشغيلية الحالية.
 - هذه تحديثات مسارات فقط، ولا تعدّل القرارات أو تمنح هذا الملف سلطة تتجاوز الـBaseline أو ملفات القرار المعتمدة أو سجل القرارات.
+
+
+## تحديث 2026-11-26 — توحيد مسارات الملفات الحالية
+
+- موقع قرار DECISION-5B.25 الحالي هو `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/DECISION-5B.25-SAVED-CONTRIBUTIONS-EMPTY-STATES.md`.
+- سجل إغلاق Stage 5 الحالي هو `حوكمة-المراحل/سجل-إغلاق-المرحلة-5-توثيقياً.md`.
+- نقاش إرسال الرياكشن الحالي هو `المراحل/المرحلة-5-بنية-المعلومات-والتنقل/نقاش-إرسال-الرياكشن.md`، وقرارات 5B.23–5B.29 كلها في مجلد المرحلة المعرب نفسه.
+- بقيت أوصاف Stage 5 القديمة OPEN في السجل التاريخي أدناه كما كانت وقت كتابتها؛ لا تتقدم على سجل الإغلاق الأحدث. لا تغيير في القرارات أو نطاقها أو حالة التنفيذ.
