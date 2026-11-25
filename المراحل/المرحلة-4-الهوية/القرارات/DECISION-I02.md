@@ -1,11 +1,11 @@
-## DECISION-I02 — Qussasa Mark v1.0 Adopted As-Is — ACCEPTED — Stage 4 — PD-I02
+## DECISION-I02 — اعتماد علامة Qussasa Mark v1.0 كما هي — ACCEPTED — Stage 4 — PD-I02
 
-- **Status:** ACCEPTED — CLOSED — PD-I02 CLOSED
-- **Decided by:** حمدان (Founder)
-- **Date:** 2026-09-23 — Stage 4 — Identity Re-Foundation — PD-I02 Logo/Mark
-- **Topic:** اعتماد Qussasa Mark v1.0 كما هو — بدون تحسين
+- **الحالة:** ACCEPTED — CLOSED — PD-I02 CLOSED
+- **صاحب القرار:** حمدان (Founder)
+- **التاريخ:** 2026-09-23 — Stage 4 — Identity Re-Foundation — PD-I02 Logo/Mark
+- **الموضوع:** اعتماد Qussasa Mark v1.0 كما هو — بدون تحسين
 
-**Context — رحلة الاختيار:**
+**السياق — رحلة الاختيار:**
 
 1. DECISION-I01 Brand Direction الختم Direction C ACCEPTED 2026-09-21 — Persona منهجي واثق الشخصيات هي البطل — 3 Anchors Watermark موحد هندسي مجرد + Motion ختم/قلب + chips اسم الشخصية
 2. Claude 4.5 أنتج 4 اتجاهات جديدة للـLogo/Mark في H1-R2: Direction A الزاوية + Direction B الحرف + Direction C الختم الجديد + Direction D الإيقاع — كلها مع نسخ محسّنة مقترحة
@@ -25,7 +25,7 @@
 
 - **New:**
 
-  **Qussasa Mark v1.0 Adopted As-Is — ACCEPTED**
+  **اعتماد علامة Qussasa Mark v1.0 كما هي — ACCEPTED**
 
   ```
   القرار: اعتماد Qussasa Mark v1.0 كما هو — بدون تحسين
@@ -61,7 +61,7 @@
   - No conflict Stage 3 — P-12 to P-34 + P-35 Brand Direction الختم كلها تبقى — Qussasa Mark v1.0 يبني فوقها
   ```
 
-**Reason:**
+**الأسباب:**
 
 1) Qussasa اجتاز اختبار 8 سيناريوهات فعلية — Brand v1.0 LOCKED — S10 says built after test on 8 real scenarios — لا حاجة لإعادة اختراع Mark اجتاز اختبار فعلي — يوفر وقت
 2) متوافق مع Direction C — الختم (التقشير = بصمة بصرية) — DECISION-I01 Direction C الختم — Persona منهجي واثق — Mood بصمة استوديو — Qussasa تقشير ورقي بزاوية = بصمة بصرية = يطابق الختم — ليس متحف — هو بصمة — اختبار المتحف + الحداثة
@@ -77,7 +77,7 @@
 - كل النسخ المحسّنة المقترحة من Claude في H1-R2 — REJECTED per DECISION-I02 — كلها محاولات تحسين لمطلوب اجتاز اختبار — لا حاجة
 - Qussasa Mark Improvement (H1-R3) — لم يُنفذ — REJECTED per DECISION-I02 — اقتراح تحسين Qussasa — لم يُنفذ — Qussasa v1.0 adopted as-is — Improvement مؤجل لـ PD جديد إذا احتجنا
 
-**Impact:**
+**الأثر:**
 
 - PD-I02 CLOSED — Stage 4 Identity Re-Foundation — PD-I02 Logo/Mark — ACCEPTED 2026-09-23 — 68 → 69 facts
 - P-36 NEW: Qussasa Mark v1.0 adopted as-is — بدون تحسين — اجتاز 8 سيناريوهات — يعمل 16-512px — متوافق Direction C الختم تقشير=بصمة — يوفر وقت Stage 4 — يفتح PD-I03+PD-I05
@@ -95,13 +95,13 @@
 - YEMREACT-REFORMATION-MASTER-PLAN.md + PROJECT_CONTEXT_AND_DECISIONS.md + Roadmap — يحتاج تحديث — PD-I02 مغلق — Qussasa Mark v1.0 adopted — يفتح PD-I03+PD-I05
 - NEXT: Stage 4 — PD-I03 Color System + PD-I05 Watermark Qussasa-based — HISTORY+EVIDENCE فقط — بانتظار أمر حمدان
 
-**Stage:** Stage 4 — PD-I02 — CLOSED — DECISION-I02 ACCEPTED 2026-09-23 — Qussasa Mark v1.0 Adopted As-Is — NEXT PD-I03 + PD-I05
+**المرحلة:** Stage 4 — PD-I02 — CLOSED — DECISION-I02 ACCEPTED 2026-09-23 — اعتماد علامة Qussasa Mark v1.0 كما هي — NEXT PD-I03 + PD-I05
 
 **Evidence:** Brand v1.0 LOCKED YemReact-Brand-v1.0-LOCKED.html S10 says built after test on 8 real scenarios, B-04 Qussasa Mark مربع بزاوية مشطوفة + مثلث سالب fill-rule evenodd, S01 Asset Inventory overlay PNGs watermark/qs.png 200, DECISION-I01 Brand Direction الختم Direction C Persona منهجي واثق 3 Anchors Watermark+Motion+chips Modern UI Pinterest-like+Search فوري, Claude H1-R2 4 directions A B C D + H1-R3 Qussasa Improvement proposed, Hamdan chose Qussasa v1.0 as-is — اجتاز 8 سيناريوهات — متوافق Direction C تقشير=بصمة — يعمل 16-512px — يوفر وقت Stage 4, Stage 4 OPEN PD-I01 CLOSED 68 facts
 
 ---
 
-## Topic 12 — PD-I02 — CLOSED — DECISION-I02 ACCEPTED — Stage 4 — Qussasa Mark v1.0 Adopted As-Is
+## الموضوع 12 — PD-I02 — CLOSED — DECISION-I02 ACCEPTED — Stage 4 — اعتماد علامة Qussasa Mark v1.0 كما هي
 
 - Qussasa Mark v1.0 adopted as-is — بدون تحسين — اجتاز 8 سيناريوهات فعلية — Brand v1.0 LOCKED — يعمل 16-512px — متوافق Direction C الختم تقشير=بصمة بصرية
 - Reason: 1) اجتاز 8 سيناريوهات 2) متوافق Direction C الختم 3) يعمل 16-512px 4) يوفر وقت Stage 4 للمواضيع الأكثر تأثيرًا PD-I03+PD-I05
