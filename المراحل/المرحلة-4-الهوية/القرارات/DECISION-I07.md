@@ -1,10 +1,10 @@
-## DECISION-I07 — PD-I07 Closed — ACCEPTED — Stage 4 — PD-I07
+## DECISION-I07 — إغلاق PD-I07 — ACCEPTED — Stage 4 — PD-I07
 
-**Date:** 2026-09-25
-**Stage:** Stage 4 — Experience & Identity — Identity Re-Foundation
-**Decided by:** حمدان (Founder)
-**Status:** ACCEPTED — CLOSED — بدون تصميم جديد
-**Topic:** PD-I07 — chips الشخصية
+**التاريخ:** 2026-09-25
+**المرحلة:** Stage 4 — Experience & Identity — Identity Re-Foundation
+**صاحب القرار:** حمدان (Founder)
+**الحالة:** ACCEPTED — CLOSED — بدون تصميم جديد
+**الموضوع:** PD-I07 — chips الشخصية
 
 ── القرار ──
 
@@ -33,11 +33,11 @@
 - PD-I07 CLOSED
 - يفتح: PD-I08 Light/Dark + PD-I09 Motion + Settings Modal Topic مستقبلي + PD-I05-R2 بعد الإطلاق
 
-**Stage:** Stage 4 — PD-I07 — CLOSED — DECISION-I07 ACCEPTED 2026-09-25 — بدون تصميم جديد — NEXT PD-I08 + PD-I09 + Settings Modal
+**المرحلة:** Stage 4 — PD-I07 — CLOSED — DECISION-I07 ACCEPTED 2026-09-25 — بدون تصميم جديد — NEXT PD-I08 + PD-I09 + Settings Modal
 
 ---
 
-## Topic 17 — PD-I07 — CLOSED — DECISION-I07 ACCEPTED — Stage 4 — chips الشخصية
+## الموضوع 17 — PD-I07 — CLOSED — DECISION-I07 ACCEPTED — Stage 4 — chips الشخصية
 
 - PD-I07 مغلق — لا تصميم جديد — chips تُبنى على P-35 + P-39
 - Chip = وسم بصري فقط + inline قبل الوصف + غير قابل للنقر + ❌ لا يظهر في البطاقة — P-35/B-09 CORRECTED — P-39 UPDATED
