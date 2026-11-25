@@ -1,106 +1,115 @@
-# DECISION-5B.27 — Remaining UX Details: Signup Prompts, Header, Collections, Help
+# DECISION-5B.27 — تفاصيل تجربة الاستخدام المتبقية: دعوات التسجيل والترويسة والمجموعات والمساعدة
 
-**Status:** ACCEPTED — delegated resolution authorized by Hamdan on 2026-10-28 (message received during the ongoing roadmap workflow).  
+**Status:** ACCEPTED — فوّض حمدان حسم هذه التفاصيل بتاريخ 2026-10-28 (وصل التوجيه أثناء سير العمل على خارطة الطريق).  
 **Recorded:** 2026-10-29  
-**Scope:** Remaining Stage 5-B product/UI questions only. This document records product policy; it does not prove implementation, tests, build, or runtime behavior.
+**Scope:** أسئلة المنتج/واجهة المستخدم الأربعة المتبقية في Stage 5-B فقط. تسجل هذه الوثيقة سياسة المنتج؛ ولا تثبت التنفيذ أو الاختبارات أو البناء أو سلوك بيئة التشغيل.
 
-## Authority and boundaries
+## الصلاحية والحدود
 
-Hamdan explicitly directed the assistant to resolve the remaining open decisions and maintain the reviewed roadmap and its change log after each work item. This decision resolves only the four open UX details below. It does not reopen accepted decisions, alter canonical product fundamentals, or authorize app-code/database changes.
+وجّه حمدان المساعد صراحةً إلى حسم القرارات المفتوحة المتبقية، والمحافظة على خارطة الطريق التي تمت مراجعتها وسجل تغييراتها بعد كل بند عمل. يحسم هذا القرار تفاصيل تجربة الاستخدام الأربع المفتوحة أدناه فقط. ولا يعيد فتح قرارات مقبولة، ولا يغير الأسس الكانونية للمنتج، ولا يصرّح بتعديلات على شيفرة التطبيق أو قاعدة البيانات.
 
-## 1. Signup invitations
+## 1. دعوات التسجيل
 
-### Decision
-1. Signup invitations must never block browsing, searching, opening a reaction, or using guest-local saves.
-2. The first library invitation is optional and non-blocking. Use a compact inline/banner-style invitation, not a blocking modal or timed interruption.
-3. Contextual invitations appear only when a guest reaches an action that genuinely requires an account (for example, following a collection), or in the already approved contextual location. Saving a reaction alone is not a reason to block or interrupt the guest.
-4. Once dismissed or continued past, a given invitation is not shown again in the same browser session/profile context. Do not repeatedly prompt on every page or every action.
-5. The invitation provides an explicit close/dismiss action and a clear continue-as-guest path. Google is the active sign-in provider; do not imply Apple/Microsoft sign-in is available.
-6. Use the following approved Arabic copy as the default:
-   - **Library invitation heading:** «خلّ رياكشناتك المحفوظة معك»
-   - **Body:** «سجّل دخولك عشان تزامن محفوظاتك وتوصل لها من حسابك. وتقدر تواصل التصفح كزائر.»
-   - **Primary action:** «تسجيل الدخول بـ Google»
-   - **Secondary action:** «الاستمرار كزائر»
-   - **Dismiss label/accessibility name:** «إغلاق»
-7. For a guest attempting an account-only collection-follow action:
-   - **Heading:** «تابع المجموعة من حسابك»
-   - **Body:** «سجّل دخولك عشان تحفظ المجموعات التي تتابعها.»
-   - **Primary action:** «تسجيل الدخول بـ Google»
-   - **Secondary action:** «ليس الآن»
-8. Do not claim that guest saves are synchronized until server confirmation. Follow DECISION-5B.24 for additive merge, retry, deduplication, and account isolation.
+### القرار
 
-### Rationale / rejected alternatives
-- Rejected: blocking signup modal, forced login before browsing/saving, repeated prompts, and implying that local guest saves are already synchronized.
-- Reason: preserve low-friction library access, guest utility, and honest account boundaries.
+1. يجب ألا تعيق دعوات التسجيل التصفح أو البحث أو فتح الرياكشن أو استخدام محفوظات الزائر المحلية.
+2. دعوة المكتبة الأولى اختيارية وغير مانعة للاستخدام. استخدم دعوة مدمجة ومختصرة داخل الصفحة أو على هيئة شريط، لا نافذة منبثقة تعيق المستخدم ولا مقاطعة مؤقتة تظهر بعد مدة.
+3. لا تظهر الدعوات السياقية إلا عندما يصل الزائر إلى إجراء يتطلب حسابًا فعلًا (مثل متابعة مجموعة)، أو في الموضع السياقي المعتمد مسبقًا. مجرد حفظ رياكشن ليس سببًا لمنع الزائر أو مقاطعته.
+4. بعد إغلاق الدعوة أو تجاوزها بالمتابعة، لا تُعرض الدعوة نفسها مرة أخرى خلال جلسة المتصفح/سياق الملف الشخصي نفسه. لا تكرر طلب التسجيل في كل صفحة أو عند كل إجراء.
+5. توفر الدعوة إجراءً واضحًا للإغلاق/التجاهل ومسارًا واضحًا لمواصلة الاستخدام كزائر. Google هو مزود تسجيل الدخول النشط؛ فلا توحِ بتوفر تسجيل الدخول عبر Apple أو Microsoft.
+6. استخدم النص العربي المعتمد التالي افتراضيًا:
+   - **عنوان دعوة المكتبة:** «خلّ رياكشناتك المحفوظة معك»
+   - **النص:** «سجّل دخولك عشان تزامن محفوظاتك وتوصل لها من حسابك. وتقدر تواصل التصفح كزائر.»
+   - **الإجراء الأساسي:** «تسجيل الدخول بـ Google»
+   - **الإجراء الثانوي:** «الاستمرار كزائر»
+   - **تسمية الإغلاق/اسم إمكانية الوصول:** «إغلاق»
+7. عندما يحاول زائر تنفيذ إجراء متابعة مجموعة يتطلب حسابًا:
+   - **العنوان:** «تابع المجموعة من حسابك»
+   - **النص:** «سجّل دخولك عشان تحفظ المجموعات التي تتابعها.»
+   - **الإجراء الأساسي:** «تسجيل الدخول بـ Google»
+   - **الإجراء الثانوي:** «ليس الآن»
+8. لا تدّعِ مزامنة محفوظات الزائر قبل تأكيد الخادم نجاحها. اتبع DECISION-5B.24 فيما يخص الدمج الإضافي وإعادة المحاولة وإزالة التكرار وعزل الحسابات.
 
-## 2. Header visual reference
+### المبررات / البدائل المرفوضة
 
-### Decision
-1. The visual authority is the locked YemReact Brand v1.0 and Qussasa Mark, combined with the already accepted Stage 5-B responsive navigation and clean product-first visual language.
-2. Pinterest is **not** the header reference. Pinterest-like masonry remains a presentation pattern for the library only; it does not authorize copying Pinterest navigation, controls, branding, or social features.
-3. Preserve the accepted interaction structure:
-   - Mobile: Library, Collections, Account in the bottom navigation; submission is not a bottom-nav item.
-   - Desktop: Library and Collections as primary destinations; search and Submit in the header; no standalone Saved destination in the desktop header.
-   - Account avatar opens Account; its adjacent chevron opens the account menu.
-4. The header must remain visually quiet, RTL-correct, responsive, and consistent with the approved typography/color/mark system. Do not add social metrics, profile feeds, decorative Pinterest-like controls, or a new navigation destination.
-5. No new reference screenshot is required to establish the product rule. A later visual comparison may evaluate execution quality but may not silently change the approved structure or brand.
+- **مرفوض:** نافذة تسجيل منبثقة مانعة، أو فرض تسجيل الدخول قبل التصفح/الحفظ، أو تكرار الدعوات، أو الإيحاء بأن محفوظات الزائر المحلية قد تزامنت بالفعل.
+- **السبب:** الحفاظ على سهولة الوصول إلى المكتبة، وفائدة وضع الزائر، والوضوح بشأن حدود الحساب.
 
-### Rationale / rejected alternatives
-- Rejected: treating a historical Pinterest-like prototype as a binding header design, or using the header redesign to reopen accepted navigation.
-- Reason: distinguish visual inspiration for the content grid from the product's own brand and navigation system.
+## 2. المرجع البصري للترويسة
 
-## 3. Collections display and ordering
+### القرار
 
-### Decision
-1. Collections remain admin-curated editorial groupings, not user-created Boards or a social graph.
-2. On the Library page, show a compact, horizontally scrollable collection strip after the primary page introduction/search area and before the reaction grid. On narrow screens, the strip must not displace the core search/library experience or force horizontal page overflow.
-3. The `/collections` page lists active, published collections in an explicit admin-controlled order. Do not sort by follower count, engagement, popularity, or an invented score.
-4. Collection cards use an admin-selected cover when one is supplied; otherwise use a deterministic, available reaction thumbnail from that collection. Show title and a short description when present. The actual clip count may be shown with a clear label in accordance with DECISION-5B.23. Do not show follower counts or engagement counters.
-5. The `/collections/[slug]` page shows the collection title, description when present, reaction grid, and follow/unfollow action for signed-in users. Empty/error/loading states must remain distinct; an absent optional description is omitted rather than replaced with a placeholder.
-6. Guests can view collections and their reactions. If a guest attempts to follow a collection, show the non-blocking contextual invitation from section 1; do not require login merely to view.
-7. For signed-in users, followed collections appear in a clearly labelled «المجموعات التي تتابعها» section at the top of `/collections`, followed by the full admin-ordered collection list. This section is personal and private; it is not a public profile or social feed. Do not create a separate route or add a new Account tab for it in this decision.
-8. If a collection is unfollowed, removed, unpublished, or unavailable, reflect the actual state without making stale entries appear available. Never invent counts, covers, or collection content.
+1. المرجع البصري المعتمد هو هوية YemReact Brand v1.0 المقفلة وعلامة Qussasa Mark، إلى جانب نظام التنقل المتجاوب النظيف الذي تم قبوله مسبقًا في Stage 5-B، واللغة البصرية التي تضع المنتج في المقام الأول.
+2. Pinterest **ليس** مرجع الترويسة. يظل تخطيط الصور المتراصة المشابه لـPinterest نمط عرض للمكتبة فقط؛ ولا يجيز نسخ تنقل Pinterest أو عناصر التحكم فيه أو علامته التجارية أو ميزاته الاجتماعية.
+3. حافظ على بنية التفاعل المقبولة:
+   - **الهاتف:** المكتبة والمجموعات والحساب في شريط التنقل السفلي؛ ولا يكون الإرسال عنصرًا في هذا الشريط.
+   - **سطح المكتب:** المكتبة والمجموعات وجهتان أساسيتان؛ والبحث والإرسال في الترويسة؛ ولا توجد وجهة مستقلة للمحفوظات في ترويسة سطح المكتب.
+   - تفتح صورة الحساب صفحة/واجهة الحساب؛ بينما يفتح السهم المجاور لها قائمة الحساب.
+4. يجب أن تظل الترويسة هادئة بصريًا، وصحيحة في RTL، ومتجاوبة، ومتسقة مع نظام الخطوط والألوان والعلامة المعتمد. لا تضف مقاييس اجتماعية أو موجزات للملفات الشخصية أو عناصر تحكم زخرفية مستوحاة من Pinterest أو وجهة تنقل جديدة.
+5. لا يلزم تقديم لقطة شاشة مرجعية جديدة لإثبات قاعدة المنتج. ويمكن لمقارنة بصرية لاحقة تقييم جودة التنفيذ، لكنها لا تستطيع تغيير البنية المعتمدة أو العلامة التجارية ضمنيًا.
 
-### Rationale / rejected alternatives
-- Rejected: user-created boards, engagement-ranked ordering, public follower counts, a separate new route/tab, or hiding the full collection catalogue behind the followed list.
-- Reason: preserve curated discovery while keeping follows useful, private, and distinct from reaction saves.
+### المبررات / البدائل المرفوضة
 
-## 4. Help center Arabic copy
+- **مرفوض:** اعتبار نموذج Pinterest تاريخي شبيه بالواجهة مرجعًا ملزمًا للترويسة، أو استخدام إعادة تصميم الترويسة لإعادة فتح قرارات التنقل المقبولة.
+- **السبب:** التمييز بين الإلهام البصري لشبكة المحتوى وبين العلامة التجارية ونظام التنقل الخاصين بالمنتج.
 
-### Decision
-1. `/help` is a concise, scannable Arabic help center. Search within Help is optional; do not display a non-functional search control.
-2. Use these initial sections and approved baseline copy. Copy must be revised before publication if it conflicts with verified shipped behavior:
+## 3. عرض المجموعات وترتيبها
+
+### القرار
+
+1. تظل المجموعات تصنيفات تحريرية ينظمها المسؤول، وليست لوحات ينشئها المستخدمون ولا شبكة اجتماعية.
+2. في صفحة المكتبة، اعرض شريطًا مختصرًا للمجموعات يمكن تمريره أفقيًا، بعد مقدمة الصفحة/منطقة البحث الأساسية وقبل شبكة الرياكشنات. وفي الشاشات الضيقة، يجب ألا يزيح الشريط تجربة البحث والمكتبة الأساسية أو يسبب تجاوزًا أفقيًا للصفحة.
+3. تسرد صفحة /collections المجموعات النشطة والمنشورة بترتيب صريح يتحكم فيه المسؤول. لا ترتبها بحسب عدد المتابعين أو التفاعل أو الشعبية أو درجة مخترعة.
+4. تستخدم بطاقات المجموعات غلافًا يختاره المسؤول عند توفيره؛ وإلا فتستخدم صورة مصغرة ثابتة ومحددة من رياكشن متاح ضمن المجموعة. اعرض العنوان ووصفًا قصيرًا إذا توفر. ويمكن عرض العدد الفعلي للمقاطع بتسمية واضحة، وفق DECISION-5B.23. لا تعرض أعداد المتابعين أو عدادات التفاعل.
+5. تعرض صفحة /collections/[slug] عنوان المجموعة ووصفها عند توفره وشبكة الرياكشنات وإجراء المتابعة/إلغاء المتابعة للمستخدمين المسجلين. ويجب إبقاء حالات الفراغ والخطأ والتحميل منفصلة؛ وإذا لم يتوفر وصف اختياري، فيُحذف بدل استبداله بنص موحّد مؤقت.
+6. يمكن للزوار مشاهدة المجموعات والرياكشنات الموجودة فيها. وإذا حاول الزائر متابعة مجموعة، فاعرض الدعوة السياقية غير المانعة الواردة في القسم 1؛ ولا تشترط تسجيل الدخول لمجرد المشاهدة.
+7. تظهر المجموعات التي يتابعها المستخدم المسجل ضمن قسم واضح بعنوان «المجموعات التي تتابعها» في أعلى /collections، ثم تليها القائمة الكاملة للمجموعات وفق ترتيب المسؤول. هذا القسم شخصي وخاص؛ وليس ملفًا عامًا أو موجزًا اجتماعيًا. لا تنشئ مسارًا منفصلًا له، ولا تضف له تبويبًا جديدًا في الحساب بموجب هذا القرار.
+8. إذا ألغيت متابعة مجموعة أو حُذفت أو أُزيل نشرها أو أصبحت غير متاحة، فاعكس حالتها الفعلية من دون إظهار عناصر قديمة على أنها متاحة. ولا تخترع أعدادًا أو أغلفة أو محتوى للمجموعات.
+
+### المبررات / البدائل المرفوضة
+
+- **مرفوض:** لوحات ينشئها المستخدمون، أو ترتيب بحسب التفاعل، أو أعداد متابعين عامة، أو مسار/تبويب جديد منفصل، أو إخفاء كامل فهرس المجموعات خلف قائمة المجموعات المتابَعة.
+- **السبب:** الحفاظ على الاكتشاف المنظم مع إبقاء المتابعات مفيدة وخاصة ومختلفة عن حفظ الرياكشنات.
+
+## 4. النص العربي لمركز المساعدة
+
+### القرار
+
+1. مسار /help هو مركز مساعدة عربي موجز وسهل التصفح. والبحث داخله اختياري؛ فلا تعرض عنصر بحث لا يعمل.
+2. استخدم الأقسام الأولية التالية والنص الأساسي المعتمد. ويجب مراجعة النص قبل نشره إذا تعارض مع السلوك الذي تم التحقق من شحنه فعليًا:
    - **عن يمن رياكت:** «يمن رياكت مكتبة منظّمة لرياكشنات يمنية تقدر تتصفحها وتبحث عنها وتفتح صفحة الرياكشن لمشاركته أو حفظه.»
    - **كيف ألقى رياكشن؟** «تقدر تتصفح المكتبة أو تستكشف المجموعات أو تستخدم البحث. افتح الرياكشن لمشاهدة تفاصيله والخيارات المتاحة له.»
    - **كيف أحفظ رياكشن؟** «تقدر تحفظ الرياكشن كزائر على هذا الجهاز. إذا سجّلت دخولك، قد تُدمج محفوظات الزائر مع محفوظات حسابك بعد تأكيد نجاح المزامنة. إذا تعذرت المزامنة، احتفظ بالمحفوظات المحلية وأعد المحاولة.»
    - **هل الحفظ يحتاج حسابًا؟** «لا، تقدر تحفظ محليًا كزائر. بعض الوظائف المرتبطة بالحساب، مثل متابعة المجموعات، تتطلب تسجيل الدخول.»
    - **كيف أرسل رياكشن؟** «اختر إرسال رياكشن وأكمل النموذج. يلزم تسجيل الدخول عبر Google لإكمال الإرسال، وكل مساهمة تمر بمراجعة بشرية؛ الإرسال لا يضمن النشر.»
    - **متى يظهر الرياكشن الذي أرسلته؟** «لن يظهر في المكتبة العامة إلا بعد المراجعة والموافقة والنشر. يمكنك متابعة الحالة المعروضة في حسابك إذا كانت متاحة.»
-   - **كيف أبلغ عن مشكلة؟** «إذا ظهر خيار إبلاغ في صفحة الرياكشن، استخدمه لبدء البلاغ. يمكنك أيضًا مراجعة مركز المساعدة لمعرفة قناة الإبلاغ المتاحة.» Do not claim an operational report form until it passes DECISION-5B.26's end-to-end launch gate.
+   - **كيف أبلغ عن مشكلة؟** «إذا ظهر خيار إبلاغ في صفحة الرياكشن، استخدمه لبدء البلاغ. يمكنك أيضًا مراجعة مركز المساعدة لمعرفة قناة الإبلاغ المتاحة.» لا تدّعِ وجود نموذج إبلاغ يعمل ما لم يجتز بوابة الإطلاق من البداية إلى النهاية في DECISION-5B.26.
    - **كيف أغيّر المظهر؟** «من الإعدادات، اختر تلقائي أو نهاري أو ليلي إذا كانت الخيارات متاحة في النسخة التي تستخدمها. الوضع التلقائي يتبع إعداد جهازك.»
-3. Do not claim Apple/Microsoft sign-in, public contributor profiles, automatic publishing, guaranteed support replies, working report submission, or any unverified feature.
-4. Help copy is content, not evidence of functionality. Where a described control or flow is not verified in the shipped product, either omit the answer until verified or clearly label it as guidance for the intended behavior.
+3. لا تدّعِ توفر تسجيل الدخول عبر Apple أو Microsoft أو ملفات مساهمين عامة أو النشر التلقائي أو ضمان الرد من الدعم أو عمل إرسال البلاغات أو أي ميزة لم يتم التحقق منها.
+4. نص المساعدة محتوى إرشادي، وليس دليلًا على الوظيفة. فإذا لم يُتحقق من عنصر تحكم أو مسار موصوف في المنتج المنشور، فإما أن تُحذف الإجابة إلى حين التحقق، أو تُوسم بوضوح بأنها إرشاد للسلوك المقصود.
 
-### Rationale / rejected alternatives
-- Rejected: help copy that promises unverified features, claims reports are sent without server confirmation, or promises support response times.
-- Reason: accuracy and user trust.
+### المبررات / البدائل المرفوضة
 
-## Acceptance checklist
+- **مرفوض:** نص مساعدة يعد بميزات غير متحقق منها، أو يدّعي إرسال البلاغات دون تأكيد الخادم، أو يعد بمدة استجابة للدعم.
+- **السبب:** الدقة وثقة المستخدم.
 
-- Signup prompts are optional, non-blocking, dismissible, not repetitive, and have clear guest continuation.
-- Header reference and accepted navigation are unambiguous; Pinterest is limited to masonry presentation inspiration.
-- Collections have a deterministic admin-controlled order, explicit card rules, private followed-collection placement, and no social counters.
-- Help copy matches accepted policies and is withheld/qualified where implementation is unverified.
-- No route, account tab, or public social feature is added beyond the decisions above.
-- No code, database, security verification, tests, build, runtime, or release readiness is implied.
+## قائمة التحقق من القبول
 
-## Impact and governance
+- دعوات التسجيل اختيارية وغير مانعة وقابلة للإغلاق وغير متكررة، وتوفر مسارًا واضحًا لمواصلة الاستخدام كزائر.
+- المرجع البصري للترويسة ونظام التنقل المعتمد واضحان؛ ويقتصر دور Pinterest على الإلهام في نمط عرض الصور المتراصة.
+- للمجموعات ترتيب محدد يتحكم فيه المسؤول، وقواعد واضحة للبطاقات، وموضع خاص للمجموعات المتابَعة، ومن دون عدادات اجتماعية.
+- يتطابق نص المساعدة مع السياسات المقبولة، ويُحجب أو يُقيّد عندما يكون التنفيذ غير متحقق منه.
+- لا يُضاف مسار أو تبويب حساب أو ميزة اجتماعية عامة خارج القرارات المذكورة أعلاه.
+- لا يُفهم من هذا القرار تنفيذ شيفرة أو تعديل قاعدة بيانات أو تحقق أمني أو اختبارات أو بناء أو تشغيل أو جاهزية إصدار.
 
-- Resolves the remaining Stage 5-B product questions for signup prompts, header visual reference, collection presentation, and Arabic Help copy.
-- DECISION-5B.19 through DECISION-5B.26 remain in force; DECISION-5B.23 controls numeric UI, DECISION-5B.24 controls guest-save reconciliation, and DECISION-5B.26 controls the report launch gate.
-- Stage 5 remains OPEN. This does not create Stage 5.3 or start Stage 6.
-- OPEN-Q-08 and OPEN-Q-09 remain separate and closed for documentation only; their technical implementation is unverified.
-- SEC-06, upload enforcement, route behavior, permissions, report workflow, tests, build, and runtime remain unverified.
+## الأثر والحوكمة
 
-## Current status reconciliation — 2026-10-30
-The statement above that Stage 5 remains open describes the status at the time this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** under the dated closeout record; the product questions resolved here remain accepted. OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. UX implementation, accessibility, route behavior, and runtime remain unverified/deferred. This addendum does not authorize implementation.
+- يحسم هذا القرار أسئلة المنتج المتبقية في Stage 5-B المتعلقة بدعوات التسجيل والمرجع البصري للترويسة وعرض المجموعات والنص العربي لمركز المساعدة.
+- تظل القرارات DECISION-5B.19 إلى DECISION-5B.26 سارية؛ ويتحكم DECISION-5B.23 في الأرقام الظاهرة، وDECISION-5B.24 في التوفيق بين محفوظات الزائر، وDECISION-5B.26 في بوابة إطلاق الإبلاغ.
+- في وقت تسجيل هذا القرار كانت Stage 5 بحالة OPEN. لا ينشئ هذا القرار Stage 5.3 ولا يبدأ Stage 6.
+- يظل OPEN-Q-08 وOPEN-Q-09 منفصلين ومغلقين توثيقيًا فقط؛ وتنفيذهما التقني غير متحقق منه.
+- تظل SEC-06 وإنفاذ الرفع وسلوك المسارات والصلاحيات وسير الإبلاغ والاختبارات والبناء وبيئة التشغيل غير متحققة.
+
+## مواءمة الحالة الحالية — 2026-10-30
+
+العبارة أعلاه التي تقول إن Stage 5 ما زالت مفتوحة تصف الحالة وقت تسجيل هذا القرار. الحالة الحالية: Stage 5 **CLOSED FOR DOCUMENTATION ONLY** وفق سجل الإغلاق المؤرخ؛ وتظل أسئلة المنتج التي حُسمت هنا مقبولة. وOPEN-Q-08 وOPEN-Q-09 كل منهما **CLOSED FOR DOCUMENTATION ONLY** في وثيقته المستقلة. ويظل تنفيذ تجربة الاستخدام والإتاحة وسلوك المسارات وبيئة التشغيل غير متحقق منه/مؤجلًا. ولا يمنح هذا الملحق إذنًا بالتنفيذ.
