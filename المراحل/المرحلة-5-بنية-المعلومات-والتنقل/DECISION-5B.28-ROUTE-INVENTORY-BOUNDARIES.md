@@ -1,64 +1,64 @@
-# DECISION-5B.28 — Route Inventory Boundaries and Unavailable States
+# القرار 5B.28 — حدود جرد المسارات وحالات عدم التوفر
 
-**Status:** ACCEPTED — product/documentation scope only  
-**Recorded:** 2026-10-29  
-**Authority:** Hamdan directed the assistant to continue resolving remaining documentation questions before considering Stage 5 closure, while explicitly deferring implementation work until documentation is complete.  
-**Scope:** Classify the remaining route-inventory gaps without inventing product routes. This decision does not select implementation architecture, prove any route exists in the application, or authorize code/database changes.
+**الحالة:** ACCEPTED — نطاق المنتج والتوثيق فقط  
+**تاريخ التسجيل:** 2026-10-29  
+**السلطة:** وجّه حمدان المساعد إلى مواصلة حسم أسئلة التوثيق المتبقية قبل النظر في إغلاق المرحلة 5، مع تأجيل أعمال التنفيذ صراحةً إلى ما بعد اكتمال التوثيق.  
+**النطاق:** تصنيف الفجوات المتبقية في جرد المسارات دون اختراع مسارات للمنتج. لا يختار هذا القرار معمارية التنفيذ، ولا يثبت وجود أي مسار في التطبيق، ولا يجيز تغييرات في الكود أو قاعدة البيانات.
 
-## 1. Admin area and subroutes
+## 1. منطقة الإدارة والمسارات الفرعية
 
-1. `/admin` is the only admin route currently established at the product-inventory level.
-2. No additional public or product-level route names are approved for admin subsections by this decision.
-3. Content management, submission review, collection management, report review, and permissions belong to the admin area according to authorized roles; their exact internal screen/URL structure is not a Stage 5 product-route decision.
-4. Do not invent or publish an assumed list of admin URLs in the product route inventory. Their actual route tree must be documented during a separately authorized application/technical review.
-5. This does not weaken the requirement that sensitive admin actions be restricted to authorized staff; enforcement remains unverified.
+1. المسار \`/admin\` هو مسار الإدارة الوحيد المثبت حاليًا على مستوى جرد المنتج.
+2. لا يعتمد هذا القرار أي أسماء إضافية لمسارات عامة أو مسارات على مستوى المنتج للأقسام الفرعية في الإدارة.
+3. تندرج إدارة المحتوى، ومراجعة المساهمات، وإدارة المجموعات، ومراجعة البلاغات، والصلاحيات ضمن منطقة الإدارة وفق الأدوار المصرح بها؛ أما البنية الدقيقة للشاشات أو عناوين URL الداخلية فلم تُحسم بوصفها قرارًا لمسارات المنتج في المرحلة 5.
+4. لا تخترع ولا تنشر قائمة مفترضة لعناوين URL الخاصة بالإدارة ضمن جرد مسارات المنتج. يجب توثيق شجرة المسارات الفعلية خلال مراجعة مستقلة للتطبيق/الجانب التقني، بعد التصريح بها.
+5. لا ينتقص ذلك من اشتراط حصر إجراءات الإدارة الحساسة على الموظفين المصرح لهم؛ فما زال تطبيق هذا الحصر غير متحقق منه.
 
-## 2. Privacy, rights, and legal pages
+## 2. صفحات الخصوصية والحقوق والشؤون القانونية
 
-1. Stage 5 does not approve new standalone routes such as `/privacy`, `/terms`, `/rights`, or `/report` based solely on gaps in the inventory.
-2. The accepted product surfaces remain `/settings` for the approved account/privacy settings area and `/help` for help content and reporting guidance. Reporting begins through the already specified Help/reaction-menu workflow; DECISION-5B.26 does not approve a separate public report route.
-3. Substantive legal requirements, terms, rights/takedown policy, and any required legal disclosures remain a separate legal-scope obligation (historically assigned to the later Legal scope). This decision neither waives those obligations nor decides whether a future legal page will be required.
-4. Until that legal scope is explicitly reviewed, the Stage 5 inventory records no approved standalone privacy/rights/legal route. Do not create or name one by inference.
+1. لا تعتمد المرحلة 5 مسارات مستقلة جديدة مثل \`/privacy\` أو \`/terms\` أو \`/rights\` أو \`/report\` لمجرد وجود فجوات في الجرد.
+2. تظل واجهات المنتج المعتمدة هي \`/settings\` لمنطقة إعدادات الحساب/الخصوصية المعتمدة، و\`/help\` لمحتوى المساعدة وإرشادات الإبلاغ. يبدأ الإبلاغ عبر مسار المساعدة/قائمة الرياكشن المحدد سابقًا؛ ولا يعتمد القرار 5B.26 مسارًا عامًا مستقلًا للإبلاغ.
+3. تظل المتطلبات القانونية الجوهرية، والشروط، وسياسة الحقوق/إزالة المحتوى، وأي إفصاحات قانونية مطلوبة التزامًا منفصلًا ضمن النطاق القانوني (أُسند تاريخيًا إلى النطاق القانوني اللاحق). لا يعفي هذا القرار من تلك الالتزامات، ولا يحسم ما إذا كانت هناك حاجة إلى صفحة قانونية مستقبلًا.
+4. إلى أن تُراجع تلك المتطلبات القانونية صراحةً، لا يسجل جرد المرحلة 5 أي مسار مستقل معتمد للخصوصية أو الحقوق أو الشؤون القانونية. لا تنشئ مثل هذا المسار ولا تسمّه بالاستنتاج.
 
-## 3. Invalid or unavailable reaction links
+## 3. روابط الرياكشن غير الصالحة أو غير المتاحة
 
-1. An invalid reaction code or a reaction that is not available for public viewing is handled as an unavailable/not-found state of the existing `/r/[code]` route, not as a new product route.
-2. Do not render a misleading empty reaction detail, fabricate reaction data, or reveal internal moderation details.
-3. The user-facing state should communicate that the reaction is unavailable and provide a clear return path to the library. The default copy may be concise, for example: «هذا الرياكشن غير متاح».
-4. Unknown application paths likewise use the app's general not-found state; no additional named route is approved by this decision.
-5. Exact HTTP status codes, indexing/crawl behavior, redirects, telemetry, and visual implementation remain technical specification/verification matters and are not claimed as implemented here.
+1. يُعالج رمز الرياكشن غير الصالح، أو الرياكشن غير المتاح للمشاهدة العامة، بوصفه حالة عدم توفر/عدم العثور ضمن مسار \`/r/[code]\` القائم، لا بوصفه مسارًا جديدًا للمنتج.
+2. لا تعرض صفحة تفاصيل رياكشن فارغة على نحو مضلل، ولا تختلق بيانات للرياكشن، ولا تكشف تفاصيل الإشراف الداخلي.
+3. يجب أن توضح الحالة الظاهرة للمستخدم أن الرياكشن غير متاح، وأن توفر مسار عودة واضحًا إلى المكتبة. ويمكن أن يكون النص الافتراضي موجزًا، مثل: «هذا الرياكشن غير متاح».
+4. تستخدم المسارات غير المعروفة في التطبيق كذلك حالة «غير موجود» العامة للتطبيق؛ ولا يعتمد هذا القرار أي مسار إضافي باسم مستقل.
+5. تظل رموز حالة HTTP، وسلوك الفهرسة/الزحف، وإعادة التوجيه، والقياس، والتنفيذ البصري مسائل للمواصفات/التحقق التقني، ولا يُدّعى أنها منفذة هنا.
 
-## 4. Inventory classification
+## 4. تصنيف الجرد
 
-| Inventory topic | Product/documentation outcome | Remaining technical status |
+| موضوع الجرد | نتيجة المنتج/التوثيق | الحالة التقنية المتبقية |
 |---|---|---|
-| Admin subroutes | No additional product-level routes approved in Stage 5; `/admin` is the documented umbrella. | Actual application route tree and authorization checks unverified. |
-| Privacy/rights/legal routes | No standalone route approved by Stage 5. Legal content/obligations remain outside this decision and require separate legal-scope review. | Whether future legal requirements require a page remains for that scope; no implementation verified. |
-| Report route | No standalone public `/report` route; follow DECISION-5B.26. | End-to-end report workflow remains unverified and cannot be presented as operational before its gate passes. |
-| Invalid reaction code | Unavailable/not-found state within `/r/[code]`; no new product route. | Status code, SEO/crawl treatment, and actual state rendering unverified. |
-| Unknown app path | General not-found state; no named route added to product scope. | Actual fallback, status code, and navigation behavior unverified. |
+| المسارات الفرعية للإدارة | لا مسارات إضافية على مستوى المنتج معتمدة في المرحلة 5؛ و\`/admin\` هو المسار الجامع الموثق. | شجرة مسارات التطبيق الفعلية وفحوص التفويض غير متحقق منها. |
+| مسارات الخصوصية/الحقوق/الشؤون القانونية | لا مسار مستقل معتمد في المرحلة 5. يظل المحتوى/الالتزام القانوني خارج هذا القرار ويتطلب مراجعة مستقلة ضمن النطاق القانوني. | ما إذا كانت المتطلبات القانونية المستقبلية تستلزم صفحة يظل شأنًا لذلك النطاق؛ ولم يُتحقق من أي تنفيذ. |
+| مسار الإبلاغ | لا مسار عام مستقل باسم \`/report\`؛ يُتبع القرار 5B.26. | مسار الإبلاغ من بدايته إلى نهايته غير متحقق منه، ولا يجوز عرضه على أنه يعمل قبل اجتياز بوابته. |
+| رمز رياكشن غير صالح | حالة عدم توفر/عدم العثور داخل \`/r/[code]\`؛ دون إضافة مسار جديد. | رمز الحالة، ومعالجة SEO/الزحف، وعرض الحالة الفعلي غير متحقق منها. |
+| مسار تطبيق غير معروف | حالة «غير موجود» العامة؛ ولا يُضاف اسم مسار إلى نطاق المنتج. | السلوك الاحتياطي الفعلي، ورمز الحالة، وسلوك التنقل غير متحقق منها. |
 
-## 5. Stage boundary and governance
+## 5. حدود المرحلة والحوكمة
 
-- This resolves the remaining Stage 5 **product-route inventory classification** gaps; it does not claim every legal obligation, internal admin URL, or technical state has been implemented or fully specified.
-- The route inventory may now label the above product-scope questions as resolved, while retaining technical details as UNVERIFIED and future legal requirements as a separate scope.
-- Stage 5 remains OPEN pending a separate documentation closeout review and Hamdan's explicit closure decision.
-- No Stage 5.3 is created and Stage 6 is not started.
-- OPEN-Q-08 and OPEN-Q-09 remain separate and CLOSED FOR DOCUMENTATION only.
-- No app code, database, security settings, tests, build, runtime, or release configuration is changed or verified by this decision.
+- يحسم هذا القرار فجوات **تصنيف جرد مسارات المنتج** المتبقية في المرحلة 5؛ ولا يدّعي تنفيذ جميع الالتزامات القانونية أو عناوين الإدارة الداخلية أو الحالات التقنية، ولا استكمال مواصفاتها.
+- يجوز لجرد المسارات وسم الأسئلة أعلاه بأنها محسومة على مستوى نطاق المنتج، مع إبقاء التفاصيل التقنية بحالة UNVERIFIED والمتطلبات القانونية المستقبلية ضمن نطاق منفصل.
+- تظل المرحلة 5 **مغلقة توثيقيًا فقط** وفق سجل إغلاق المرحلة 5 الموجود في \`حوكمة-المراحل/سجل-إغلاق-المرحلة-5-توثيقياً.md\`.
+- لا تُنشأ مرحلة 5.3، ولا تبدأ المرحلة 6.
+- يظل السؤالان OPEN-Q-08 وOPEN-Q-09 منفصلين، وحالة كل منهما CLOSED FOR DOCUMENTATION ONLY.
+- لا يغيّر هذا القرار كود التطبيق أو قاعدة البيانات أو إعدادات الأمان أو الاختبارات أو البناء أو بيئة التشغيل أو إعدادات الإصدار، ولا يتحقق من أي منها.
 
+## توضيح نص الحالة الظاهرة للمستخدم عند عدم التوفر/عدم العثور — 2026-10-30
 
-## User-facing unavailable/not-found copy clarification — 2026-10-30
+وُضّح قرار المسارات بالنصوص العربية الأولية التالية لواجهة المستخدم، بعد تبنٍّ انتقائي من PR #18 ومواءمتها مع حدود المسارات القائمة:
 
-The route decision is clarified with the following initial Arabic UX copy, selectively adopted from PR #18 and aligned to the existing route boundaries:
+- مسار تطبيق غير معروف: «الصفحة غير موجودة».
+- رياكشن غير صالح أو غير متاح على \`/r/[code]\`: «الرياكشن غير متاح».
+- النص المساند: «يمكنك العودة للمكتبة أو البحث عن رياكشن آخر.»
+- الإجراء الأساسي: «العودة للمكتبة» ← \`/\`.
+- الإجراء الثانوي: «البحث في المكتبة» ← \`/?q=\`.
 
-- Unknown application path: «الصفحة غير موجودة».
-- Invalid or unavailable reaction at `/r/[code]`: «الرياكشن غير متاح».
-- Supporting text: «يمكنك العودة للمكتبة أو البحث عن رياكشن آخر.»
-- Primary action: «العودة للمكتبة» → `/`.
-- Secondary action: «البحث في المكتبة» → `/?q=`.
+يجب ألا تكشف هذه الرسائل حالة الإشراف أو النشر أو المراجعة الخاصة. ولا تُجرِ إعادة توجيه صامتة إلى محتوى غير ذي صلة. تظل حالة HTTP والبيانات الوصفية وإعادة التوجيه ومعالجة الزحف والعرض مسائل تقنية غير متحقق منها. هذا توضيح على مستوى النصوص فقط؛ ولا ينشئ مسارات جديدة ولا يغيّر حدود النطاق القانوني.
 
-These messages must not disclose moderation, publication, or private review status. Do not silently redirect to unrelated content. HTTP status, metadata, redirects, crawl treatment, and rendering remain technical and UNVERIFIED. This is a copy-level clarification only; it does not create new routes or change the legal-scope boundary.
+## مصالحة الحالة الحالية — 2026-10-30
 
-## Current status reconciliation — 2026-10-30
-The statement above that Stage 5 remains open pending closeout describes the state at the time this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY** under `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-RECORD.md`. OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. Actual routes, status codes, SEO/crawl behavior, admin authorization, and legal-scope outcomes remain unverified or assigned to a separate future scope. This addendum does not authorize implementation.
+العبارة السابقة التي تفيد بأن المرحلة 5 ما تزال مفتوحة بانتظار مراجعة الإغلاق تصف الحالة وقت تسجيل القرار. الحالة الحالية: المرحلة 5 **CLOSED FOR DOCUMENTATION ONLY** وفق \`حوكمة-المراحل/سجل-إغلاق-المرحلة-5-توثيقياً.md\`. كما أن OPEN-Q-08 وOPEN-Q-09 كلٌّ منهما **CLOSED FOR DOCUMENTATION ONLY** في وثيقته المستقلة. وما تزال المسارات الفعلية ورموز الحالة وسلوك SEO/الزحف وتفويض الإدارة ونتائج النطاق القانوني غير متحقق منها أو مسندة إلى نطاق مستقبلي منفصل. لا يجيز هذا الملحق أي تنفيذ.
