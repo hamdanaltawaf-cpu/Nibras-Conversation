@@ -1,5 +1,7 @@
 # تسليم Arena التقني (ARENA-TECHNICAL-HANDOFF.md)
 ## YemReact — المرحلة 0 / التسليم المعرفي التقني
+
+> **تنبيه تاريخي بالغ الأهمية:** هذا التسليم لقطة تقنية أعدّتها Arena بتاريخ 2026-09-02، اعتمادًا على ملفات ومخرجات أوامر وقاعدة بيانات كما كانت في تلك البيئة. ليس تقريرًا عن الحالة التقنية الحالية لمستودع `main`، ولا يثبت أن الأرقام أو الإعدادات أو الاختبارات المذكورة ما زالت صحيحة اليوم. أي وصف لحالة «موجود/مكتمل/مكسور/غير منفذ» يخص وقت الفحص فقط؛ ولا يُستند إليه دون تحقق تقني جديد ومصرح به.
 ### التسليم الرسمي من Arena-Agent إلى مرحلة إعادة تأسيس YemReact (إلى: نِبراس)
 
 | البند | القيمة |
@@ -133,7 +135,7 @@
 | Media في الإنتاج | Vercel بلا ffmpeg؛ `LocalStorage` على قرص مؤقت؛ حد body 4.5MB مقابل قراءة 80MB في الذاكرة | استنتاج (قيود Vercel معروفة) + الشيفرة + قاعدة البيانات (media=0) |
 
 ### ⚪ مخطط فقط ولم يُنفَّذ
-Settings · إدارة المستخدمين/الأدوار · Featured مسؤول · AuditLog viewer · Search suggestions/recent/sort · صفحة `/categories` · Notifications · Rate limiting (عدا قيد الانتظار≤5) · CSP · `middleware.ts` · `loading.tsx` · favicon/robots/sitemap/manifest/OG · PWA · Job queue/worker خارجي · Range/HLS/CDN/signed URLs · Aggregation job · CI · git remote · Embedding search · تنظيف `.storage` اليتيم. (الشيفرة: غياب تام)
+الإعدادات · إدارة المستخدمين/الأدوار · إدارة المحتوى المميز (Featured) · عارض سجل التدقيق (AuditLog viewer) · Search suggestions/recent/sort · صفحة `/categories` · Notifications · Rate limiting (عدا قيد الانتظار≤5) · CSP · `middleware.ts` · `loading.tsx` · favicon/robots/sitemap/manifest/OG · PWA · Job queue/worker خارجي · Range/HLS/CDN/signed URLs · Aggregation job · CI · git remote · Embedding search · تنظيف `.storage` اليتيم. (الشيفرة: غياب تام)
 
 ---
 
@@ -292,7 +294,7 @@ DROP INDEX "Reaction_searchText_gin";
 ### 6.7 غير المستخدم (الشيفرة: 0 مراجع في `src/`)
 `Session`, `OneTimeCode`, `Setting` (models)؛ `UserRole.EDITOR` (بلا منطق)؛ `MediaRole.SUBTITLE`؛ `MediaKind.PROCESSED` كمخرج (يُقبل فقط برفع أدمن يدوي)؛ `Submission.contact`, `Submission.sessionId` (لا تُملأ)؛ `Reaction.savesCount/downloadsCount/sharesCount` (تُزاد عبر مسار معطَّل — BUG-1).
 
-### 6.8 عناصر تبدو موروثة من إصدار سابق (legacy) (استنتاج — استنتاج وليس حقيقة مثبتة)
+### 6.8 عناصر تبدو موروثة من إصدار سابق (legacy) — استنتاج لا حقيقة مثبتة
 `Session` + `OneTimeCode` + `ADMIN_EMAIL`/`SMTP_*` في env → بقايا تصميم OTP الوارد في ADR-0001 والـ MVP القديم (`arena.md` §9.2)، استُبدل بـ Google في "Phase 6A".
 
 ### 6.9 يحتاج قرارًا لاحقًا (لا أقرره)
@@ -375,12 +377,12 @@ DELIVERY  GET /media/[...key]
 PLAYBACK  <video src poster muted playsInline controls>  ; DOWNLOAD <a href download target=_blank>
 ```
 
-### 8.2 ما يعمل محليًا (الشيفرة + `.storage` + unit اختبارات)
+### 8.2 ما يعمل محليًا (الشيفرة + `.storage` + اختبارات الوحدة)
 - كل ما سبق نُفِّذ محليًا مرارًا: `.storage/` يحتوي **829 ملفًا / 11 MB**: 282 تحت `reactions/`، 546 تحت `submissions/`، **216 زوج `.wm.mp4` + `.thumb.jpg`**، و`watermark/qs.png`. (مخرجات الأوامر: find/count)
 - unit: `media-validation` (9), `media-processing` (10, processor بحالاته عبر mocks), `media-storage-agnostic` (2), `storage-s3` (11) — كلها ✅.
 - integration `media-process.test.ts` (2) و e2e `admin-media*.spec.ts` (9) موجودة — **لم أشغّلها** (لا ffmpeg + تكتب في DB).
 
-### 8.3 ما لا يعمل على Vercel (استنتاج — استنتاج وليس حقيقة مثبتة، مبني على قيود Vercel المعروفة + الشيفرة)
+### 8.3 ما لا يعمل على Vercel (استنتاج لا حقيقة مثبتة، مبني على قيود Vercel المعروفة والشيفرة)
 - `spawn("ffmpeg")` → ENOENT (لا ffmpeg في runtime الـ functions) → كل أصل يصبح `failed`.
 - `LocalStorage` يكتب إلى `./.storage` على نظام ملفات مؤقت/للقراءة فقط؛ `/media/<key>` لن يجد الملفات بعد cold start.
 - `ensureWatermarkFile` يكتب إلى `./.storage` حتى مع `STORAGE_DRIVER=s3`.
@@ -514,7 +516,7 @@ PLAYBACK  <video src poster muted playsInline controls>  ; DOWNLOAD <a href down
 
 ---
 
-## القسم 12 — Git وبيئة المشروع (مخرجات الأوامر، لا mutation)
+## القسم 12 — Git وبيئة المشروع (مخرجات الأوامر، دون تعديل أو تغيير بيانات — لا mutation)
 
 | البند | القيمة |
 |---|---|
