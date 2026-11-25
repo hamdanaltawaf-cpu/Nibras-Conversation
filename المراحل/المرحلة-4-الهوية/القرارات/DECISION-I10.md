@@ -1,10 +1,10 @@
-## DECISION-I10 — UI Visual Language (Studio Seal) — ACCEPTED — Stage 4 — PD-I10 — LAST TOPIC
+## DECISION-I10 — اللغة البصرية للواجهة (Studio Seal) — ACCEPTED — Stage 4 — PD-I10 — LAST TOPIC
 
-**Date:** 2026-09-30
-**Stage:** Stage 4 — Experience & Identity — Identity Re-Foundation — **LAST TOPIC**
-**Decided by:** حمدان (Founder)
-**Status:** ACCEPTED — CLOSED
-**Topic:** PD-I10 — UI Visual Language
+**التاريخ:** 2026-09-30
+**المرحلة:** Stage 4 — Experience & Identity — Identity Re-Foundation — **LAST TOPIC**
+**صاحب القرار:** حمدان (Founder)
+**الحالة:** ACCEPTED — CLOSED
+**الموضوع:** PD-I10 — UI Visual Language
 
 ── الاتجاه المعتمد ──
 
@@ -80,18 +80,18 @@
 
 ── الأثر ──
 
-- **P-44 NEW:** UI Visual Language (Studio Seal)
+- **P-44 NEW:** اللغة البصرية للواجهة (Studio Seal)
 - **P-45 NEW:** Account Menu (3 حالات)
 - **P-46 NEW:** Guest Save (local + sync)
 - **76 → 79 facts**
 - **PD-I10 CLOSED**
 - **Stage 4 — Identity Re-Foundation مكتمل 100%**
 
-**Stage:** Stage 4 — PD-I10 — CLOSED — DECISION-I10 ACCEPTED 2026-09-30 — UI Visual Language Studio Seal — **Stage 4 CLOSED 100%** — NEXT Stage 5
+**المرحلة:** Stage 4 — PD-I10 — CLOSED — DECISION-I10 ACCEPTED 2026-09-30 — UI Visual Language Studio Seal — **Stage 4 CLOSED 100%** — NEXT Stage 5
 
 ---
 
-## Topic 20 — PD-I10 — CLOSED — DECISION-I10 ACCEPTED — Stage 4 — UI Visual Language (Studio Seal)
+## الموضوع 20 — PD-I10 — CLOSED — DECISION-I10 ACCEPTED — Stage 4 — اللغة البصرية للواجهة (Studio Seal)
 
 - الاتجاه: **Direction D — Hybrid «Studio Seal»** — نظام هادئ كـLinear + دفء Qishr + نظام ختم صارم + الشخصية في المحتوى لا الواجهة
 - Foundation: Spacing 4/8/12/16/24/32/48/64 + Breakpoints 640/1024/1440 + Container 1120px + Masonry 2/3/4/5
