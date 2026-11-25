@@ -1,32 +1,36 @@
-# DECISION-5B.23 — Number Formatting and Numeric UI Visibility
+# DECISION-5B.23 — تنسيق الأرقام وظهورها في واجهة المستخدم
 
 **Status:** ACCEPTED  
 **Date:** 2026-10-28  
-**Scope:** YemReact product/UI policy only. This does not prove implementation or testing.
+**Scope:** سياسة منتج/واجهة مستخدم في YemReact فقط. ولا يثبت هذا القرار تنفيذ السياسة أو اختبارها.
 
-## Global rules
-- Use Western digits (0–9) in Arabic and English UI.
-- Show full counts with comma thousands separators (example: 1,250); do not abbreviate with K/M.
-- Video duration uses minutes:seconds with two-digit seconds (examples: 0:08, 1:05). Card duration remains at the media's top-right. Do not duplicate a duration badge on reaction detail; the player supplies timing.
-- Dates use the Gregorian calendar. Arabic UI uses Arabic month names (example: 27 أكتوبر 2026).
-- Use a 12-hour clock. Arabic UI uses ص/م (example: 2:35 م), two-digit minutes, and no unnecessary leading zero on the hour. Localize the AM/PM marker in other languages.
-- Do not expose internal IDs or technical numbers without an approved user-facing purpose.
+## القواعد العامة
 
-## UI locations and visibility
-- **Library (/):** no total-library count by default. Video cards may show duration. No views, likes, shares, followers, or social-engagement counters.
-- **Search (/?q=; /search redirects to /?q=):** no total-results count or manual result numbering. The five-suggestion cap is not displayed as a count.
-- **Reaction detail (/r/[code]):** the player may show elapsed/total duration (example: 0:08 / 0:42). No duplicate duration badge or numbered reaction position.
-- **Related/recommended clips:** do not show counts of related or recommended clips and do not turn those counts into headings/labels such as “10 رياكشنات”. If related/recommended clips are displayed, their section must not advertise a numeric total.
-- **Collections (/collections and /collections/[slug]):** may show the actual clip count per collection with a clear label (example: “12 مقطعًا”). This is a content count, not engagement. Empty states must be accurate.
-- **Account (/account):** signed-in users may see separate, clearly labelled counts for saved reactions and published contributions. Guests see no account statistics. Pending submissions do not count as published contributions.
-- **Submission (/submit):** communicate the allowed video duration as 2–60 seconds. Validation may show the actual measured duration and allowed range. Do not show upload-time estimates without reliable data.
-- **Settings, login, and help:** no numeric statistics without a clear user need. Any dates/times follow the global rules.
-- **Admin/moderation:** if/when defined, follow the same rules. This does not finalize any admin routes.
+- استخدام الأرقام الغربية (0–9) في واجهة المستخدم العربية والإنجليزية.
+- عرض الأعداد كاملة مع فاصل الآلاف بالفاصلة (مثال: 1,250)؛ وعدم اختصارها باستخدام K/M.
+- عرض مدة الفيديو بصيغة الدقائق:الثواني، مع خانتين للثواني (مثل: 0:08 و1:05). وتبقى مدة البطاقة أعلى يمين الوسيط. لا تكرر شارة المدة في صفحة تفاصيل الرياكشن؛ فمشغل الفيديو يعرض التوقيت.
+- استخدام التقويم الميلادي. وتستخدم الواجهة العربية أسماء الشهور العربية (مثال: 27 أكتوبر 2026).
+- استخدام نظام الساعة ذي 12 ساعة. وفي الواجهة العربية يُستخدم ص/م (مثال: 2:35 م)، مع دقيقتين دائمًا ومن دون صفر بادئ غير ضروري للساعة. وتُوطّن علامة AM/PM في اللغات الأخرى.
+- عدم إظهار المعرفات الداخلية أو الأرقام التقنية ما لم توجد لها حاجة معتمدة وواضحة للمستخدم.
 
-## Governance
-Show numbers only when useful and grounded in real data. Do not invent values, duplicate counts, or add social-network metrics. This decision resolves the open Stage 5-B number/count-formatting topic and prohibits visible counts for related/recommended clips.
+## مواضع الواجهة وما يجوز إظهاره
 
-Stage 5 remains OPEN. No Stage 5.3 or Stage 6 is created. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, upload enforcement, routes, tests, build, and runtime remain unverified. This is product policy, not implementation evidence.
+- **المكتبة (/):** لا يُعرض العدد الإجمالي للمكتبة افتراضيًا. يمكن لبطاقات الفيديو إظهار المدة. لا تعرض أعداد المشاهدات أو الإعجابات أو المشاركات أو المتابعين أو أي عدادات للتفاعل الاجتماعي.
+- **البحث (/?q=؛ ويُعاد توجيه /search إلى /?q=):** لا يُعرض عدد النتائج الإجمالي ولا ترقيم يدوي للنتائج. ولا يُعرض الحد الأقصى البالغ خمسة اقتراحات باعتباره عددًا.
+- **تفاصيل الرياكشن (/r/[code]):** يمكن للمشغل إظهار الزمن المنقضي/المدة الإجمالية (مثال: 0:08 / 0:42). لا تكرر شارة المدة ولا تعرض رقم ترتيب الرياكشن.
+- **المقاطع المرتبطة/المقترحة:** لا تعرض عدد المقاطع المرتبطة أو المقترحة، ولا تحوّل هذه الأعداد إلى عناوين أو تسميات مثل «10 رياكشنات». وإذا عُرضت مقاطع مرتبطة/مقترحة، فيجب ألا يعلن القسم عن إجمالي رقمي لها.
+- **المجموعات (/collections و/collections/[slug]):** يمكن عرض العدد الفعلي للمقاطع داخل كل مجموعة، مع تسمية واضحة (مثال: «12 مقطعًا»). هذا عدد للمحتوى، وليس مقياس تفاعل. ويجب أن تكون حالات الفراغ دقيقة.
+- **الحساب (/account):** يمكن للمستخدم المسجل الدخول رؤية عددين منفصلين وواضحي التسمية: عدد الرياكشنات المحفوظة، وعدد المساهمات المنشورة. لا يرى الزائر إحصاءات الحساب. ولا تُحسب المساهمات المعلقة ضمن المساهمات المنشورة.
+- **الإرسال (/submit):** يجب توضيح أن مدة الفيديو المسموح بها من 2 إلى 60 ثانية. ويمكن للتحقق إظهار المدة المقاسة فعليًا والنطاق المسموح. لا تعرض تقديرات لوقت الرفع ما لم تستند إلى بيانات موثوقة.
+- **الإعدادات وتسجيل الدخول والمساعدة:** لا تعرض إحصاءات رقمية ما لم توجد حاجة واضحة للمستخدم. وتتبع التواريخ والأوقات القواعد العامة.
+- **الإدارة/الإشراف:** عند تعريفها، تتبع القواعد نفسها. ولا يحسم هذا القرار أي مسارات إدارية.
 
-## Current status reconciliation — 2026-10-30
-Any statement above that Stage 5 remains open or that OPEN-Q-08/OPEN-Q-09 remain open reflects the state when this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY**; OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. This decision remains accepted product policy; actual formatting behavior is unverified until separately authorized technical verification. No implementation is authorized by this addendum.
+## الحوكمة
+
+لا تُعرض الأرقام إلا عندما تكون مفيدة ومستندة إلى بيانات فعلية. لا تخترع قيمًا، ولا تكرر الأعداد، ولا تضف مقاييس لشبكة اجتماعية. يحسم هذا القرار موضوع تنسيق الأرقام/الأعداد المفتوح في Stage 5-B، ويحظر إظهار أعداد المقاطع المرتبطة/المقترحة.
+
+في وقت تسجيل هذا القرار كانت Stage 5 بحالة OPEN، وكان OPEN-Q-08 وOPEN-Q-09 منفصلين ومفتوحين OPEN. لا تنشئ Stage 5.3 ولا تبدأ Stage 6. وتظل SEC-06 وإنفاذ الرفع والمسارات والاختبارات والبناء وبيئة التشغيل غير متحققة. هذه سياسة منتج، وليست دليلًا على التنفيذ.
+
+## مواءمة الحالة الحالية — 2026-10-30
+
+أي عبارة أعلاه تقول إن Stage 5 ما زالت مفتوحة، أو إن OPEN-Q-08 وOPEN-Q-09 ما زالا مفتوحين، تصف الحالة وقت تسجيل هذا القرار. الحالة الحالية: Stage 5 **CLOSED FOR DOCUMENTATION ONLY**؛ وOPEN-Q-08 وOPEN-Q-09 كل منهما **CLOSED FOR DOCUMENTATION ONLY** في وثيقته المستقلة. يظل سلوك التنسيق الفعلي غير متحقق منه إلى حين صدور تكليف منفصل بالتحقق التقني. ولا يمنح هذا الملحق إذنًا بالتنفيذ.
