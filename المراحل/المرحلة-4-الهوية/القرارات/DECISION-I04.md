@@ -1,10 +1,10 @@
-## DECISION-I04 — Typography System — ACCEPTED — Stage 4 — PD-I04
+## DECISION-I04 — نظام الخطوط والطباعة — ACCEPTED — Stage 4 — PD-I04
 
-**Date:** 2026-09-25
-**Stage:** Stage 4 — Experience & Identity — Identity Re-Foundation
-**Decided by:** حمدان (Founder)
-**Status:** ACCEPTED
-**Topic:** PD-I04 — Typography System
+**التاريخ:** 2026-09-25
+**المرحلة:** Stage 4 — Experience & Identity — Identity Re-Foundation
+**صاحب القرار:** حمدان (Founder)
+**الحالة:** ACCEPTED
+**الموضوع:** PD-I04 — نظام الخطوط والطباعة
 
 ── النظام المعتمد ──
 
@@ -48,16 +48,16 @@
 
 ── الأثر ──
 
-- P-41 NEW: Typography System
+- P-41 NEW: نظام الخطوط والطباعة
 - PD-I04 CLOSED
 - يفتح: PD-I07 chips الشخصية + PD-I08 Light/Dark + PD-I09 Motion
 - 73→74 facts
 
-**Stage:** Stage 4 — PD-I04 — CLOSED — DECISION-I04 ACCEPTED 2026-09-25 — Typography System — NEXT PD-I07 + PD-I08 + PD-I09
+**المرحلة:** Stage 4 — PD-I04 — CLOSED — DECISION-I04 ACCEPTED 2026-09-25 — نظام الخطوط والطباعة — NEXT PD-I07 + PD-I08 + PD-I09
 
 ---
 
-## Topic 16 — PD-I04 — CLOSED — DECISION-I04 ACCEPTED — Stage 4 — Typography System
+## الموضوع 16 — PD-I04 — CLOSED — DECISION-I04 ACCEPTED — Stage 4 — نظام الخطوط والطباعة
 
 - الخطوط 4: Display Lalezar Logo فقط + عناوين التسويق — Primary Arabic IBM Plex Sans Arabic 400/500/600/700 — Latin Inter 400/500/600/700 — Mono IBM Plex Mono 400/500
 - Type Scale 8 مستويات: H1 32/700/1.2 — H2 24/600/1.3 — H3 20/600/1.3 — Body L 16/400/1.5 — Body 14/400/1.5 — Body S 13/400/1.5 — Caption 12/400/1.4 — Micro 11/500/1.4 Mono
