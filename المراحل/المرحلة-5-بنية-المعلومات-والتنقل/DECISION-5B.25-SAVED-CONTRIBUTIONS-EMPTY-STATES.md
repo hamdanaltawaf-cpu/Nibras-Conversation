@@ -1,21 +1,24 @@
-# DECISION-5B.25 — Saved and My Contributions Empty States
+# DECISION-5B.25 — حالات الفراغ للمحفوظات ومساهماتي
 
-Status: Accepted product policy.
+**Status:** ACCEPTED — سياسة منتج.
 
-## Rules
-- Show an empty state only after a successful load confirms there are no displayable items. Loading, network/server errors, and permission failures are distinct states; offer retry where supported.
-- Guest Saved: heading “ما حفظت أي رياكشن لحد الآن”; body “تصفّح المكتبة واحفظ الرياكشنات التي تعجبك، وبتحصل عليها هنا.”; action “استكشف المكتبة” → `/`.
-- Signed-in Saved: heading “محفوظاتك بتظهر هنا”; body “احفظ الرياكشنات التي تريد الرجوع إليها، وستجدها في مكان واحد.”; action “استكشف المكتبة” → `/`.
-- Signed-in My Contributions: heading “ما عندك مساهمات حتى الآن”; body “أرسل رياكشن يمنيًا ليستفيد منه الآخرون بعد مراجعته واعتماده.”; action “أرسل رياكشن” → `/submit`.
-- Guest Account must not show account statistics or an empty My Contributions panel. Preserve guest local saves and the established sign-in invitation.
-- Any submission with a status (pending, needs changes, declined/rejected, published) is an item, not an empty state. Show contributor-facing status and reasons/change requests only; never expose internal moderation notes.
-- Unavailable saved codes do not make content available and must not cause valid saves to be discarded.
-- Do not imply automatic publication; human review remains required.
-- Scope is Saved and My Contributions only. The existing rule about optional reaction-detail fields remains scoped to reaction details.
-- DECISION-5B-CANONICAL and decisions 5B.22, 5B.23, and 5B.24 remain in force.
+## القواعد
 
-## Verification boundary
-This is product policy, not evidence of implementation or tests. Stage 5 remains OPEN. Do not create Stage 5.3 or start Stage 6. OPEN-Q-08 and OPEN-Q-09 remain separate/open. SEC-06, server-side upload allowlist enforcement, routes, tests, builds, and runtime remain unverified.
+- لا تعرض حالة فراغ إلا بعد اكتمال تحميل ناجح يؤكد عدم وجود عناصر قابلة للعرض. فالتحميل، وأخطاء الشبكة/الخادم، وفشل الصلاحيات حالات منفصلة؛ وأتح إعادة المحاولة حيثما كان ذلك مدعومًا.
+- **المحفوظات للزائر:** العنوان «ما حفظت أي رياكشن لحد الآن»؛ والنص «تصفّح المكتبة واحفظ الرياكشنات التي تعجبك، وبتحصل عليها هنا.»؛ والإجراء «استكشف المكتبة» ← /.
+- **المحفوظات للمستخدم المسجل:** العنوان «محفوظاتك بتظهر هنا»؛ والنص «احفظ الرياكشنات التي تريد الرجوع إليها، وستجدها في مكان واحد.»؛ والإجراء «استكشف المكتبة» ← /.
+- **مساهماتي للمستخدم المسجل:** العنوان «ما عندك مساهمات حتى الآن»؛ والنص «أرسل رياكشن يمنيًا ليستفيد منه الآخرون بعد مراجعته واعتماده.»؛ والإجراء «أرسل رياكشن» ← /submit.
+- **حساب الزائر:** يجب ألا يعرض إحصاءات الحساب أو لوحة فراغ لمساهماتي. حافظ على محفوظات الزائر المحلية ودعوة تسجيل الدخول المعتمدة.
+- أي مساهمة لها حالة (pending أو needs changes أو declined/rejected أو published) تُعد عنصرًا وليست حالة فراغ. اعرض للمساهم الحالة والأسباب/طلبات التعديل الموجهة إليه فقط؛ ولا تكشف مطلقًا ملاحظات الإشراف الداخلية.
+- رموز المحفوظات غير المتاحة لا تجعل المحتوى متاحًا، ويجب ألا تتسبب في إسقاط المحفوظات الصالحة.
+- لا توحِ بالنشر التلقائي؛ فالمراجعة البشرية تظل مطلوبة.
+- يقتصر النطاق على المحفوظات ومساهماتي فقط. وتظل القاعدة الموجودة بشأن الحقول الاختيارية لتفاصيل الرياكشن محصورة في صفحة تفاصيل الرياكشن.
+- يظل DECISION-5B-CANONICAL والقرارات 5B.22 و5B.23 و5B.24 سارية.
 
-## Current status reconciliation — 2026-10-30
-Any statement above that Stage 5 remains open or that OPEN-Q-08/OPEN-Q-09 remain open reflects the state when this decision was recorded. Current status: Stage 5 is **CLOSED FOR DOCUMENTATION ONLY**; OPEN-Q-08 and OPEN-Q-09 are each **CLOSED FOR DOCUMENTATION ONLY** in their separate documents. Loading, empty, error, and permission states remain technically unverified/deferred. This addendum does not authorize implementation.
+## حدود التحقق
+
+هذه سياسة منتج، وليست دليلًا على التنفيذ أو الاختبارات. في وقت تسجيل هذا القرار كانت Stage 5 بحالة OPEN، وكان OPEN-Q-08 وOPEN-Q-09 منفصلين ومفتوحين OPEN. لا تنشئ Stage 5.3 ولا تبدأ Stage 6. وتظل SEC-06 وإنفاذ قائمة السماح للرفع من جهة الخادم والمسارات والاختبارات والبناء وبيئة التشغيل غير متحققة.
+
+## مواءمة الحالة الحالية — 2026-10-30
+
+أي عبارة أعلاه تقول إن Stage 5 ما زالت مفتوحة، أو إن OPEN-Q-08 وOPEN-Q-09 ما زالا مفتوحين، تصف الحالة وقت تسجيل هذا القرار. الحالة الحالية: Stage 5 **CLOSED FOR DOCUMENTATION ONLY**؛ وOPEN-Q-08 وOPEN-Q-09 كل منهما **CLOSED FOR DOCUMENTATION ONLY** في وثيقته المستقلة. وتظل حالات التحميل والفراغ والخطأ والصلاحيات غير متحققة تقنيًا/مؤجلة. ولا يمنح هذا الملحق إذنًا بالتنفيذ.
