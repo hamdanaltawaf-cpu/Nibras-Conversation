@@ -3074,7 +3074,7 @@ Full decision: `المراحل/المرحلة-5-بنية-المعلومات-وا
 - أُضيفت مسودة `stage-2-reformation/STAGE-5-DOCUMENTATION-CLOSEOUT-CHECKLIST.md` ضمن PR #19 لتجميع بوابات الإغلاق التوثيقية، والقرارات الكانونية، والاستثناءات والمؤجلات، وحدود التحقق التقني.
 - الحالة: IN PROGRESS؛ لا تُغلق Stage 5 من القائمة وحدها. يلزم تدقيق اتساق نهائي ثم توصية واضحة وموافقة حمدان الصريحة.
 - لا تنفيذ أو فحص تقني في هذا العمل. SEC-06 والمسارات الفعلية والصلاحيات والإبلاغ والاختبارات والبناء ووقت التشغيل تبقى UNVERIFIED حتى يكتمل التوثيق ويصدر تكليف منفصل.
-- مرجع العمل: PR #19 — https://github.com/hamdanaltawaf-cpu/Nibras-Conversation/pull/19.
+- مرجع العمل: PR #19 — https://github.com/hamdanaltawaf-cpu/YemReact-Project/pull/19.
 
 - Cross-reference review checked Stage 5 decisions through DECISION-5B.28, roadmap, inventory, deferred/cancelled register, and the separate OPEN-Q-08/OPEN-Q-09 decisions. Corrected stale OPEN-Q-09 wording in the OPEN-Q-08 document and updated the Stage 5-B status label to DECISION-5B.28.
 - Historical note at the time of the earlier closure: the submission discussion source was on `hamdanaltawaf-cpu-patch-1` and had not been relocated to `main`. On 2026-11-05, the original file was copied unchanged to `main` at `docs/product/discussions/reaction-submission-discussion.md`; this later preservation does not alter the earlier closure decision.
